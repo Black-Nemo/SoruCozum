@@ -754,13 +754,8 @@
 
         function jsonTemplateExampleObject() {
             return {
-                question: 'Write the question text here',
-                options: [
-                    'Option A',
-                    'Option B',
-                    'Option C',
-                    'Option D'
-                ],
+                question: 'string',
+                options: ['string', 'string', 'string', 'string'],
                 correctIndex: 0,
                 explanations: [
                     'Correct Answer Explanation: Explain why the correct answer is correct',
@@ -790,16 +785,16 @@
             return map[sel] || sel;
         }
 
-        function getPgDifficultyEn() {
+        function getDifficultyLevelRule() {
             const v = document.getElementById('pg-zorluk').value;
             const map = {
-                'Kolay': 'easy',
-                'Orta': 'moderate',
-                'Zor': 'difficult',
-                'Çok zor': 'very difficult',
-                'Karma (kolay–zor karışık)': 'mixed (from easy to very difficult)'
+                'Kolay': 'Difficulty level must be low.',
+                'Orta': 'Difficulty level must be moderate.',
+                'Zor': 'Difficulty level must be high.',
+                'Çok zor': 'Difficulty level must be extremely high.',
+                'Karma (kolay–zor karışık)': 'Difficulty must vary from easy to extremely high across questions.'
             };
-            return map[v] || v;
+            return map[v] || 'Difficulty level must be extremely high.';
         }
 
         function getPgSoruSayisi() {
@@ -810,25 +805,37 @@
 
         function buildPromptText() {
             const questionCount = getPgSoruSayisi();
-            const difficulty = getPgDifficultyEn();
             const lang = getPgLanguageEn();
-            const example = getJsonTemplateString();
-            return `Generate ${questionCount} multiple-choice questions based on the PDFs I provide.
+            const difficultyRule = getDifficultyLevelRule();
+            const schema = getJsonTemplateString();
+            return `Wrap the output in JSON only. No prose. No explanation. No formatting.
+You must return ONLY a valid JSON array.
+Do not include any explanations, comments, markdown, or any text before or after the JSON.
+If your response contains anything other than valid JSON, it is considered incorrect.
 
-The questions must be ${difficulty} in terms of difficulty level.
+Generate exactly ${questionCount} multiple-choice questions based on the PDFs I provide.
+
 All questions must be written in ${lang}.
+${difficultyRule}
 
-Each question must have exactly 4 answer options.
-The correct answer must not be easily identifiable through formatting or symbols. Avoid using markers such as parentheses to highlight the correct option. If any such formatting is used, it must be applied consistently across all options.
+Each question must have exactly 4 options.
+Do not use any symbols or formatting that could reveal the correct answer. If any formatting is used, it must be consistent across all options.
 
-The output must strictly follow the JSON format shown below.
-Return only a valid JSON array. Do not include any explanations, markdown formatting, or code block markers before or after the JSON.
+Strictly follow this schema:
 
-Each question object must follow this exact structure:
+${schema}
 
-${example}
+Additional strict rules:
 
-The final JSON array must contain exactly ${questionCount} question objects (${questionCount} elements in the array), each fully complying with this structure.`;
+Output must be valid JSON (RFC 8259 compliant)
+No trailing commas
+No comments
+No extra keys
+No missing fields
+Exactly ${questionCount} objects in the array
+All strings must be properly escaped
+
+Before sending, validate your output. If it is not valid JSON, regenerate it.`;
         }
 
         function refreshPromptOutput() {
