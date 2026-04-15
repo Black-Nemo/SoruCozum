@@ -10,16 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #4f46e5;
-            --primary-hover: #4338ca;
-            --bg: #f8fafc;
-            --card-bg: #ffffff;
-            --text-main: #1e293b;
-            --text-muted: #64748b;
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
             --success: #22c55e;
             --error: #ef4444;
-            --border: #e2e8f0;
-            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --border: #334155;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
         }
 
         * {
@@ -66,6 +66,7 @@
             font-weight: 700;
             background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 12px;
         }
@@ -84,7 +85,7 @@
         }
 
         .catalog-item {
-            background: #fff;
+            background: var(--card-bg);
             border: 1px solid var(--border);
             padding: 20px;
             border-radius: 16px;
@@ -94,7 +95,7 @@
             flex-direction: column;
             justify-content: center;
             text-align: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
         }
 
         .catalog-item:hover {
@@ -158,8 +159,8 @@
 
         .question-number {
             display: inline-block;
-            background: #e0e7ff;
-            color: var(--primary);
+            background: rgba(99, 102, 241, 0.15);
+            color: #818cf8;
             padding: 4px 12px;
             border-radius: 99px;
             font-size: 0.875rem;
@@ -188,26 +189,27 @@
             transition: all 0.2s;
             text-align: left;
             font-size: 1.05rem;
-            background: white;
+            background: var(--card-bg);
             position: relative;
             overflow: hidden;
+            color: var(--text-main);
         }
 
         .option-card:hover:not(.disabled) {
             border-color: var(--primary);
-            background: #f5f3ff;
+            background: rgba(99, 102, 241, 0.1);
         }
 
         .option-card.correct {
             border-color: var(--success);
-            background: #f0fdf4;
-            color: #166534;
+            background: rgba(34, 197, 94, 0.1);
+            color: #4ade80;
         }
 
         .option-card.wrong {
             border-color: var(--error);
-            background: #fef2f2;
-            color: #991b1b;
+            background: rgba(239, 68, 68, 0.1);
+            color: #f87171;
         }
 
         .option-card.disabled {
@@ -303,12 +305,7 @@
                 </div>
             </div>
 
-            <div class="divider"><span>veya</span></div>
 
-            <input type="file" id="file-input" accept=".json" style="display: none;">
-            <button class="btn btn-outline" style="width: 100%" onclick="document.getElementById('file-input').click()">
-                📁 Bilgisayardan Dosya Seç
-            </button>
         </div>
 
         <!-- Quiz View -->
@@ -387,22 +384,7 @@
             }
         }
 
-        // Manual File Upload
-        document.getElementById('file-input').addEventListener('change', function (event) {
-            const file = event.target.files[0];
-            if (!file) return;
 
-            const reader = new FileReader();
-            reader.onload = function (e) {
-                try {
-                    questionsData = JSON.parse(e.target.result);
-                    startQuiz();
-                } catch (error) {
-                    alert("Geçersiz JSON dosyası!");
-                }
-            };
-            reader.readAsText(file);
-        });
 
         function startQuiz() {
             currentQuestionIndex = 0;
@@ -457,9 +439,9 @@
 
             const expBox = document.getElementById('explanation-box');
             expBox.innerText = explanation || (isCorrect ? "Doğru cevap!" : "Yanlış cevap.");
-            expBox.style.background = isCorrect ? '#f0fdf4' : '#fef2f2';
-            expBox.style.color = isCorrect ? '#166534' : '#991b1b';
-            expBox.style.border = `1px solid ${isCorrect ? '#bbf7d0' : '#fecaca'}`;
+            expBox.style.background = isCorrect ? 'rgba(34, 197, 94, 0.1)' : 'rgba(239, 68, 68, 0.1)';
+            expBox.style.color = isCorrect ? '#4ade80' : '#f87171';
+            expBox.style.border = `1px solid ${isCorrect ? 'rgba(34, 197, 94, 0.2)' : 'rgba(239, 68, 68, 0.2)'}`;
             expBox.classList.add('visible');
 
             const nextBtn = document.getElementById('next-btn');
@@ -492,7 +474,6 @@
         function returnToMenu() {
             document.getElementById('quiz-view').style.display = 'none';
             document.getElementById('menu-view').style.display = 'block';
-            document.getElementById('file-input').value = "";
         }
 
         // Start
