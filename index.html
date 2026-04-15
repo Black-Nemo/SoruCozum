@@ -808,34 +808,38 @@
             const lang = getPgLanguageEn();
             const difficultyRule = getDifficultyLevelRule();
             const schema = getJsonTemplateString();
-            return `Wrap the output in JSON only. No prose. No explanation. No formatting.
-You must return ONLY a valid JSON array.
-Do not include any explanations, comments, markdown, or any text before or after the JSON.
-If your response contains anything other than valid JSON, it is considered incorrect.
+            return `Generate exactly ${questionCount} multiple-choice questions based on the PDFs I provide.
 
-Generate exactly ${questionCount} multiple-choice questions based on the PDFs I provide.
+Wrap the output EXCLUSIVELY in a single JSON code block (starting with \`\`\`json and ending with \`\`\`) so I can easily copy it. Do not include any explanations, comments, prose, or greetings outside of the code block.
 
 All questions must be written in ${lang}.
+
 ${difficultyRule}
 
 Each question must have exactly 4 options.
+
 Do not use any symbols or formatting that could reveal the correct answer. If any formatting is used, it must be consistent across all options.
 
 Strictly follow this schema:
-
 ${schema}
 
 Additional strict rules:
 
-Output must be valid JSON (RFC 8259 compliant)
-No trailing commas
-No comments
-No extra keys
-No missing fields
-Exactly ${questionCount} objects in the array
-All strings must be properly escaped
+Output must be valid JSON (RFC 8259 compliant).
 
-Before sending, validate your output. If it is not valid JSON, regenerate it.`;
+No trailing commas.
+
+No comments inside the JSON.
+
+No extra keys.
+
+No missing fields.
+
+Exactly ${questionCount} objects in the array.
+
+All strings must be properly escaped.
+
+Before sending, validate your output. If it is not valid JSON, regenerate it and send only the JSON code block.`;
         }
 
         function refreshPromptOutput() {
