@@ -1,0 +1,402 @@
+[
+  {
+    "question": "Merkezi Limit Teoremi'ne (CLT) göre, popülasyonun dağılım türü ne olursa olsun, yeterince büyük örneklemlerin ortalamalarının dağılımı nasıldır?",
+    "options": [
+      "Düzgün (Uniform) dağılır.",
+      "Üstel dağılır.",
+      "Normal dağılır.",
+      "Binom dağılır."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Düzgün dağılım asıl popülasyonun dağılımı olabilir, ancak örneklem ortalamaları düzgün dağılmaz.",
+      "Yanlış. CLT üstel dağılım olacağını söylemez.",
+      "Doğru! Merkezi Limit Teoremi'ne göre, popülasyon dağılımı ne olursa olsun k-adet örneklem verisinin ortalamalarının dağılımı NORMAL'dir.",
+      "Yanlış. Binom dağılımı değil, normal dağılım gösterir."
+    ]
+  },
+  {
+    "question": "Merkezi Limit Teoremi'nin geçerli olması için örneklem boyutunun (n) genellikle en az kaç olması yeterli kabul edilir?",
+    "options": [
+      "n ≥ 10",
+      "n ≥ 30",
+      "n ≥ 50",
+      "n ≥ 100"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. 10 yeterince büyük bir örneklem boyutu olarak kabul edilmez.",
+      "Doğru! CLT'nin geçerli olması için seçilen örneklem boyutu n'in yeterince büyük olması gerekir ve n ≥ 30 olması yeterli kabul edilir.",
+      "Yanlış. 50 de büyük bir boyuttur ancak minimum kabul edilen sınır 30'dur.",
+      "Yanlış. 100 olması şart değildir, 30 ve üzeri yeterlidir."
+    ]
+  },
+  {
+    "question": "Eğer asıl popülasyonun normal dağıldığı biliniyorsa, Merkezi Limit Teoremi'nin uygulanması için örneklem boyutu (n) hakkında ne söylenebilir?",
+    "options": [
+      "Yine de kesinlikle n ≥ 30 olmalıdır.",
+      "n < 30 olmak zorundadır.",
+      "Örneklem boyutunun (n) bir önemi yoktur, CLT her halükarda geçerlidir.",
+      "Sadece n = 1 olduğunda geçerlidir."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Popülasyon zaten normalse n ≥ 30 şartı aranmaz.",
+      "Yanlış. n < 30 olmak zorunda değildir.",
+      "Doğru! Eğer popülasyonun normal dağıldığı biliniyorsa n ≥ 30 şartına gerek yoktur. Her halükarda CLT geçerlidir.",
+      "Yanlış. n=1 gibi bir kısıtlama yoktur."
+    ]
+  },
+  {
+    "question": "Ortalaması μ ve varyansı σ² olan bir popülasyondan seçilen n boyutlu bir örneklemin ortalamalarının beklenen değeri (ortalama, μ_x̄) hangisidir?",
+    "options": [
+      "μ / n",
+      "n * μ",
+      "μ",
+      "μ / √n"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Formül bu şekilde değildir.",
+      "Yanlış. Bu, toplamların beklenen değeri (μ_ΣX) formülüdür, ortalamaların değil.",
+      "Doğru! Çok sayıda örneklemin ortalamalarının ortalaması, popülasyonun gerçek ortalamasına (μ) eşittir.",
+      "Yanlış. Bu değer ortalama formülü değil, standart hata ile karıştırılmıştır."
+    ]
+  },
+  {
+    "question": "Ortalaması μ ve standart sapması σ olan bir popülasyondan seçilen n boyutlu örneklem ortalamalarının standart sapması (σ_x̄) aşağıdakilerden hangisidir?",
+    "options": [
+      "σ / n",
+      "σ / √n",
+      "√n * σ",
+      "n * σ"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Standart sapma n'e değil, kök n'e bölünür. Varyans n'e bölünür (σ² / n).",
+      "Doğru! Örneklem ortalamalarının varyansı σ² / n olduğu için, standart sapması σ / √n olarak hesaplanır.",
+      "Yanlış. Bu, toplamların standart sapması formülüdür.",
+      "Yanlış. Formülde çarpma değil bölme işlemi vardır."
+    ]
+  },
+  {
+    "question": "Merkezi Limit Teoremi (CLT) istatistik için neden çok önemlidir?",
+    "options": [
+      "Sadece ayrık (discrete) verileri analiz etmeyi sağladığı için.",
+      "Gerçek dünyadaki dağılımların çoğu normal olmamasına rağmen bu verilerin analizini mümkün kıldığı için.",
+      "Örneklem boyutunu her zaman sıfıra yaklaştırdığı için.",
+      "Standart sapma hesaplamalarını ortadan kaldırdığı için."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Sadece ayrık veriler için değil, sürekli veriler için de kullanılır.",
+      "Doğru! Hipotez testleri, güven aralıkları gibi yöntemlerin temelini oluşturur ve gerçek hayattaki normal olmayan verilerin analiz edilebilmesini sağlar.",
+      "Yanlış. Örneklem boyutuyla ilgili böyle bir kural yoktur.",
+      "Yanlış. Standart sapma hesaplamaları ortadan kalkmaz, şekil değiştirir (σ / √n)."
+    ]
+  },
+  {
+    "question": "n boyutlu örneklemlerin toplamı (ΣX) için Merkezi Limit Teoremi uygulandığında, toplamların beklenen değeri (μ_ΣX) hangisidir?",
+    "options": [
+      "μ",
+      "μ / n",
+      "n * μ",
+      "μ / √n"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bu, ortalamaların beklenen değeridir.",
+      "Yanlış. Beklenen değer n'e bölünmez.",
+      "Doğru! Toplamların beklenen değeri E(ΣX) = E(n*X̄) = n*E(X̄) = n*μ şeklinde hesaplanır.",
+      "Yanlış. Bu formül standart hata ile ilgilidir."
+    ]
+  },
+  {
+    "question": "n boyutlu örneklemlerin toplamı (ΣX) için standart sapma (σ_ΣX) formülü aşağıdakilerden hangisidir?",
+    "options": [
+      "√n * σ",
+      "σ / √n",
+      "n * σ",
+      "σ / n"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Toplamların varyansı n*σ²'dir, bunun karekökü alındığında standart sapma √n * σ olur.",
+      "Yanlış. Bu, örneklem ortalamalarının standart sapma (σ_x̄) formülüdür.",
+      "Yanlış. n ile değil kök n (√n) ile çarpılır.",
+      "Yanlış. Formülde bölme değil, çarpma vardır."
+    ]
+  },
+  {
+    "question": "Binom dağılımının Normal dağılıma yaklaşımının geçerli olması için genellikle kabul edilen temel iki kriter nedir?",
+    "options": [
+      "np ≥ 5 ve nq ≥ 5",
+      "np < 5 ve nq < 5",
+      "n ≥ 30 ve p = 0.5",
+      "np ≥ 1 ve nq ≥ 1"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Binom dağılımındaki n yeterince büyükse Normal dağılıma yaklaşır ve temel kriterler np ≥ 5 ile nq ≥ 5 olmasıdır.",
+      "Yanlış. Değerler 5'ten küçük olmamalı, büyük veya eşit olmalıdır.",
+      "Yanlış. p'nin tam olarak 0.5 olma zorunluluğu yoktur.",
+      "Yanlış. 1 değeri yaklaşım için yeterli güvenilirliği sağlamaz."
+    ]
+  },
+  {
+    "question": "X ~ B(n, p) şeklinde bir Binom dağılımında, beklenen değer (ortalama, μ) nasıl hesaplanır?",
+    "options": [
+      "p / n",
+      "n / p",
+      "√npq",
+      "np"
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. Formül p/n değildir.",
+      "Yanlış. Formül n/p değildir.",
+      "Yanlış. Bu formül Binom dağılımı için standart sapma formülüdür.",
+      "Doğru! Binom rastgele değişkeninde ortalama μ = np çarpımı ile elde edilir."
+    ]
+  },
+  {
+    "question": "X ~ B(n, p) şeklinde bir Binom dağılımında standart sapma (σ) formülü nedir?",
+    "options": [
+      "np",
+      "npq",
+      "√npq",
+      "n * √pq"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bu ortalamanın formülüdür.",
+      "Yanlış. Bu varyansın formülüdür.",
+      "Doğru! Varyans npq olduğu için standart sapma √npq formülü ile hesaplanır.",
+      "Yanlış. Kök işaretinin dışında n bulunmaz."
+    ]
+  },
+  {
+    "question": "Binom dağılımını Normal dağılıma yaklaştırırken neden 'süreklilik düzeltmesi' (continuity correction) yapılması gerekir?",
+    "options": [
+      "Ayrık dağılımlarda eşitlik önemliyken sürekli dağılımlarda değildir; bu farkı telafi edip hedef sayıyı kapsamak için.",
+      "Örneklem boyutunu n ≥ 30 şartına uydurabilmek için.",
+      "Ortalama değeri sıfıra eşitlemek için.",
+      "Negatif z-puanlarının çıkmasını engellemek için."
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Binom ayrık (kesikli), Normal ise sürekli bir dağılımdır. Ayrık dağılımlarda eşitlik önemlidir (örneğin ≤). Sürekli dağılıma geçerken bu noktayı kapsamak veya dışlamak için 0.5 eklenir/çıkarılır.",
+      "Yanlış. Süreklilik düzeltmesinin örneklem boyutu ile ilgisi yoktur.",
+      "Yanlış. Ortalama değeri sıfırlamak z-dönüşümünün (standartlaştırmanın) bir sonucudur.",
+      "Yanlış. Negatif z-puanları her zaman çıkabilir, düzeltme bunu engellemek için değildir."
+    ]
+  },
+  {
+    "question": "Süreklilik düzeltmesi yaparken P(X ≤ 58) olasılığı Normal dağılımda hangi ifadeye dönüşür?",
+    "options": [
+      "P(X < 57.5)",
+      "P(X < 58.5)",
+      "P(X > 58.5)",
+      "P(X = 58.5)"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. 57.5 olursa 58 değerini kapsam dışı bırakmış oluruz.",
+      "Doğru! 58 dahil olduğu için, düzeltme ile 58'i de kapsaması adına yarım puan eklenir ve P(X < 58.5) olur.",
+      "Yanlış. Olasılığın yönü değişmez.",
+      "Yanlış. Sürekli dağılımlarda tek bir noktanın olasılığı hesaplanmaz."
+    ]
+  },
+  {
+    "question": "Süreklilik düzeltmesi yaparken P(X ≥ 58) olasılığı Normal dağılımda hangi ifadeye dönüşür?",
+    "options": [
+      "P(X > 57.5)",
+      "P(X > 58.5)",
+      "P(X < 57.5)",
+      "P(X ≥ 58)"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! 58 dahil olduğu için, alt sınırdan yarım puan çıkarılır ve 58 değerinin Normal eğri altında kalması sağlanarak P(X > 57.5) yapılır.",
+      "Yanlış. 58.5 yapılırsa 58 rakamı dahil edilmemiş olur.",
+      "Yanlış. Olasılığın yönü küçüktür ( < ) olmamalıdır.",
+      "Yanlış. Düzeltme yapılmamış halidir."
+    ]
+  },
+  {
+    "question": "Süreklilik düzeltmesi yaparken P(X < 5) olasılığı Normal dağılımda nasıl ifade edilir?",
+    "options": [
+      "P(X < 5.5)",
+      "P(X < 4.5)",
+      "P(X > 4.5)",
+      "P(X < 5)"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. 5.5 dersek 5 değerini de hesaba katmış oluruz ama orijinal soruda 5 dahil değil (<).",
+      "Doğru! 5 dahil olmadığı ve dışlanması gerektiği için, düzeltme aşağı yönde yapılır ve P(X < 4.5) şeklini alır.",
+      "Yanlış. İşaretin yönü değişmemelidir.",
+      "Yanlış. Düzeltme yapılmamış halidir."
+    ]
+  },
+  {
+    "question": "Süreklilik düzeltmesinde aralık olasılığı olan P(5 ≤ X ≤ 10) ifadesi Normal dağılıma geçerken neye dönüşür?",
+    "options": [
+      "P(5.5 < X < 9.5)",
+      "P(4.5 < X < 10.5)",
+      "P(5 < X < 10)",
+      "P(4.5 < X < 9.5)"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu durumda hem 5 hem de 10 dışarıda bırakılmış olur.",
+      "Doğru! Hem 5 hem de 10 dahil olduğu için, alt sınır 0.5 düşürülerek (4.5), üst sınır 0.5 artırılarak (10.5) iki sınır da kapsanır.",
+      "Yanlış. Süreklilik düzeltmesi uygulanmamış.",
+      "Yanlış. Üst sınır yanlış yönde düzeltilmiş."
+    ]
+  },
+  {
+    "question": "Aşağıdaki durumlardan hangisinde Merkezi Limit Teoremi (CLT) KULLANILMAZ?",
+    "options": [
+      "Örneklem ortalamalarının olasılığını bulmak için.",
+      "Bir toplamın olasılığını bulmak için.",
+      "Binom dağılımının Normal dağılıma yakınsadığı durumlarda.",
+      "Bireysel bir değerin olasılığı isteniyorsa."
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. CLT ortalamalar için sıklıkla kullanılır.",
+      "Yanlış. CLT toplamlar için sıklıkla kullanılır.",
+      "Yanlış. CLT Binom'u Normal'e yaklaştırırken temel dayanaktır.",
+      "Doğru! Eğer çoklu verilerin ortalaması veya toplamı değil de tek bir bireysel değerin olasılığı isteniyorsa CLT kullanılmaz, rastgele değişkenin kendi dağılımı kullanılır."
+    ]
+  },
+  {
+    "question": "Popülasyon ortalaması μ = 34, standart sapması σ = 15 olan bir dağılımdan seçilen n = 100 boyutundaki bir örneklem ortalamasının standart sapması (σ_x̄) kaçtır?",
+    "options": [
+      "15",
+      "1.5",
+      "150",
+      "0.15"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. 15, asıl popülasyonun standart sapmasıdır.",
+      "Doğru! Formül σ / √n şeklindedir. 15 / √100 = 15 / 10 = 1.5 olarak hesaplanır.",
+      "Yanlış. Formülde çarpma yapılmaz, bölme yapılır.",
+      "Yanlış. Hesaplama hatası."
+    ]
+  },
+  {
+    "question": "Örneklem ortalamaları (x̄) için standartlaştırma (z-puanı) formülü aşağıdakilerden hangisidir?",
+    "options": [
+      "Z = (x̄ - μ) / (σ / √n)",
+      "Z = (x̄ - μ) / σ",
+      "Z = (x̄ - nμ) / (√n * σ)",
+      "Z = (x̄ - μ) / (σ / n)"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Örneklem ortalamaları için z-puanı bulunurken ortalamadan (μ) çıkarılır ve standart hataya (σ / √n) bölünür.",
+      "Yanlış. Bu, bireysel X değerleri için standartlaştırma formülüdür.",
+      "Yanlış. Bu, toplamlar formülüne aittir.",
+      "Yanlış. Payda kısmında n kök içinde olmalıdır."
+    ]
+  },
+  {
+    "question": "Toplamlar (ΣX) için standartlaştırma (z-puanı) dönüşüm formülü aşağıdakilerden hangisidir?",
+    "options": [
+      "Z = (ΣX - μ) / σ",
+      "Z = (ΣX - nμ) / (√n * σ)",
+      "Z = (ΣX - μ) / (σ / √n)",
+      "Z = (ΣX - n) / σ"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu, bireysel veriler için geçerlidir.",
+      "Doğru! Toplamlarda beklenen değer nμ, standart sapma ise √n * σ olduğu için; z=(ΣX - nμ) / (√n * σ) formülü kullanılır.",
+      "Yanlış. Bu formül ortalamalar için geçerli formül parçaları içerir.",
+      "Yanlış. Tamamen hatalı bir formül."
+    ]
+  },
+  {
+    "question": "Popülasyon dağılımı üniform (düzgün) olsa bile, seçilen çok sayıda n ≥ 30 boyutlu örneklemin ortalamalarının dağılımı nasıl bir grafik çizer?",
+    "options": [
+      "Yine üniform (düzgün) dağılım grafiği",
+      "Üstel dağılım grafiği",
+      "Çan eğrisi (Normal dağılım) grafiği",
+      "Düz bir çizgi"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Asıl veriler düzgün dağılır ancak ortalamalar çan eğrisine döner.",
+      "Yanlış. Üstel dağılıma dönmez.",
+      "Doğru! Merkezi Limit Teoremi tam olarak bunu söyler. Asıl dağılım düzgün (uniform) olsa bile, ortalamaların dağılımı normal dağılıma (çan eğrisine) dönüşür.",
+      "Yanlış. Düz bir çizgi frekans dağılımını temsil etmez."
+    ]
+  },
+  {
+    "question": "Bilinmeyen bir dağılımın ortalaması μ = 90 ve standart sapması σ = 15'tir. Popülasyondan rasgele n = 80 büyüklüğünde bir örneklem seçiliyor. 80 değerin toplamının beklenen değeri (ortalama, μ_ΣX) nedir?",
+    "options": [
+      "90",
+      "1200",
+      "7200",
+      "150"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. 90 popülasyon ortalamasıdır.",
+      "Yanlış. Hesaplama hatası.",
+      "Doğru! Toplamların beklenen değeri μ_ΣX = n * μ formülüyle bulunur. 80 * 90 = 7200 eder.",
+      "Yanlış. Matematiksel olarak ilgisiz bir sonuç."
+    ]
+  },
+  {
+    "question": "Merkezi Limit Teoremi'ne göre, ortalamaların ortalaması (μ_x̄) popülasyonun asıl ortalamasına (μ) göre nasıldır?",
+    "options": [
+      "Popülasyon ortalamasından her zaman daha büyüktür.",
+      "Popülasyon ortalamasından daha küçüktür.",
+      "Popülasyon ortalamasına tam olarak eşittir.",
+      "Örneklem büyüklüğü n kadar daha büyüktür."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Daha büyük değildir.",
+      "Yanlış. Daha küçük değildir.",
+      "Doğru! E(X̄) = μ formülü gereği, çok sayıda örneklem ortalamasının da ortalaması, popülasyonun orijinal ortalaması ile aynı kalır.",
+      "Yanlış. Toplamların (ΣX) beklenen değeri n katı olur, ortalamalarınki eşittir."
+    ]
+  },
+  {
+    "question": "Süreklilik düzeltmesi yaparken P(X ≤ 0.8) ifadesi, Binom'dan Normal dağılıma geçerken kural gereği neye dönüşmelidir?",
+    "options": [
+      "P(X < 0.75)",
+      "P(X < 0.85)",
+      "P(X > 0.85)",
+      "P(X < 0.8)"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. 0.75 yapılırsa 0.8 dahil edilmemiş olur.",
+      "Doğru! 0.8 dahil olduğu için, onu da kapsamak amacıyla sınır 0.05 puan yukarı taşınarak P(X < 0.85) şekline getirilir (Ders slaydındaki kural tablosu).",
+      "Yanlış. Olasılık yönü değiştirilemez.",
+      "Yanlış. Hiçbir düzeltme uygulanmamış halidir."
+    ]
+  },
+  {
+    "question": "Süreklilik düzeltmesi yaparken P(X > 2.4) olasılığı Normal dağılımda hangi ifadeye dönüşür?",
+    "options": [
+      "P(X > 2.35)",
+      "P(X > 2.4)",
+      "P(X > 2.45)",
+      "P(X < 2.45)"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. 2.35 yapılırsa, hariç tutulması gereken 2.4 de olasılığa dahil edilmiş olur.",
+      "Yanlış. Düzeltme yapılmamış.",
+      "Doğru! Slayttaki kurala göre, 2.4 dahil olmadığı (>) için sınır daha da ileri çekilip 2.45 yapılır. Böylece 2.4 değeri dahil edilmemiş olur.",
+      "Yanlış. İşaret yönü hatalı."
+    ]
+  }
+]

@@ -1,0 +1,1602 @@
+[
+  {
+    "question": "İstatistikte 'popülasyonun sayısal bir özelliği' olarak tanımlanan kavram hangisidir?",
+    "options": [
+      "İstatistik",
+      "Parametre",
+      "Örneklem",
+      "Değişken"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. İstatistik, örneklemin sayısal bir özelliğidir.",
+      "Doğru! Parametre, tüm popülasyonun sayısal bir özelliğini (ortalama, standart sapma vb.) ifade eder.",
+      "Yanlış. Örneklem popülasyonun bir alt kümesidir.",
+      "Yanlış. Değişken, popülasyon üyeleri için belirlenen ölçümdür."
+    ]
+  },
+  {
+    "question": "Bir spor salonundaki 'makine sayısı' verisi ne tür bir veridir?",
+    "options": [
+      "Nitel veri",
+      "Nicel sürekli veri",
+      "Nicel ayrık veri",
+      "Kategorik veri"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Makineler sayısal değerlerdir.",
+      "Yanlış. Makine sayısı buçuklu değerler alamaz, sayılabilir.",
+      "Doğru! Makine sayısı tam sayılarla ifade edilen ve sayılabilen 'nicel ayrık' veridir.",
+      "Yanlış. Kategorik veri nitel özellikler içindir."
+    ]
+  },
+  {
+    "question": "Çubukları en büyükten en küçüğe doğru sıralanmış olan grafik türü hangisidir?",
+    "options": [
+      "Histogram",
+      "Pasta Grafiği",
+      "Pareto Grafiği",
+      "Zaman Serisi Grafiği"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Histogramda çubuklar veri aralıklarına göredir.",
+      "Yanlış. Pasta grafiği dilimlerden oluşur.",
+      "Doğru! Pareto grafiği, kategorilerin boyutuna göre büyükten küçüğe sıralandığı özel bir çubuk grafiğidir.",
+      "Yanlış. Zaman serisi verinin zamana göre değişimini gösterir."
+    ]
+  },
+  {
+    "question": "Verilerin en az yüzde 75'inin ortalamadan iki standart sapma uzaklıkta olduğunu belirten kural hangisidir?",
+    "options": [
+      "Merkezi Limit Teoremi",
+      "Empirik Kural",
+      "Büyük Sayılar Yasası",
+      "Chebyshev Kuralı"
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. CLT örneklem dağılımları ile ilgilidir.",
+      "Yanlış. Empirik kural normal dağılım için %95 der.",
+      "Yanlış. Bu yasa deneysel olasılığın teorik olasılığa yaklaşmasını açıklar.",
+      "Doğru! Chebyshev Kuralı, dağılım ne olursa olsun verilerin en az %75'inin 2 standart sapma içinde olduğunu söyler."
+    ]
+  },
+  {
+    "question": "Simetrik bir dağılımda ortalama, medyan ve mod arasındaki ilişki nasıldır?",
+    "options": [
+      "Ortalama > Medyan > Mod",
+      "Ortalama < Medyan < Mod",
+      "Ortalama = Medyan = Mod",
+      "Mod > Ortalama > Medyan"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bu durum sağa çarpık dağılımlarda görülür.",
+      "Yanlış. Bu durum sola çarpık dağılımlarda görülür.",
+      "Doğru! Tamamen simetrik bir dağılımda (örneğin Normal dağılım) üç merkezi eğilim ölçüsü de eşittir.",
+      "Yanlış. Simetrik dağılımda bu sıralama mümkün değildir."
+    ]
+  },
+  {
+    "question": "Bir olayın asla gerçekleşmeyeceği durumunda olasılık değeri (P(A)) kaçtır?",
+    "options": [
+      "-1",
+      "0",
+      "0.5",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Olasılık negatif değer alamaz.",
+      "Doğru! P(A)=0, olayın imkansız olduğunu ve asla gerçekleşmeyeceğini gösterir.",
+      "Yanlış. 0.5 eşit derece olasılığı ifade eder.",
+      "Yanlış. 1 kesin gerçekleşecek olayı ifade eder."
+    ]
+  },
+  {
+    "question": "İki olayın kesişiminin olasılığı sıfır ise (P(A∩B)=0), bu olaylara ne denir?",
+    "options": [
+      "Bağımsız olaylar",
+      "Bağımlı olaylar",
+      "Ayrık (Mutually Exclusive) olaylar",
+      "Tamamlayıcı olaylar"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bağımsız olaylarda kesişim sıfır olmak zorunda değildir.",
+      "Yanlış. Bağımlı olaylar birbirini etkiler.",
+      "Doğru! Ayrık olaylar aynı anda gerçekleşemez, dolayısıyla ortak sonuçları yoktur ve kesişimleri sıfırdır.",
+      "Yanlış. Tamamlayıcı olayların toplamı 1 eder."
+    ]
+  },
+  {
+    "question": "Z-skoru (standart puan) neyi ölçer?",
+    "options": [
+      "Verinin büyüklüğünü",
+      "Verinin ortalamadan kaç standart sapma uzakta olduğunu",
+      "Verinin frekansını",
+      "Verinin varyansını"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Verinin ham değeri değildir.",
+      "Doğru! Z-skoru, bir değerin ortalamadan uzaklığını standart sapma birimi cinsinden ifade eder.",
+      "Yanlış. Frekans sayımla ilgilidir.",
+      "Yanlış. Varyans tüm veri kümesinin yayılımıdır."
+    ]
+  },
+  {
+    "question": "Binom dağılımının (n, p) beklentisi (ortalama) nasıl hesaplanır?",
+    "options": [
+      "n * p",
+      "n * p * q",
+      "p / n",
+      "1 / p"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Binom dağılımında beklenen değer (ortalama) deneme sayısı ile başarı olasılığının çarpımıdır (np).",
+      "Yanlış. npq varyansın formülüdür.",
+      "Yanlış. Bu geçerli bir Binom parametresi değildir.",
+      "Yanlış. 1/p Geometrik dağılımın ortalamasıdır."
+    ]
+  },
+  {
+    "question": "Merkezi Limit Teoremi'nin geçerli olması için genellikle örneklem büyüklüğünün (n) en az kaç olması yeterli kabul edilir?",
+    "options": [
+      "10",
+      "20",
+      "30",
+      "100"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. 10 çok küçük bir değerdir.",
+      "Yanlış. Bazı durumlarda yetse de kural olarak kabul edilmez.",
+      "Doğru! İstatistik literatüründe n >= 30 olması, CLT'nin uygulanabilmesi için genellikle yeterli bir sınır kabul edilir.",
+      "Yanlış. 100 kesinlikle yeterlidir ama 'en az' şartı genellikle 30'dur."
+    ]
+  },
+  {
+    "question": "Bir kutu grafiğinde (box plot) 'kutunun' sınırları hangi değerleri temsil eder?",
+    "options": [
+      "Min ve Max",
+      "Q1 ve Q3",
+      "Ortalama ve Varyans",
+      "Mod ve Medyan"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Min ve Max 'bıyıkların' uçları olabilir.",
+      "Doğru! Kutu grafiğinde kutu, 1. çeyreklik (Q1) ile 3. çeyreklik (Q3) arasındaki %50'lik dilimi temsil eder.",
+      "Yanlış. Varyans grafik üzerinde doğrudan kutu sınırı değildir.",
+      "Yanlış. Medyan kutunun içinde bir çizgidir, sınır değildir."
+    ]
+  },
+  {
+    "question": "Üstel dağılımın en önemli özelliklerinden biri olan, geçmişteki bekleme süresinin geleceği etkilememesi durumuna ne denir?",
+    "options": [
+      "Simetri",
+      "Süreklilik",
+      "Hafızasızlık (Memoryless)",
+      "Bağımsızlık"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Üstel dağılım simetrik değildir.",
+      "Yanlış. Süreklilik genel bir dağılım türüdür.",
+      "Doğru! Üstel dağılım hafızasızdır; yani 'zaten t kadar bekledim' bilgisi, gelecek t süresi olasılığını değiştirmez.",
+      "Yanlış. Bağımsızlık daha genel bir olasılık kavramıdır."
+    ]
+  },
+  {
+    "question": "Örnekleme yöntemi olarak 'ilk birimin rastgele seçilip sonrakilerin belirli bir k aralığıyla seçilmesi' hangisidir?",
+    "options": [
+      "Basit Rastgele Örnekleme",
+      "Tabakalı Örnekleme",
+      "Küme Örnekleme",
+      "Sistematik Örnekleme"
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. Basit rastgele örneklemede her seçim tamamen şanstır.",
+      "Yanlış. Tabakalıda gruplardan rastgele seçilir.",
+      "Yanlış. Kümede tüm grup seçilir.",
+      "Doğru! Sistematik örneklemede k=N/n aralığı hesaplanır ve bu düzende seçim yapılır."
+    ]
+  },
+  {
+    "question": "Aykırı değerleri (outliers) belirlemek için kullanılan IQR kriteri nedir?",
+    "options": [
+      "Medyanın 2 katı",
+      "Q1 - 1.5*IQR'dan küçük veya Q3 + 1.5*IQR'dan büyük",
+      "Ortalamadan 3 standart sapma uzaklık",
+      "Max - Min farkı"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Medyan tek başına yeterli değildir.",
+      "Doğru! İstatistikte standart yöntem, alt ve üst çeyrekliklerden 1.5*IQR kadar uzağa gitmektir.",
+      "Yanlış. Bu normal dağılım için bir yaklaşımdır.",
+      "Yanlış. Bu değer sadece aralığı (range) verir."
+    ]
+  },
+  {
+    "question": "Poisson dağılımında beklenen değer λ=2 ise varyans kaçtır?",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "0.5"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Varyans 1 değildir.",
+      "Doğru! Poisson dağılımının benzersiz bir özelliği, ortalamasının (λ) varyansına eşit olmasıdır.",
+      "Yanlış. Kare alma işlemi standart sapmadan varyansa geçerken yapılır, burada λ doğrudan varyanstır.",
+      "Yanlış. λ=2 ise varyans da 2'dir."
+    ]
+  },
+  {
+    "question": "Nitel verileri göstermek için uygun olmayan grafik türü hangisidir?",
+    "options": [
+      "Pasta Grafiği",
+      "Çubuk Grafiği",
+      "Histogram",
+      "Pareto Grafiği"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Pasta grafiği nitel kategoriler içindir.",
+      "Yanlış. Çubuk grafiği nitel veriler için temel grafiktir.",
+      "Doğru! Histogram nicel sürekli verilerin aralıklarındaki frekansları göstermek için kullanılır; nitel veri için uygun değildir.",
+      "Yanlış. Pareto nitel verinin sıralı halidir."
+    ]
+  },
+  {
+    "question": "Geometrik dağılımda X rastgele değişkeni neyi temsil eder?",
+    "options": [
+      "n denemedeki başarı sayısını",
+      "İlk başarıya kadar yapılan deneme sayısını",
+      "Belli bir alandaki kusur sayısını",
+      "Örneklemdeki ortalamayı"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu Binom dağılımının tanımıdır.",
+      "Doğru! Geometrik dağılım, Bernoulli denemelerinde ilk 'başarı' elde edilene kadar geçen deneme sayısını modeller.",
+      "Yanlış. Bu Poisson dağılımına yakındır.",
+      "Yanlış. Dağılım bir sayıdır, ortalama değil."
+    ]
+  },
+  {
+    "question": "Standart normal dağılımda (Z), eğrinin altında kalan toplam alan kaçtır?",
+    "options": [
+      "0.5",
+      "1",
+      "100",
+      "0.68"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. 0.5 sadece yarısının alanıdır.",
+      "Doğru! Tüm sürekli olasılık yoğunluk fonksiyonlarında olduğu gibi, eğri altındaki toplam alan her zaman 1'e eşittir.",
+      "Yanlış. Alan olasılığı ifade eder ve 1'den büyük olamaz.",
+      "Yanlış. 0.68 bir standart sapma içindeki alandır."
+    ]
+  },
+  {
+    "question": "Merkezi Limit Teoremi'ne göre, popülasyon dağılımı ne olursa olsun, örneklem ortalamalarının (X-bar) dağılımı neye yaklaşır?",
+    "options": [
+      "Üstel Dağılım",
+      "Binom Dağılımı",
+      "Normal Dağılım",
+      "Düzgün Dağılım"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Üstel dağılım bekleme süreleri içindir.",
+      "Yanlış. Binom kesikli bir dağılımdır.",
+      "Doğru! CLT'nin ana mesajı, yeterince büyük örneklemlerde ortalamaların 'Normal Dağılım' göstereceğidir.",
+      "Yanlış. Düzgün dağılımda tüm olasılıklar eşittir."
+    ]
+  },
+  {
+    "question": "A ve B olayları bağımsız ise P(A|B) neye eşittir?",
+    "options": [
+      "P(B)",
+      "P(A)*P(B)",
+      "P(A)",
+      "P(A+B)"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. P(B) ile alakası yoktur.",
+      "Yanlış. Bu kesişimin formülüdür.",
+      "Doğru! Bağımsız olaylarda birinin gerçekleşmesi diğerini etkilemez, dolayısıyla koşullu olasılık ham olasılığa eşittir.",
+      "Yanlış. Bu toplama kuralı ile ilgilidir."
+    ]
+  },
+  {
+    "question": "Nominal düzeydeki verilere bir örnek hangisidir?",
+    "options": [
+      "Sıcaklık",
+      "Boy uzunluğu",
+      "Araba renkleri",
+      "Sınav notu"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Interval.",
+      "Yanlış. Ratio.",
+      "Doğru! Renkler sadece isimdir, sıralanamaz veya matematiksel işlem yapılamaz.",
+      "Yanlış. Ordinal."
+    ]
+  },
+  {
+    "question": "Bir popülasyonu gruplara ayırıp her gruptan rastgele seçim yapmaya ne denir?",
+    "options": [
+      "Basit Rastgele",
+      "Tabakalı",
+      "Küme",
+      "Kolaylı"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Tabakalı (Stratified) örnekleme.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Hangi veri türü 'sıralanabilir' ancak aralarındaki farklar anlamlı değildir?",
+    "options": [
+      "Nominal",
+      "Ordinal",
+      "Aralık",
+      "Oran"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Ordinal veriler (örn. memnuniyet anketi) sıralanabilir ancak farklar ölçülemez.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Sürekli bir nicel veriye örnek hangisidir?",
+    "options": [
+      "Ailedeki çocuk sayısı",
+      "Atılan gol sayısı",
+      "Boy uzunluğu",
+      "Sınıf mevcudu"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Boy uzunluğu ara değerler alabilir.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Örneklemin bir alt kümesi olduğu büyük gruba ne denir?",
+    "options": [
+      "İstatistik",
+      "Parametre",
+      "Popülasyon",
+      "Değişken"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Popülasyon incelenen tüm nesneleri kapsar.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Verilerin yanlış toplanması sonucu oluşan hataya ne denir?",
+    "options": [
+      "Örnekleme Hatası",
+      "Örnekleme Dışı Hata",
+      "Z-skoru hatası",
+      "Varyans hatası"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Veri girişi veya cihaz hatası örnekleme dışı hatadır.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "İstatistiksel etik açısından 'araştırmacı sorumluluğu' hangisini içerir?",
+    "options": [
+      "Verileri değiştirmek",
+      "Hipotezi destekleyen veriyi seçmek",
+      "Katılımcı mahremiyetini korumak",
+      "Örneklem sayısını yanlış yazmak"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Mahremiyet etiktir.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Hangi grafik türü zaman içindeki değişimi gösterir?",
+    "options": [
+      "Histogram",
+      "Pasta",
+      "Çizgi Grafiği",
+      "Kutu Grafiği"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Zaman serileri için çizgi grafiği kullanılır.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Sıklık tablosunda bir değerin tüm değerlere oranı nedir?",
+    "options": [
+      "Frekans",
+      "Kümülatif Frekans",
+      "Göreceli Frekans",
+      "Standart Sapma"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Relative frequency (göreceli frekans) oranı verir.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Çıkarımsal istatistik neyi amaçlar?",
+    "options": [
+      "Veriyi özetlemeyi",
+      "Grafik çizmeyi",
+      "Örneklemden popülasyona sonuç çıkarmayı",
+      "Sadece mod hesaplamayı"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Inferential stats tahmin ve çıkarım yapar.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Veri kümesindeki en büyük ve en küçük değer arasındaki fark nedir?",
+    "options": [
+      "Varyans",
+      "Aralık (Range)",
+      "Ortalama",
+      "Medyan"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Range = Max - Min.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Hangi ölçü aykırı değerlerden (outliers) en çok etkilenir?",
+    "options": [
+      "Mod",
+      "Medyan",
+      "Ortalama",
+      "Çeyreklikler"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Aritmetik ortalama uç değerlerden çok etkilenir.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Standart sapmanın karesi hangisidir?",
+    "options": [
+      "Varyans",
+      "Mod",
+      "Z-skoru",
+      "Medyan"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Varyans, standart sapmanın karesidir.",
+      "Yanlış.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Verilerin %50'sinin altında kaldığı değer hangisidir?",
+    "options": [
+      "Ortalama",
+      "Mod",
+      "Medyan",
+      "Üst Çeyreklik"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Medyan (Q2) veriyi ikiye böler.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Sağa çarpık (Right-skewed) bir dağılımda genellikle hangisi daha büyüktür?",
+    "options": [
+      "Medyan",
+      "Ortalama",
+      "Mod",
+      "Varyans"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Sağ taraftaki uzun kuyruk ortalamayı sağa çeker.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Kutu grafiğinde 'bıyıkların' dışındaki noktalar neyi temsil eder?",
+    "options": [
+      "Ortalamayı",
+      "Aykırı değerleri",
+      "Modu",
+      "Varyansı"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Outliers kutu grafiğinde ayrı noktalarla gösterilir.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "IQR (Çeyreklikler arası fark) nasıl hesaplanır?",
+    "options": [
+      "Q3 - Q1",
+      "Q3 + Q1",
+      "Max - Min",
+      "Ortalama / Sapma"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Interquartile range Q3 ile Q1 arasındaki farktır.",
+      "Yanlış.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Z-skoru negatifse ne anlama gelir?",
+    "options": [
+      "Hata yapılmıştır",
+      "Veri ortalamanın üstündedir",
+      "Veri ortalamanın altındadır",
+      "Varyans negatiftir"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Negatif Z verinin ortalamadan küçük olduğunu gösterir.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Nokta grafiği (Dot plot) ne için kullanılır?",
+    "options": [
+      "Çok büyük veriler",
+      "Küçük veri setlerinin dağılımını görmek",
+      "Sadece zaman serileri",
+      "Kategorik isimler"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Az sayıda veri için frekansları gösterir.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Kök-Yaprak (Stem-and-leaf) grafiğinin avantajı nedir?",
+    "options": [
+      "Grafiği çizerken orijinal verileri koruması",
+      "Sadece ortalamayı göstermesi",
+      "Renk kullanması",
+      "Hesaplama gerektirmemesi"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Veri değerleri grafik içinde okunabilir.",
+      "Yanlış.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Olasılık değerleri hangi aralıktadır?",
+    "options": [
+      "-1 ile 1",
+      "0 ile 100",
+      "0 ile 1",
+      "-sonsuz ile +sonsuz"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Olasılık 0 (imkansız) ile 1 (kesin) arasındadır.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Bir madeni para 3 kez atıldığında örnek uzay kaç elemanlıdır?",
+    "options": [
+      "3",
+      "6",
+      "8",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! 2^3 = 8 olası sonuç vardır (TTT, TTY vb.).",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "P(A) = 0.3 ise P(A') (A'nın tümleyeni) kaçtır?",
+    "options": [
+      "0.3",
+      "0.7",
+      "0.0",
+      "1.0"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! 1 - 0.3 = 0.7.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "P(A veya B) hesaplanırken eğer olaylar ayrık değilse ne çıkarılır?",
+    "options": [
+      "P(A)",
+      "P(B)",
+      "P(A ve B)",
+      "P(A|B)"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Çifte sayımı önlemek için kesişim çıkarılır: P(A)+P(B)-P(A∩B).",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Koşullu olasılık P(A|B) formülü nedir?",
+    "options": [
+      "P(A)/P(B)",
+      "P(A ve B) / P(B)",
+      "P(A) * P(B)",
+      "P(A) + P(B)"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! B gerçekleştiğine göre A'nın olma olasılığı kesişim/B'dir.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Bir ağaç diyagramında dalların sonundaki olasılıkların toplamı kaç olmalıdır?",
+    "options": [
+      "0.5",
+      "Belirsiz",
+      "1",
+      "100"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Bir düğümden çıkan dalların toplamı her zaman 1 olmalıdır.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Venn diyagramında iki dairenin ortak alanı neyi temsil eder?",
+    "options": [
+      "Birleşimi",
+      "Kesişimi",
+      "Evrensel kümeyi",
+      "Farkı"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Ortak alan 've' (intersection) anlamına gelir.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Büyük Sayılar Yasası neyi ifade eder?",
+    "options": [
+      "Verilerin normale yaklaştığını",
+      "Deneme sayısı arttıkça deneysel olasılığın teorik olasılığa yaklaştığını",
+      "Varyansın küçüldüğünü",
+      "Ortalamanın büyüdüğünü"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Daha çok deney daha kesin sonuç verir.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "P(A) = 0.5, P(B) = 0.5 ve olaylar bağımsız ise P(A ve B) kaçtır?",
+    "options": [
+      "1.0",
+      "0.0",
+      "0.25",
+      "0.5"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Bağımsızlıkta çarparız: 0.5 * 0.5 = 0.25.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "İki zar atıldığında toplamın 13 gelme olasılığı kaçtır?",
+    "options": [
+      "1/36",
+      "1/6",
+      "0",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! En fazla 12 (6+6) gelebilir, 13 imkansızdır.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Binom dağılımında her denemenin kaç sonucu vardır?",
+    "options": [
+      "Sınırsız",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Başarı veya Başarısızlık (2 sonuç).",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Poisson dağılımı genellikle neyi modeller?",
+    "options": [
+      "Bir denemedeki başarıyı",
+      "Belirli bir zaman veya mekan aralığındaki olay sayısını",
+      "İlk başarıya kadar deneme sayısını",
+      "Boy uzunluğunu"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Örn: Saatte gelen telefon sayısı.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Hipergeometrik dağılımın Binom'dan farkı nedir?",
+    "options": [
+      "Denemeler bağımlıdır (iadesiz seçim)",
+      "Denemeler bağımsızdır",
+      "Sadece 2 sonuç vardır",
+      "Sürekli bir dağılımdır"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! İadesiz seçimlerde olasılık her adımda değişir.",
+      "Yanlış.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Beklenen değer (Expected Value) aslında nedir?",
+    "options": [
+      "Mod",
+      "En büyük değer",
+      "Uzun vadeli ortalama",
+      "Standart sapma"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! E(X) dağılımın kütle merkezidir.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Bir zarı 10 kez attığımızda 6 gelme sayısını hangi dağılım modeller?",
+    "options": [
+      "Poisson",
+      "Geometrik",
+      "Binom",
+      "Düzgün"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Sabit n deneme ve sabit p olasılığı var.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Geometrik dağılımda p=0.2 ise ortalama kaç denemedir?",
+    "options": [
+      "2",
+      "5",
+      "10",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! E(X) = 1/p = 1/0.2 = 5.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Bernoulli denemesi nedir?",
+    "options": [
+      "Sadece bir kez yapılan 2 sonuçlu deney",
+      "Çok sayıda yapılan deney",
+      "Sürekli bir ölçüm",
+      "Zar atma"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Binom'un temel taşı olan tek bir denemedir.",
+      "Yanlış.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Poisson dağılımında λ (lambda) neyi temsil eder?",
+    "options": [
+      "Başarı olasılığını",
+      "Birim alandaki ortalama olay sayısını",
+      "Deneme sayısını",
+      "Varyansın karekökünü"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Ortalama hızı ifade eder.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "P(X=x) fonksiyonuna ayrık değişkenlerde ne ad verilir?",
+    "options": [
+      "Yoğunluk fonksiyonu",
+      "Olasılık kütle fonksiyonu (pmf)",
+      "Kümülatif fonksiyon",
+      "Z-skoru"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Ayrık noktalardaki kütleyi verir.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Binom dağılımında p+q toplamı kaç olmalıdır?",
+    "options": [
+      "0.5",
+      "1",
+      "100",
+      "Değişken"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Başarı + Başarısızlık = 1.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Sürekli bir dağılımda P(X = 5) olasılığı kaçtır?",
+    "options": [
+      "1/5",
+      "1",
+      "0",
+      "0.5"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Sürekli dağılımlarda tek bir noktanın alanı 0'dır.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Düzgün (Uniform) dağılımın grafiği neye benzer?",
+    "options": [
+      "Çan eğrisi",
+      "Dikdörtgen",
+      "L harfi",
+      "Üçgen"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Tüm değerler arasında olasılık yoğunluğu sabittir.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Üstel (Exponential) dağılım ne için kullanılır?",
+    "options": [
+      "Olaylar arası bekleme süresi",
+      "Kişi sayısı",
+      "Başarı sayısı",
+      "Sınav notları"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Örn: İki müşteri arasındaki süre.",
+      "Yanlış.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Olasılık Yoğunluk Fonksiyonu (pdf) f(x) değeri negatif olabilir mi?",
+    "options": [
+      "Evet",
+      "Hayır",
+      "Sadece Z dağılımında",
+      "Bazen"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! f(x) her zaman >= 0 olmalıdır.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Kümülatif Dağılım Fonksiyonu P(X < x) neyi verir?",
+    "options": [
+      "Sadece x noktasını",
+      "x değerine kadar olan toplam alanı",
+      "Varyansı",
+      "Modu"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Sol tarafta kalan birikimli olasılıktır.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Üstel dağılımda λ=0.5 ise ortalama (1/λ) kaçtır?",
+    "options": [
+      "0.5",
+      "1",
+      "2",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! 1 / 0.5 = 2.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Üstel dağılımın şekli nasıldır?",
+    "options": [
+      "Simetrik",
+      "Sağa çarpık (azalarak giden)",
+      "Sola çarpık",
+      "Düz"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! X büyüdükçe olasılık yoğunluğu hızla azalır.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Sürekli bir değişkenin olasılığı nasıl hesaplanır?",
+    "options": [
+      "Fonksiyonu toplayarak",
+      "Eğri altındaki alanı (integral) hesaplayarak",
+      "Modu bularak",
+      "Değerleri çarparak"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Alan olasılıktır.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Uniform dağılımda f(x) = 1/(b-a) ise, aralık dışında f(x) kaçtır?",
+    "options": [
+      "1",
+      "0",
+      "-1",
+      "Sonsuz"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Tanım aralığı dışında olasılık yoktur.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Standart sapma arttıkça normal dağılım eğrisi nasıl değişir?",
+    "options": [
+      "Daralır ve yükselir",
+      "Genişler ve basıklaşır",
+      "Değişmez",
+      "Sağa kayar"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Daha çok sapma daha yayık bir çan demektir.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Normal dağılımda medyan nerededir?",
+    "options": [
+      "En sağda",
+      "En solda",
+      "Tam ortada (ortalama ile aynı)",
+      "Aykırı değerlerdedir"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Simetriktir.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Empirik kurala göre verilerin %95'i kaç standart sapma içindedir?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! +/- 2 standart sapma %95'i kapsar.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Z tablosu genellikle hangi alanları verir?",
+    "options": [
+      "Eğrinin üstündeki",
+      "Z değerinden sonsuza olan",
+      "Soldan Z değerine kadar olan (birikimli)",
+      "Sadece ortalamadaki"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Standart tablolar P(Z < z) değerini verir.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "X~N(10, 2) ise Z-skoru (X=12 için) kaçtır?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! (12-10)/2 = 1.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Normal dağılımın toplam alanı 1 ise, ortalamanın solunda kalan alan kaçtır?",
+    "options": [
+      "0",
+      "0.5",
+      "1",
+      "0.95"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Simetri nedeniyle yarısı soldadır.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "X~N(μ, σ) ifadesindeki μ neyi temsil eder?",
+    "options": [
+      "Varyansı",
+      "Medyanı",
+      "Aritmetik ortalamayı",
+      "Örneklem sayısını"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Parametre olan popülasyon ortalamasıdır.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Z=0 değeri hangi değere karşılık gelir?",
+    "options": [
+      "Minimuma",
+      "Maksimuma",
+      "Ortalamaya",
+      "Aykırı değere"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! X=μ olduğunda Z=0 olur.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Normal eğrinin uçları (kuyrukları) X eksenine ne yapar?",
+    "options": [
+      "Keser",
+      "Dokunur",
+      "Asimptotik olarak yaklaşır ama dokunmaz",
+      "Yukarı döner"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Sonsuza kadar yaklaşır.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Standart normal dağılımın standart sapması kaçtır?",
+    "options": [
+      "0",
+      "1",
+      "10",
+      "Değişken"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Z dağılımı her zaman mu=0, sigma=1'dir.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Bir öğrencinin notu 80. yüzdelik (80th percentile) ise bu ne demektir?",
+    "options": [
+      "Sınıfın %80'inden düşük almıştır",
+      "Sınıfın %80'i ondan daha düşük veya eşit almıştır",
+      "Notu 100 üzerinden 80'dir",
+      "Hata yapmıştır"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Yüzdelik, altta kalan kısmı belirtir.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Örneklem ortalamalarının standart sapmasına (σ/√n) ne ad verilir?",
+    "options": [
+      "Varyans",
+      "Standart Hata (Standard Error)",
+      "Hata payı",
+      "Z-skoru"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Örneklem dağılımının yayılımıdır.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Popülasyon dağılımı çok çarpık olsa bile n arttıkça örneklem ortalamaları neye yaklaşır?",
+    "options": [
+      "Üstel",
+      "Normal",
+      "Düzgün",
+      "Binom"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! CLT'nin gücü buradadır.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "n=100 olan bir örneklemde standart hata, n=25 olana göre nasıldır?",
+    "options": [
+      "Daha büyüktür",
+      "Daha küçüktür",
+      "Aynıdır",
+      "İki katıdır"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Payda (kök n) büyüdükçe standart hata küçülür, tahmin kesinleşir.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Binom dağılımını Normal dağılım ile tahmin etmek için hangi düzeltme yapılır?",
+    "options": [
+      "Z-düzeltmesi",
+      "Süreklilik Düzeltmesi (Continuity Correction)",
+      "Varyans düzeltmesi",
+      "Bias düzeltmesi"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Ayrık çubuklardan sürekli eğriye geçerken +/- 0.5 eklenir/çıkarılır.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Örneklem toplamlarının (ΣX) dağılımı n büyüdükçe neye yaklaşır?",
+    "options": [
+      "Normal dağılım",
+      "Poisson dağılımı",
+      "Ki-kare",
+      "T-dağılımı"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! CLT hem ortalamalar hem toplamlar için geçerlidir.",
+      "Yanlış.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Bir örneklem dağılımı oluşturmak için ne yapılır?",
+    "options": [
+      "Sadece bir kişi seçilir",
+      "Aynı büyüklükte çok sayıda farklı örneklem çekilip ortalamaları alınır",
+      "Popülasyonun modu bulunur",
+      "Veriler toplanır"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Örneklem dağılımı istatistiklerin (örn. x-bar) dağılımıdır.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Eğer popülasyon zaten Normal dağılıyorsa, örneklem ortalamaları için n'in 30'dan büyük olması şart mıdır?",
+    "options": [
+      "Evet",
+      "Hayır, n=1 olsa bile normaldir",
+      "Sadece n=100 ise",
+      "Bilinemez"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Popülasyon normalse her n için ortalamalar normaldir.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Normal dağılım yaklaşımında np ve nq değerleri en az kaç olmalıdır?",
+    "options": [
+      "1",
+      "5 veya 10",
+      "30",
+      "100"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Genellikle 5 veya 10 sınırı kullanılır (Ders notunda 10 belirtilmiş).",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Süreklilik düzeltmesinde P(X >= 10) ayrık olasılığı sürekliye nasıl çevrilir?",
+    "options": [
+      "P(X > 10)",
+      "P(X > 9.5)",
+      "P(X > 10.5)",
+      "P(X < 10)"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! 10'u dahil etmek için 9.5'ten başlanır.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Merkezi Limit Teoremi'nin temel amacı nedir?",
+    "options": [
+      "Veriyi toplamak",
+      "Örneklem istatistiklerinin davranışını anlamak",
+      "Mod hesaplamak",
+      "Grafik çizmek"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! İstatistikte çıkarım yapmanın temelidir.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Nitel bir verinin frekansını pasta grafiğinde göstermek için ne kullanılır?",
+    "options": [
+      "Çizgiler",
+      "Açı ve Dilimler",
+      "Z-skorları",
+      "İntegral"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Her kategori payına göre bir dilim (açı) alır.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Bir deneyin sonucunun önceden kesin olarak bilinemediği deneylere ne denir?",
+    "options": [
+      "Deterministik",
+      "Şans deneyi (Random experiment)",
+      "Hipotez",
+      "Varyans"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Olasılık bu deneylerle ilgilenir.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Standart sapma formülünde (n-1) neden kullanılır?",
+    "options": [
+      "Daha kolay olsun diye",
+      "Örneklem varyansının tarafsız (unbiased) olması için",
+      "Popülasyon küçükse",
+      "Her zaman 1 çıkar"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Bessel düzeltmesi popülasyon parametresini daha iyi tahmin eder.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Venn diyagramında A ve B olayları tüm örnek uzayı kaplıyor ve kesişmiyorsa bunlara ne denir?",
+    "options": [
+      "Bağımsız",
+      "Tamamlayıcı (Complementary)",
+      "Aykırı",
+      "Eş olasılıklı"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Toplamları 1 eden ayrık olaylardır.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Poisson dağılımında zaman aralığı iki katına çıkarsa λ (lambda) ne olur?",
+    "options": [
+      "Aynı kalır",
+      "Yarıya iner",
+      "İki katına çıkar",
+      "Karesi alınır"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Ortalama hız zamanla doğru orantılıdır.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Üstel dağılımda 'bekleme süresinin 5'ten büyük olması' olasılığı nasıl hesaplanır?",
+    "options": [
+      "e^(-5*lambda)",
+      "1 - e^(-5*lambda)",
+      "e^(5*lambda)",
+      "Integral f(x) from 0 to 5"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! P(X > k) = e^(-lambda * k).",
+      "Yanlış.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Normal dağılımda μ = 50, σ = 5 ise, 45 ile 55 arasında verilerin yaklaşık yüzde kaçı vardır?",
+    "options": [
+      "%50",
+      "%68",
+      "%95",
+      "%99"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! +/- 1 standart sapma (45-55) %68'dir.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Standart normal tabloda Z = -3.5 olasılığı yaklaşık kaçtır?",
+    "options": [
+      "0.5",
+      "1.0",
+      "0.0001 (Sıfıra çok yakın)",
+      "0.999"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış.",
+      "Yanlış.",
+      "Doğru! Sol uçta olduğu için olasılık çok küçüktür.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Örneklem büyüklüğü n arttıkça standart hata nasıl değişir?",
+    "options": [
+      "Artar",
+      "Azalır",
+      "Sabit kalır",
+      "Karesi kadar artar"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Daha çok veri daha az belirsizlik (hata) demektir.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Bir araştırmada katılımcılara risklerin anlatılıp imzalarının alınmasına ne denir?",
+    "options": [
+      "İpotek",
+      "Bilgilendirilmiş Onay (Informed Consent)",
+      "Vize",
+      "Deney onayı"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış.",
+      "Doğru! Etik bir zorunluluktur.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  }
+]

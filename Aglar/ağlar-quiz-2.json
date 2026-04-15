@@ -1,0 +1,402 @@
+[
+  {
+    "question": "1. Uygulama katmanı protokollerinin temel amacı nedir?",
+    "options": [
+      "Router'lar arasında paket iletmek",
+      "Uygulamalar arasında veri alışverişini sağlamak",
+      "Fiziksel veri iletimi yapmak",
+      "MAC adresi çözmek"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Router'lar arası paket yönlendirme Ağ (Network) katmanının görevidir.",
+      "Doğru! Ağ üzerinden çalışan farklı uç sistemlerdeki uygulamaların (ör. tarayıcı ile web sunucusu) haberleşmesini sağlar.",
+      "Yanlış. Fiziksel iletim, kablolar veya kablosuz sinyaller üzerinden Fiziksel katmanda yapılır.",
+      "Yanlış. MAC adresi çözümleme (ARP vb.) Veri Bağı (Data Link) katmanının işidir."
+    ]
+  },
+  {
+    "question": "2. Aşağıdakilerden hangisi uygulama katmanı protokolüdür?",
+    "options": [
+      "TCP",
+      "UDP",
+      "HTTP",
+      "IP"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. TCP, Taşıma (Transport) katmanı protokolüdür.",
+      "Yanlış. UDP, Taşıma (Transport) katmanı protokolüdür.",
+      "Doğru! HTTP (Hypertext Transfer Protocol), web uygulamaları için kullanılan temel bir uygulama katmanı protokolüdür.",
+      "Yanlış. IP, Ağ (Network) katmanı protokolüdür."
+    ]
+  },
+  {
+    "question": "3. HTTP protokolü hangi amaçla kullanılır?",
+    "options": [
+      "Dosya sıkıştırma",
+      "Web sayfalarının istemci ve sunucu arasında iletilmesi",
+      "IP adresi çözme",
+      "Paket yönlendirme"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. HTTP veri sıkıştırmayı desteklese de temel varlık amacı bu değildir.",
+      "Doğru! HTTP, web sayfalarını oluşturan HTML belgeleri, görseller ve diğer medyaların istemci ve sunucu arasında transferini sağlar.",
+      "Yanlış. IP adresi çözümleme işi DNS protokolüne aittir.",
+      "Yanlış. Paketlerin yönlendirilmesi IP'nin (Ağ katmanı) görevidir."
+    ]
+  },
+  {
+    "question": "4. HTTP hangi iletişim modelini kullanır?",
+    "options": [
+      "Peer-to-peer",
+      "Client-server",
+      "Mesh",
+      "Broadcast"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. P2P modelinde cihazlar hem istemci hem sunucu gibidir, merkezi bir sunucu gerekmez.",
+      "Doğru! HTTP, İstemci-Sunucu (Client-Server) mimarisiyle çalışır. İstemci (tarayıcı) istek yapar, sunucu (web server) yanıt verir.",
+      "Yanlış. Mesh, cihazların birbirine doğrudan bağlandığı bir ağ topolojisidir.",
+      "Yanlış. Broadcast bir mesajın ağdaki herkese aynı anda gönderilmesi yöntemidir."
+    ]
+  },
+  {
+    "question": "5. HTTP protokolü varsayılan olarak hangi transport protokolünü kullanır?",
+    "options": [
+      "UDP",
+      "TCP",
+      "IP",
+      "ICMP"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. UDP bağlantısızdır ve paket kaybını önemsemez, bu da web sayfalarının eksik yüklenmesine sebep olurdu.",
+      "Doğru! HTTP, güvenilir ve kayıpsız veri iletimi gerektirdiği için alt katmanda TCP protokolünü kullanır (varsayılan port 80).",
+      "Yanlış. IP bir taşıma (transport) protokolü değil, ağ protokolüdür.",
+      "Yanlış. ICMP hata ve durum mesajları (ping gibi) için kullanılır."
+    ]
+  },
+  {
+    "question": "6. Bir URL aşağıdaki bileşenlerden hangisini içermez?",
+    "options": [
+      "Protokol",
+      "Domain adı",
+      "Dosya yolu",
+      "MAC adresi"
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. URL protokolü içerir (örn: http://, https://).",
+      "Yanlış. URL sunucuya ulaşmak için domain adını içerir (örn: www.google.com).",
+      "Yanlış. URL sunucudaki kaynağın nerede olduğunu gösteren yolu içerir (örn: /images/logo.png).",
+      "Doğru! URL (Uniform Resource Locator) mantıksal bir adrestir ve cihazların fiziksel donanım adresi olan MAC adresini asla içermez."
+    ]
+  },
+  {
+    "question": "7. Aşağıdaki URL yapısında \"http://www.example.com/index.html\" hangisi domain adıdır?",
+    "options": [
+      "http",
+      "www.example.com",
+      "index",
+      "html"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. \"http\" bağlantı için kullanılan iletişim protokolüdür.",
+      "Doğru! \"www.example.com\" ilgili web sunucusunu işaret eden domain (alan) adıdır.",
+      "Yanlış. \"index\" istenilen dosyanın isminin bir parçasıdır.",
+      "Yanlış. \"html\" istenilen dosyanın uzantısı/türüdür."
+    ]
+  },
+  {
+    "question": "8. HTTP request mesajını kim gönderir?",
+    "options": [
+      "Sunucu",
+      "Router",
+      "İstemci (browser)",
+      "DNS"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Sunucu request (istek) alıcıdır, gönderici değil.",
+      "Yanlış. Router sadece paketleri iletmekle görevlidir, içeriğiyle veya mesaj oluşturmayla ilgilenmez.",
+      "Doğru! Web sayfasına girmek isteyen kullanıcı tarafındaki uygulama (örn. tarayıcı), kaynak talep etmek için Request mesajını oluşturur ve gönderir.",
+      "Yanlış. DNS sunucusu sadece domain isimlerini IP adreslerine çevirir."
+    ]
+  },
+  {
+    "question": "9. HTTP response mesajını kim gönderir?",
+    "options": [
+      "İstemci",
+      "Sunucu",
+      "Router",
+      "DNS"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. İstemci yanıt (response) mesajını alan taraftır.",
+      "Doğru! Gelen HTTP request (istek) mesajını alıp işleyen ve talep edilen kaynağı veya hata kodunu HTTP response (yanıt) olarak döndüren taraf Sunucudur.",
+      "Yanlış. Router HTTP seviyesinde bir yanıt oluşturmaz.",
+      "Yanlış. DNS HTTP yanıtı değil, isim çözümleme yanıtı döndürür."
+    ]
+  },
+  {
+    "question": "10. HTTP request mesajının ilk satırında aşağıdakilerden hangisi bulunur?",
+    "options": [
+      "Status code",
+      "Request line",
+      "Cookie",
+      "Response body"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Status code (durum kodu) Response (yanıt) mesajının ilk satırında olur.",
+      "Doğru! Request (istek) mesajının en üstünde; metodun (örn: GET), istenen URL'nin ve HTTP versiyonunun yer aldığı 'Request line' bulunur.",
+      "Yanlış. Çerez bilgileri Header (başlık) satırlarında bulunur.",
+      "Yanlış. Veri içeriği mesajın en sonundaki Body (gövde) kısmındadır."
+    ]
+  },
+  {
+    "question": "11. Aşağıdakilerden hangisi bir HTTP request methodudur?",
+    "options": [
+      "GET",
+      "SEND",
+      "RECEIVE",
+      "OPEN"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! GET, sunucudan bir kaynak (sayfa, resim, dosya vb.) talep etmek için kullanılan standart HTTP metodudur.",
+      "Yanlış. HTTP protokolünde SEND adında bir metot yoktur.",
+      "Yanlış. HTTP protokolünde RECEIVE adında bir metot yoktur.",
+      "Yanlış. HTTP protokolünde OPEN adında bir metot yoktur."
+    ]
+  },
+  {
+    "question": "12. HTTP response mesajında status code neyi ifade eder?",
+    "options": [
+      "Sunucu IP adresi",
+      "İsteğin sonucunu",
+      "Paket boyutunu",
+      "Tarayıcı türünü"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. IP adresi IP katmanı başlıklarında bulunur.",
+      "Doğru! Status code (durum kodu), istemcinin gönderdiği talebin başarılı olup olmadığını, yönlendirildiğini veya ne tür bir hata ile karşılaşıldığını (200, 404, 500 vb.) ifade eder.",
+      "Yanlış. Paket veya içerik boyutu 'Content-Length' header'ı ile belirtilir.",
+      "Yanlış. Tarayıcı türü request mesajındaki 'User-Agent' başlığında bulunur."
+    ]
+  },
+  {
+    "question": "13. HTTP status code 200 ne anlama gelir?",
+    "options": [
+      "Sayfa bulunamadı",
+      "Yetkisiz erişim",
+      "İstek başarılı",
+      "Sunucu hatası"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bu 404 durum kodunun anlamıdır.",
+      "Yanlış. Bu 401 (Unauthorized) veya 403 (Forbidden) durum kodunun anlamıdır.",
+      "Doğru! 200 'OK' anlamına gelir. İstemcinin talebi sunucu tarafından başarıyla alınmış, anlaşılmış ve işlenmiştir.",
+      "Yanlış. Bu 500 (Internal Server Error) durum kodunun anlamıdır."
+    ]
+  },
+  {
+    "question": "14. HTTP status code 404 neyi ifade eder?",
+    "options": [
+      "Başarılı işlem",
+      "Sayfa bulunamadı",
+      "Sunucu hatası",
+      "Yetkisiz erişim"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu 200 durum kodunun anlamıdır.",
+      "Doğru! 404 'Not Found' anlamına gelir. İstemcinin talep ettiği kaynak (sayfa, resim vb.) sunucuda bulunamamıştır.",
+      "Yanlış. Sunucu tarafı hataları 5xx serisi kodlarla belirtilir.",
+      "Yanlış. Bu 401 veya 403 durum kodlarıyla ifade edilir."
+    ]
+  },
+  {
+    "question": "15. HTTP mesajlarında header kısmı ne içerir?",
+    "options": [
+      "Sadece HTML kodu",
+      "Kontrol ve bilgi alanları",
+      "IP adresleri",
+      "Router bilgileri"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. HTML kodu mesajın gövde (body) kısmında yer alır.",
+      "Doğru! Header (başlık) kısmı; mesajın içeriği (türü, uzunluğu), sunucu/istemci yazılım bilgileri, tarih, dil tercihleri ve çerezler gibi metadataları (kontrol bilgilerini) içerir.",
+      "Yanlış. IP adresleri ağ katmanı paketinde (IP header) bulunur.",
+      "Yanlış. Router bilgileri uygulama katmanı mesajlarına dahil edilmez."
+    ]
+  },
+  {
+    "question": "16. HTTP response mesajında body kısmı ne içerir?",
+    "options": [
+      "HTML veya veri içeriği",
+      "IP adresi",
+      "Port numarası",
+      "MAC adresi"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Body (gövde) kısmı, asıl aktarılmak istenen veriyi taşır. Bu bir HTML belgesi, bir görsel, JSON verisi veya indirilebilir bir dosya olabilir.",
+      "Yanlış. IP adresi IP paket başlığındadır.",
+      "Yanlış. Port numaraları taşıma katmanı (TCP/UDP) başlığındadır.",
+      "Yanlış. MAC adresi veri bağı katmanı (Ethernet) çerçevesindedir."
+    ]
+  },
+  {
+    "question": "17. HTTP protokolü aşağıdaki özelliklerden hangisine sahiptir?",
+    "options": [
+      "Stateful",
+      "Stateless",
+      "Connectionless",
+      "Broadcast"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. HTTP doğası gereği istemciye ait durum bilgisini (state) kendi başına tutmaz.",
+      "Doğru! HTTP 'Stateless' (durumsuz) bir protokoldür. Gelen her yeni isteği, geçmiş isteklerden tamamen bağımsız ve sıfırdan bir işlem gibi değerlendirir.",
+      "Yanlış. HTTP çoğunlukla bağlantı yönelimli olan TCP üzerinde çalışır.",
+      "Yanlış. HTTP tekil bir istemci ile sunucu arasında (unicast) iletişim kurar."
+    ]
+  },
+  {
+    "question": "18. HTTP'nin stateless olması ne anlama gelir?",
+    "options": [
+      "Sunucu bağlantı kuramaz",
+      "Sunucu önceki istekleri hatırlamaz",
+      "Paketler kaybolur",
+      "TCP kullanılmaz"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bağlantı kurmak TCP'nin işidir ve HTTP bunu sorunsuz yapar.",
+      "Doğru! Stateless yapı, sunucunun istemci ile olan önceki etkileşimlerine dair hafızasında hiçbir bilgi (durum) tutmaması demektir. (Bu sorunu çözmek için sonradan Cookie'ler geliştirilmiştir).",
+      "Yanlış. Paket kayıpları güvenilirlikle alakalıdır, stateless kavramıyla ilgisi yoktur.",
+      "Yanlış. HTTP temel olarak TCP kullanır."
+    ]
+  },
+  {
+    "question": "19. Cookie'nin temel amacı nedir?",
+    "options": [
+      "Paketleri sıkıştırmak",
+      "Kullanıcı bilgilerini saklamak",
+      "IP adresi çözmek",
+      "Paket yönlendirmek"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Veri sıkıştırma işlemi gzip, br gibi algoritmalarla header'da belirlenerek yapılır.",
+      "Doğru! HTTP'nin stateless (durumsuz) yapısını aşmak için icat edilmiştir. Oturum bilgileri, sepet durumu, kullanıcı tercihleri gibi verileri hatırlamayı sağlar.",
+      "Yanlış. Bu DNS protokolünün işidir.",
+      "Yanlış. Paket yönlendirme router cihazlarının görevidir."
+    ]
+  },
+  {
+    "question": "20. Cookie'ler genellikle nerede saklanır?",
+    "options": [
+      "Router",
+      "Sunucu RAM",
+      "Kullanıcının tarayıcısı",
+      "DNS sunucusu"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Router geçiş noktasıdır, kullanıcıya özel uygulama verisi depolamaz.",
+      "Yanlış. Sunucu tarafında ilişkili veriler Session (oturum) olarak saklanabilir, ancak Cookie'nin kendisi fiziki olarak sunucuda durmaz.",
+      "Doğru! Web sunucusu HTTP yanıtı (Set-Cookie header) ile çerezi gönderir ve bu çerez istemcinin (kullanıcının) web tarayıcısında saklanır.",
+      "Yanlış. DNS sadece isim ve IP eşleştirmeleri yapar."
+    ]
+  },
+  {
+    "question": "21. Cookie'ler hangi problemi çözmek için kullanılır?",
+    "options": [
+      "HTTP gecikmesi",
+      "HTTP stateless yapısı",
+      "IP adresi eksikliği",
+      "Paket kaybı"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Gecikme (delay) ağ altyapısıyla ilgilidir.",
+      "Doğru! HTTP, doğası gereği geçmiş istekleri hatırlamadığı (stateless) için, kullanıcıları tanıyabilmek ve oturum sürekliliği sağlamak amacıyla çerezler (cookies) kullanılır.",
+      "Yanlış. IPv4 adreslerinin tükenmesi gibi durumlar NAT veya IPv6 ile çözülür.",
+      "Yanlış. TCP protokolü kendi içinde mekanizmalarla paket kayıplarını çözer."
+    ]
+  },
+  {
+    "question": "22. Aşağıdakilerden hangisi cookie kullanımına örnektir?",
+    "options": [
+      "DNS çözümleme",
+      "Kullanıcı giriş bilgisinin hatırlanması",
+      "Paket yönlendirme",
+      "MAC adresi çözümü"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. DNS sunucuları ile ilgilidir.",
+      "Doğru! Bir e-ticaret veya sosyal medya sitesine giriş yaptığınızda 'Beni Hatırla' seçeneği ile oturumunuzun sürekli açık kalmasını sağlayan yapı arka planda çerezlerdir.",
+      "Yanlış. Ağ trafiği yönlendirmesidir.",
+      "Yanlış. ARP (Address Resolution Protocol) kullanılarak yapılır."
+    ]
+  },
+  {
+    "question": "23. HTTP request mesajında Host alanı neyi belirtir?",
+    "options": [
+      "İstemci IP",
+      "Hedef web sunucusu",
+      "Router adresi",
+      "DNS adresi"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. İstemcinin IP'si IP paket başlığında bulunur.",
+      "Doğru! Host başlığı (header), isteğin ulaştırılmak istendiği hedef sunucunun alan adını (örn: www.domain.com) belirtir. Özellikle aynı IP üzerinde birden fazla site barındıran sunucular (Virtual Host) için çok kritiktir.",
+      "Yanlış. Router adresini belirtmez.",
+      "Yanlış. DNS adresini belirtmez."
+    ]
+  },
+  {
+    "question": "24. Bir web sayfası açıldığında tarayıcı ilk olarak hangi HTTP mesajını gönderir?",
+    "options": [
+      "Response",
+      "GET request",
+      "ACK",
+      "POST response"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Tarayıcı (istemci) ilk adımı atan taraftır, bu yüzden yanıt (response) değil, istek (request) gönderir.",
+      "Doğru! Adres çubuğuna bir URL yazıp Enter'a bastığınızda, tarayıcı sunucudan ilgili HTML sayfasını getirmesi için ilk olarak bir HTTP GET isteği (request) atar.",
+      "Yanlış. ACK bir TCP bayrağıdır, HTTP uygulama katmanı mesajı değildir.",
+      "Yanlış. Tarayıcı yanıt göndermez."
+    ]
+  },
+  {
+    "question": "25. POST metodunun GET metodundan temel farkı nedir?",
+    "options": [
+      "Veri URL içinde gönderilir",
+      "Veri request body içinde gönderilir",
+      "HTTP kullanmaz",
+      "TCP kullanmaz"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Veriyi URL'ye parametre (?isim=ali) olarak ekleyerek göndermek GET metodunun özelliğidir.",
+      "Doğru! POST metodu ile gönderilen veriler (örneğin bir şifre giriş formu), doğrudan URL'de görünmek yerine HTTP istek mesajının gövdesine (body) paketlenerek daha güvenli bir şekilde sunucuya iletilir.",
+      "Yanlış. İkisi de HTTP metodudur.",
+      "Yanlış. İkisi de alt katmanda TCP'yi kullanır."
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Olasilik Hafta 1",
+    "path": "c:\\Numan\\Numan\\Ders\\SoruCozucu\\Olasilik\\OlasilikHafta-1.json"
+  },
+  { "name": "Olasilik Hafta 2", "path": "c:\\Numan\\Numan\\Ders\\SoruCozucu\\Olasilik\\OlasilikHafta-2.json" },
+  { "name": "Olasilik Hafta 3", "path": "c:\\Numan\\Numan\\Ders\\SoruCozucu\\Olasilik\\OlasilikHafta-3.json" },
+  { "name": "Olasilik Hafta 4", "path": "c:\\Numan\\Numan\\Ders\\SoruCozucu\\Olasilik\\OlasilikHafta-4.json" },
+  { "name": "Olasilik Hafta 5", "path": "c:\\Numan\\Numan\\Ders\\SoruCozucu\\Olasilik\\OlasilikHafta-5.json" },
+  { "name": "Olasilik Hafta 6", "path": "c:\\Numan\\Numan\\Ders\\SoruCozucu\\Olasilik\\OlasilikHafta-6.json" },
+  { "name": "Olasilik Hafta 7", "path": "c:\\Numan\\Numan\\Ders\\SoruCozucu\\Olasilik\\OlasilikHafta-7.json" },
+  { "name": "Olasilik 100 Soru", "path": "c:\\Numan\\Numan\\Ders\\SoruCozucu\\Olasilik\\olasilik-100-soru.json" },
+  { "name": "Aglar Claude 100 Soru", "path": "c:\\Numan\\Numan\\Ders\\SoruCozucu\\Aglar\\ağlar-claude-100-soru.json" },
+  { "name": "Aglar Quiz 1", "path": "c:\\Numan\\Numan\\Ders\\SoruCozucu\\Aglar\\ağlar-quiz-1.json" },
+  { "name": "Aglar Quiz 2", "path": "c:\\Numan\\Numan\\Ders\\SoruCozucu\\Aglar\\ağlar-quiz-2.json" }
+]

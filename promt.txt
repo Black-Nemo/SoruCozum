@@ -1,0 +1,39 @@
+Verdiğim pdf' lerden soru çıkar.
+100 tane soru olsun.
+Sorular aşşağıdaki örnekteki gibi olsun .json dosyası olarak indirilebilir şekilde ver:
+
+.json dosyasının içeriği örnek olarak bu şekilde olucak.
+[
+  {
+    "question": "Yapay zeka (AI) karar ağaçlarında 'Alpha-Beta Budaması'nın temel amacı nedir?",
+    "options": [
+      "Oyunun grafiklerini optimize etmek.",
+      "Kötü olasılıklı dalları direkt kapatarak arama süresini kısaltmak.",
+      "Ağ üzerinden gelen veri paketlerini sıkıştırmak.",
+      "Rastgele sayılar üreterek yapay zekayı öngörülemez yapmak."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Alpha-Beta rendering veya grafik optimizasyonu ile ilgilenmez.",
+      "Doğru! Alpha-Beta kullanarak zaten kötü olasılıklı dalları direkt kapatırsın, böylece algoritma gereksiz yere derinleşmekten kurtulur.",
+      "Yanlış. Ağ (network) optimizasyonu değil, bir karar algoritması optimizasyonudur.",
+      "Yanlış. Algoritma deterministiktir, rastgelelik katmaz."
+    ]
+  },
+  {
+    "question": "Unity'de Mirror Networking framework'ü kullanırken, istemciden (client) sunucuya (server) bir fonksiyon çağırmak için hangi attribute kullanılır?",
+    "options": [
+      "[ClientRpc]",
+      "[TargetRpc]",
+      "[Command]",
+      "[SyncVar]"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. [ClientRpc] sunucudan (server) tüm istemcilere (clients) çağrı yapmak için kullanılır.",
+      "Yanlış. [TargetRpc] sunucudan sadece belirli bir istemciye çağrı yapmak içindir.",
+      "Doğru! [Command] etiketi (attribute), istemcinin sunucuda bir metot çalıştırmasını sağlar.",
+      "Yanlış. [SyncVar] fonksiyon çağırmak için değil, değişkenlerin değerlerini senkronize etmek içindir."
+    ]
+  }
+]

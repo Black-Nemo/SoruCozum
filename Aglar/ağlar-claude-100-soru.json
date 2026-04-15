@@ -1,0 +1,1602 @@
+[
+  {
+    "question": "Internet'in 'nuts and bolts' (somut bileşenler) görünümüne göre, milyarlarca bağlı cihaz arasında veri iletimini sağlayan paket anahtarlama elemanları hangileridir?",
+    "options": [
+      "Modemler ve amplifikatörler",
+      "Router'lar ve switch'ler",
+      "DNS sunucuları ve CDN'ler",
+      "ISP'ler ve NAP'lar"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Modemler erişim ağlarında kullanılır; paket anahtarlama görevi yapmazlar.",
+      "Doğru! Router'lar ve switch'ler, paket anahtarlama elemanları olarak veri parçalarını (paketleri) ağ üzerinde iletir.",
+      "Yanlış. DNS ve CDN'ler uygulama katmanı altyapısıdır; paket anahtarlama elemanı değildir.",
+      "Yanlış. ISP'ler ağ sağlayıcısıdır, doğrudan paket anahtarlama elemanı olarak tanımlanmaz."
+    ]
+  },
+  {
+    "question": "İnternet 'network of networks' olarak tanımlanır. Bu hiyerarşide uç sistemler (end systems) ile içerik sağlayıcı ağlar arasındaki bağlantıyı kim kurar?",
+    "options": [
+      "Küresel veya ulusal ISP'ler",
+      "Fiziksel fiber kablolar",
+      "Uygulama katmanı protokolleri",
+      "DNS kök sunucuları"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Küresel ve ulusal ISP'ler, yerel ISP'leri birbirine bağlayarak 'ağların ağı' olan İnternet'i oluşturur.",
+      "Yanlış. Fiziksel kablolar iletim ortamıdır; ağ hiyerarşisini oluşturan organizasyonel yapı değildir.",
+      "Yanlış. Uygulama katmanı protokolleri veri alışverişi sağlar; ağ hiyerarşisini oluşturmaz.",
+      "Yanlış. DNS kök sunucuları alan adı çözümlemesi yapar; ağ hiyerarşisini oluşturmaz."
+    ]
+  },
+  {
+    "question": "Bir protokolün tanımında hangi üç temel unsur yer alır?",
+    "options": [
+      "Format, hız, güvenlik",
+      "Mesajların formatı, iletim sırası ve mesaj alındığında/gönderildiğinde gerçekleştirilen aksiyonlar",
+      "IP adresi, port numarası, şifreleme yöntemi",
+      "Bant genişliği, gecikme, kayıp oranı"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu üçlü protokolün tam tanımını kapsamaz.",
+      "Doğru! Protokol; mesajların formatını, sırasını ve mesaj gönderilip alındığında yapılan aksiyonları tanımlar.",
+      "Yanlış. Bunlar ağ parametreleri veya soket tanımlayıcılarıdır; protokol tanımının özü değil.",
+      "Yanlış. Bunlar performans metrikleridir, protokol tanımının bileşenleri değil."
+    ]
+  },
+  {
+    "question": "Devre anahtarlama (circuit switching) ile paket anahtarlama (packet switching) arasındaki temel fark nedir?",
+    "options": [
+      "Devre anahtarlamada kaynaklar önceden ayrılır; paket anahtarlamada kaynaklar isteğe göre paylaşılır (on-demand).",
+      "Paket anahtarlamada bağlantı kesilmez; devre anahtarlamada veriler parçalanır.",
+      "Devre anahtarlama sadece kablosuz ağlarda kullanılır.",
+      "Paket anahtarlama garantili gecikme sağlarken devre anahtarlama sağlamaz."
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Devre anahtarlamada iletim öncesinde kaynaklar (bant genişliği, tampon) ayrılır ve sadece o bağlantıya tahsis edilir. Paket anahtarlamada kaynaklar tüm kullanıcılar arasında paylaşılır.",
+      "Yanlış. Tam tersi; paket anahtarlamada veriler parçalara (paketlere) bölünür.",
+      "Yanlış. Devre anahtarlama geleneksel telefon ağlarında (kablolu) da kullanılır.",
+      "Yanlış. Devre anahtarlama garantili gecikme sağlarken paket anahtarlama değişken gecikmeye (jitter) yol açabilir."
+    ]
+  },
+  {
+    "question": "Paket anahtarlamada 'store-and-forward' (depola ve ilet) ilkesine göre, L bitlik bir paketin R bps'lik bir bağlantıda iletim gecikmesi nedir?",
+    "options": [
+      "R/L saniye",
+      "L × R saniye",
+      "L/R saniye",
+      "2L/R saniye"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. R/L boyutu değil, bölme ters taraftadır.",
+      "Yanlış. L × R birim olarak da tutarsız; bu formül doğru değil.",
+      "Doğru! İletim gecikmesi = paket boyutu / bant genişliği = L (bit) / R (bps) = L/R saniye.",
+      "Yanlış. 2L/R, iki bağlantı için tek yönlü end-to-end gecikme formülüdür."
+    ]
+  },
+  {
+    "question": "İnternet'te toplam paket gecikmesinin dört bileşeni nelerdir?",
+    "options": [
+      "Şifreleme, yönlendirme, iletim, yayılma",
+      "İşleme (nodal processing), kuyruk (queuing), iletim (transmission), yayılma (propagation)",
+      "Paketleme, parçalama, iletim, alım",
+      "Bant genişliği, gecikme, kayıp, jitter"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Şifreleme ve yönlendirme gecikme bileşeni olarak sayılmaz.",
+      "Doğru! Toplam paket gecikmesi = nodal processing + queuing + transmission + propagation gecikmelerinin toplamıdır.",
+      "Yanlış. Paketleme ve parçalama gecikme bileşeni değildir.",
+      "Yanlış. Bunlar ağ performans metrikleridir; gecikme bileşenleri değil."
+    ]
+  },
+  {
+    "question": "Bir router'da kuyruk (queuing) gecikmesinin artmasının temel sebebi nedir?",
+    "options": [
+      "Fiziksel kablonun uzunluğu artması",
+      "Gelen paket hızının bağlantının iletim kapasitesini aşması",
+      "DNS çözümleme süresinin uzaması",
+      "TCP bağlantısının kurulması"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Kablo uzunluğu yayılma gecikmesini etkiler, kuyruk gecikmesini değil.",
+      "Doğru! Gelen trafik hızı çıkış bağlantısının kapasitesini aştığında paketler kuyrukta bekler ve kuyruk gecikmesi artar.",
+      "Yanlış. DNS gecikmesi uygulama katmanında olur.",
+      "Yanlış. TCP el sıkışması başlangıç gecikmesine yol açar, kuyruk gecikmesiyle doğrudan ilgisi yoktur."
+    ]
+  },
+  {
+    "question": "İnternet'in protokol katmanları (OSI modeline göre) hangi sırayla dizilir (yukarıdan aşağıya)?",
+    "options": [
+      "Fiziksel → Veri Bağlantısı → Ağ → Taşıma → Uygulama",
+      "Uygulama → Taşıma → Ağ → Veri Bağlantısı → Fiziksel",
+      "Uygulama → Ağ → Taşıma → Veri Bağlantısı → Fiziksel",
+      "Taşıma → Uygulama → Ağ → Fiziksel → Veri Bağlantısı"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu sıralama aşağıdan yukarıya doğrudur.",
+      "Doğru! İnternet protokol yığını: Uygulama (Application) → Taşıma (Transport) → Ağ (Network) → Veri Bağlantısı (Data Link) → Fiziksel (Physical).",
+      "Yanlış. Taşıma katmanı, Ağ katmanının üzerindedir; yer değiştirmiş.",
+      "Yanlış. Sıralama hatalı."
+    ]
+  },
+  {
+    "question": "Kapsülleme (encapsulation) kavramına göre, uygulama katmanı mesajı taşıma katmanına geçtiğinde ne olur?",
+    "options": [
+      "Mesaj şifrelenerek yeni bir protokol ile gönderilir.",
+      "Taşıma katmanı başlığı (header) eklenerek segment oluşturulur.",
+      "Mesaj doğrudan fiziksel ortama aktarılır.",
+      "DNS adresi çözümlenerek hedefe yönlendirilir."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Şifreleme zorunlu değildir; kapsülleme başlık ekleme işlemidir.",
+      "Doğru! Taşıma katmanı, uygulama mesajına kendi başlığını ekler ve oluşan yapıya 'segment' adı verilir.",
+      "Yanlış. Fiziksel ortama aktarım en alt katmanda yapılır.",
+      "Yanlış. DNS çözümlemesi uygulama katmanı işidir."
+    ]
+  },
+  {
+    "question": "İnternet güvenliği bağlamında 'IP spoofing' nedir?",
+    "options": [
+      "Sahte IP adresi içeren paketler göndermek",
+      "Şifreli DNS sorguları yapmak",
+      "Router tablolarını bozmak",
+      "TCP bağlantılarını kesmek"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! IP spoofing, saldırganın sahte (başka birine ait) kaynak IP adresi içeren paketler göndermesidir.",
+      "Yanlış. Bu DNS over HTTPS veya DNS over TLS ile ilgilidir.",
+      "Yanlış. Bu daha çok routing table poisoning olarak adlandırılır.",
+      "Yanlış. TCP bağlantısını kesmek RST attack'tır, IP spoofing ile aynı şey değildir."
+    ]
+  },
+  {
+    "question": "Client-server mimarisinde sunucu (server) için hangi özellik doğrudur?",
+    "options": [
+      "Dinamik IP adresine sahiptir ve aralıklı bağlanır.",
+      "Her zaman açık (always-on) bir host'tur ve genellikle kalıcı IP adresine sahiptir.",
+      "Diğer client'larla doğrudan iletişim kurar.",
+      "Servis talep eder, servis sunmaz."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu tanım client için geçerlidir.",
+      "Doğru! Sunucu her zaman açık çalışır, kalıcı IP adresiyle veri merkezlerinde bulunur.",
+      "Yanlış. Client-server mimarisinde client'lar birbirleriyle doğrudan iletişim kurmaz.",
+      "Yanlış. Sunucu servis sunar, servis talep etmez."
+    ]
+  },
+  {
+    "question": "P2P (Peer-to-Peer) mimarisinin temel avantajı nedir?",
+    "options": [
+      "Garantili gecikme sağlar.",
+      "Her zaman merkezi bir sunucuya ihtiyaç duyar.",
+      "Yeni peer'lar hem servis talebi hem de kapasite ekleyerek kendi kendine ölçeklenir (self-scalability).",
+      "IP adresleri statik olduğu için yönetimi kolaydır."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. P2P gecikme garantisi vermez.",
+      "Yanlış. P2P mimarisinde always-on merkezi sunucu yoktur.",
+      "Doğru! P2P'nin en büyük avantajı öz-ölçeklenebilirliktir: yeni peer geldiğinde hem servis talep eder hem de sisteme kapasite katar.",
+      "Yanlış. P2P'de IP adresleri dinamik olabilir ve bu yönetimi zorlaştırır."
+    ]
+  },
+  {
+    "question": "HTTP'nin 'stateless' (durumsuz) olması ne anlama gelir?",
+    "options": [
+      "Sunucu her istemci hakkındaki önceki istekleri hatırlamaz.",
+      "HTTP şifreli veri taşıyamaz.",
+      "Her HTTP isteği yeni bir TCP bağlantısı gerektirir.",
+      "HTTP yalnızca GET metodunu destekler."
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! HTTP stateless'tır, yani sunucu önceki istemci isteklerini saklamaz; her istek bağımsız olarak işlenir.",
+      "Yanlış. HTTPS şifreleme sağlar; 'stateless' şifrelemeyle ilgili değildir.",
+      "Yanlış. HTTP persistent connection kullanabilir; her istek için yeni bağlantı zorunlu değildir.",
+      "Yanlış. HTTP GET, POST, HEAD, PUT, DELETE gibi birçok metodu destekler."
+    ]
+  },
+  {
+    "question": "HTTP'de 'persistent connection' (kalıcı bağlantı) ile 'non-persistent connection' arasındaki fark nedir?",
+    "options": [
+      "Persistent bağlantıda her obje için ayrı TCP bağlantısı kurulur.",
+      "Non-persistent bağlantıda tüm objeler tek bir TCP bağlantısı üzerinden gönderilir.",
+      "Persistent bağlantıda birden fazla obje tek bir TCP bağlantısı üzerinden gönderilebilir.",
+      "Non-persistent bağlantıda UDP kullanılır."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bu non-persistent bağlantının tanımıdır.",
+      "Yanlış. Bu persistent bağlantının tanımıdır.",
+      "Doğru! HTTP/1.1 varsayılan olarak persistent bağlantı kullanır; birden fazla istek/cevap aynı TCP bağlantısı üzerinden yapılır.",
+      "Yanlış. HTTP her iki durumda da TCP kullanır."
+    ]
+  },
+  {
+    "question": "Non-persistent HTTP'de, bir base HTML sayfası ve 10 obje içeren bir web sayfasını indirmek kaç TCP bağlantısı gerektirir?",
+    "options": [
+      "1 bağlantı",
+      "10 bağlantı",
+      "11 bağlantı",
+      "20 bağlantı"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Non-persistent HTTP her obje için ayrı bağlantı gerektirir.",
+      "Yanlış. 10 obje için 10 bağlantı artı 1 HTML sayfası için bağlantı unutulmuş.",
+      "Doğru! 1 HTML sayfası + 10 obje = 11 ayrı TCP bağlantısı gerekir.",
+      "Yanlış. Paralel bağlantı kullanılsa bile aynı obje sayısı kadar bağlantı kurulur; 20 sayısı yanlış."
+    ]
+  },
+  {
+    "question": "HTTP GET isteğinde 'If-Modified-Since' başlığı ne işe yarar?",
+    "options": [
+      "Sunucunun dosyayı belirtilen tarihten sonra silmesini sağlar.",
+      "İstemcinin önbelleğindeki nesnenin değişip değişmediğini kontrol eder; değişmediyse '304 Not Modified' döner.",
+      "GET isteğini POST isteğine dönüştürür.",
+      "Bağlantı zaman aşımı süresini belirler."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. HTTP GET isteği hiçbir zaman silme işlemi yapmaz.",
+      "Doğru! Koşullu GET mekanizmasıdır; nesne değişmemişse sunucu yalnızca 304 kodu döner, içeriği tekrar göndermez (bant genişliği tasarrufu).",
+      "Yanlış. If-Modified-Since başlığının metod dönüşümüyle ilgisi yoktur.",
+      "Yanlış. Bağlantı zaman aşımı başka başlıklarla yönetilir."
+    ]
+  },
+  {
+    "question": "SMTP protokolü hangi port üzerinde çalışır ve hangi transport protokolünü kullanır?",
+    "options": [
+      "Port 80, TCP",
+      "Port 25, TCP",
+      "Port 53, UDP",
+      "Port 443, TCP"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Port 80 HTTP'ye aittir.",
+      "Doğru! SMTP (Simple Mail Transfer Protocol) port 25 üzerinde TCP kullanarak çalışır.",
+      "Yanlış. Port 53 ve UDP, DNS'e aittir.",
+      "Yanlış. Port 443 HTTPS'ye aittir."
+    ]
+  },
+  {
+    "question": "DNS'in temel işlevi nedir?",
+    "options": [
+      "Web sayfalarını şifrelemek",
+      "İnsan tarafından okunabilir alan adlarını (hostname) IP adreslerine çevirmek",
+      "E-posta mesajlarını iletmek",
+      "TCP bağlantısını yönetmek"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. DNS şifreleme yapmaz.",
+      "Doğru! DNS'in ana görevi hostname → IP adresi dönüşümüdür (name resolution).",
+      "Yanlış. E-posta iletimi SMTP'nin görevidir.",
+      "Yanlış. TCP bağlantı yönetimi taşıma katmanının görevidir."
+    ]
+  },
+  {
+    "question": "DNS hiyerarşisinde 'TLD (Top-Level Domain) sunucuları' hangi alan adlarından sorumludur?",
+    "options": [
+      "Yalnızca IP adreslerini tutar.",
+      ".com, .org, .edu gibi üst düzey domain uzantılarından sorumludur.",
+      "Yalnızca Türkiye'deki alan adlarından sorumludur.",
+      "Kök (root) sunucuları ile aynı işlevi görür."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. TLD sunucuları IP adresi değil, bir alt kademedeki sunucu adreslerini tutar.",
+      "Doğru! TLD sunucuları .com, .org, .net, .edu, .tr gibi üst düzey uzantılardan sorumludur.",
+      "Yanlış. .tr gibi ülke TLD'leri ayrı sunuculardır; TLD kavramı tüm uzantıları kapsar.",
+      "Yanlış. Kök sunucuları TLD sunucularının adresini bilir; işlevleri farklıdır."
+    ]
+  },
+  {
+    "question": "DNS'te 'recursive query' ile 'iterative query' arasındaki fark nedir?",
+    "options": [
+      "Recursive sorguda istemci her sunucuyu kendisi sorgular; iterative sorguda yük DNS sunucusuna bırakılır.",
+      "Iterative sorguda istemci her sunucuyu kendisi sorgular; recursive sorguda DNS sunucusu adına tüm çözümlemeyi yapar.",
+      "İkisi de aynı şekilde çalışır, yalnızca isimleri farklıdır.",
+      "Recursive sorgu UDP, iterative sorgu TCP kullanır."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Tanımlar yer değiştirmiş.",
+      "Doğru! Iterative sorguda her sunucu 'şuna git' yanıtı verir, istemci devam eder. Recursive sorguda DNS sunucusu tüm zinciri tamamlayarak sonucu istemciye döner.",
+      "Yanlış. İşleyiş biçimleri tamamen farklıdır.",
+      "Yanlış. Her ikisi de genellikle UDP (port 53) kullanır."
+    ]
+  },
+  {
+    "question": "CDN (Content Distribution Network) kullanmanın birincil amacı nedir?",
+    "options": [
+      "İnternet güvenliğini artırmak",
+      "İçeriği kullanıcılara coğrafi olarak yakın sunuculardan dağıtarak gecikmeyi azaltmak ve ölçeklenebilirlik sağlamak",
+      "DNS çözümleme hızını artırmak",
+      "E-posta iletimini hızlandırmak"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. CDN öncelikli olarak güvenlik değil, performans için kullanılır.",
+      "Doğru! CDN, içerikleri dünya genelindeki sunucularda çoğaltır ve kullanıcıyı en yakın sunucuya yönlendirir, böylece gecikmeyi ve tıkanıklığı azaltır.",
+      "Yanlış. CDN ve DNS farklı altyapılardır.",
+      "Yanlış. CDN genellikle video/web içeriği için kullanılır."
+    ]
+  },
+  {
+    "question": "Socket programlamada TCP ile UDP arasındaki temel fark nedir?",
+    "options": [
+      "TCP bağlantısız, UDP bağlantı tabanlıdır.",
+      "TCP bağlantı tabanlıdır ve veri güvenilir iletilir; UDP bağlantısızdır ve veri güvenilir iletilmez.",
+      "UDP daha yavaş ama güvenilirdir.",
+      "TCP yalnızca LAN'da, UDP WAN'da kullanılır."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Tanımlar yer değiştirmiş.",
+      "Doğru! TCP (connection-oriented) el sıkışma ile bağlantı kurar ve güvenilir sıralı teslimat sağlar. UDP (connectionless) bağlantı kurmadan gönderir, güvenilirlik garantisi yoktur.",
+      "Yanlış. UDP daha hızlıdır ama güvenilir değildir.",
+      "Yanlış. Her ikisi de LAN ve WAN'da kullanılabilir."
+    ]
+  },
+  {
+    "question": "Bir uygulama akış kontrolü (flow control) ve tıkanıklık kontrolü (congestion control) gerektiriyorsa hangi transport protokolü tercih edilmelidir?",
+    "options": [
+      "UDP",
+      "ICMP",
+      "TCP",
+      "HTTP"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. UDP bu özellikleri sunmaz.",
+      "Yanlış. ICMP bir kontrol mesajı protokolüdür; veri iletim protokolü değildir.",
+      "Doğru! TCP hem akış kontrolü hem de tıkanıklık kontrolü mekanizmalarını içerir.",
+      "Yanlış. HTTP bir uygulama katmanı protokolüdür; taşıma katmanı protokolü değildir."
+    ]
+  },
+  {
+    "question": "P2P dosya paylaşımında BitTorrent'te 'torrent' ne anlama gelir?",
+    "options": [
+      "Bir dosyanın tüm kopyasını barındıran merkezi sunucu",
+      "Aynı dosyanın parçalarını değiş tokuş eden peer'lar topluluğu",
+      "Dosyanın şifreli hali",
+      "DNS kayıt türü"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. BitTorrent merkezi sunucu gerektirmez.",
+      "Doğru! Torrent; aynı dosyanın parçalarını (chunk) değiş tokuş eden tüm peer'lardan oluşan topluluktur.",
+      "Yanlış. Torrent şifrelemeyle ilgili değildir.",
+      "Yanlış. Torrent DNS kayıt türü değildir."
+    ]
+  },
+  {
+    "question": "Taşıma katmanı (transport layer) ile ağ katmanı (network layer) arasındaki fark nedir?",
+    "options": [
+      "Taşıma katmanı yalnızca router'larda çalışır.",
+      "Ağ katmanı host'lar arası iletişimi, taşıma katmanı ise process'ler arası iletişimi sağlar.",
+      "Taşıma katmanı paketleri fiziksel ortamda taşır.",
+      "İkisi aynı işlevi görür, farklı isimlere sahiptirler."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Taşıma katmanı end system'lerde çalışır, router'larda değil.",
+      "Doğru! Ağ katmanı host-to-host (mantıksal iletişim), taşıma katmanı ise process-to-process (uygulama süreçleri arası) iletişim sağlar.",
+      "Yanlış. Fiziksel iletim fiziksel katmanın görevidir.",
+      "Yanlış. İşlevleri farklıdır."
+    ]
+  },
+  {
+    "question": "Ann'in evindeki 12 çocuk ile Bill'in evindeki 12 çocuğun mektup göndermesi analojisinde 'transport protokolü' neye karşılık gelir?",
+    "options": [
+      "Mektupların içindeki yazılar",
+      "Posta servisi (postal service)",
+      "Ann ve Bill: mektupları kendi kardeşlerine dağıtan kişiler",
+      "Mektup zarfları"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Mesaj içeriği uygulama verisine karşılık gelir.",
+      "Yanlış. Posta servisi ağ katmanına (network-layer) karşılık gelir.",
+      "Doğru! Ann ve Bill transport protokolüne karşılık gelir: gelen mektupları doğru kişiye (process) dağıtırlar (demultiplexing).",
+      "Yanlış. Zarflar segment başlıklarına benzetilebilir, transport protokolüne değil."
+    ]
+  },
+  {
+    "question": "Multiplexing (çoklama) taşıma katmanında ne anlama gelir?",
+    "options": [
+      "Alıcı tarafta gelen segmentleri doğru soketlere yönlendirmek",
+      "Gönderici tarafta farklı soketlerden gelen veriye başlık ekleyip birleştirerek ağ katmanına iletmek",
+      "Birden fazla TCP bağlantısını tek bir IP üzerinde çalıştırmak",
+      "Şifreli veriyi çözümlemek"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu demultiplexing'in (çoklama çözme) tanımıdır.",
+      "Doğru! Multiplexing, gönderici tarafta birden fazla soketten gelen verilere başlık eklenerek tek bir segment akışına dönüştürülmesi işlemidir.",
+      "Yanlış. Birden fazla TCP bağlantısı çalıştırmak port kavramıyla ilgilidir; multiplexing tanımı daha kapsamlıdır.",
+      "Yanlış. Şifre çözme kriptografik bir işlemdir."
+    ]
+  },
+  {
+    "question": "Demultiplexing (çoklama çözme) nasıl çalışır?",
+    "options": [
+      "Alıcı, segment başlığındaki port numaralarına bakarak segmenti doğru sokete yönlendirir.",
+      "Gönderici, veriyi birden fazla hedefe eş zamanlı gönderir.",
+      "Router, paketi IP adresine göre yönlendirir.",
+      "DNS, alan adını IP adresine çevirir."
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Alıcı host, gelen segmentin başlığındaki hedef port numarasını okuyarak uygun sokete (dolayısıyla uygun process'e) iletir.",
+      "Yanlış. Bu multicast/broadcast kavramıyla ilgilidir.",
+      "Yanlış. Bu IP katmanındaki yönlendirme işlemidir.",
+      "Yanlış. DNS uygulama katmanı işlemidir."
+    ]
+  },
+  {
+    "question": "Bağlantısız (connectionless) demultiplexing'de, UDP segmenti hangi iki bilgiyle doğru sokete yönlendirilir?",
+    "options": [
+      "Kaynak IP ve kaynak port",
+      "Hedef IP adresi ve hedef port numarası",
+      "Kaynak MAC adresi ve hedef MAC adresi",
+      "Sıra numarası ve onay numarası"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Kaynak IP ve port, yanıt gönderimi için kullanılır; yönlendirmede hedef bilgiler kullanılır.",
+      "Doğru! UDP demultiplexing yalnızca hedef IP adresi ve hedef port numarasına bakar; aynı hedefe farklı kaynaklardan gelen segmentler aynı sokete yönlendirilir.",
+      "Yanlış. MAC adresleri veri bağlantısı katmanında kullanılır.",
+      "Yanlış. Bunlar TCP güvenilirlik mekanizmasına ait alanlardır."
+    ]
+  },
+  {
+    "question": "Bağlantı tabanlı (connection-oriented) TCP demultiplexing'de soket hangi 4 bilgiyle tanımlanır?",
+    "options": [
+      "Kaynak IP, kaynak port, hedef IP, hedef port",
+      "Yalnızca hedef IP ve hedef port",
+      "Kaynak MAC, hedef MAC, kaynak IP, hedef IP",
+      "Sıra numarası, onay numarası, pencere boyutu, hedef port"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! TCP soketi 4'lü kimlik bilgisiyle (4-tuple) tanımlanır: kaynak IP, kaynak port, hedef IP, hedef port. Farklı kaynaklardan gelen bağlantılar farklı soketlere yönlendirilebilir.",
+      "Yanlış. Yalnızca 2 bilgi UDP için yeterlidir; TCP daha fazlasına ihtiyaç duyar.",
+      "Yanlış. MAC adresleri veri bağlantısı katmanına aittir.",
+      "Yanlış. Bu alanlar TCP başlığında bulunur ama soket tanımlamasında kullanılmaz."
+    ]
+  },
+  {
+    "question": "UDP (User Datagram Protocol) hangi RFC belgesiyle tanımlanmıştır?",
+    "options": [
+      "RFC 793",
+      "RFC 791",
+      "RFC 768",
+      "RFC 2616"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. RFC 793, TCP'yi tanımlar.",
+      "Yanlış. RFC 791, IP'yi tanımlar.",
+      "Doğru! UDP, RFC 768 ile tanımlanmıştır.",
+      "Yanlış. RFC 2616, HTTP/1.1'i tanımlar."
+    ]
+  },
+  {
+    "question": "UDP'nin 'no-frills' (süslemesiz) bir protokol olduğu söylenir. Bunun nedeni nedir?",
+    "options": [
+      "UDP şifreleme kullanmaz.",
+      "UDP yalnızca multicast için tasarlanmıştır.",
+      "UDP bağlantı kurma, akış kontrolü veya tıkanıklık kontrolü gibi mekanizmalar sunmaz; 'best-effort' IP'nin basit bir uzantısıdır.",
+      "UDP yalnızca IPv6 ile çalışır."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Şifreleme eksikliği UDP'nin tanımlayıcı özelliği değildir.",
+      "Yanlış. UDP unicast, multicast ve broadcast için kullanılabilir.",
+      "Doğru! UDP ekstra mekanizmalar eklemeden IP'nin üzerine port çoklama ve basit hata tespiti (checksum) ekler; güvenilirlik veya kontrol mekanizmaları sunmaz.",
+      "Yanlış. UDP hem IPv4 hem IPv6 ile çalışır."
+    ]
+  },
+  {
+    "question": "UDP'nin tercih edildiği uygulamalara örnek hangisi değildir?",
+    "options": [
+      "DNS sorguları",
+      "Gerçek zamanlı video streaming",
+      "Büyük dosya indirme işlemi",
+      "SNMP (Ağ Yönetim Protokolü)"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. DNS genellikle UDP kullanır (kısa sorgular için).",
+      "Yanlış. Gerçek zamanlı streaming gecikme toleranssız olduğundan UDP tercih edilir.",
+      "Doğru! Büyük dosya indirme güvenilir teslimata ihtiyaç duyar, bu yüzden UDP yerine TCP tercih edilir.",
+      "Yanlış. SNMP UDP kullanır çünkü kısa kontrol mesajları gönderir."
+    ]
+  },
+  {
+    "question": "UDP segment başlığı kaç alan içerir ve toplam başlık boyutu kaç bayttır?",
+    "options": [
+      "8 alan, 20 bayt",
+      "4 alan, 8 bayt",
+      "6 alan, 12 bayt",
+      "2 alan, 4 bayt"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. UDP başlığı 20 bayt değildir (bu TCP'nin minimum başlık boyutudur).",
+      "Doğru! UDP başlığı 4 alandan oluşur: kaynak port, hedef port, uzunluk, checksum. Her alan 2 bayt = toplam 8 bayt.",
+      "Yanlış. 6 alan ve 12 bayt UDP için yanlış.",
+      "Yanlış. 4 bayt 2 alan için gerekli olur, UDP'nin 4 alanı vardır."
+    ]
+  },
+  {
+    "question": "UDP başlığındaki 'length' (uzunluk) alanı neyi ifade eder?",
+    "options": [
+      "Yalnızca verinin (payload) bayt cinsinden uzunluğunu",
+      "UDP başlığı dahil toplam segment uzunluğunu (bayt cinsinden)",
+      "Kaynak ve hedef port numaralarının toplamını",
+      "Checksum değerinin uzunluğunu"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Uzunluk alanı yalnızca payload'u değil, başlık dahil tüm segmenti kapsar.",
+      "Doğru! UDP length alanı, başlık (8 bayt) + veri kısmı dahil toplam UDP segmentinin bayt cinsinden uzunluğunu belirtir.",
+      "Yanlış. Port numaralarının toplamı anlamsız bir değer olurdu.",
+      "Yanlış. Checksum sabit 16 bit (2 bayt) boyutundadır."
+    ]
+  },
+  {
+    "question": "UDP checksum hesaplamasında hangi yöntem kullanılır?",
+    "options": [
+      "CRC-32 algoritması",
+      "16-bitlik sözcüklerin 1'in tümleyeni (one's complement) toplamının 1'in tümleyeni alınması",
+      "MD5 hash algoritması",
+      "XOR tabanlı hata düzeltme"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. CRC-32 veri bağlantısı katmanında kullanılan güçlü bir hata tespit yöntemidir.",
+      "Doğru! Internet checksum; 16-bitlik sözcüklerin tüm 1'in tümleyeni toplamının sonucunun 1'in tümleyeni alınmasıyla hesaplanır.",
+      "Yanlış. MD5 kriptografik hash fonksiyonudur; UDP checksum için kullanılmaz.",
+      "Yanlış. XOR UDP checksum algoritmasında kullanılmaz."
+    ]
+  },
+  {
+    "question": "İki sayının internet checksum'ı hesaplanırken 1'e tamamlama (one's complement) toplamında taşma (carry) nasıl işlenir?",
+    "options": [
+      "Taşma biti yok sayılır.",
+      "Taşma biti sonucun MSB'sine (en yüksek bit) eklenir.",
+      "Taşma biti sonucun en düşük bitine (LSB) geri eklenir (wrap-around).",
+      "Taşma oluşursa checksum sıfırlanır."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Taşma yok sayılsaydı internet checksum güvenilmez olurdu.",
+      "Yanlış. MSB'ye eklenmesi standart değildir.",
+      "Doğru! 1'e tamamlama toplamında taşma (carry out) en düşük bite geri eklenir; buna 'wrap-around carry' denir.",
+      "Yanlış. Checksum sıfırlanmaz, taşma geri eklenir."
+    ]
+  },
+  {
+    "question": "Aşağıdaki iki 16-bitlik sayının internet checksum'ını hesaplayın:\n1110011001100110\n1101010101010101",
+    "options": [
+      "0010010011111100",
+      "1011101100000011",
+      "0100010100000011",
+      "1111111111111111"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Toplam yanlış hesaplanmış.",
+      "Doğru! İki sayıyı topla: 1110011001100110 + 1101010101010101 = 1_1011101100111011 (taşma var). Taşmayı geri ekle: 1011101100111011 + 1 = 1011101100111100. Sonucun 1'e tümleyenini al: 0100010011000011. Detaylı hesap için satır satır binary toplama yapılmalıdır.",
+      "Yanlış. Hesaplama hatalı.",
+      "Yanlış. 0xFFFF özel bir değerdir; bu durumda elde edilmez."
+    ]
+  },
+  {
+    "question": "UDP checksum alıcı tarafta nasıl doğrulanır?",
+    "options": [
+      "Alıcı checksumu yeniden hesaplayarak göndericinin checksumu ile karşılaştırır; eşleşmiyorsa hata vardır.",
+      "Alıcı yalnızca checksum değerinin 0 olup olmadığına bakar.",
+      "Alıcı, checksum'u şifreli kanalla doğrular.",
+      "Alıcı tüm 16-bitlik sözcükleri toplar; sonuç 0xFFFF olmalıdır."
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Kısmen doğru ama en doğru açıklama 'tüm alanlar checksum dahil toplanır ve 0xFFFF olmalı' şeklindedir.",
+      "Yanlış. Checksum 0 olması hata anlamına gelir.",
+      "Yanlış. Checksum şifreli kanal gerektirmez.",
+      "Doğru! Alıcı, başlık ve veri dahil tüm 16-bitlik sözcükleri (checksum alanı dahil) toplar. 1'e tümleyen toplamı 1111111111111111 (0xFFFF) olmalıdır; değilse hata tespit edilmiştir."
+    ]
+  },
+  {
+    "question": "UDP, çok hafif (lightweight) olduğu için tercih edilir. Aşağıdaki hangi özellik UDP'nin bir AVANTAJI değildir?",
+    "options": [
+      "Bağlantı kurma süresi olmadığı için düşük gecikme",
+      "Basit başlık yapısı",
+      "Güvenilir veri teslimi",
+      "Tıkanıklık kontrolü olmadığından mümkün olan en hızlı gönderim"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bu UDP'nin avantajıdır.",
+      "Yanlış. Bu UDP'nin avantajıdır.",
+      "Doğru! Güvenilir veri teslimi UDP'nin bir özelliği DEĞİLDİR. Paketler kaybolabilir veya sırasız gelebilir; bu bir dezavantajdır.",
+      "Yanlış. Tıkanıklık kontrolü olmaması bazı uygulamalar için avantaj sayılabilir (ancak ağ tıkanıklığına yol açabilir)."
+    ]
+  },
+  {
+    "question": "HTTP/3 neden UDP üzerine inşa edilmiştir?",
+    "options": [
+      "TCP güvenli değildir.",
+      "UDP daha fazla bant genişliği sağlar.",
+      "TCP'nin bağlantı kurma (handshake) ve head-of-line blocking sorunlarından kaçınmak için uygulama katmanında güvenilirlik sağlanmıştır.",
+      "HTTP/3 şifreleme gerektirmez."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. TCP güvenli bir protokoldür.",
+      "Yanlış. UDP bant genişliği sağlamaz; bant genişliği fiziksel altyapıya bağlıdır.",
+      "Doğru! HTTP/3 (QUIC üzerine kurulu), TCP'nin el sıkışma gecikmesi ve HOL blocking problemlerini aşmak için UDP kullanır ve güvenilirliği uygulama katmanında (QUIC protokolü aracılığıyla) kendisi sağlar.",
+      "Yanlış. HTTP/3 QUIC + TLS ile şifreleme kullanır."
+    ]
+  },
+  {
+    "question": "Güvenilir veri transferi (reliable data transfer) protokolünün karmaşıklığı neye bağlıdır?",
+    "options": [
+      "Kullanılan programlama diline",
+      "Yalnızca ağ bant genişliğine",
+      "Altta yatan kanalın özelliklerine (bit hatası, paket kaybı, yeniden sıralama)",
+      "DNS sunucusunun yanıt süresine"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Programlama dili protokol karmaşıklığını belirlemez.",
+      "Yanlış. Bant genişliği tek başına belirleyici değildir.",
+      "Doğru! Protokolün karmaşıklığı doğrudan kanalın ne tür bozulmalara yol açabileceğine bağlıdır: bit hatası, kayıp, sıra dışı gelme.",
+      "Yanlış. DNS gecikme protokol tasarım karmaşıklığını etkilemez."
+    ]
+  },
+  {
+    "question": "Gönderici ve alıcı birbirlerinin durumunu nasıl öğrenir?",
+    "options": [
+      "Doğrudan birbirlerinin tampon belleğini okuyarak",
+      "Ağ katmanından durum bilgisi alarak",
+      "Yalnızca mesaj alışverişi (sinyalleşme) yoluyla",
+      "Fiziksel kablo üzerindeki elektrik sinyalleriyle"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Gönderici ve alıcı birbirlerinin belleğine doğrudan erişemez.",
+      "Yanlış. Ağ katmanı durum bilgisi sağlamaz; best-effort servis sunar.",
+      "Doğru! Gönderici alıcının ne aldığını, alıcı gönderenin ne gönderdiğini ancak mesaj alışverişi (ACK, NAK vb.) yoluyla öğrenebilir.",
+      "Yanlış. Elektrik sinyalleri veri taşır; durum iletişimi için değildir."
+    ]
+  },
+  {
+    "question": "rdt1.0 protokolü hangi kanal varsayımı altında çalışır?",
+    "options": [
+      "Kanal paket kaybedebilir.",
+      "Kanal bit hatası oluşturabilir.",
+      "Kanal mükemmel güvenilirdir: bit hatası yok, paket kaybı yok.",
+      "Kanal paket sırasını değiştirebilir."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. rdt1.0 paket kaybını dikkate almaz.",
+      "Yanlış. rdt1.0 bit hatasını dikkate almaz.",
+      "Doğru! rdt1.0 en basit durum: altta yatan kanalın mükemmel güvenilir olduğu varsayılır. Gönderici gönderir, alıcı alır; başka işlem gerekmez.",
+      "Yanlış. rdt1.0 sıra değişikliğini dikkate almaz."
+    ]
+  },
+  {
+    "question": "rdt2.0 protokolü hangi yeni kanal sorununu ele alır ve bunun için hangi mekanizmaları kullanır?",
+    "options": [
+      "Paket kaybı; zamanlayıcı (timer) ve yeniden iletim (retransmission)",
+      "Bit hataları; checksum + ACK/NAK + yeniden iletim",
+      "Sıra dışı paketler; sıra numaraları",
+      "Tıkanıklık; pencere boyutu küçültme"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Zamanlayıcı rdt3.0'a eklenir.",
+      "Doğru! rdt2.0, bit hatasıyla başa çıkmak için checksum (hata tespiti), ACK/NAK (olumlu/olumsuz bildirim) ve yeniden iletim kullanır.",
+      "Yanlış. Sıra numaraları rdt2.1'de eklenir.",
+      "Yanlış. Tıkanıklık kontrolü farklı bir protokol mekanizmasıdır."
+    ]
+  },
+  {
+    "question": "rdt2.0'ın 'ölümcül kusuru' (fatal flaw) nedir?",
+    "options": [
+      "Checksum hesaplaması çok uzun zaman alır.",
+      "ACK/NAK mesajlarının kendisi de bozulabilir; bu durumda gönderici ne yapacağını bilemez.",
+      "Alıcı NAK yerine her zaman ACK gönderir.",
+      "Protokol yalnızca tek yönlü iletişimde çalışır."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Checksum hesaplama süresi ölümcül kusur değildir.",
+      "Doğru! ACK veya NAK mesajı bozulursa gönderici alıcının paketi doğru alıp almadığını bilemez ve basit yeniden iletim yinelenen paketlere yol açabilir.",
+      "Yanlış. rdt2.2 böyle çalışır ama bu rdt2.0'ın hatası değildir.",
+      "Yanlış. rdt2.0 çift yönlü kontrol mesajlarını destekler."
+    ]
+  },
+  {
+    "question": "rdt2.1, rdt2.0'ın ölümcül kusurunun üstesinden nasıl gelir?",
+    "options": [
+      "Zamanlayıcı ekleyerek bekleme süresini sınırlandırır.",
+      "Her pakete sıra numarası (sequence number) ekler; alıcı tekrar gelen paketi sıra numarasına bakarak duplikat olarak tanır.",
+      "ACK/NAK yerine yalnızca checksum kullanır.",
+      "Gönderici ACK beklememeden sürekli paket gönderir."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Zamanlayıcı rdt3.0'da eklenir.",
+      "Doğru! rdt2.1'de paketlere 0 veya 1 sıra numarası eklenir. ACK/NAK bozulsa bile yeniden gönderilen paketin sıra numarasından alıcı bunun duplikat olup olmadığını anlar.",
+      "Yanlış. rdt2.2 NAK'ı ortadan kaldırır ama rdt2.1 hâlâ NAK kullanır.",
+      "Yanlış. Bu stop-and-wait ilkesini ihlal eder; rdt2.1 hâlâ stop-and-wait kullanır."
+    ]
+  },
+  {
+    "question": "rdt2.1'de neden yalnızca 0 ve 1 olmak üzere iki sıra numarası yeterlidir?",
+    "options": [
+      "İki bit bellekte yer kaplamamak için seçilmiştir.",
+      "Stop-and-wait protokolünde en fazla bir paket yolda olabilir; dolayısıyla bir önceki ve şimdiki paketi ayırt etmek için iki numara yeterlidir.",
+      "0 ve 1 sıra numaraları uluslararası standartla zorunlu kılınmıştır.",
+      "Daha fazla sıra numarası checksum'ı karmaşıklaştırır."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bellek tasarrufu temel neden değildir.",
+      "Doğru! Stop-and-wait yapısında yalnızca bir paket aynı anda yolda bulunabilir. Alıcı sadece 'bu beklediğim paket mi, yoksa yeniden gönderilen eski paket mi?' sorusunu yanıtlaması gerekir; bunun için 1 bit (0 veya 1) yeterlidir.",
+      "Yanlış. Böyle bir uluslararası standart zorunluluğu yoktur.",
+      "Yanlış. Sıra numarası checksum hesaplamasını doğrudan etkilemez."
+    ]
+  },
+  {
+    "question": "rdt2.2, rdt2.1'den nasıl farklıdır?",
+    "options": [
+      "rdt2.2 NAK kullanmak yerine, alıcı son doğru aldığı paketin sıra numarasını içeren ACK gönderir.",
+      "rdt2.2 checksum kullanmaz.",
+      "rdt2.2 paket kaybını da ele alır.",
+      "rdt2.2 daha fazla sıra numarası kullanır."
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! rdt2.2, NAK mesajını ortadan kaldırır. Alıcı hata durumunda son başarılı paketin sıra numarasını içeren ACK gönderir. Gönderici, tekrar eden (duplicate) ACK alırsa NAK almış gibi davranır.",
+      "Yanlış. rdt2.2 hâlâ checksum kullanır.",
+      "Yanlış. Paket kaybı rdt3.0'da ele alınır.",
+      "Yanlış. rdt2.2 hâlâ 0/1 sıra numarası kullanır."
+    ]
+  },
+  {
+    "question": "rdt3.0 hangi yeni kanal sorununu ele alır?",
+    "options": [
+      "Bit hataları",
+      "Sıra numarası taşması",
+      "Paket kaybı (data veya ACK kaybolabilir)",
+      "Ağ tıkanıklığı"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bit hatası rdt2.0'da ele alınmıştı.",
+      "Yanlış. rdt3.0 sıra numarası taşmasını ele almaz.",
+      "Doğru! rdt3.0, kanalın hem bit hatası hem de paket kaybı oluşturabileceğini varsayar. Bunu çözmek için geri sayım zamanlayıcısı (countdown timer) kullanır.",
+      "Yanlış. Ağ tıkanıklığı taşıma katmanı tıkanıklık kontrol mekanizmalarıyla ele alınır."
+    ]
+  },
+  {
+    "question": "rdt3.0'da gönderici, bir paketin kaybolduğunu nasıl anlar?",
+    "options": [
+      "Alıcıdan NAK mesajı alarak",
+      "Ağ katmanından kayıp bildirimi alarak",
+      "Belirli bir süre içinde ACK gelmezse zamanlayıcının (timer) zaman aşımına uğramasıyla",
+      "Checksum hata raporu alarak"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. rdt3.0 NAK kullanmaz (rdt2.2 gibi NAK-free yaklaşım).",
+      "Yanlış. Ağ katmanı kayıp bildirimi yapmaz.",
+      "Doğru! Gönderici paket gönderdikten sonra zamanlayıcı başlatır. Makul süre içinde ACK gelmezse paket (veya ACK) kaybolmuş sayılır ve yeniden iletim yapılır.",
+      "Yanlış. Checksum hata raporlama mekanizması bu değildir."
+    ]
+  },
+  {
+    "question": "rdt3.0'da zamanlayıcı süresi dolduğunda (timeout) gönderici ne yapar?",
+    "options": [
+      "Bağlantıyı tamamen sonlandırır.",
+      "Bir sonraki paketi gönderir.",
+      "Mevcut paketi yeniden iletir ve zamanlayıcıyı yeniden başlatır.",
+      "Alıcıdan NAK bekler."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. rdt3.0 bağlantı sonlandırmaz; yeniden iletim yapar.",
+      "Yanlış. Zamanlayıcı bitince bir sonraki değil, aynı paket tekrar gönderilir.",
+      "Doğru! Zamanlayıcı bitince gönderici stop-and-wait ilkesini koruyarak mevcut paketi yeniden gönderir ve zamanlayıcıyı sıfırlar.",
+      "Yanlış. rdt3.0 NAK kullanmaz."
+    ]
+  },
+  {
+    "question": "rdt3.0'da gecikmiş (delayed) bir ACK'ın neden olduğu sorun nasıl çözülür?",
+    "options": [
+      "Gecikmiş ACK'lar tamamen görmezden gelinir.",
+      "Alıcı gecikmiş ACK'ları yeniden göndermez.",
+      "Sıra numaraları sayesinde gecikmiş ACK alındığında gönderici duplikat iletimi fark eder ve yeniden gönderilen paketi alıcı duplikat olarak tanıyarak atar.",
+      "Gönderici yalnızca en son ACK'ı kabul eder."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Gecikmiş ACK'lar işlenir ama doğru şekilde tanınır.",
+      "Yanlış. Alıcı gecikmiş de olsa gelen pakete ACK yanıtı verir.",
+      "Doğru! Sıra numarası mekanizması sayesinde gecikmiş ACK veya duplikat paket geldiğinde hem gönderici hem alıcı bunu tespit eder. Alıcı duplikat paketi atar, gönderici fazladan gelen ACK'ı yok sayar.",
+      "Yanlış. Gönderici zamanlayıcı-tabanlı mantıkla çalışır, 'en son ACK' filtrelemesi yapmaz."
+    ]
+  },
+  {
+    "question": "rdt3.0'daki dört senaryo hangilerini kapsar?",
+    "options": [
+      "Normal çalışma, bit hatası, paket kaybı, tıkanıklık",
+      "Normal çalışma, paket kaybı, ACK kaybı, erken zamanlayıcı/gecikmeli ACK",
+      "Handshake, veri iletimi, ACK, bağlantı sonlandırma",
+      "rdt1.0, rdt2.0, rdt2.1, rdt2.2"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. rdt3.0 bit hatasını rdt2.x'ten devralır; tıkanıklık ayrı bir konudur.",
+      "Doğru! rdt3.0 dört durumu ele alır: (a) kayıpsız normal, (b) paket kaybı, (c) ACK kaybı, (d) erken zamanlayıcı/gecikmeli ACK.",
+      "Yanlış. Bunlar TCP bağlantı aşamalarıdır.",
+      "Yanlış. Bunlar protokol versiyonlarıdır, senaryo değil."
+    ]
+  },
+  {
+    "question": "Stop-and-wait protokolünde, L = 1000 bit, R = 1 Mbps, yayılma gecikmesi d_prop = 15 ms olan bir senaryoda kullanım oranı (utilization) nedir?",
+    "options": [
+      "yaklaşık %50",
+      "yaklaşık %3.2",
+      "yaklaşık %100",
+      "yaklaşık %0.3"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. %50 çok yüksek; stop-and-wait RTT boyunca bekler.",
+      "Doğru! İletim süresi = L/R = 1000/1.000.000 = 1 ms. RTT = 2 × 15 ms = 30 ms. Kullanım = (L/R) / (RTT + L/R) = 1 / (30 + 1) ≈ 0.032 = %3.2",
+      "Yanlış. Stop-and-wait %100 kullanım sağlayamaz.",
+      "Yanlış. Hesaplama yanlış."
+    ]
+  },
+  {
+    "question": "Pipeline (boru hattı) protokollerinin stop-and-wait'e göre temel avantajı nedir?",
+    "options": [
+      "Daha az bellek tüketir.",
+      "ACK gerektirmez.",
+      "Birden fazla paketin aynı anda 'havada' (in-flight) olmasına izin vererek bant genişliği kullanımını artırır.",
+      "Checksum kullanmaz."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Pipeline daha fazla tampon bellek gerektirir.",
+      "Yanlış. Pipeline protokollerinde ACK mekanizması hâlâ kullanılır.",
+      "Doğru! Pipeline'da gönderici ACK beklemeden birden fazla paket gönderebilir; bu da bant genişliği kullanım oranını (utilization) önemli ölçüde artırır.",
+      "Yanlış. Checksum yine de kullanılır."
+    ]
+  },
+  {
+    "question": "Finite State Machine (FSM) protokol tasarımında ne amaçla kullanılır?",
+    "options": [
+      "Ağ topolojisini çizmek için",
+      "IP adreslerini atamak için",
+      "Protokol durumlarını, olayları ve geçişte alınan aksiyonları biçimsel olarak belirtmek için",
+      "Checksum hesaplamak için"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Ağ topolojisi için grafik araçları kullanılır.",
+      "Yanlış. IP adresi ataması DHCP ile yapılır.",
+      "Doğru! FSM, protokol durumları (states), olaylar (events/triggers) ve durum geçişlerinde alınan aksiyonları (actions) biçimsel olarak ifade etmek için kullanılır.",
+      "Yanlış. Checksum ayrı bir algoritmayla hesaplanır."
+    ]
+  },
+  {
+    "question": "rdt protokollerinde 'udt_send()' fonksiyonu ne anlama gelir?",
+    "options": [
+      "Güvenilir kanal üzerinden paket gönderir.",
+      "Güvenilmez (unreliable) kanaldan alınan paketi işler.",
+      "Güvenilmez kanal üzerinden paketi iletmek için çağrılan fonksiyondur.",
+      "Üst katmana veri teslim eder."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. 'u' harfi unreliable anlamına gelir.",
+      "Yanlış. Almak için rdt_rcv() kullanılır.",
+      "Doğru! udt_send(), rdt tarafından paketi güvenilmez kanal (ağ katmanı) üzerinden göndermek için çağrılır.",
+      "Yanlış. Üst katmana teslimat için deliver_data() kullanılır."
+    ]
+  },
+  {
+    "question": "Taşıma katmanının gönderici tarafındaki temel görevi nedir?",
+    "options": [
+      "IP adreslerini çözümlemek",
+      "Uygulama mesajlarını segmentlere ayırıp başlık ekleyerek ağ katmanına iletmek",
+      "Fiziksel ortamda elektrik sinyali oluşturmak",
+      "Güvenlik duvarı kurallarını uygulamak"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. IP adresi çözümleme DNS ve ağ katmanının işidir.",
+      "Doğru! Gönderici taşıma katmanı, uygulama mesajını alır, segmentlere böler, başlık (kaynak/hedef port, checksum vb.) ekler ve ağ katmanına iletir.",
+      "Yanlış. Bu fiziksel katmanın görevidir.",
+      "Yanlış. Güvenlik duvarı taşıma katmanına ait değildir."
+    ]
+  },
+  {
+    "question": "Taşıma katmanının alıcı tarafındaki temel görevi nedir?",
+    "options": [
+      "Paketleri en kısa yoldan yönlendirmek",
+      "Ağ katmanından gelen segmentleri birleştirip başlığı inceleyerek doğru sokete/uygulamaya iletmek",
+      "Şifreli mesajları çözmek",
+      "MAC adreslerine göre çerçeveleri iletmek"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Yönlendirme ağ katmanının görevidir.",
+      "Doğru! Alıcı taşıma katmanı, ağ katmanından segmenti alır, başlığı kontrol eder ve demultiplexing yaparak uygun sokete (uygulamaya) iletir.",
+      "Yanlış. Şifre çözme uygulama veya güvenlik katmanının işidir.",
+      "Yanlış. MAC adres yönlendirmesi veri bağlantısı katmanına aittir."
+    ]
+  },
+  {
+    "question": "Internet'te kullanılabilen iki ana transport protokolü hangisidir ve temel farklılıkları nedir?",
+    "options": [
+      "HTTP ve FTP; biri web diğeri dosya transferi içindir",
+      "TCP ve UDP; TCP güvenilir bağlantılı, UDP güvenilmez bağlantısızdır",
+      "IPv4 ve IPv6; biri 32-bit diğeri 128-bit adresleme kullanır",
+      "SMTP ve IMAP; biri gönderim diğeri alım protokolüdür"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. HTTP ve FTP uygulama katmanı protokolleridir.",
+      "Doğru! İnternet'te iki temel transport protokolü TCP (güvenilir, bağlantılı, akış/tıkanıklık kontrolü olan) ve UDP'dir (güvenilmez, bağlantısız).",
+      "Yanlış. IPv4 ve IPv6 ağ katmanı protokolleridir.",
+      "Yanlış. SMTP ve IMAP uygulama katmanı e-posta protokolleridir."
+    ]
+  },
+  {
+    "question": "UDP checksum hesabında, aşağıdaki iki 16-bitlik sayının toplamını hesaplayın:\n0110011001100110\n0101010101010101\nToplam nedir? (Taşma yok)",
+    "options": [
+      "1011101110111011",
+      "1011101011111011",
+      "0000000000000000",
+      "1111111111111111"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! 0110011001100110 + 0101010101010101 = 1011101110111011. Bit bit toplama: kolon kolon eklenir, taşma yoktur.",
+      "Yanlış. Hesaplama hatalı.",
+      "Yanlış. Sıfır olamaz.",
+      "Yanlış. 0xFFFF bu toplamla elde edilemez."
+    ]
+  },
+  {
+    "question": "Yukarıdaki toplamın (1011101110111011) Internet checksum değeri (1'in tümleyeni) nedir?",
+    "options": [
+      "0100010001000100",
+      "1011101110111011",
+      "1111111111111111",
+      "0000000000000000"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! 1011101110111011'in 1'e tümleyeni (tüm bitleri ters çevir): 0100010001000100.",
+      "Yanlış. Bu zaten toplamın kendisi.",
+      "Yanlış. 0xFFFF tüm bitlerin 1 olduğu durumdur.",
+      "Yanlış. 0x0000 tüm bitlerin 0 olduğu durumdur."
+    ]
+  },
+  {
+    "question": "Bir UDP segmenti kaynak port=1234, hedef port=80 ile gönderilmektedir. Segment 20 bayt veri içeriyorsa, UDP başlığı dahil toplam segment uzunluğu nedir?",
+    "options": [
+      "20 bayt",
+      "24 bayt",
+      "28 bayt",
+      "32 bayt"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Yalnızca veri uzunluğu; başlık dahil değil.",
+      "Yanlış. UDP başlığı 8 bayttır; 4 bayt sayısı hatalı.",
+      "Doğru! UDP başlık boyutu = 8 bayt, veri = 20 bayt. Toplam = 8 + 20 = 28 bayt.",
+      "Yanlış. 32 - 20 = 12 bayt başlık olurdu; UDP başlığı 8 bayttır."
+    ]
+  },
+  {
+    "question": "rdt3.0'da, pkt0 gönderilmiş ve ACK0 kaybolmuştur. Zamanlayıcı dolunca gönderici pkt0'ı yeniden gönderir. Alıcı ne yapar?",
+    "options": [
+      "pkt0'ı sanki yeni bir paketmiş gibi kabul eder ve üst katmana teslim eder.",
+      "pkt0'ın sıra numarasına bakarak duplikat olduğunu anlar; paketi atar ama ACK0 gönderir.",
+      "pkt0'ı alır ve NAK gönderir.",
+      "Hiçbir şey yapmaz; ACK kaybı alıcıyı etkilemez."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Alıcı duplikat paketi üst katmana iletmez.",
+      "Doğru! Alıcı pkt0'ın sıra numarasını daha önce gördüğü için duplikat olduğunu anlar, paketi atar (deliver_data yapmaz) ama yine de ACK0 gönderir.",
+      "Yanlış. rdt3.0'da NAK kullanılmaz.",
+      "Yanlış. Alıcı duplikat pakete yine de ACK ile yanıt verir."
+    ]
+  },
+  {
+    "question": "Taşıma katmanı protokolleri hangi ağ cihazlarında çalışır?",
+    "options": [
+      "Yalnızca router'larda",
+      "Yalnızca switch'lerde",
+      "Yalnızca end system'lerde (host'larda)",
+      "Tüm ağ cihazlarında"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Router'lar ağ (IP) katmanına kadar işlem yapar; taşıma katmanını işlemez.",
+      "Yanlış. Switch'ler veri bağlantısı katmanında çalışır.",
+      "Doğru! Taşıma katmanı protokolleri (TCP, UDP) yalnızca end system'lerde (gönderici ve alıcı host'larda) uygulanır.",
+      "Yanlış. Ara ağ cihazları (router, switch) taşıma katmanı işlemi yapmaz."
+    ]
+  },
+  {
+    "question": "Ağ katmanı (network layer) hangi servis modelini sunar?",
+    "options": [
+      "Güvenilir, sıralı teslimat",
+      "Guaranteed bandwidth",
+      "Best-effort (en iyi çaba) - garanti yok",
+      "Gerçek zamanlı garantili iletim"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Güvenilir sıralı teslimat TCP'nin sağladığı şeydir.",
+      "Yanlış. Internet ağ katmanı bant genişliği garantisi vermez.",
+      "Doğru! İnternet'in IP katmanı 'best-effort' hizmeti sunar: paketler kaybolabilir, sıra dışı gelebilir, bozulabilir; hiçbir garanti yoktur.",
+      "Yanlış. Gerçek zamanlı garanti Internet ağ katmanında mevcut değildir."
+    ]
+  },
+  {
+    "question": "Bir web sunucusu aynı anda 3 farklı istemciden bağlantı kabul ettiğinde, her bağlantı için ayrı soket açılır mı?",
+    "options": [
+      "Hayır, tek soket tüm bağlantıları yönetir.",
+      "Evet, TCP'de her bağlantı 4'lü bilgiyle (src IP, src port, dst IP, dst port) benzersiz şekilde tanımlanır ve ayrı soketler kullanılır.",
+      "Yalnızca UDP soketleri çoğul bağlantıyı destekler.",
+      "Sunucu port 80'de yalnızca bir bağlantıya hizmet verebilir."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. TCP'de her bağlantı için ayrı soket oluşturulur.",
+      "Doğru! Her TCP bağlantısı, (kaynak IP, kaynak port, hedef IP, hedef port) 4'lüsüyle benzersiz tanımlanır; sunucu her bağlantı için farklı bir soket kullanabilir.",
+      "Yanlış. UDP soketi bağlantı tabanlı değildir; ayrı soket açmak TCP'ye özgüdür.",
+      "Yanlış. Sunucu aynı port üzerinden birden fazla bağlantıyı paralel yönetebilir."
+    ]
+  },
+  {
+    "question": "DNS kayıt türlerinden 'A kaydı' ne anlama gelir?",
+    "options": [
+      "İsim ile posta sunucusunu eşleştirir.",
+      "İsim ile başka bir ismi (alias) eşleştirir.",
+      "İsim ile IPv4 adresini eşleştirir.",
+      "Ad sunucusunun (nameserver) adresini belirtir."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Posta sunucusu MX kaydıdır.",
+      "Yanlış. İsim ile isim eşleşmesi CNAME kaydıdır.",
+      "Doğru! 'A' kaydı (Address record), bir hostname'i IPv4 adresine eşleştirir.",
+      "Yanlış. Ad sunucusu kaydı NS kaydıdır."
+    ]
+  },
+  {
+    "question": "HTTP yanıt mesajındaki '404 Not Found' durum kodu ne anlama gelir?",
+    "options": [
+      "Sunucu geçici olarak erişilemez durumda.",
+      "İstemci yanlış formatlı bir istek gönderdi.",
+      "İstenen nesne/kaynak sunucuda bulunamadı.",
+      "Bağlantı zaman aşımına uğradı."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Sunucu erişilemezliği genellikle 503 ile ifade edilir.",
+      "Yanlış. Yanlış formatlı istek 400 Bad Request'e karşılık gelir.",
+      "Doğru! 404 Not Found, istemcinin talep ettiği kaynağın sunucuda mevcut olmadığını belirtir.",
+      "Yanlış. Zaman aşımı genellikle 408 ile ifade edilir."
+    ]
+  },
+  {
+    "question": "Web önbelleği (web cache / proxy server) kullanmanın iki temel faydası nedir?",
+    "options": [
+      "Güvenliği artırır ve içeriği şifreler.",
+      "İstemciye yanıt süresini düşürür ve kurumsal erişim bağlantısındaki trafik yükünü azaltır.",
+      "DNS çözümleme hızını artırır ve SMTP gecikmesini azaltır.",
+      "TCP bağlantı sayısını artırır."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Web önbelleği güvenlik veya şifreleme amacıyla tasarlanmamıştır.",
+      "Doğru! Önbellek, sık erişilen içerikleri yerel olarak saklayarak hem istemciye daha hızlı yanıt verir hem de köken sunucuya ve WAN bağlantısına giden trafik yükünü azaltır.",
+      "Yanlış. DNS ve SMTP öncelikli hedef değildir.",
+      "Yanlış. TCP bağlantı sayısını azaltır (köken sunucuya gidilmeden önbellekten karşılanır)."
+    ]
+  },
+  {
+    "question": "Bir ağda 100 kullanıcı var; her biri %10 aktif olduğunda, paket anahtarlamada 10'dan fazla kullanıcının aynı anda aktif olma olasılığı (binomial dağılım) devre anahtarlamaya göre nasıldır?",
+    "options": [
+      "Paket anahtarlama her zaman 10'dan az kullanıcıyla sınırlı kalır.",
+      "Binomial dağılıma göre bu olasılık düşüktür; paket anahtarlama 35 kullanıcıya devre anahtarlamanın 10 kullanıcısına karşı hizmet verebilir.",
+      "Devre anahtarlama daha verimlidir.",
+      "İki yöntem arasında fark yoktur."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Paket anahtarlama istatistiksel çoğullama (statistical multiplexing) kullanır; 10'dan fazlası aktif olabilir.",
+      "Doğru! %10 aktivite oranıyla 100 kullanıcı için 10'dan fazlasının aynı anda aktif olma olasılığı istatistiksel olarak düşüktür. Bu nedenle paket anahtarlama aynı bant genişliğiyle çok daha fazla kullanıcıya hizmet verebilir.",
+      "Yanlış. İstatistiksel çoğullama sayesinde paket anahtarlama çoğu senaryoda daha verimlidir.",
+      "Yanlış. İki yöntem arasında önemli farklar vardır."
+    ]
+  },
+  {
+    "question": "İnternet'in tarihi gelişiminde ARPANET'in önemi nedir?",
+    "options": [
+      "İlk ticari ISP'yi kurmuştur.",
+      "İlk paket anahtarlamalı ağdır ve internetin öncüsüdür.",
+      "DNS'i tasarlayan organizasyondur.",
+      "TCP/IP protokolünü reddeden ve OSI modelini geliştiren kurumdur."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. ARPANET ticari değil askeri/akademik amaçlı kurulmuştur.",
+      "Doğru! ARPANET (1969), paket anahtarlamayı kullanan ilk geniş alan ağıdır ve modern internetin temelini atmıştır.",
+      "Yanlış. DNS daha sonra geliştirilmiştir.",
+      "Yanlış. TCP/IP internet standardı olmuştur; OSI ayrı bir yapıdır."
+    ]
+  },
+  {
+    "question": "Kablosuz erişim ağlarında 802.11 (WiFi) ile geniş alan kablosuz (4G/5G) arasındaki temel fark nedir?",
+    "options": [
+      "WiFi fiber optik kullanır; 4G/5G kullanmaz.",
+      "WiFi genellikle daha kısa mesafe ve daha yüksek hız sunar; 4G/5G daha geniş coğrafi kapsama sağlar.",
+      "4G/5G yalnızca ses iletimi için kullanılır.",
+      "WiFi yalnızca masaüstü bilgisayarlarla uyumludur."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. WiFi tipik olarak kısa mesafe kablosuz erişim, 4G/5G ise hücresel ağ teknolojisidir.",
+      "Doğru! WiFi (802.11) ev/ofis gibi kısa menzilli ortamlarda yüksek hız sunarken, 4G/5G geniş coğrafi alanlarda mobil kullanıcılara hizmet verir.",
+      "Yanlış. 4G/5G veri, ses ve video iletimi sağlar.",
+      "Yanlış. WiFi akıllı telefon, tablet gibi birçok cihazda kullanılır."
+    ]
+  },
+  {
+    "question": "İnternet'te 'throughput' (verim) neyi ifade eder?",
+    "options": [
+      "Kaynak ile hedef arasındaki toplam gecikme süresi",
+      "Saniye başına gönderilen veri miktarı (bit/s)",
+      "Ağda kaybolan paket sayısı",
+      "Bir paketin yolculuğu sırasında geçtiği router sayısı"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu gecikme (latency) tanımıdır.",
+      "Doğru! Throughput, birim zamanda kaynaktan hedefe başarıyla iletilen veri miktarıdır (bit/s veya Mbps).",
+      "Yanlış. Bu paket kayıp oranıdır.",
+      "Yanlış. Bu hop sayısıdır (TTL ile ilgili)."
+    ]
+  },
+  {
+    "question": "Bottleneck link (darboğaz bağlantı) kavramı ne anlama gelir?",
+    "options": [
+      "En uzun gecikmeye sahip bağlantı",
+      "End-to-end throughput'u sınırlayan en düşük kapasiteli bağlantı",
+      "En fazla paket kaybeden bağlantı",
+      "Güvenlik duvarının bulunduğu bağlantı"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. En yüksek gecikme ile darboğaz her zaman aynı nokta değildir.",
+      "Doğru! Bottleneck link, uçtan uca verimi belirleyen en düşük kapasiteli (en yavaş) bağlantıdır.",
+      "Yanlış. Paket kaybı ile darboğaz ilişkili olabilir ama tanım kapasiteyle ilgilidir.",
+      "Yanlış. Güvenlik duvarı darboğaz tanımının parçası değildir."
+    ]
+  },
+  {
+    "question": "İnternet güvenliğinde 'malware' nasıl bulaşabilir?",
+    "options": [
+      "Yalnızca USB disk aracılığıyla",
+      "Yalnızca e-posta ekleri aracılığıyla",
+      "Virüs, solucan, truva atı gibi biçimlerde internet üzerinden indirilen dosyalar veya exploitler yoluyla",
+      "Yalnızca kablosuz ağlar aracılığıyla"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. USB tek vektördür ama tek yol değildir.",
+      "Yanlış. E-posta eki bir vektördür ama tek yol değildir.",
+      "Doğru! Kötü amaçlı yazılım; virüs (kendi kopyasını yaratır), solucan (ağ üzerinden yayılır), trojan (kullanıcıyı aldatır) dahil pek çok yolla bulaşabilir.",
+      "Yanlış. Kablolu ağlar da enfeksiyon için kullanılabilir."
+    ]
+  },
+  {
+    "question": "DDoS (Distributed Denial of Service) saldırısı nedir?",
+    "options": [
+      "Şifreli trafiği çözmek için kullanılan yöntem",
+      "Birden fazla kaynaktan koordineli yüksek hacimli trafik göndererek hedef sistemi erişilemez hale getirme",
+      "Kullanıcı adı/şifre çalmak için tasarlanmış saldırı",
+      "IP adreslerini taklit eden saldırı türü"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Şifre çözme kriptanaliz yöntemidir.",
+      "Doğru! DDoS, binlerce ele geçirilmiş cihazdan (botnet) hedefe eş zamanlı trafik göndererek hedefin meşru kullanıcılara hizmet verememesine neden olur.",
+      "Yanlış. Bu phishing/credential stuffing saldırısıdır.",
+      "Yanlış. Bu IP spoofing'dir."
+    ]
+  },
+  {
+    "question": "E-posta sisteminde IMAP'in SMTP'den farkı nedir?",
+    "options": [
+      "IMAP posta sunucusuna mesaj iletir; SMTP mesajları okumak içindir.",
+      "SMTP posta sunucusuna mesaj gönderir; IMAP mesajları posta sunucusundan almak/okumak için kullanılır.",
+      "İkisi de aynı işlevi görür; yalnızca port numaraları farklıdır.",
+      "IMAP yalnızca metin mesajları destekler; SMTP ekler gönderebilir."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Tanımlar yer değiştirmiş.",
+      "Doğru! SMTP (Simple Mail Transfer Protocol) mesaj göndermek için; IMAP (Internet Mail Access Protocol) gelen kutusu sunucusundaki mesajlara erişmek ve okumak için kullanılır.",
+      "Yanlış. İşlevleri farklıdır.",
+      "Yanlış. SMTP ve IMAP MIME eklerini destekler."
+    ]
+  },
+  {
+    "question": "DNS'te 'caching' (önbellekleme) nasıl çalışır ve neden önemlidir?",
+    "options": [
+      "DNS caching, web sayfalarını yerel olarak depolar.",
+      "Bir DNS sunucusu aldığı cevabı TTL süresi boyunca önbelleğe alır; aynı sorgu tekrar geldiğinde uzak sunucuya gitmeden hızlıca yanıt verir.",
+      "DNS caching yalnızca root sunucularda yapılır.",
+      "DNS caching güvenlik açığı olduğu için devre dışı bırakılmıştır."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. DNS web sayfası değil, isim-IP eşleştirmesi önbellekler.",
+      "Doğru! DNS caching; çözümlenen kayıtları TTL (Time To Live) süresi boyunca yerel bellekte tutar. Bu sayede tekrar eden sorgular hızla yanıtlanır ve üst DNS sunucularına yük azalır.",
+      "Yanlış. DNS caching hem yerel resolver hem de intermediate DNS sunucularında yapılır.",
+      "Yanlış. DNS caching standartta aktiftir (güvenlik iyileştirmeleri yapılmıştır)."
+    ]
+  },
+  {
+    "question": "Video streaming uygulamalarında 'DASH' (Dynamic Adaptive Streaming over HTTP) ne sağlar?",
+    "options": [
+      "Videoyu şifreler ve güvenli iletir.",
+      "Video kalitesini ağ bant genişliğine göre dinamik olarak ayarlayarak kesintisiz izleme deneyimi sunar.",
+      "Video dosyasını P2P ağında dağıtır.",
+      "DNS çözümlemeyi hızlandırır."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. DASH şifreleme protokolü değildir.",
+      "Doğru! DASH, videoyu farklı kalite seviyelerinde (bitrate) küçük parçalara böler. İstemci ağ koşuluna göre en uygun kaliteyi dinamik olarak seçer.",
+      "Yanlış. DASH HTTP tabanlıdır; P2P dağıtımı farklı bir yöntemdir.",
+      "Yanlış. DNS ile doğrudan ilişkisi yoktur."
+    ]
+  },
+  {
+    "question": "Bir router'daki 'nodal processing' (düğüm işleme) gecikmesini oluşturan etmenler nelerdir?",
+    "options": [
+      "Kablonun fiziksel uzunluğu",
+      "Bit hatası kontrolü ve çıkış bağlantısının belirlenmesi",
+      "Kuyrukta bekleyen paket sayısı",
+      "İnternet servis sağlayıcısının hızı"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Kablo uzunluğu yayılma gecikmesini etkiler.",
+      "Doğru! Nodal processing, router'ın paketteki bit hatalarını kontrol etmesi ve routing tablosunu kullanarak çıkış portunu belirlemesi gibi işlemleri kapsar.",
+      "Yanlış. Kuyruk uzunluğu queuing gecikmesini etkiler.",
+      "Yanlış. ISP hızı bant genişliğini belirler; nodal processing değil."
+    ]
+  },
+  {
+    "question": "İnternet'in katmanlı mimarisinin (layered architecture) temel faydası nedir?",
+    "options": [
+      "Her katman daha hızlı çalışır.",
+      "Karmaşık sistemleri daha iyi tanımlamak ve modülerlik sağlamak; bir katmanı değiştirirken diğerlerini etkilememek.",
+      "Her katman aynı protokolü kullanır.",
+      "Katmanlı mimari sadece kablolu ağlarda çalışır."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Katmanlama her zaman hız artırmaz.",
+      "Doğru! Katmanlı mimari; büyük karmaşık sistemleri tanımlamayı kolaylaştırır, modülerlik sağlar. Bir katmanın uygulaması değiştirilebilir, diğer katmanlar etkilenmez.",
+      "Yanlış. Her katmanın farklı protokolleri vardır.",
+      "Yanlış. Katmanlı mimari hem kablolu hem kablosuz ağlarda kullanılır."
+    ]
+  },
+  {
+    "question": "rdt2.0 FSM'de gönderici 'Wait for ACK or NAK' durumundayken ACK alırsa ne olur?",
+    "options": [
+      "Paketi yeniden gönderir.",
+      "NAK gönderir.",
+      "Hiçbir şey yapmaz (L: boş aksiyon) ve 'Wait for call from above' durumuna geçer.",
+      "Zamanlayıcıyı başlatır."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. ACK alındığında yeniden gönderim gerekmez.",
+      "Yanlış. Gönderici NAK göndermez; NAK alıcının göndereceği bir mesajdır.",
+      "Doğru! ACK alındığında herhangi bir ekstra aksiyon alınmaz (L: lambda/empty), gönderici üst katmandan yeni veri beklediği duruma geçer.",
+      "Yanlış. Zamanlayıcı rdt3.0'da eklenir."
+    ]
+  },
+  {
+    "question": "rdt2.1'de alıcı beklediği paketin sıra numarasından farklı bir paket alırsa (duplikat) ne yapar?",
+    "options": [
+      "Paketi kabul eder ve üst katmana iletir.",
+      "Paketi atar ve NAK gönderir.",
+      "Paketi atar ve alınan paketin sıra numarasına ait ACK gönderir.",
+      "Hiçbir şey yapmaz."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Duplikat paket üst katmana iletilmez.",
+      "Yanlış. rdt2.1 NAK kullanır ama duplikat durumunda NAK değil eski sıra numarasının ACK'ı gönderilir.",
+      "Doğru! Alıcı duplikat paketi atar ve o paketin sıra numarasına ait ACK'ı göndererek göndericiyi bilgilendirir.",
+      "Yanlış. Alıcı her durumda yanıt vermek zorundadır."
+    ]
+  },
+  {
+    "question": "rdt3.0 (alternating-bit protokolü olarak da bilinir) neden 'alternating-bit' olarak adlandırılır?",
+    "options": [
+      "Checksum hesaplamasında bitleri değiştirir.",
+      "Sıra numaraları 0 ve 1 arasında sürekli değiştiğinden (alternar)",
+      "Her ikinci paketi atlar.",
+      "Çift paketlerde 0, tek paketlerde 1 bit gönderir."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Checksum ile ilgisi yoktur.",
+      "Doğru! rdt3.0'da paket sıra numaraları 0 → 1 → 0 → 1 şeklinde sürekli dönüşümlü değiştiği için bu protokol 'alternating-bit protocol' olarak adlandırılır.",
+      "Yanlış. Her paket gönderilir, hiçbiri atlanmaz.",
+      "Yanlış. Çift/tek paket ayrımı bu bağlamda kullanılmaz."
+    ]
+  },
+  {
+    "question": "HTTP'de 'cookie' ne amaçla kullanılır?",
+    "options": [
+      "Şifreleme anahtarı saklamak için",
+      "Stateless HTTP üzerinde kullanıcı durumunu (state) takip etmek için",
+      "DNS önbelleğini temizlemek için",
+      "UDP bağlantısını yönetmek için"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Cookie şifreleme anahtarı değildir.",
+      "Doğru! Cookie, HTTP'nin stateless doğasını aşmak için kullanılır: sunucu kullanıcı bilgilerini cookie olarak saklayıp durum takibi yapabilir (oturum, sepet vb.).",
+      "Yanlış. DNS ve cookie bağımsız mekanizmalardır.",
+      "Yanlış. Cookie HTTP ile kullanılır; UDP ile ilgisi yoktur."
+    ]
+  },
+  {
+    "question": "Aşağıdakilerden hangisi bir 'iyi' internet uygulamasının ihtiyaç duyabileceği taşıma servisi gereksinimlerinden biri değildir?",
+    "options": [
+      "Veri bütünlüğü (data integrity)",
+      "Zamanlama garantisi (timing)",
+      "Minimum bant genişliği",
+      "Otomatik IP adresi ataması"
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. Veri bütünlüğü (örn. dosya aktarımı) taşıma servis gereksinimi olabilir.",
+      "Yanlış. Zamanlama (örn. telefon, oyun) bazı uygulamalar için kritik taşıma gereksinimidir.",
+      "Yanlış. Minimum bant genişliği video streaming gibi uygulamalar için gereklidir.",
+      "Doğru! IP adresi ataması DHCP'nin görevidir; taşıma servisi gereksinimi değildir."
+    ]
+  },
+  {
+    "question": "UDP segmentinde 'checksum' alanı 0 olarak ayarlanırsa ne anlama gelir?",
+    "options": [
+      "Checksum hesaplaması başarısız olmuştur.",
+      "Checksum koruması gönderici tarafından kullanılmamaktadır.",
+      "Paket bozuktur ve atılmalıdır.",
+      "Bu geçerli bir UDP segmenti değildir."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. 0 değeri hesaplama başarısızlığını değil, özelliğin kapatıldığını gösterir.",
+      "Doğru! UDP checksum alanının 0 olması, göndericinin checksum özelliğini kullanmadığını belirtir. IPv4'te opsiyoneldir.",
+      "Yanlış. 0 checksum, paketin bozuk olduğunu değil, kontrol yapılmadığını gösterir.",
+      "Yanlış. 0 checksum değeri geçerli bir UDP segmenti olabilir."
+    ]
+  },
+  {
+    "question": "Taşıma katmanı, ağ katmanından DAHA FAZLA ne sağlayabilir?",
+    "options": [
+      "Daha hızlı yönlendirme",
+      "Güvenilirlik, akış kontrolü ve tıkanıklık kontrolü gibi ek servisler",
+      "Daha büyük paket boyutu",
+      "Fiziksel ortam seçimi"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Yönlendirme hızı ağ katmanı ve router donanımına bağlıdır.",
+      "Doğru! Taşıma katmanı, ağ katmanının 'best-effort' servisinin üzerine güvenilirlik (TCP), akış kontrolü ve tıkanıklık kontrolü gibi ek özellikler ekleyebilir.",
+      "Yanlış. Paket boyutu MTU ile ağ katmanında sınırlıdır.",
+      "Yanlış. Fiziksel ortam seçimi fiziksel/veri bağlantısı katmanına aittir."
+    ]
+  },
+  {
+    "question": "Internet checksum hesabında, toplamdaki tüm 16-bitlik sözcüklerin 1'e tümleyeni toplamı alınır. Bu işlemin sonucundaki 1'e tümleyeni neden alınır?",
+    "options": [
+      "Sonucu negatife çevirmek için",
+      "Hata tespitini kolaylaştırmak: alıcı tüm alanları topladığında sonuç 0xFFFF (tümü 1) olmalıdır; değilse hata var demektir.",
+      "Sıra numarası hesaplamak için",
+      "UDP başlık boyutunu sabitlemek için"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. 1'e tümleyeni negasyon değil, bit tersleme işlemidir.",
+      "Doğru! 1'e tümleyeni alınmasının amacı hata tespitini basitleştirmektir. Alıcı checksum dahil tüm alanları toplarsa sonuç 0xFFFF (1111...1) olmalıdır; farklıysa hata tespit edilir.",
+      "Yanlış. Sıra numarası farklı bir alan ve mekanizmadır.",
+      "Yanlış. Başlık boyutu sabitlenmiştir (8 bayt); checksum bunu belirlemez."
+    ]
+  },
+  {
+    "question": "rdt protokollerinde 'stop-and-wait' neden verimsizdir?",
+    "options": [
+      "Checksum hesaplaması çok zaman alır.",
+      "Gönderici bir sonraki paketi göndermeden önce ACK beklemek zorundadır; bu sürede bant genişliği boşa harcanır.",
+      "Stop-and-wait şifreleme gerektirmez.",
+      "Zamanlayıcı sürekli çalışmak zorundadır."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Checksum hesaplama süresi ihmal edilebilir düzeydedir.",
+      "Doğru! Stop-and-wait'te gönderici her paket için ACK bekler; bu bekleme süresinde bağlantı boşta kalır ve bant genişliği kullanım oranı düşer.",
+      "Yanlış. Şifreleme ile ilgisi yoktur.",
+      "Yanlış. Zamanlayıcı tek başına verimsizliğin sebebi değildir."
+    ]
+  },
+  {
+    "question": "Gönderici ve alıcı arasındaki kanalın üç temel bozulma türü nelerdir?",
+    "options": [
+      "Şifreleme, sıkıştırma, yeniden düzenleme",
+      "Bit hatası (corruption), paket kaybı (loss), sıra dışı teslim (reordering)",
+      "Gecikme, jitter, tıkanıklık",
+      "ARP çakışması, IP çakışması, port çakışması"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bunlar iletim teknikleridir, bozulma türleri değil.",
+      "Doğru! rdt protokol tasarımı için dikkate alınan üç temel kanal bozulması: bit hatası, paket kaybı ve sıra dışı gelme.",
+      "Yanlış. Bunlar QoS metrikleridir.",
+      "Yanlış. Bunlar farklı ağ sorunlarıdır."
+    ]
+  },
+  {
+    "question": "Bir web sayfası 1 base HTML (1 KB) ve 10 adet resim (her biri 100 KB) içermektedir. Persistent HTTP bağlantısıyla toplam kaç RTT (Round-Trip Time) harcanır (pipelined olmayan)?",
+    "options": [
+      "1 RTT (tüm içerik tek seferde indirilir)",
+      "11 RTT + iletim süreleri (bağlantı kurma dahil)",
+      "2 RTT (HTML için 1, resimler için 1)",
+      "22 RTT"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Persistent bağlantıda bile her istek için RTT harcanır.",
+      "Doğru! Persistent HTTP'de: 1 RTT TCP bağlantısı + 1 RTT HTML isteği + 10 RTT resim isteği = toplam 12 RTT + iletim süreleri. (Yaklaşık olarak 11 RTT bağlantı kurma ve içerik için harcandığı söylenebilir.)",
+      "Yanlış. Her resim için ayrı RTT harcanır.",
+      "Yanlış. Non-persistent'te her obje için 2 RTT gerekir; bu persistent senaryosuyla karışmış."
+    ]
+  },
+  {
+    "question": "Internet'te 'peering' (eşleme) ne anlama gelir?",
+    "options": [
+      "Kullanıcıların birbirlerine dosya göndermesi",
+      "İki ISP'nin ücret ödemeksizin doğrudan trafik alışverişi yapması",
+      "DNS sunucusunun IP adresini çözümlemesi",
+      "Router'ların routing tablosu paylaşması"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu P2P dosya paylaşımına benzer bir kavramdır.",
+      "Doğru! Peering, iki ISP'nin birbirine transit ücret ödemeksizin doğrudan bağlanıp trafik değiş tokuşu yapmasıdır.",
+      "Yanlış. DNS çözümleme farklı bir işlemdir.",
+      "Yanlış. Routing tablosu paylaşımı BGP protokolüyle yapılır; peering bağlantı türünü ifade eder."
+    ]
+  },
+  {
+    "question": "rdt3.0 gönderici FSM'inde, 'Wait for ACK0' durumundayken rdt_rcv() fonksiyonu çağrılır ama alınan paket ne bozuktur ne de ACK0'dır. Gönderici ne yapmalıdır?",
+    "options": [
+      "Paketi işler ve bir sonraki duruma geçer.",
+      "Bağlantıyı keser.",
+      "Hiçbir aksiyon almaz (L - boş geçiş); aynı durumda kalmaya devam eder.",
+      "Zamanlayıcıyı sıfırlar ve paketi yeniden gönderir."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Beklenen ACK değilse işlem yapılmaz.",
+      "Yanlış. rdt3.0 bağlantı kesmez.",
+      "Doğru! Bozulmamış ama beklenen ACK numarası olmayan (örn. corrupt veya yanlış sıra numaralı) bir ACK alınırsa gönderici L (lambda/boş) aksiyonla aynı durumda bekler.",
+      "Yanlış. Zamanlayıcı sıfırlaması yalnızca timeout durumunda yapılır."
+    ]
+  },
+  {
+    "question": "DNS hiyerarşisinde, www.amazon.com için iterative çözümlemede hangi sıra izlenir?",
+    "options": [
+      "İstemci → TLD sunucusu → Amazon yetkili sunucusu → Kök sunucu",
+      "İstemci → Kök sunucu → .com TLD sunucusu → Amazon yetkili sunucusu",
+      "İstemci → Amazon yetkili sunucusu → TLD sunucusu → Kök sunucu",
+      "İstemci → ISP DNS sunucusu → Amazon yetkili sunucusu"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Kök sunucu başlangıç noktasıdır.",
+      "Doğru! Iterative çözümlemede: yerel DNS → Kök sunucu (TLD adresini verir) → .com TLD sunucusu (Amazon NS adresini verir) → Amazon yetkili sunucusu (IP adresini verir).",
+      "Yanlış. Sıra yanlış.",
+      "Yanlış. ISP DNS sunucusu kısım doğru ama Amazon yetkili sunucusuna direkt gidilmez."
+    ]
+  },
+  {
+    "question": "UDP'de hata tespit edildiğinde protokol ne yapar?",
+    "options": [
+      "Paketi otomatik olarak yeniden gönderir.",
+      "NAK mesajı göndericiye iletir.",
+      "UDP'nin kendisi hiçbir şey yapmaz; hatalı paketi atar veya üst katmana bildirir. Hata düzeltme/yeniden iletim uygulama katmanına bırakılmıştır.",
+      "TCP'ye geçerek güvenilir iletim sağlar."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. UDP yeniden gönderim mekanizmasına sahip değildir.",
+      "Yanlış. NAK UDP protokolünde bulunmaz.",
+      "Doğru! UDP hata tespit ederse (checksum uyuşmuyorsa) paketi atar; ama yeniden gönderim veya hata düzeltme yapmaz. İstenirse uygulama katmanı bu işlemi üstlenir.",
+      "Yanlış. UDP hiçbir zaman otomatik olarak TCP'ye geçmez."
+    ]
+  },
+  {
+    "question": "rdt2.2 protokolünde gönderici, aynı sıra numaralı iki ACK aldığında ne yapar?",
+    "options": [
+      "Bağlantıyı başarılı kabul eder ve bir sonraki pakete geçer.",
+      "Duplikat ACK, NAK yerine kullanılır; gönderici mevcut paketi yeniden gönderir.",
+      "Zamanlayıcıyı iptal eder.",
+      "Üst katmandan yeni veri ister."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Duplikat ACK başarı değil hata sinyalidir.",
+      "Doğru! rdt2.2'de NAK yoktur. Bunun yerine alıcı, hata durumunda bir önceki doğru paketin sıra numarasını içeren ACK gönderir. Gönderici duplikat ACK alırsa NAK almış gibi mevcut paketi yeniden iletir.",
+      "Yanlış. Duplikat ACK zamanlayıcıyı iptal etmez.",
+      "Yanlış. Duplikat ACK yeniden gönderim tetikler, yeni veri isteği değil."
+    ]
+  },
+  {
+    "question": "İnternet'in 'best-effort' servis modelinde hangi garanti YOKTUR?",
+    "options": [
+      "Paketlerin en kısa yoldan gönderilmesi",
+      "Paket teslim garantisi, gecikme garantisi ve bant genişliği garantisi",
+      "Paketin adreslenmesi",
+      "Checksum hesaplanması"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. En kısa yol garantisi de tam anlamıyla yoktur.",
+      "Doğru! Best-effort modelinde; paket teslim, minimum gecikme ve minimum bant genişliği garantisi yoktur. Paketler kaybolabilir, gecikmeli veya sırasız gelebilir.",
+      "Yanlış. IP adresleme zorunludur ama garanti farklı bir kavramdır.",
+      "Yanlış. Checksum hata tespiti mekanizmasıdır, servis garantisiyle aynı değil."
+    ]
+  }
+]

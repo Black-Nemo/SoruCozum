@@ -1,0 +1,402 @@
+[
+  {
+    "question": "Verilerin dağılımlarını analiz etmek için kullanılan ve genellikle küçük ya da orta büyüklükteki veriler için tercih edilen grafik türü aşağıdakilerden hangisidir?",
+    "options": [
+      "Nokta grafiği",
+      "Kök-yaprak grafiği",
+      "Pasta grafiği",
+      "Zaman serisi grafiği"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Nokta grafiği verileri görselleştirmede kullanılsa da sunumda bu özellik kök-yaprak için vurgulanmıştır.",
+      "Doğru! Kök-yaprak grafiği, dağılım analizinde küçük ve orta büyüklükteki veriler için oldukça etkilidir.",
+      "Yanlış. Pasta grafiği, verilerin bir bütün içindeki oranlarını göstermek için kullanılır.",
+      "Yanlış. Zaman serisi grafiği verilerin zamana göre değişimini gösterir."
+    ]
+  },
+  {
+    "question": "Çizgi grafiğinde (Line graph) y ekseni (dikey eksen) genellikle aşağıdakilerden hangisini temsil eder?",
+    "options": [
+      "Zaman periyotlarını",
+      "Kümülatif oranları",
+      "Frekans noktalarını",
+      "Veri değerlerini"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Zaman periyotları genellikle zaman serisi grafiklerinde yatay eksende olur.",
+      "Yanlış. Kümülatif oranlar ogive grafiğinde (kümülatif frekans poligonu) kullanılır.",
+      "Doğru! Çizgi grafiğinde yatay eksen veri değerlerinden, dikey eksen (y ekseni) ise frekans noktalarından oluşur.",
+      "Yanlış. Veri değerleri çizgi grafiğinde x ekseninde (yatay eksen) yer alır."
+    ]
+  },
+  {
+    "question": "Histogram grafiği ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      "Bitişik kutuların yatay veya dikey eksende gösterilmesidir.",
+      "Kutular (çubuklar) arasında belirgin ayrık boşluklar bulunur.",
+      "Verinin nasıl dağıldığı hakkında bilgi verir.",
+      "Eksenlerden biri veri değerlerinden, diğeri ise frekans veya göreceli frekans değerinden oluşur."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Histogram gerçekten de bitişik kutulardan oluşur. Bu ifade doğrudur.",
+      "Doğru! Histogramdaki kutular birbirine bitişiktir. Arasında boşluklar olan grafik 'Çubuk Grafiği'dir.",
+      "Yanlış. Histogramın temel amaçlarından biri verinin dağılımını göstermektir.",
+      "Yanlış. Bu ifade histogramın eksen yapısını doğru bir şekilde açıklar."
+    ]
+  },
+  {
+    "question": "Bir örneklemde frekansı (f) 15 ve toplam örneklem boyutu (n) 100 olan bir sınıfın göreceli frekansı (rf) kaçtır?",
+    "options": [
+      "0.15",
+      "15",
+      "1.5",
+      "0.015"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Göreceli frekans (rf) = f / n formülü ile hesaplanır. 15 / 100 = 0.15 eder.",
+      "Yanlış. Bu sadece sınıfın frekansıdır (f).",
+      "Yanlış. Formül f/n şeklindedir, 15/10 değil.",
+      "Yanlış. 15 / 1000 olsaydı bu sonuç çıkardı."
+    ]
+  },
+  {
+    "question": "Verilerin zamana göre değişimini incelemek için kullanılan, yatay eksenin zamanı ve dikey eksenin veri değerlerini gösterdiği grafik türü hangisidir?",
+    "options": [
+      "Frekans poligonu",
+      "Zaman serisi grafikleri",
+      "Çubuk grafiği",
+      "Kutu grafiği"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Frekans poligonu frekans dağılımını gösterir.",
+      "Doğru! Zaman serisi grafikleri (Time series) verilerin zaman içindeki değişimini göstermek için tasarlanmıştır.",
+      "Yanlış. Çubuk grafiği genellikle kategorik verileri özetlemek için kullanılır.",
+      "Yanlış. Kutu grafiği, verilerin çeyrekliklerini ve aykırı değerlerini göstermek içindir."
+    ]
+  },
+  {
+    "question": "Veri setindeki birinci çeyreklik (Q1) verilerin yüzde kaçlık dilimini temsil eder?",
+    "options": [
+      "%10",
+      "%50",
+      "%25",
+      "%75"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. %10'luk dilimi ifade etmez.",
+      "Yanlış. %50'lik dilim ikinci çeyrekliğe (Q2) veya medyana karşılık gelir.",
+      "Doğru! Birinci çeyreklik, verilerin ilk yüzde 25'lik kısmını belirtir.",
+      "Yanlış. %75'lik dilim üçüncü çeyrekliğe (Q3) karşılık gelir."
+    ]
+  },
+  {
+    "question": "Aşağıdakilerden hangisi bir veri setinin tam orta noktasını temsil eder ve 2. çeyreklik (Q2) ile aynı anlamı taşır?",
+    "options": [
+      "Varyans",
+      "Mod",
+      "Aritmetik Ortalama",
+      "Medyan"
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. Varyans bir dağılım ölçüsüdür, orta nokta değil.",
+      "Yanlış. Mod en çok tekrar eden değerdir, her zaman ortada olmak zorunda değildir.",
+      "Yanlış. Ortalama verilerin toplamının adede bölümüdür, aykırı değerlerden etkilenir ve tam %50 noktası olmayabilir.",
+      "Doğru! Medyan (Q2), veriler sıralandığında tam ortadaki (yüzde 50'nci) değerdir."
+    ]
+  },
+  {
+    "question": "Çeyreklikler arası aralık (IQR) hangi matematiksel işlemle bulunur ve verinin hangi kısmını ifade eder?",
+    "options": [
+      "Q3 + Q1 / Orta yarısı",
+      "Q3 - Q1 / Orta yarısı",
+      "Q4 - Q1 / Tamamı",
+      "Q2 - Q1 / Alt yarısı"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Çeyreklikler arası açıklık fark alınarak bulunur, toplanarak değil.",
+      "Doğru! IQR = Q3 - Q1 formülü ile hesaplanır ve verinin merkezdeki %50'sini (orta yarısını) kapsar.",
+      "Yanlış. Bu, tam aralığı (Range) bulmaya benzer bir yaklaşımdır.",
+      "Yanlış. Bu sadece Q1 ile medyan arasındaki aralığı verir."
+    ]
+  },
+  {
+    "question": "Kutu grafiğinde (Box plot) potansiyel bir 'aykırı değer' (outlier) olmasından şüphelenilen veriler hangi sınırların dışında kalır?",
+    "options": [
+      "Ortalamanın 1 standart sapma altı veya üstü",
+      "Sadece Q3 + 1.5 * IQR değerinden fazla olanlar",
+      "Q1 - 1.5 * IQR değerinden az veya Q3 + 1.5 * IQR değerinden fazla olanlar",
+      "Minimum ve Maksimum değerler dışındakiler"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Aykırı değer hesabı standart sapma ile değil çeyreklikler aralığı ile tanımlanmıştır.",
+      "Yanlış. Aykırı değerler alt sınırın altında da olabilir, sadece üst sınıra bakılmaz.",
+      "Doğru! 1.5 * IQR kuralına göre alt sınır (Q1 - 1.5*IQR) altındaki ve üst sınır (Q3 + 1.5*IQR) üstündeki değerler olası aykırı değerlerdir.",
+      "Yanlış. Zaten bir veri setinde minimum ve maksimum dışında bir değer bulunamaz."
+    ]
+  },
+  {
+    "question": "k'ıncı yüzdelik hesaplama formülü olan i = (k/100)*(n+1) sonucunda 'i' sayısı bir tam sayı çıkmazsa ne yapılır?",
+    "options": [
+      "Sadece aşağı yuvarlanıp veri bulunur.",
+      "Alt ve üste yuvarlanır ve o iki pozisyondaki verilerin ortalaması alınır.",
+      "Sadece yukarı yuvarlanır.",
+      "Yüzdelik değeri hesaplanamaz kabul edilir."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Sadece aşağıya yuvarlamak eksik bilgi verir.",
+      "Doğru! Tam sayı çıkmadığında değer alt ve üst tam sayıya yuvarlanır ve o konumlardaki iki verinin ortalaması alınarak yüzdelik hesaplanır.",
+      "Yanlış. Sadece yukarı yuvarlanarak değil ortalama alınarak bulunur.",
+      "Yanlış. Veriler arasında bir noktaya denk gelen yüzdelikler bu yöntemle gayet hesaplanabilir."
+    ]
+  },
+  {
+    "question": "Kutu grafiği (Box plot) oluşturulurken merkezde bulunan 'kutu' kısmının sol (alt) ve sağ (üst) sınırlarını hangi değerler oluşturur?",
+    "options": [
+      "Aykırı Değerler",
+      "Minimum ve Maksimum",
+      "Birinci Çeyreklik (Q1) ve Üçüncü Çeyreklik (Q3)",
+      "Ortalama ve Mod"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Aykırı değerler bıyıkların dışında gösterilir.",
+      "Yanlış. Minimum ve maksimum değerleri tipik olarak grafikteki bıyıkların (whiskers) uçlarıdır.",
+      "Doğru! Kutunun sınırlarını %25'lik dilim olan Q1 ve %75'lik dilim olan Q3 oluşturur.",
+      "Yanlış. Ortalama ve mod kutu grafiğinin ana yapı taşlarından değildir."
+    ]
+  },
+  {
+    "question": "Kutu grafiğinde (Box plot) verilerin medyanı (2. çeyreklik) nerede konumlandırılır?",
+    "options": [
+      "Kutunun dışında nokta olarak",
+      "Kutunun içinde bir çizgi (kesikli veya düz) olarak",
+      "Sol bıyığın en ucunda",
+      "Kutunun tam sağ çizgisinde"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Medyan değer her zaman Q1 ile Q3 aralığında yani kutunun içinde veya sınırındadır.",
+      "Doğru! Kutu içindeki ortadaki çizgi (ikinci çeyreklik) medyanı gösterir.",
+      "Yanlış. Sol bıyığın en ucu minimum veya aykırı olmayan en küçük değeri gösterir.",
+      "Yanlış. Sağ çizgi üçüncü çeyreklik olan Q3'ü gösterir."
+    ]
+  },
+  {
+    "question": "Aşağıdakilerden hangisi bir 'Merkezi Eğilim Ölçüsü' (Measures of Central Tendency) değildir?",
+    "options": [
+      "Ortalama",
+      "Varyans",
+      "Medyan",
+      "Mod"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Ortalama çok temel bir merkezi eğilim ölçüsüdür.",
+      "Doğru! Varyans verilerin nereye toplandığını değil, ne kadar yayıldığını gösteren bir 'Merkezi Dağılım Ölçüsü'dür.",
+      "Yanlış. Medyan verilerin orta noktasını bulan bir merkezi eğilim ölçüsüdür.",
+      "Yanlış. Mod en çok tekrar eden değer olarak merkeze dair bilgi verir."
+    ]
+  },
+  {
+    "question": "Veri setinde uç değerler veya aykırı değerler (outliers) bulunduğunda, verinin merkezini tahmin etmek için aşağıdaki ölçülerden hangisi genellikle daha güvenilirdir?",
+    "options": [
+      "Standart Sapma",
+      "Dağılım Aralığı (Range)",
+      "Aritmetik Ortalama",
+      "Medyan"
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. Standart sapma bir dağılım ölçüsüdür.",
+      "Yanlış. Dağılım aralığı (Max-Min) doğrudan uç değerlere bağlıdır, merkeze değil.",
+      "Yanlış. Aritmetik ortalama aykırı değerlerden çok kolay etkilenerek merkezin sağa veya sola kaymasına sebep olur.",
+      "Doğru! Medyan aykırı değerlerin kesin sayısal değerlerinden etkilenmediği için bu durumlarda en iyi merkezi ölçüdür."
+    ]
+  },
+  {
+    "question": "İstatistik terminolojisinde 'Mod' (Tepe Değeri) kavramının tanımı aşağıdakilerden hangisidir?",
+    "options": [
+      "Verilerin en büyük ve en küçük değerleri arasındaki farktır.",
+      "Verilerin tümünün toplanıp adetlerine bölünmesidir.",
+      "Bir örneklemdeki frekansı en yüksek olan veri değeridir.",
+      "Verilerin tam orta noktasında yer alan değerdir."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bu dağılım aralığının (Range) tanımıdır.",
+      "Yanlış. Bu tanım aritmetik ortalamaya aittir.",
+      "Doğru! Mod, bir veri kümesinde en çok tekrar eden (frekansı en yüksek) sayıdır.",
+      "Yanlış. Bu tanım medyan için geçerlidir."
+    ]
+  },
+  {
+    "question": "İstatistiksel analizlerde 'Popülasyon Ortalaması' (Evren Ortalaması) hangi sembolle gösterilir?",
+    "options": [
+      "x̄ (x-bar)",
+      "s",
+      "σ (sigma)",
+      "μ (mü)"
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. x̄ (x-bar) örneklem ortalamasını sembolize eder.",
+      "Yanlış. s harfi örneklem standart sapmasını gösterir.",
+      "Yanlış. σ (sigma) popülasyon standart sapmasını ifade eder.",
+      "Doğru! Yunan alfabesindeki μ (mü) harfi popülasyon ortalamasını (parametreyi) göstermek için kullanılır."
+    ]
+  },
+  {
+    "question": "Simetrik bir veri dağılımında (çan eğrisi gibi), verilerin Ortalama, Medyan ve Mod'u arasındaki büyüklük ilişkisi nasıldır?",
+    "options": [
+      "Ortalama < Medyan < Mod",
+      "Ortalama = Medyan = Mod",
+      "Ortalama > Medyan > Mod",
+      "Medyan her zaman ortalamanın iki katıdır"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu durum sola çarpık (left-skewed) dağılımlarda görülür.",
+      "Doğru! Eğer dağılım tam simetrikse ortalama, medyan ve mod aynı (eşit) değere sahiptir.",
+      "Yanlış. Bu durum sağa çarpık (right-skewed) dağılımlarda görülür.",
+      "Yanlış. Aralarında böyle doğrudan bir çarpan ilişkisi bulunmaz."
+    ]
+  },
+  {
+    "question": "Sola eğik (sola çarpık) bir veri dağılımı (Left Skewed) söz konusu olduğunda, aşağıdaki eşitsizliklerden hangisi her zaman geçerlidir?",
+    "options": [
+      "Ortalama < Medyan < Mod",
+      "Ortalama > Medyan > Mod",
+      "Ortalama = Medyan = Mod",
+      "Medyan > Mod > Ortalama"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Sola çarpık dağılımlarda uç değerler solu çektiği için Ortalama medyandan daha küçük kalır, mod ise tepede en sağdadır.",
+      "Yanlış. Bu kural sağa eğik dağılımlar içindir.",
+      "Yanlış. Bu simetrik dağılımlar için geçerlidir.",
+      "Yanlış. Sola eğik bir yapıda Mod genellikle en büyüktür (frekans tepesidir)."
+    ]
+  },
+  {
+    "question": "Verilerin uzun kuyruğunun sağa uzandığı 'Sağa çarpık' (Right Skewed) bir dağılımda merkezi eğilim ölçüleri nasıl sıralanır?",
+    "options": [
+      "Ortalama = Medyan = Mod",
+      "Ortalama > Medyan > Mod",
+      "Ortalama < Medyan < Mod",
+      "Mod > Ortalama > Medyan"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu eşitlik simetrik grafiklerdedir.",
+      "Doğru! Sağa uzanan kuyruktaki büyük sayılar ortalamayı sağa çektiği için Ortalama, Medyandan ve Mod'dan daha büyük hale gelir.",
+      "Yanlış. Bu sola çarpık (negatif çarpık) yapıların özelliğidir.",
+      "Yanlış. Mod genelde sola yığılan kısımda kaldığı için en küçükleri olur."
+    ]
+  },
+  {
+    "question": "Aşağıdaki kavramlardan hangisi verilerin nasıl yayıldığını ölçmek için kullanılan bir 'Merkezi Dağılım Ölçüsü'dür?",
+    "options": [
+      "Standart sapma",
+      "Göreceli frekans",
+      "Medyan",
+      "Mod"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Standart sapma, dağılım aralığı ve varyans gibi, verilerin merkeze göre yayılımını ölçen bir merkezi dağılım ölçüsüdür.",
+      "Yanlış. Göreceli frekans belirli bir sınıfın tüm veriler içindeki oranını belirtir.",
+      "Yanlış. Medyan bir merkezi dağılım değil, merkezi eğilim (konum) ölçüsüdür.",
+      "Yanlış. Mod bir merkezi eğilim ölçüsüdür."
+    ]
+  },
+  {
+    "question": "Bir veri setindeki varyasyonun en basit ölçüsü olan 'Dağılım Aralığı' (Range) nasıl hesaplanır?",
+    "options": [
+      "Tüm sapmaların karelerinin toplanmasıyla.",
+      "Orta noktanın (Medyan) karesi alınarak.",
+      "Q3 değerinden Q1 değerinin çıkarılmasıyla.",
+      "En büyük veri değerinden en küçük veri değeri çıkarılarak."
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. Bu yöntem varyans (veya sapma kareleri toplamı) için kullanılır.",
+      "Yanlış. Medyanın karesi istatistiksel bir dağılım ölçüsü oluşturmaz.",
+      "Yanlış. Bu formül Çeyreklikler Arası Aralığı (IQR) verir, genel dağılım aralığını değil.",
+      "Doğru! Dağılım aralığı x_max - x_min formülüyle, uç değerlerin farkı olarak bulunur."
+    ]
+  },
+  {
+    "question": "Varyans ile Standart Sapma arasındaki matematiksel ilişki aşağıdakilerden hangisidir?",
+    "options": [
+      "Varyans, standart sapmanın iki katıdır.",
+      "Standart sapma, varyansın karesidir.",
+      "Varyans, standart sapmanın karesidir.",
+      "İki kavram birbirinden tamamen bağımsızdır."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Aralarındaki ilişki doğrusal bir katlama değil, üslüdür.",
+      "Yanlış. Aksine varyans, standart sapmanın karesidir (s^2). Standart sapma (s) varyansın kareköküdür.",
+      "Doğru! Varyans her zaman standart sapmanın karesine eşittir.",
+      "Yanlış. İkisi de aynı temele dayalı merkezi dağılım ölçüleridir ve formülleri çok yakındır."
+    ]
+  },
+  {
+    "question": "Örneklem varyansı formülünde, paydadaki 'n' (veri sayısı) yerine neden '(n-1)' böleni kullanılır?",
+    "options": [
+      "Örneklemdeki hata payını sıfıra indirmek için.",
+      "Popülasyon varyansının daha iyi ve yansız (unbiased) bir tahminini verdiği için.",
+      "Standart sapma formülünü kök dışına çıkarmayı kolaylaştırmak için.",
+      "Aykırı değerlerin etkisini matematiksel olarak silmek için."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Hata payını tamamen sıfıra indirmek istatistiksel olarak mümkün değildir.",
+      "Doğru! n-1'e bölmek (serbestlik derecesi), popülasyon varyansını tahmin ederken daha az sapmalı (daha doğru) bir sonuç verir.",
+      "Yanlış. Karekök işlemiyle alakası yoktur.",
+      "Yanlış. Aykırı değerleri yok eden bir işlem değildir, onları içerir."
+    ]
+  },
+  {
+    "question": "Z-değeri (Z-score) olarak bilinen standart skor, temel olarak istatistikte neyi ifade eder?",
+    "options": [
+      "Bir verinin popülasyonun tam olarak yüzde kaçlık dilimine girdiğini.",
+      "Veri setinin toplam medyan sapmasını.",
+      "Aykırı verilerin sayısını.",
+      "Belirli bir verinin ortalamadan kaç standart sapma uzakta olduğunu."
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. Z-değeri doğrudan yüzdeliği belirtmez (ancak z-tablosu kullanılarak o sonuca ulaşılabilir).",
+      "Yanlış. Toplam medyan sapmasıyla ilişkili değildir.",
+      "Yanlış. Aykırı veri sayısını saymaz, sadece bir konum ölçüsüdür.",
+      "Doğru! Z-değeri hesaplaması (x - μ) / σ ile bir verinin ortalamaya göre standart sapma cinsinden konumunu gösterir."
+    ]
+  },
+  {
+    "question": "Chebyshev Kuralına göre, herhangi bir veri dağılımında (şekli ne olursa olsun), verilerin en az yüzde 75'i ortalamadan kaç standart sapma uzaklık mesafesinde bulunur?",
+    "options": [
+      "1 standart sapma",
+      "2 standart sapma",
+      "3 standart sapma",
+      "4.5 standart sapma"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. 1 standart sapma Chebyshev Kuralı'nda verimli bir yüzdelik aralık tanımlamaz (hesaba göre %0 olur).",
+      "Doğru! Chebyshev Kuralına göre verilerin en az %75'i ortalamadan 2 standart sapma uzakta olan aralık içinde bulunur.",
+      "Yanlış. 3 standart sapma aralığında verilerin en az yüzde 89'u bulunur.",
+      "Yanlış. 4.5 standart sapma uzaklığında verilerin en az yüzde 95'i bulunur."
+    ]
+  }
+]

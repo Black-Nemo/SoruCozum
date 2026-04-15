@@ -1,0 +1,434 @@
+[
+  {
+    "question": "1. İnternet en doğru şekilde nasıl tanımlanır?",
+    "options": [
+      "Tek bir büyük bilgisayar",
+      "Birbirine bağlı ağlar sistemi",
+      "Sadece kablosuz iletişim",
+      "Sadece veri merkezlerinden oluşur"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. İnternet merkezi tek bir bilgisayar değil, dağıtık bir yapıdır.",
+      "Doğru! İnternet, dünya çapında cihazları bağlayan 'ağların ağı' yani birbirine bağlı ağlar sistemidir.",
+      "Yanlış. İnternet hem kablolu (fiber, bakır) hem de kablosuz bağlantıları içerir.",
+      "Yanlış. Veri merkezlerinin yanı sıra yönlendiriciler (router), son kullanıcı cihazları vb. birçok bileşen içerir."
+    ]
+  },
+  {
+    "question": "2. Protokol nedir?",
+    "options": [
+      "Donanım bileşeni",
+      "Veri depolama yöntemi",
+      "İletişim kuralları",
+      "Yazılım dili"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Protokol fiziksel bir cihaz veya donanım değildir.",
+      "Yanlış. Verilerin nasıl saklanacağı ile değil, nasıl iletileceği ile ilgilidir.",
+      "Doğru! Protokol, ağ üzerindeki cihazların birbiriyle nasıl iletişim kuracağını belirleyen kurallar dizisidir.",
+      "Yanlış. Bir programlama dili değil, standartlar ve kurallar bütünüdür."
+    ]
+  },
+  {
+    "question": "3. Packet switching'de veri nasıl iletilir?",
+    "options": [
+      "Tek parça halinde",
+      "Paketlere bölünerek",
+      "Analog sinyal ile",
+      "Sabit bağlantı ile"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Veri tek ve büyük bir blok halinde gönderilmez.",
+      "Doğru! Veri, ağ üzerinden daha verimli iletilebilmesi için küçük parçalara (paketlere) bölünür.",
+      "Yanlış. Veri dijital veya analog ortamlardan geçebilir, ancak asıl olay verinin mantıksal olarak bölünmesidir.",
+      "Yanlış. Sabit (dedicated) bağlantı Circuit Switching'in özelliğidir."
+    ]
+  },
+  {
+    "question": "4. Store-and-forward neyi ifade eder?",
+    "options": [
+      "Paketleri saklamadan iletmek",
+      "Paketin tamamını alıp sonra iletmek",
+      "Şifreleme yapmak",
+      "Veri sıkıştırmak"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu Cut-through switching mekanizmasına daha yakındır.",
+      "Doğru! Yönlendirici (router), paketin tamamını bit bit alır (store), hata kontrolü yapar ve sonraki düğüme iletir (forward).",
+      "Yanlış. Güvenlik ve şifreleme işlemiyle doğrudan ilgisi yoktur.",
+      "Yanlış. Veriyi sıkıştırma değil, iletim yöntemiyle alakalıdır."
+    ]
+  },
+  {
+    "question": "5. Paket kaybı ne zaman oluşur?",
+    "options": [
+      "Hız yüksekse",
+      "Buffer dolarsa",
+      "Paket küçükse",
+      "Router boşsa"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Yüksek hız tek başına paket kaybına neden olmaz.",
+      "Doğru! Yönlendiricinin (router) kuyruğu (buffer) kapasitesini aştığında, yeni gelen paketler düşürülür (kaybedilir).",
+      "Yanlış. Paketin boyutu değil, ağdaki trafik yoğunluğu ve buffer kapasitesi belirleyicidir.",
+      "Yanlış. Router boşsa paket hemen işlenir, kayıp olmaz."
+    ]
+  },
+  {
+    "question": "6. Circuit switching'in özelliği nedir?",
+    "options": [
+      "Kaynak paylaşımı",
+      "Dedicated bağlantı",
+      "Paket kaybı",
+      "Gecikme yok"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Kaynak paylaşımı (istatistiksel çoklama) Packet Switching'e aittir.",
+      "Doğru! İletişim süresince uçtan uca özel ve ayrılmış (dedicated) bir yol tahsis edilir.",
+      "Yanlış. Ayrılmış bir yol olduğu için tıkanıklık kaynaklı paket kaybı yaşanmaz.",
+      "Yanlış. İletim ve yayılım gecikmesi (transmission, propagation) doğası gereği yine vardır."
+    ]
+  },
+  {
+    "question": "7. FDM neyin kısaltmasıdır?",
+    "options": [
+      "Fast Data Method",
+      "Frequency Division Multiplexing",
+      "Frame Data Model",
+      "Fiber Digital Mode"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Böyle bir ağ terimi yaygın değildir.",
+      "Doğru! FDM (Frekans Bölmeli Çoklama), frekans bandının farklı kanallara bölünerek paylaşıldığı bir yöntemdir.",
+      "Yanlış. Uydurma bir terimdir.",
+      "Yanlış. Fiber optikle ilgili olsa da kısaltmanın açılımı bu değildir."
+    ]
+  },
+  {
+    "question": "8. TDM neyi ifade eder?",
+    "options": [
+      "Zaman bölmeli çoklama",
+      "Veri sıkıştırma",
+      "Paket bölme",
+      "Hata kontrolü"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! TDM (Time Division Multiplexing), bağlantı süresinin sabit zaman dilimlerine (slot) bölünerek paylaştırılmasıdır.",
+      "Yanlış. Veri boyutunu küçültmekle ilgisi yoktur.",
+      "Yanlış. Paket bölme, Packet Switching ile ilgili bir konsepttir.",
+      "Yanlış. TDM bir hata kontrol protokolü değildir."
+    ]
+  },
+  {
+    "question": "9. Packet switching'in avantajı nedir?",
+    "options": [
+      "Kaynak israfı",
+      "Sabit hız",
+      "Kaynak paylaşımı",
+      "Dedicated bağlantı"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Aksine, circuit switching'e kıyasla kaynak israfını önler.",
+      "Yanlış. Ağ trafiğine göre hız ve gecikme değişkenlik gösterebilir.",
+      "Doğru! Bağlantı hattı aktif kullanıcılar arasında dinamik olarak paylaşıldığı için daha verimlidir.",
+      "Yanlış. Dedicated bağlantı (adanmış yol) Circuit Switching'in özelliğidir."
+    ]
+  },
+  {
+    "question": "10. Transmission delay neye bağlıdır?",
+    "options": [
+      "Mesafe",
+      "Paket boyutu ve bant genişliği",
+      "Kullanıcı sayısı",
+      "Router tipi"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Mesafe, Propagation delay'i (yayılım gecikmesi) etkiler.",
+      "Doğru! İletim gecikmesi (L/R), paketin uzunluğu (L) ve bağlantı hattının kapasitesine/bant genişliğine (R) bağlıdır.",
+      "Yanlış. Kullanıcı sayısı doğrudan queueing (kuyruk) gecikmesini etkiler.",
+      "Yanlış. Router'ın donanımı daha çok processing (işlem) gecikmesini belirler."
+    ]
+  },
+  {
+    "question": "11. Propagation delay neye bağlıdır?",
+    "options": [
+      "Paket sayısı",
+      "Mesafe ve sinyal hızı",
+      "Bant genişliği",
+      "CPU"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Paket sayısı iletim veya kuyruk gecikmesinde etkilidir.",
+      "Doğru! Yayılım gecikmesi (d/s), iki nokta arasındaki fiziksel mesafe (d) ve sinyalin ortamdaki yayılma hızına (s) bağlıdır.",
+      "Yanlış. Bant genişliği transmission delay'i (iletim gecikmesi) etkiler.",
+      "Yanlış. CPU hızı processing delay (işlem gecikmesi) ile ilgilidir."
+    ]
+  },
+  {
+    "question": "12. Queueing delay ne zaman artar?",
+    "options": [
+      "Trafik azsa",
+      "Trafik yoğunsa",
+      "Router boşsa",
+      "Paket küçükse"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Trafik az olduğunda paketler kuyrukta beklemeden hızla işlenir.",
+      "Doğru! Yönlendiriciye gelen paket hızı, iletim hızından yüksek olduğunda paketler kuyrukta bekler ve gecikme artar.",
+      "Yanlış. Router boşsa bekleme süresi sıfıra yakındır.",
+      "Yanlış. Paketin küçük olması işlemeyi hızlandırabilir, gecikmeyi azaltır."
+    ]
+  },
+  {
+    "question": "13. Throughput nedir?",
+    "options": [
+      "Paket sayısı",
+      "Aktarım hızı",
+      "Mesafe",
+      "Hata oranı"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Toplam paket sayısı değil, birim zamandaki aktarım miktarıdır.",
+      "Doğru! Throughput, alıcı ve gönderici arasında başarılı bir şekilde aktarılan verinin hızıdır (genellikle bps cinsinden).",
+      "Yanlış. Mesafe, gecikmeyi etkileyen bir faktördür.",
+      "Yanlış. Hata oranı throughput'u etkilese de kendisi değildir."
+    ]
+  },
+  {
+    "question": "14. Aşağıdakilerden hangisi güvenlik önlemidir?",
+    "options": [
+      "Firewall",
+      "Buffer",
+      "Router",
+      "Switch"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Firewall (Güvenlik Duvarı), ağa giren ve çıkan trafiği filtreleyerek güvenlik sağlayan sistemdir.",
+      "Yanlış. Buffer, verileri geçici olarak depolayan bir bellek alanıdır.",
+      "Yanlış. Router veri paketlerini yönlendiren ağ cihazıdır.",
+      "Yanlış. Switch yerel ağdaki (LAN) cihazları birbirine bağlayan ağ donanımıdır."
+    ]
+  },
+  {
+    "question": "15. Katmanlı mimarinin avantajı nedir?",
+    "options": [
+      "Karmaşıklık artar",
+      "Modülerlik sağlar",
+      "Hız düşer",
+      "Veri kaybı olur"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Aksine sistemi parçalara bölerek karmaşıklığı yönetilebilir hale getirir.",
+      "Doğru! Ağ işlevlerini mantıksal katmanlara bölerek, bir katmanda yapılan değişikliğin diğerlerini etkilememesini (modülerlik) sağlar.",
+      "Yanlış. Hızdan ziyade mimari organizasyonla ilgilidir.",
+      "Yanlış. Güvenilmez bir tasarım olmadığı sürece veri kaybına doğrudan yol açmaz."
+    ]
+  },
+  {
+    "question": "16. Store-and-forward mekanizmasında bir router paketi ne zaman iletmeye başlar?",
+    "options": [
+      "İlk bit gelir gelmez",
+      "Paketin yarısı geldiğinde",
+      "Paket tamamen geldikten sonra",
+      "Buffer dolduğunda"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bu durum 'cut-through' switching yöntemine aittir.",
+      "Yanlış. Yönlendirici paketin yalnızca bir kısmıyla işlem yapmaz.",
+      "Doğru! Router paketin tüm bitlerini alır, doğruluk kontrolü (checksum) yapar ve ancak ondan sonra sonraki linke iletmeye başlar.",
+      "Yanlış. Buffer'ın dolmasını beklemek zorunlu değildir, paketin gelmesi yeterlidir."
+    ]
+  },
+  {
+    "question": "17. Aşağıdakilerden hangisi propagation delay'i etkilemez?",
+    "options": [
+      "Fiziksel mesafe",
+      "Sinyalin yayılma hızı",
+      "Paket boyutu",
+      "Ortam türü (fiber, bakır vb.)"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Fiziksel mesafe arttıkça yayılım gecikmesi artar.",
+      "Yanlış. Sinyalin yayılma hızı formülün (d/s) paydasındadır, doğrudan etkilidir.",
+      "Doğru! Paket boyutu 'transmission delay'i etkiler, ışık veya elektrik sinyalinin kablo içindeki seyahat hızını (propagation) değiştirmez.",
+      "Yanlış. Ortamın türü sinyalin fiziksel ortamdaki yayılma hızını (s) belirler."
+    ]
+  },
+  {
+    "question": "18. Transmission delay aşağıdaki formüllerden hangisiyle hesaplanır?",
+    "options": [
+      "d/s",
+      "L/R",
+      "R/L",
+      "La/R"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu, Propagation delay (yayılım gecikmesi) formülüdür (mesafe/hız).",
+      "Doğru! L (Paket boyutu - bit) bölü R (Linkin bant genişliği - bps) formülüyle hesaplanır.",
+      "Yanlış. Tam tersidir. Bant genişliğinin boyuta bölünmesi bir anlam ifade etmez.",
+      "Yanlış. Bu 'Traffic intensity' (Trafik yoğunluğu) formülüne daha çok benzer (a = ortalama paket varış hızı)."
+    ]
+  },
+  {
+    "question": "19. Packet switching'in circuit switching'e göre temel avantajı nedir?",
+    "options": [
+      "Dedicated bağlantı",
+      "Kaynakların verimli paylaşımı",
+      "Gecikmenin sıfır olması",
+      "Paket kaybının olmaması"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Dedicated bağlantı (özel hat) Circuit Switching'in özelliğidir.",
+      "Doğru! İstatistiksel çoklama sayesinde ağ kapasitesi, ihtiyacı olan kullanıcılar tarafından esnek ve verimli bir şekilde paylaşılır.",
+      "Yanlış. Packet switching'de sıraya girme (queueing) gecikmeleri oluşabilir.",
+      "Yanlış. Packet switching'de ağ yoğunluğunda paket kayıpları görülebilir."
+    ]
+  },
+  {
+    "question": "20. Throughput hangi durumda link kapasitesine eşit olur?",
+    "options": [
+      "Kuyruk doluyken",
+      "Darboğaz yoksa",
+      "Paket kaybı varsa",
+      "Delay yüksekse"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Kuyruk doluysa paket kayıpları başlar ve verim düşer.",
+      "Doğru! Ağın herhangi bir noktasında bir kapasite darboğazı (bottleneck) yoksa, uçtan uca throughput, hattın kapasitesine (bant genişliğine) eşit olabilir.",
+      "Yanlış. Paket kayıpları yeniden iletimlere sebep olur, bu da throughput'u düşürür.",
+      "Yanlış. Gecikmenin yüksek olması genellikle verimi olumsuz etkiler."
+    ]
+  },
+  {
+    "question": "21. Propagation delay ile transmission delay arasındaki temel fark nedir?",
+    "options": [
+      "İkisi de mesafeye bağlıdır",
+      "Biri mesafeye, diğeri paket boyutuna bağlıdır",
+      "İkisi de bant genişliğine bağlıdır",
+      "Aynı kavramdır"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Sadece propagation delay mesafeye bağlıdır.",
+      "Doğru! Propagation delay sinyalin mesafeyi kat etme süresidir (d/s). Transmission delay ise tüm paketin hatta çıkarılması süresidir ve paket boyutu/kapasite (L/R) ile hesaplanır.",
+      "Yanlış. Sadece transmission delay bant genişliğine (kapasiteye) bağlıdır.",
+      "Yanlış. Tamamen farklı gecikme türleridir."
+    ]
+  },
+  {
+    "question": "22. Circuit switching hangi tür trafik için daha uygundur?",
+    "options": [
+      "Burst veri",
+      "Sürekli ve sabit veri akışı",
+      "Düzensiz trafik",
+      "Küçük dosyalar"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Anlık patlamalar yapan (bursty) veriler için Packet Switching daha esnektir.",
+      "Doğru! Ses ve video görüşmeleri gibi hızı sabit, kesintisiz veri akışı gerektiren uygulamalar için ayrılmış (dedicated) hatlar sunan Circuit switching idealdir.",
+      "Yanlış. Düzensiz trafik için kaynak tahsisi yapmak israfa yol açar.",
+      "Yanlış. Küçük dosyalar için bağlantı kurma (setup) maliyeti aktarım süresinden daha uzun sürebilir."
+    ]
+  },
+  {
+    "question": "23. Paket boyutu artarsa hangi delay artar?",
+    "options": [
+      "Propagation",
+      "Transmission",
+      "Processing",
+      "Queueing"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Yayılım hızı fiziksel kurallara bağlıdır, paket boyutuna değil.",
+      "Doğru! İletim gecikmesi formülü L/R'dir. L (Paket boyutu) artarsa, yönlendiricinin paketi fiziksel hatta çıkarma süresi uzar.",
+      "Yanlış. Yönlendiricinin paket başlığını inceleme süresi (işlem) genelde sabittir.",
+      "Yanlış. Trafik yoğunluğuna göre değişir, doğrudan ve formülasyon gereği ilk artan Transmission delay'dir."
+    ]
+  },
+  {
+    "question": "24. Eğer bir linkte R=100 Mbps ve paket boyutu L=1 Mbit ise transmission delay nedir?",
+    "options": [
+      "0.01 sn",
+      "0.1 sn",
+      "1 sn",
+      "10 sn"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Formül L/R'dir. (1 Mbit) / (100 Mbit/s) = 0.01 saniye.",
+      "Yanlış. Hesaplama hatası.",
+      "Yanlış. Hesaplama hatası.",
+      "Yanlış. Hesaplama hatası."
+    ]
+  },
+  {
+    "question": "25. R artarsa transmission delay ne olur?",
+    "options": [
+      "Artar",
+      "Azalır",
+      "Aynı kalır",
+      "Sonsuz olur"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. R payda kısmında olduğu için değer büyümez.",
+      "Doğru! R (Link kapasitesi / bant genişliği) arttığında, paketi hatta çıkarmak için geçen süre (L/R) matematiksel olarak kısalır.",
+      "Yanlış. İletim hızı arttığı için süre sabit kalamaz.",
+      "Yanlış. Değer sıfıra doğru yaklaşır, sonsuza gitmez."
+    ]
+  },
+  {
+    "question": "26. Mesafe azalırsa propagation delay ne olur?",
+    "options": [
+      "Artar",
+      "Azalır",
+      "Aynı kalır",
+      "Paket kaybı olur"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Formüle (d/s) göre mesafe (d) azalırsa sonuç artmaz.",
+      "Doğru! İki nokta arasındaki fiziksel mesafe (d) kısaldıkça, sinyalin o mesafeyi kat etmesi için gereken süre de azalır.",
+      "Yanlış. Süre direkt mesafeyle doğru orantılıdır.",
+      "Yanlış. Gecikmenin azalması paket kaybına yol açmaz."
+    ]
+  },
+  {
+    "question": "27. 2 router'lı bir ağda toplam transmission delay kaç kez oluşur?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "Router sayısına bağlı"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Her router atlaması (hop) veriyi tekrar hatta çıkarır.",
+      "Yanlış. Kaynaktan ilk router'a yapılan gönderim de sayılmalıdır.",
+      "Doğru! Ağ mimarisi (Kaynak -> Router 1 -> Router 2 -> Hedef) şeklindedir. Toplamda 3 ayrı link vardır (K-R1, R1-R2, R2-H). Her linkte veriyi hatta çıkarma (transmission) işlemi yaşandığı için 3 kez oluşur.",
+      "Yanlış. Sabit bir formülü vardır: Bağlantı sayısı (link) = Router sayısı + 1."
+    ]
+  }
+]

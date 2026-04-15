@@ -1,0 +1,402 @@
+[
+  {
+    "question": "Sürekli bir rastgele değişkenin belirli bir X=a noktasındaki olasılığı P(X=a) kaçtır?",
+    "options": [
+      "1",
+      "0.5",
+      "0",
+      "a'nın değerine bağlıdır"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Sürekli dağılımlarda tek bir noktanın olasılığı 1 olamaz.",
+      "Yanlış. Eğri altındaki toplam alanın yarısı değildir.",
+      "Doğru! Sürekli olasılık dağılımlarında tek bir noktanın olasılığı her zaman 0'dır, çünkü çizgi üzerinde bir alan oluşmaz.",
+      "Yanlış. a'nın değeri ne olursa olsun olasılık her zaman sıfırdır."
+    ]
+  },
+  {
+    "question": "Olasılık yoğunluk fonksiyonu (PDF) eğrisinin altında kalan toplam alan aşağıdakilerden hangisine eşittir?",
+    "options": [
+      "0",
+      "0.5",
+      "1",
+      "Sonsuz"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Toplam olasılık 0 olamaz.",
+      "Yanlış. Toplam alan her zaman tam olasılığı temsil eder.",
+      "Doğru! Tüm olasılıkların toplamını temsil ettiği için PDF eğrisi altındaki toplam alan her zaman 1'e eşittir.",
+      "Yanlış. Toplam olasılık sınırlıdır ve 1'e eşittir."
+    ]
+  },
+  {
+    "question": "X ~ U(a, b) şeklinde gösterilen Düzgün (Uniform) dağılımın olasılık yoğunluk fonksiyonu f(x) formülü nedir?",
+    "options": [
+      "1 / (a + b)",
+      "1 / (b - a)",
+      "a + b",
+      "(b - a) / 2"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Payda alt ve üst sınırın toplamı değildir.",
+      "Doğru! Düzgün dağılımda olayların gerçekleşme olasılığı eşittir ve 1 / (b - a) ile hesaplanır.",
+      "Yanlış. Bu sadece iki sınırın toplamıdır.",
+      "Yanlış. Bu, aralığın yarısını temsil eder ama PDF formülü değildir."
+    ]
+  },
+  {
+    "question": "Düzgün (Uniform) dağılımın beklenen değeri (ortalaması) aşağıdakilerden hangisi ile hesaplanır?",
+    "options": [
+      "(a + b) / 2",
+      "(b - a)^2 / 12",
+      "(b - a) / 2",
+      "a * b"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Düzgün dağılımın ortalaması, alt ve üst sınırların toplanıp ikiye bölünmesiyle bulunur.",
+      "Yanlış. Bu formül varyansın (Var(X)) hesaplanması içindir.",
+      "Yanlış. Aralık farkının yarısı ortalamayı vermez.",
+      "Yanlış. Çarpım formülü ortalama için kullanılmaz."
+    ]
+  },
+  {
+    "question": "Düzgün dağılıma sahip bir X rastgele değişkeninin varyansı Var(X) nasıl ifade edilir?",
+    "options": [
+      "(a + b)^2 / 12",
+      "(b - a)^2 / 12",
+      "(b - a) / 2",
+      "1 / (b - a)"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Formülde sınırların toplamı değil farkı kullanılır.",
+      "Doğru! Düzgün dağılımın varyans formülü (b - a)^2 / 12 şeklindedir.",
+      "Yanlış. Bu varyans değil, aralık uzunluğunun yarısıdır.",
+      "Yanlış. Bu olasılık yoğunluk fonksiyonunun f(x) değeridir."
+    ]
+  },
+  {
+    "question": "f(x) = 1/20 (0 ≤ X ≤ 20) olan bir düzgün dağılımda P(4 < X < 15) olasılığı kaçtır?",
+    "options": [
+      "11/20",
+      "1/20",
+      "15/20",
+      "4/20"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Olasılık bir alan hesabıdır. (15 - 4) * (1/20) = 11/20 bulunur.",
+      "Yanlış. Bu sadece f(x)'in sabit değeridir, aralığın olasılığı değildir.",
+      "Yanlış. Sadece üst sınırı 20'ye bölerek iki nokta arası olasılık bulunmaz.",
+      "Yanlış. Sadece alt sınırı baz alarak olasılık hesaplanamaz."
+    ]
+  },
+  {
+    "question": "Bebeklerin gülümseme süreleri 0 ile 23 saniye arasında düzgün dağılım göstermektedir. Rastgele seçilen bir bebeğin 2 ile 18 saniye arasında gülümseme olasılığı nedir?",
+    "options": [
+      "14/23",
+      "16/23",
+      "18/23",
+      "2/23"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. 18 - 2 = 16 saniyelik bir aralık vardır, 14 değil.",
+      "Doğru! Alan hesabından (18 - 2) / (23 - 0) = 16/23 olarak bulunur.",
+      "Yanlış. Sadece üst sınır alınarak aralık hesabı yapılmaz.",
+      "Yanlış. Sadece alt sınır alınarak hesaplanamaz."
+    ]
+  },
+  {
+    "question": "Bebeklerin gülümseme süreleri 0 ile 23 saniye arasında düzgün dağılım göstermektedir. Bir bebeğin gülümseme süresinin 90. yüzdeliği (k) kaçtır?",
+    "options": [
+      "18.5",
+      "20.7",
+      "21.0",
+      "22.3"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Oran %90 (0.90) olacak şekilde k/23 = 0.90 denklemi çözülmelidir.",
+      "Doğru! P(X < k) = k / 23 = 0.90 formülünden k = 20.7 bulunur.",
+      "Yanlış. Matematiksel hesap k=20.7'yi verir.",
+      "Yanlış. Hesaba uymayan yüksek bir değerdir."
+    ]
+  },
+  {
+    "question": "Dokuz yaşında bir çocuğun bir donut yemesi 0.5 ile 4 dakika arasında düzgün dağılmaktadır. Bu çocuğun 1.5 dakikadan uzun süredir donut yediği bilindiğine göre, 2 dakikadan uzun sürede yeme olasılığı kaçtır?",
+    "options": [
+      "0.4",
+      "0.6",
+      "0.8",
+      "1.0"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Koşullu olasılık formülünü P(X>2 | X>1.5) şeklinde kurmalısın.",
+      "Yanlış. P(X>2) / P(X>1.5) hesabında payda ve pay oranları yanlış hesaplanmış.",
+      "Doğru! P(X>2) = 2/3.5 ve P(X>1.5) = 2.5/3.5 oranlarının birbirine bölümü 2/2.5 = 0.8 yapar.",
+      "Yanlış. Olasılık kesin (1.0) değildir."
+    ]
+  },
+  {
+    "question": "Olaylar Poisson dağılımı ile meydana gelmekte ise, ardışık iki olay arasında geçen sürenin hangi dağılıma uyduğu söylenebilir?",
+    "options": [
+      "Normal Dağılım",
+      "Üstel Dağılım",
+      "Düzgün Dağılım",
+      "Binom Dağılımı"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Normal dağılım olaylar arası zaman süreciyle doğrudan ilişkili değildir.",
+      "Doğru! Poisson süreci ile olaylar arası bekleme süreleri her zaman Üstel (Exponential) dağılım ile modellenir.",
+      "Yanlış. Düzgün dağılımda her değer eşit olasılıklıdır.",
+      "Yanlış. Binom dağılımı ayrık (kesikli) sonuçlar içindir, zaman ölçmez."
+    ]
+  },
+  {
+    "question": "Aşağıdakilerden hangisi Üstel Dağılımın kullanıldığı senaryolardan biri değildir?",
+    "options": [
+      "Bir zar atıldığında üst yüze gelen sayının olasılığı",
+      "Bir taksi durağında gelen müşteriler arası bekleme süresi",
+      "Bir depremin olmasına kadar geçen zaman",
+      "Acil servise gelen hastalar arası geçen süre"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Zar atımı kesikli bir olasılıktır, üstel dağılım ise sürekli zaman ve bekleme aralıklarını ölçer.",
+      "Yanlış. Bekleme sorunları üstel dağılımla çözülür.",
+      "Yanlış. İki deprem arası veya depreme kadar geçen süre üstel dağılımla modellenir.",
+      "Yanlış. İki hasta arası süre üstel dağılımın klasik bir örneğidir."
+    ]
+  },
+  {
+    "question": "Ders slaytlarındaki notasyona göre parametresi 'a' (alfa) olan Üstel Dağılımın olasılık yoğunluk fonksiyonu f(x) aşağıdakilerden hangisidir? (x>0 için)",
+    "options": [
+      "1 - e^(-a*x)",
+      "a * e^(-a*x)",
+      "e^(-a*x)",
+      "(1/a) * e^(-a*x)"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu formül birikimli dağılım fonksiyonudur (CDF).",
+      "Doğru! Üstel dağılımın PDF'i f(x) = a * e^(-a*x) şeklindedir.",
+      "Yanlış. Formülde baştaki 'a' çarpanı eksik.",
+      "Yanlış. Çarpan 1/a değil, doğrudan parametrenin kendisidir (a)."
+    ]
+  },
+  {
+    "question": "Parametresi 'a' (alfa) olan Üstel dağılımın beklenen değeri (ortalaması) E[X] nedir?",
+    "options": [
+      "a",
+      "1 / a",
+      "1 / a^2",
+      "a^2"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Beklenen değer, parametrenin direkt kendisi değildir.",
+      "Doğru! Üstel dağılımın beklenen değeri (ortalaması) 1/a'dır.",
+      "Yanlış. Bu varyans değeridir.",
+      "Yanlış. Bu formül varyans veya ortalama için kullanılmaz."
+    ]
+  },
+  {
+    "question": "Parametresi 'a' (alfa) olan Üstel dağılımın varyansı Var(X) aşağıdakilerden hangisidir?",
+    "options": [
+      "1 / a",
+      "a^2",
+      "1 / a^2",
+      "1 / (2*a)"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bu beklenen değer (ortalama) formülüdür.",
+      "Yanlış. Varyans parametrenin karesi değildir.",
+      "Doğru! Üstel dağılımda varyans 1/a^2 olarak hesaplanır.",
+      "Yanlış. Hatalı ve eksik bir formüldür."
+    ]
+  },
+  {
+    "question": "Üstel dağılım gösteren bir rastgele değişkene ait birikimli dağılım (CDF) fonksiyonu P(X < x) nasıl hesaplanır?",
+    "options": [
+      "e^(-a*x)",
+      "a * e^(-a*x)",
+      "1 - a * e^(-a*x)",
+      "1 - e^(-a*x)"
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. Bu, P(X > x) olasılığını verir.",
+      "Yanlış. Bu olasılık yoğunluk fonksiyonunun (PDF) ta kendisidir.",
+      "Yanlış. Çarpan olarak 'a' CDF formülünde bu konumda yer almaz.",
+      "Doğru! İntegral sonucu birikimli olasılık (CDF) her zaman 1 - e^(-a*x) olur."
+    ]
+  },
+  {
+    "question": "Bir telefon operatörüne yapılan aramada ortalama bekleme süresi 5 dakikadır. Bu durum için Üstel dağılım parametresi 'a' (alfa) kaçtır?",
+    "options": [
+      "5",
+      "0.5",
+      "0.2",
+      "0.1"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. 5, beklenen değerin ta kendisidir, 'a' bunun tersidir.",
+      "Yanlış. Ortalama bekleme süresinin tersi 1/5'tir, 1/2 değil.",
+      "Doğru! E[X] = 1/a = 5 olduğuna göre, a = 1/5 = 0.2 olur.",
+      "Yanlış. Matematiksel hesap yanlıştır."
+    ]
+  },
+  {
+    "question": "Ortalama bekleme süresi 5 dakika olan (a = 0.2) üstel dağılımda, bir arayanın 10 dakikadan çok bekleme olasılığı P(X > 10) kaçtır?",
+    "options": [
+      "e^(-1)",
+      "e^(-2)",
+      "1 - e^(-2)",
+      "e^(-5)"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Formülde x yerine 10, a yerine 0.2 konulmalıdır.",
+      "Doğru! P(X > 10) = e^(-a * x) = e^(-0.2 * 10) = e^(-2) bulunur.",
+      "Yanlış. Bu değer 10 dakikadan *az* bekleme olasılığını P(X < 10) verir.",
+      "Yanlış. Parametreler formüle yanlış yerleştirilmiştir."
+    ]
+  },
+  {
+    "question": "Ortalama bekleme süresi 5 dakika olan üstel dağılımda, bekleme süresinin 75. yüzdeliği (k değeri) yaklaşık olarak kaçtır?",
+    "options": [
+      "5.00",
+      "6.93",
+      "8.25",
+      "10.00"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. 5 dakika ortalamanın (yaklaşık 63. yüzdelik) ta kendisidir.",
+      "Doğru! 1 - e^(-k/5) = 0.75 denklemi çözüldüğünde k = -5 * ln(0.25) ≈ 6.93 bulunur.",
+      "Yanlış. Logaritma hesabı sonucu bu değeri vermez.",
+      "Yanlış. Bu %86'lık yüzdeliğe denk gelen yüksek bir değerdir."
+    ]
+  },
+  {
+    "question": "Ortalama bekleme süresi 5 dakika olan operatörde, arayanın 3 ile 5 dakika arasında bekleme olasılığı nasıl bulunur?",
+    "options": [
+      "e^(-3) - e^(-5)",
+      "e^(-0.6) - e^(-1)",
+      "e^(-1) - e^(-0.6)",
+      "1 - e^(-0.6)"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. a parametresi (1/5 = 0.2) formülde hesaba katılmamıştır.",
+      "Doğru! P(3 < X < 5) = P(X < 5) - P(X < 3) = (1 - e^(-1)) - (1 - e^(-0.6)) = e^(-0.6) - e^(-1).",
+      "Yanlış. Çıkarma işleminin yönü terstir ve sonucu negatif çıkarır.",
+      "Yanlış. Bu sadece 3 dakikadan az bekleme olasılığıdır."
+    ]
+  },
+  {
+    "question": "Üstel Dağılımın 'Hafızasızlık Özelliği'ni (Memoryless Property) ifade eden matematiksel denklem hangisidir?",
+    "options": [
+      "P(X > b | X > a) = P(X > b)",
+      "P(X > b | X > a) = P(X < b - a)",
+      "P(X > b | X > a) = P(X > b - a)",
+      "P(X > a | X > b) = P(X > a - b)"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Geçmişte geçen sürenin tamamen silindiği ve baştan başladığı anlamına gelmez, kalan sürenin dağılımı ölçülür.",
+      "Yanlış. Eşitliğin sağ tarafı 'küçüktür' değil 'büyüktür' olmalıdır.",
+      "Doğru! Hafızasızlık özelliği tam olarak bu koşullu olasılık denklemiyle ifade edilir.",
+      "Yanlış. a ve b'nin sırası koşullu olasılıkta yanlış verilmiştir (b > a varsayımı olmalıdır)."
+    ]
+  },
+  {
+    "question": "Bir posta memuruyla geçirilen zaman ortalama 4 dakika olan üstel dağılımdır. Müşterinin halihazırda 4 dakika geçirdiği biliniyorsa, en az 3 dakika *daha* geçirme olasılığı nedir?",
+    "options": [
+      "P(X > 7)",
+      "P(X > 4)",
+      "P(X > 3)",
+      "P(X < 3)"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Hafızasızlık özelliği nedeniyle baştan 7 dakika olarak değerlendirilmez.",
+      "Yanlış. 4 dakika zaten gerçekleşmiş olan süredir.",
+      "Doğru! Üstel dağılımın hafızasızlık özelliği gereği P(X>7 | X>4) işlemi direkt olarak P(X>3) sonucuna eşittir.",
+      "Yanlış. Burada 'en az' şartı arandığı için olay P(X > 3) olmalıdır."
+    ]
+  },
+  {
+    "question": "Olasılık yoğunluk fonksiyonunun (PDF) grafiksel olarak manası nedir?",
+    "options": [
+      "Belirli bir x noktasının olasılığının tam 1 olduğunu gösterir.",
+      "Eğri altındaki alan, belirli bir değer aralığındaki olasılığı verir.",
+      "Sadece iki noktanın birbirinden çıkarılması demektir.",
+      "Kesikli rastgele değişkenlerin tek tek oranlarını çizer."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Sürekli dağılımlarda tek bir noktanın olasılığı daima sıfırdır.",
+      "Doğru! PDF bir eğridir ve aradığımız olasılık bu eğrinin altındaki o iki sınır arasındaki alanı temsil eder.",
+      "Yanlış. Doğrudan çıkarma işlemi değil bir integral (alan) hesabıdır.",
+      "Yanlış. PDF sadece sürekli rastgele değişkenler için geçerlidir."
+    ]
+  },
+  {
+    "question": "Sürekli olasılık dağılımlarında P(a < X < b) olasılığının P(a ≤ X ≤ b) olasılığına eşit olmasının sebebi nedir?",
+    "options": [
+      "İntegral hesabında tek bir çizginin (eşitliğin) alanının sıfır olması",
+      "Sürekli dağılımlarda hata payının yüksek kabul edilmesi",
+      "Düzgün dağılımın sadece tam sayıları işlemesi",
+      "Eşitlik durumunda toplamın her zaman 1'e yuvarlanması"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! İntegral hesabında tek bir noktanın alanı 0'dır, bu yüzden sınırlara dahil olup olmaması (eşitlik) sonucu değiştirmez.",
+      "Yanlış. Bu bir hata payı değil, tamamen matematiksel bir kuraldır.",
+      "Yanlış. Sürekli dağılımlar sadece tam sayıları değil sonsuz ondalıklı değerleri de kapsar.",
+      "Yanlış. Eşitlik durumuyla toplam olasılığın doğrudan alakası yoktur."
+    ]
+  },
+  {
+    "question": "Ortalama ve varyans hesaplamalarında gösterilen E(X) notasyonu neyi ifade eder?",
+    "options": [
+      "Standart sapmayı",
+      "Rastgele değişkenin beklenen değerini (ortalamasını)",
+      "Eğri altındaki maksimum modu",
+      "Varyansın karekökünü"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Standart sapma farklıdır ve varyansın kareköküdür.",
+      "Doğru! E(X) (Expected Value), rastgele değişkenin dağılımının beklenen değerini yani popülasyon ortalamasını ifade eder.",
+      "Yanlış. Maksimum olasılık noktası mod'dur.",
+      "Yanlış. Varyansın karekökü doğrudan standart sapmadır."
+    ]
+  },
+  {
+    "question": "Sürekli olasılık dağılımlarında belirli bir veri aralığındaki olasılığı P(a < X < b) hesaplamak için fonksiyon üzerinde hangi matematiksel işlem yapılır?",
+    "options": [
+      "Türev alma",
+      "Matris Çarpımı",
+      "İntegral hesaplama",
+      "Logaritma alma"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Türev eğimi bulur, aralık alanını değil.",
+      "Yanlış. Dağılımların doğrudan olasılık hesabında matrisler kullanılmaz.",
+      "Doğru! Sürekli dağılımlarda eğri altında kalan alanı ve olasılığı bulmak için verilen aralıkta İntegral alınır.",
+      "Yanlış. Logaritma işlemi doğrudan genel alan bulmada kullanılmaz."
+    ]
+  }
+]

@@ -1,0 +1,402 @@
+[
+  {
+    "question": "Bir olayları sayısal değerlere eşleyen fonksiyona ne ad verilir?",
+    "options": [
+      "Olasılık Dağılım Fonksiyonu",
+      "Rastgele Değişken",
+      "Beklenen Değer",
+      "Standart Sapma"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Olasılık dağılım fonksiyonu, bu değerlerin ortaya çıkma olasılıklarını gösterir.",
+      "Doğru! Rastgele değişken, örnek uzayındaki her durumu bir sayıya çevirerek olayları sistematik analiz etmemizi sağlar.",
+      "Yanlış. Beklenen değer, bir deneyin uzun vadeli ortalamasıdır.",
+      "Yanlış. Standart sapma, verilerin ortalamadan ne kadar saptığını gösterir."
+    ]
+  },
+  {
+    "question": "Ayrık rastgele değişkenler hangi tür değerler alırlar?",
+    "options": [
+      "Bir aralıktaki tüm reel sayıları",
+      "Sadece negatif değerleri",
+      "(Sayılabilen) tam sayılar şeklinde değerleri",
+      "Sadece 0 ve 1 değerlerini"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bir aralıktaki tüm reel sayıları alan değişkenlere 'sürekli rastgele değişkenler' denir.",
+      "Yanlış. Sadece negatif değerler almak gibi bir kısıtlaması yoktur.",
+      "Doğru! Ayrık rastgele değişkenler sayılabilen, tam sayı şeklindeki değerleri (örneğin 0, 1, 2, 3...) alırlar.",
+      "Yanlış. Sadece 0 ve 1 değerini alan dağılım Bernoulli'dir, ancak tüm ayrık değişkenler böyle olmak zorunda değildir."
+    ]
+  },
+  {
+    "question": "Olasılık Dağılım Fonksiyonu P(x) için aşağıdakilerden hangisi kesinlikle sağlanmalıdır?",
+    "options": [
+      "Tüm P(x) değerlerinin toplamı 1'e eşit olmalıdır.",
+      "Her P(x) değeri 1'den büyük olmalıdır.",
+      "P(x) değerleri her zaman birbirine eşit olmalıdır.",
+      "P(x) değerleri negatif olabilir."
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Olasılık dağılım fonksiyonunun en önemli özelliklerinden biri tüm olasılıkların toplamının 1'e (ΣP(x) = 1) eşit olmasıdır.",
+      "Yanlış. P(x) olasılık olduğu için her zaman 0 ile 1 arasında (0 ≤ P(x) ≤ 1) olmalıdır.",
+      "Yanlış. P(x) değerleri (olasılıklar) durumdan duruma farklılık gösterebilir.",
+      "Yanlış. Olasılık hiçbir zaman negatif olamaz."
+    ]
+  },
+  {
+    "question": "Ayrık rastgele değişkenler için kullanılan olasılık dağılımının özel adı nedir?",
+    "options": [
+      "Olasılık Yoğunluk Fonksiyonu (PDF)",
+      "Binom Fonksiyonu",
+      "Olasılık Kütle Fonksiyonu (PMF)",
+      "Varyans Fonksiyonu"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Yoğunluk fonksiyonu (PDF) sürekli rastgele değişkenler için kullanılır.",
+      "Yanlış. Binom sadece ayrık dağılımlardan birinin adıdır, genel terim değildir.",
+      "Doğru! Ayrık rastgele değişkenler için Olasılık Kütle Fonksiyonu (Probability Mass Function – PMF) terimi kullanılır.",
+      "Yanlış. Varyans fonksiyonu diye bir isimlendirme olasılık dağılımlarının genel tanımı değildir."
+    ]
+  },
+  {
+    "question": "Bir rastgele değişkenin uzun vadeli ortalamasını ifade eden kavram aşağıdakilerden hangisidir?",
+    "options": [
+      "Varyans",
+      "Büyük Sayılar Yasası",
+      "Standart Sapma",
+      "Beklenen Değer"
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. Varyans, dağılımın yayılımını ölçer.",
+      "Yanlış. Büyük sayılar yasası, deneme sayısı arttıkça deneysel olasılığın teorik olasılığa yaklaşmasını ifade eder.",
+      "Yanlış. Standart sapma, varyansın kareköküdür.",
+      "Doğru! Beklenen değer (E(X) veya μ), bir deneyin uzun vadeli ortalamasıdır."
+    ]
+  },
+  {
+    "question": "Büyük Sayılar Yasası'nın temel prensibi nedir?",
+    "options": [
+      "Deneme sayısı arttıkça deneysel olasılık ile teorik olasılık arasındaki farkın sıfıra yaklaşmasıdır.",
+      "Deneme sayısı arttıkça olasılıkların rastgele dağılmasıdır.",
+      "Büyük sayıların her zaman daha yüksek olasılığa sahip olmasıdır.",
+      "Zar atışlarında 6 gelme ihtimalinin sürekli artmasıdır."
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Büyük sayılar yasası, deneme sayısı arttıkça bağıl frekansın (deneysel olasılık) teorik olasılığa çok yaklaşacağını belirtir.",
+      "Yanlış. Tam tersi, belirli bir düzene (teorik olasılığa) oturur.",
+      "Yanlış. İsimlendirme matematiksel deneme sayısının büyüklüğüyle ilgilidir, sonuç değerleriyle değil.",
+      "Yanlış. Bağımsız denemelerde ihtimaller değişmez."
+    ]
+  },
+  {
+    "question": "Aşağıdakilerden hangisi bir Binom deneyinin özelliklerinden biri DEĞİLDİR?",
+    "options": [
+      "Her deneme n defa tekrarlanır.",
+      "Her deneme için sadece iki olası sonuç (başarı veya başarısızlık) vardır.",
+      "Her deneme birbirinden bağımsızdır.",
+      "İkinci seçimin olasılığı ilk seçimin sonucuna bağlıdır."
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. Bu Binom'un bir özelliğidir.",
+      "Yanlış. Bu Binom'un bir özelliğidir (p ve q durumu).",
+      "Yanlış. Bu Binom'un en önemli özelliklerinden biridir.",
+      "Doğru! Binom dağılımında her deneme bağımsızdır. Olasılıkların birbirine bağlı olduğu (yerine koymadan çekme gibi) dağılım Hipergeometrik dağılımdır."
+    ]
+  },
+  {
+    "question": "Sadece 1 kez tekrarlanan (n=1) Binom deneylerine ne ad verilir?",
+    "options": [
+      "Poisson Deneyi",
+      "Bernoulli Deneyi",
+      "Geometrik Deney",
+      "Hipergeometrik Deney"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Poisson belli bir zamanda/alanda olan nadir olaylar içindir.",
+      "Doğru! n=1 olan tekil başarı/başarısızlık deneylerine Bernoulli deneyi denir.",
+      "Yanlış. Geometrik deney ilk başarı elde edilene kadar sürer.",
+      "Yanlış. Hipergeometrik iki grup içinden yerine koymadan seçim yapmayı inceler."
+    ]
+  },
+  {
+    "question": "n deneme sayısını, p ise başarı olasılığını gösteriyorsa, bir Binom dağılımında E(X) beklenen değeri nasıl hesaplanır?",
+    "options": [
+      "E(X) = n + p",
+      "E(X) = 1 / p",
+      "E(X) = n * p",
+      "E(X) = n * p * q"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Beklenen değer hesaplamasında toplama kullanılmaz.",
+      "Yanlış. Bu formül Geometrik Dağılımın beklenen değeridir.",
+      "Doğru! Binom dağılımında beklenen değer E(X) = μ = np formülü ile bulunur.",
+      "Yanlış. Bu formül Binom dağılımında varyans (Var(X)) hesaplamak için kullanılır."
+    ]
+  },
+  {
+    "question": "Binom dağılımına sahip bir değişken için varyans (Var(X)) formülü aşağıdakilerden hangisidir?",
+    "options": [
+      "np",
+      "n/p",
+      "npq",
+      "(1-p)/p^2"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bu beklenen değer (ortalama) formülüdür.",
+      "Yanlış. Böyle bir formül kullanılmaz.",
+      "Doğru! Binom dağılımında varyans σ² = Var(X) = npq olarak tanımlanır.",
+      "Yanlış. Bu Geometrik dağılımın varyans formülüdür."
+    ]
+  },
+  {
+    "question": "Geometrik bir deneyin en temel ayırt edici özelliği nedir?",
+    "options": [
+      "İki gruptan yerine koymadan örneklem alınmasıdır.",
+      "Belirli bir zaman dilimindeki olayları saymasıdır.",
+      "Başarı elde edilene kadar bağımsız denemelerin tekrarlanmasıdır.",
+      "Deneme sayısının her zaman sabit n değerinde olmasıdır."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bu Hipergeometrik deneyin özelliğidir.",
+      "Yanlış. Bu Poisson deneyinin özelliğidir.",
+      "Doğru! Geometrik dağılım ilk başarı gelene kadar zar atmaya (örneğin 6 gelene kadar) devam etmek gibi senaryoları modeller.",
+      "Yanlış. Deneme sayısı sabit değildir, ilk başarıya kadar sonsuza kadar gidebilir."
+    ]
+  },
+  {
+    "question": "Geometrik dağılım gösteren bir deneyde beklenen değer (E(X)) formülü aşağıdakilerden hangisidir?",
+    "options": [
+      "1 / p",
+      "p / q",
+      "n * p",
+      "λ"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Geometrik dağılımda ortalama başarıya ulaşma süresi (beklenen değer) E(X) = 1/p formülüyle bulunur.",
+      "Yanlış. Bu olasılık oranlarından bir parçadır, beklenen değer değildir.",
+      "Yanlış. Bu Binom dağılımının beklenen değeridir.",
+      "Yanlış. Bu Poisson dağılımının beklenen değeridir."
+    ]
+  },
+  {
+    "question": "Bir bilgisayar parçasının arızalı çıkma olasılığı (p) 0.02'dir. Arızalı bir parça bulana kadar ortalama kaç parça test edilmelidir? (Beklenen değer nedir?)",
+    "options": [
+      "2",
+      "20",
+      "50",
+      "100"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Formül uygulandığında 2 sonucu çıkmaz.",
+      "Yanlış. Matematiksel bir hata.",
+      "Doğru! Bu bir geometrik dağılımdır. E(X) = 1/p = 1 / 0.02 = 50 test edilmesi beklenir.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Aşağıdaki senaryolardan hangisi Hipergeometrik dağılıma uygundur?",
+    "options": [
+      "Adil bir paranın 50 kez atılması.",
+      "5 kırmızı, 5 mavi top bulunan bir torbadan 'yerine koymadan' 2 top seçilmesi.",
+      "Bir kavşakta saat 12:00-13:00 arası meydana gelen kaza sayısı.",
+      "6 gelene kadar sürekli olarak zar atılması."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu bir Binom dağılımıdır (bağımsız deneme).",
+      "Doğru! 'Yerine koymadan' seçim yapıldığı için denemeler bağımlı hale gelir ve iki farklı gruptan seçim yapılır. Bu Hipergeometrik dağılımın tanımıdır.",
+      "Yanlış. Belli bir zaman dilimindeki olayları modellediği için bu Poisson dağılımıdır.",
+      "Yanlış. İlk başarıya kadar sürdüğü için bu Geometrik dağılımdır."
+    ]
+  },
+  {
+    "question": "Hipergeometrik dağılım (X ~ H(r, b, n)) içindeki 'n' parametresi neyi ifade eder?",
+    "options": [
+      "Başarılı öğe sayısını",
+      "Başarısız öğe sayısını",
+      "Beklenen değeri",
+      "Örneklem büyüklüğünü (seçilen öğe sayısı)"
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. Başarılı öğe sayısı 'r' ile gösterilir.",
+      "Yanlış. Başarısız öğe sayısı 'b' ile gösterilir.",
+      "Yanlış. Beklenen değer apayrı bir konsepttir ve formülle hesaplanır.",
+      "Doğru! Hipergeometrik dağılımda 'n' toplam seçilen örneklem (öğe) sayısını ifade eder."
+    ]
+  },
+  {
+    "question": "Hipergeometrik deneylerde denemelerin birbirinden bağımsız OLAMAMASININ temel sebebi nedir?",
+    "options": [
+      "Her zaman başarılı sonuçların elde edilmesi.",
+      "Örneklemenin 'yerine koymadan' yapılması.",
+      "Zamanla sınırlandırılmış olması.",
+      "Deneyin sonsuza kadar sürmesi."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Başarı/başarısızlık oranı her deneyde vardır.",
+      "Doğru! Örneklem havuzu yerine konmadan azaldığı için bir sonraki seçimin olasılığı direkt değişir (Örn: 13/24'ten 11/23'e).",
+      "Yanlış. Zaman sınırı Poisson ile alakalı bir konsepttir.",
+      "Yanlış. Hipergeometrik deney sonsuza kadar sürmez, havuz bitene veya n sağlanana kadardır."
+    ]
+  },
+  {
+    "question": "Belli bir zaman aralığında veya alanda nadir rastlanan olayları modellemek için hangi dağılım kullanılır?",
+    "options": [
+      "Poisson Dağılımı",
+      "Hipergeometrik Dağılım",
+      "Binom Dağılımı",
+      "Geometrik Dağılım"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Belli bir zaman veya alanda görülen seyrek/nadir olaylar (ör: köprüden 1 saatte geçen araç, kaza sayısı) Poisson dağılımı ile modellenir.",
+      "Yanlış. Hipergeometrik yerine koymadan seçimler için kullanılır.",
+      "Yanlış. Binom sabit n denemedeki başarılarla ilgilenir.",
+      "Yanlış. Geometrik dağılım ilk başarıya kadar geçen deneme sayısını inceler."
+    ]
+  },
+  {
+    "question": "Aşağıdakilerden hangisi Poisson dağılımına uygun bir örnek olay DEĞİLDİR?",
+    "options": [
+      "Boğaz köprüsünden bir saatte geçen araç sayısı.",
+      "Adil bir parayı 10 kez attığınızda kaç kere tura geldiği.",
+      "Bir postanede bir iş gününde belli bir bankoya gelen müşteri sayısı.",
+      "Bir bölgede görülen Kırım Kongo Kanamalı Ateşi vaka sayısı."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu tam olarak bir Poisson dağılımı örneğidir (belirli zaman/olay).",
+      "Doğru! Sabit bir n deneme sayısındaki (10 kez) başarı oranını aradığımız için bu Binom dağılımına girer, Poisson'a değil.",
+      "Yanlış. Belirli bir zaman aralığındaki nadir/rastgele olaylara girdiği için Poisson'dur.",
+      "Yanlış. Belirli bir alandaki hastalık vakası sayısı Poisson ile modellenir."
+    ]
+  },
+  {
+    "question": "Poisson dağılımının yegane parametresi olan 'λ' (Lambda) neyi ifade eder?",
+    "options": [
+      "Toplam popülasyon boyutunu",
+      "Deneyin maksimum tekrar sayısını",
+      "Belli bir sürede/alanda beklenen olay sayısını (ortalamayı)",
+      "İlk başarının elde edildiği deneme sayısını"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Toplam popülasyon boyutu Hipergeometrik'te önemlidir (r+b).",
+      "Yanlış. Poisson'da maksimum tekrar sayısı diye bir parametre yoktur.",
+      "Doğru! Lambda (λ), belirtilen aralık için gerçekleşmesi beklenen olay sayısıdır (örneğin saatte ortalama 5 müşteri).",
+      "Yanlış. Bu durum Geometrik dağılımın ilgilendiği alandır."
+    ]
+  },
+  {
+    "question": "Poisson dağılımında (X ~ P(λ)) beklenen değer E(X) ile Varyans Var(X) arasındaki ilişki nasıldır?",
+    "options": [
+      "Beklenen değer, Varyansın karesine eşittir.",
+      "Beklenen değer ile Varyans birbirine eşittir ve her ikisi de λ'dır.",
+      "Beklenen değer λ, Varyans ise 1/λ'dır.",
+      "Varyans her zaman Beklenen değerden büyüktür."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. İkisi arasındaki ilişki karesel değildir.",
+      "Doğru! Poisson dağılımının çok özel ve kullanışlı bir kuralı olarak E(X) = λ ve Var(X) = λ'dır.",
+      "Yanlış. 1/λ gibi bir varyans formülü yoktur.",
+      "Yanlış. Birbirlerine eşittirler."
+    ]
+  },
+  {
+    "question": "Aşağıdaki dağılımlardan hangisi 'Bernoulli denemelerini ilk başarı elde edilene kadar tekrarlama' temeline dayanır?",
+    "options": [
+      "Geometrik Dağılım",
+      "Binom Dağılımı",
+      "Hipergeometrik Dağılım",
+      "Poisson Dağılımı"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Geometrik dağılımın tanımı budur. Örneğin 6 bulana kadar zarı art arda atmaya devam etmek.",
+      "Yanlış. Binom dağılımı denemeyi sabit 'n' defa yapar, ilk başarıda durmaz.",
+      "Yanlış. Bernoulli denemeleri içermez (bağımlıdır).",
+      "Yanlış. Belirli zaman aralığındaki nadir olayları inceler."
+    ]
+  },
+  {
+    "question": "Nancy'nin 3 günlük ders programına katılımlarını gösteren P(x) tablosunda olasılıklar sırasıyla 0.01, 0.04, 0.15 ve 0.80'dir. Bu olasılıkların toplamı kaçtır ve bu ne anlama gelir?",
+    "options": [
+      "Toplam 0.80'dir, çoğunlukla derse gitmektedir.",
+      "Toplam 1'dir, geçerli bir Olasılık Dağılım Fonksiyonu (PDF/PMF) olduğunu gösterir.",
+      "Toplam 100'dür, yüzde hesabı yapıldığını gösterir.",
+      "Toplam 0'dır, deneyin hatalı olduğunu gösterir."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Basit bir toplama işlemi yapıldığında sonuç 0.80 çıkmaz (0.01+0.04+0.15+0.80 = 1.00).",
+      "Doğru! Tüm olası ayrık olayların olasılıkları toplamı her zaman 1 (ΣP(xi) = 1) olmak zorundadır, bu olasılık dağılımının kuralıdır.",
+      "Yanlış. Yüzde değil, olasılık (0-1 arası) değerleridir.",
+      "Yanlış. Toplam sıfır değildir."
+    ]
+  },
+  {
+    "question": "Bir olasılık dağılımının Varyansı (σ²) genel formül olarak nasıl ifade edilir?",
+    "options": [
+      "E(X) / n",
+      "E(X - μ)^2",
+      "npq",
+      "1 - p"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Böyle bir formül dağılımlar için varyans ifade etmez.",
+      "Doğru! Herhangi bir olasılık dağılımının varyansı σ² = Var(X) = E(X-μ)² genel formülü ile ifade edilir.",
+      "Yanlış. Bu sadece Binom dağılımına özel varyans formülüdür, genel varyans tanımı değildir.",
+      "Yanlış. Bu başarısızlık olasılığıdır (q)."
+    ]
+  },
+  {
+    "question": "Bir otobüse binen yolcuların %20'sinin lise mezunu olmadığı bilinmektedir. Rastgele seçilen yolcularla yapılan deneyde p+q=1 kuralına göre 'başarı' (mezun olma) ve 'başarısızlık' olasılıkları sırasıyla nedir?",
+    "options": [
+      "p=0.5, q=0.5",
+      "p=0.2, q=0.8",
+      "p=0.8, q=0.2",
+      "p=1.0, q=0.0"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Olasılıklar yarı yarıya değildir.",
+      "Yanlış. Soruda %20 mezun olmama (q=0.2) oranı verilmiştir.",
+      "Doğru! Eğer %20 mezun değilse (q = 0.2), mezun olma olasılığı (başarı, p) 1 - 0.2 = 0.8 olacaktır.",
+      "Yanlış. Kesinlik ifade eden bir durum yoktur."
+    ]
+  },
+  {
+    "question": "Binom dağılımında P(X=x) hesaplama formülü aşağıdakilerden hangisidir? (Kombinasyon C(n,x) ile ifade edilmiştir)",
+    "options": [
+      "C(n,x) * (p^x) * (q^(n-x))",
+      "(1-p)^(k-1) * p",
+      "(λ^x * e^-λ) / x!",
+      "1 / p"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Binom olasılık kütle fonksiyonu x başarılı olay için C(n,x) * p^x * q^(n-x) formülüyle hesaplanır.",
+      "Yanlış. Bu Geometrik dağılım olasılık fonksiyonudur.",
+      "Yanlış. Bu Poisson dağılımı olasılık fonksiyonudur.",
+      "Yanlış. Bu Geometrik dağılımın beklenen değer formülüdür."
+    ]
+  }
+]

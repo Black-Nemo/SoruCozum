@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru Çözücü Pro | Dinamik Test Sistemi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-hover: #4338ca;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --success: #22c55e;
+            --error: #ef4444;
+            --border: #e2e8f0;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            transition: transform 0.3s ease;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 12px;
+        }
+
+        .header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* Catalog Grid */
+        #catalog-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .catalog-item {
+            background: #fff;
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 16px;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .catalog-item:hover {
+            border-color: var(--primary);
+            box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.2);
+            transform: translateY(-4px);
+        }
+
+        .catalog-item h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 14px 24px;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: inherit;
+            transition: all 0.2s;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            width: 100%;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-hover);
+            transform: scale(1.02);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--border);
+            color: var(--text-muted);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        /* Quiz UI */
+        #quiz-container {
+            display: none;
+        }
+
+        .question-header {
+            margin-bottom: 24px;
+        }
+
+        .question-number {
+            display: inline-block;
+            background: #e0e7ff;
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 99px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .question-text {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-main);
+            line-height: 1.4;
+        }
+
+        .options-grid {
+            display: grid;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .option-card {
+            padding: 16px 20px;
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: left;
+            font-size: 1.05rem;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .option-card:hover:not(.disabled) {
+            border-color: var(--primary);
+            background: #f5f3ff;
+        }
+
+        .option-card.correct {
+            border-color: var(--success);
+            background: #f0fdf4;
+            color: #166534;
+        }
+
+        .option-card.wrong {
+            border-color: var(--error);
+            background: #fef2f2;
+            color: #991b1b;
+        }
+
+        .option-card.disabled {
+            cursor: default;
+        }
+
+        .explanation {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 12px;
+            display: none;
+            font-weight: 500;
+            animation: slideUp 0.3s ease-out;
+        }
+
+        .explanation.visible {
+            display: block;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .quiz-footer {
+            margin-top: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--border);
+            margin: 30px 0;
+            position: relative;
+        }
+
+        .divider span {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--card-bg);
+            padding: 0 10px;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Loading Spinner */
+        .loader {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid var(--primary);
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Menu View -->
+        <div id="menu-view" class="card">
+            <div class="header">
+                <h1>Soru Çözücü</h1>
+                <p>Hangi kategoriden soru çözmek istersiniz?</p>
+            </div>
+
+            <div id="catalog-container">
+                <div style="grid-column: 1/-1; text-align: center; color: var(--text-muted);">Katalog yükleniyor...
+                </div>
+            </div>
+
+            <div class="divider"><span>veya</span></div>
+
+            <input type="file" id="file-input" accept=".json" style="display: none;">
+            <button class="btn btn-outline" style="width: 100%" onclick="document.getElementById('file-input').click()">
+                📁 Bilgisayardan Dosya Seç
+            </button>
+        </div>
+
+        <!-- Quiz View -->
+        <div id="quiz-view" class="card" style="display: none;">
+            <div id="quiz-content">
+                <div class="question-header">
+                    <span id="q-num" class="question-number">Soru 1</span>
+                    <h2 id="q-text" class="question-text">Soru yükleniyor...</h2>
+                </div>
+
+                <div id="options-grid" class="options-grid"></div>
+
+                <div id="explanation-box" class="explanation"></div>
+
+                <div class="quiz-footer">
+                    <button id="back-nav-btn" class="btn btn-outline" onclick="handleBack()">Geri</button>
+                    <div id="progress" style="color: var(--text-muted); font-size: 0.9rem;"></div>
+                    <button id="next-btn" class="btn btn-primary" style="display: none; width: auto;"
+                        onclick="nextQuestion()">Sonraki</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let questionsData = [];
+        let currentQuestionIndex = 0;
+        let catalog = [];
+
+        // Initialize - Fetch Catalog
+        async function init() {
+            try {
+                const response = await fetch('catalog.json');
+                catalog = await response.json();
+                renderCatalog();
+            } catch (error) {
+                console.error('Katalog yüklenemedi:', error);
+                document.getElementById('catalog-container').innerHTML =
+                    '<div style="grid-column: 1/-1; color: var(--error);">Katalog yüklenirken hata oluştu.</div>';
+            }
+        }
+
+        function renderCatalog() {
+            const container = document.getElementById('catalog-container');
+            container.innerHTML = '';
+
+            catalog.forEach((item, index) => {
+                const div = document.createElement('div');
+                div.className = 'catalog-item';
+                div.innerHTML = `<h3>${item.name}</h3>`;
+                div.onclick = () => loadFromCatalog(item.path);
+                container.appendChild(div);
+            });
+        }
+
+        async function loadFromCatalog(path) {
+            // Absolute paths won't work in fetch if coming from catalog directly as c:\...
+            // We convert them to relative paths assuming the same structure.
+            let relativePath = path;
+            const basePath = "c:\\Numan\\Numan\\Ders\\SoruCozucu\\";
+            if (path.toLowerCase().startsWith(basePath.toLowerCase())) {
+                relativePath = path.substring(basePath.length).replace(/\\/g, '/');
+            } else {
+                // Fallback for paths that might already be relative or have different root
+                relativePath = path.split('SoruCozucu\\')[1]?.replace(/\\/g, '/') || path;
+            }
+
+            try {
+                const response = await fetch(relativePath);
+                if (!response.ok) throw new Error('Dosya bulunamadı');
+                questionsData = await response.json();
+                startQuiz();
+            } catch (error) {
+                console.error('Soru dosyası yüklenemedi:', error);
+                alert('Soru dosyası yüklenemedi: ' + relativePath);
+            }
+        }
+
+        // Manual File Upload
+        document.getElementById('file-input').addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                try {
+                    questionsData = JSON.parse(e.target.result);
+                    startQuiz();
+                } catch (error) {
+                    alert("Geçersiz JSON dosyası!");
+                }
+            };
+            reader.readAsText(file);
+        });
+
+        function startQuiz() {
+            currentQuestionIndex = 0;
+            document.getElementById('menu-view').style.display = 'none';
+            document.getElementById('quiz-view').style.display = 'block';
+            loadQuestion();
+        }
+
+        function loadQuestion() {
+            const data = questionsData[currentQuestionIndex];
+            const optionsGrid = document.getElementById('options-grid');
+            const nextBtn = document.getElementById('next-btn');
+            const expBox = document.getElementById('explanation-box');
+
+            document.getElementById('q-num').innerText = `Soru ${currentQuestionIndex + 1}`;
+            document.getElementById('q-text').innerText = data.question;
+            document.getElementById('progress').innerText = `${currentQuestionIndex + 1} / ${questionsData.length}`;
+
+            optionsGrid.innerHTML = '';
+            expBox.classList.remove('visible');
+            nextBtn.style.display = 'none';
+
+            data.options.forEach((opt, idx) => {
+                const card = document.createElement('div');
+                card.className = 'option-card';
+                card.innerText = opt;
+                card.onclick = () => selectOption(card, idx, data.correctIndex, data.explanations[idx]);
+                optionsGrid.appendChild(card);
+            });
+
+            // Update back button behavior
+            const bBtn = document.getElementById('back-nav-btn');
+            if (currentQuestionIndex === 0) {
+                bBtn.innerText = "Ana Menü";
+            } else {
+                bBtn.innerText = "Önceki";
+            }
+        }
+
+        function selectOption(el, selectedIdx, correctIdx, explanation) {
+            if (el.classList.contains('disabled')) return;
+
+            const cards = document.querySelectorAll('.option-card');
+            cards.forEach(c => c.classList.add('disabled'));
+
+            const isCorrect = selectedIdx === correctIdx;
+            el.classList.add(isCorrect ? 'correct' : 'wrong');
+
+            if (!isCorrect) {
+                cards[correctIdx].classList.add('correct');
+            }
+
+            const expBox = document.getElementById('explanation-box');
+            expBox.innerText = explanation || (isCorrect ? "Doğru cevap!" : "Yanlış cevap.");
+            expBox.style.background = isCorrect ? '#f0fdf4' : '#fef2f2';
+            expBox.style.color = isCorrect ? '#166534' : '#991b1b';
+            expBox.style.border = `1px solid ${isCorrect ? '#bbf7d0' : '#fecaca'}`;
+            expBox.classList.add('visible');
+
+            const nextBtn = document.getElementById('next-btn');
+            nextBtn.style.display = 'block';
+            if (currentQuestionIndex === questionsData.length - 1) {
+                nextBtn.innerText = "Testi Bitir";
+            } else {
+                nextBtn.innerText = "Sonraki";
+            }
+        }
+
+        function nextQuestion() {
+            if (currentQuestionIndex < questionsData.length - 1) {
+                currentQuestionIndex++;
+                loadQuestion();
+            } else {
+                returnToMenu();
+            }
+        }
+
+        function handleBack() {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                loadQuestion();
+            } else {
+                returnToMenu();
+            }
+        }
+
+        function returnToMenu() {
+            document.getElementById('quiz-view').style.display = 'none';
+            document.getElementById('menu-view').style.display = 'block';
+            document.getElementById('file-input').value = "";
+        }
+
+        // Start
+        init();
+    </script>
+
+</body>
+
+</html>

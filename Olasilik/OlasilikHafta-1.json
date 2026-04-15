@@ -1,0 +1,152 @@
+[
+  {
+    "question": "Bir istatistiksel çalışmada, 'tüm popülasyonun sayısal bir özelliği' aşağıdakilerden hangisi ile ifade edilir?",
+    "options": ["İstatistik", "Parametre", "Örneklem", "Değişken"],
+    "correctIndex": 1,
+    "explanations": ["Yanlış. İstatistik, örneklemin sayısal bir özelliğidir.", "Doğru! Parametre, tüm popülasyonun sayısal bir özelliğini ifade eder.", "Yanlış. Örneklem, popülasyonun bir alt kümesidir.", "Yanlış. Değişken, popülasyonun her bir üyesi için belirlenen özelliktir."]
+  },
+  {
+    "question": "Öğrencilerin sırt çantalarındaki kitap sayısı (örneğin 2, 3, 4 kitap) ne tür bir veri sınıfına girer?",
+    "options": ["Nicel sürekli veri", "Nitel veri", "Nicel kesikli veri", "Kategorik veri"],
+    "correctIndex": 2,
+    "explanations": ["Yanlış. Sürekli veriler tam sayı haricinde bir aralıktaki tüm değerleri alabilir.", "Yanlış. Nitel veriler sayısal olmayan, kategorik verilerdir.", "Doğru! Kitap sayısı sayılabilen tam sayılar olduğu için nicel ayrık (kesikli) veridir.", "Yanlış. Kategorik veri nitel veridir, sayılabilen nicelik bildirmez."]
+  },
+  {
+    "question": "Bir veri setinde birden fazla kategoriye ait olabilen veriler (toplamları %100'ü aşan durumlar) için aşağıdaki grafik türlerinden hangisinin kullanılması uygun değildir?",
+    "options": ["Pasta Grafiği", "Çubuk Grafiği", "Pareto Grafiği", "Frekans Tablosu"],
+    "correctIndex": 0,
+    "explanations": ["Doğru! Bütünün parçalarını gösteren pasta grafiği, veriler %100'den fazla olduğunda kullanılamaz.", "Yanlış. Çubuk grafiği bu durumlar için uygundur.", "Yanlış. Pareto grafiği özel bir çubuk grafiği türüdür ve kullanılabilir.", "Yanlış. Frekans tabloları %100'ü aşan çoklu kategorileri göstermek için kullanılabilir."]
+  },
+  {
+    "question": "Popülasyonun 'tabaka' adı verilen homojen gruplara bölünüp ardından her tabakadan rastgele eşit sayıda örnek seçilmesi yöntemine ne ad verilir?",
+    "options": ["Basit rastgele örnekleme", "Küme örnekleme", "Sistematik örnekleme", "Tabakalı örnekleme"],
+    "correctIndex": 3,
+    "explanations": ["Yanlış. Basit rastgele örneklemede gruplara ayırma yoktur.", "Yanlış. Küme örneklemede popülasyon heterojen kümelere ayrılır ve bazı kümeler tamamen seçilir.", "Yanlış. Sistematik örneklemede k aralığı ile seçim yapılır.", "Doğru! Homojen gruplara (tabakalara) bölüp seçme işlemi tabakalı örneklemedir."]
+  },
+  {
+    "question": "Bir araştırmacının, deneysel bir çalışmada doğrudan kontrol edip değiştirdiği değişkene ne denir?",
+    "options": ["Yanıt değişkeni", "Gizli değişken", "Bağımsız (Açıklayıcı) değişken", "Kontrol değişkeni"],
+    "correctIndex": 2,
+    "explanations": ["Yanlış. Yanıt değişkeni, bağımsız değişkene bağlı olarak ölçülen sonuçtur.", "Yanlış. Gizli değişkenler kontrol edilmeyen ama sonucu etkileyebilen değişkenlerdir.", "Doğru! Araştırmacının kontrol ettiği ve değiştirdiği değişken bağımsız (açıklayıcı) değişkendir.", "Yanlış. Kontrol değişkeni, deney boyunca sabit tutulan faktördür."]
+  },
+  {
+    "question": "Hem katılımcıların hem de araştırmacıların hangi grubun hangi deneysel işlemi (plasebo veya gerçek ilaç) aldığını bilmediği deney tasarımına ne ad verilir?",
+    "options": ["Tek-kör deney", "Çift-kör deney", "Kontrol deneyi", "Rastgele atama"],
+    "correctIndex": 1,
+    "explanations": ["Yanlış. Tek-kör deneylerde sadece katılımcılar hangi grupta olduklarını bilmez.", "Doğru! Hem katılımcının hem araştırmacının işlemi bilmediği tasarım çift-kör deneydir.", "Yanlış. Kontrol deneyi genel bir terimdir.", "Yanlış. Rastgele atama, kişileri gruplara dağıtma yöntemidir, körleme ile aynı şey değildir."]
+  },
+  {
+    "question": "Sıralama yapılabilen ancak aralarındaki farkın ölçülemediği (örneğin müşteri memnuniyet anketi: Kötü, Orta, İyi) veri ölçüm düzeyi aşağıdakilerden hangisidir?",
+    "options": ["Nominal Ölçek", "Oran Ölçeği", "Sıralı (Ordinal) Ölçek", "Aralık Ölçeği"],
+    "correctIndex": 2,
+    "explanations": ["Yanlış. Nominal ölçekte veriler sıralanamaz bile (ör. renkler).", "Yanlış. Oran ölçeğinde farklar ve oranlar ölçülebilir, mutlak sıfır vardır.", "Doğru! Verilerin sıralanabildiği ama aradaki mesafenin net hesaplanamadığı ölçek sıralı (ordinal) ölçektir.", "Yanlış. Aralık ölçeğinde farklar hesaplanabilir."]
+  },
+  {
+    "question": "Bir hastanede ortalama tedavi maliyetini bulmak için sadece hastaneye giren ilk 10 kişiye soru sormak hangi örnekleme yöntemine girer?",
+    "options": ["Kolay örnekleme", "Kota örnekleme", "Kartopu örnekleme", "Amaçlı örnekleme"],
+    "correctIndex": 0,
+    "explanations": ["Doğru! En kolay ulaşılabilir bireylerden veri toplanması kolay örneklemedir ve genellikle yanlı sonuçlar verir.", "Yanlış. Kota örneklemede belirli demografik yüzdeler hedeflenir.", "Yanlış. Kartopu örnekleme nadir gruplara birbiri üzerinden ulaşmaktır.", "Yanlış. Amaçlı örneklemede belirli bir uzmana veya spesifik kişiye danışılır."]
+  },
+  {
+    "question": "Örneklemdeki sayısal bir değere (örneğin 100 kişilik bir grubun yaş ortalaması) ne ad verilir?",
+    "options": ["Parametre", "İstatistik", "Popülasyon", "Veri"],
+    "correctIndex": 1,
+    "explanations": ["Yanlış. Parametre tüm popülasyonu temsil eden sayısal özelliktir.", "Doğru! Örneklemin sayısal özelliğine (ortalama, standart sapma vb.) İstatistik denir.", "Yanlış. Popülasyon incelenen grubun tamamıdır.", "Yanlış. Veri, değişkenin aldığı tekil gerçek değerlerdir."]
+  },
+  {
+    "question": "Örneklem büyüklüğü ile örnekleme hatası arasındaki ilişki genel olarak nasıldır?",
+    "options": ["Örneklem küçüldükçe hata azalır.", "Örneklem büyüklüğünün hata üzerinde etkisi yoktur.", "Örneklem büyüdükçe hata azalır.", "Örneklem büyüdükçe hata her zaman artar."],
+    "correctIndex": 2,
+    "explanations": ["Yanlış. Küçük örneklemler popülasyonu daha az temsil eder.", "Yanlış. Boyut doğrudan temsiliyet ve varyasyonu etkiler.", "Doğru! Kural olarak, rastgele seçilmiş bir örneklem ne kadar büyükse, örnekleme hatası o kadar küçük olur.", "Yanlış. Örneklem büyüdükçe varyasyon azalır ve hata payı düşer."]
+  },
+  {
+    "question": "Aşağıdakilerden hangisi bir 'Nominal Ölçek' örneğidir?",
+    "options": ["Sıcaklık (Celsius)", "Sınav Puanları", "Öğrencilerin saç rengi", "En iyi 5 tatil yeri sıralaması"],
+    "correctIndex": 2,
+    "explanations": ["Yanlış. Celsius aralık (interval) ölçeğidir.", "Yanlış. Sınav puanları oran (ratio) ölçeğidir.", "Doğru! Saç rengi, kan grubu gibi kategorize edilen ama sıralanamayan veriler nominal ölçektir.", "Yanlış. Sıralama bildiren veriler sıralı (ordinal) ölçektir."]
+  },
+  {
+    "question": "Bir popülasyon listesindeki kişi sayısının (N), istenen örneklem sayısına (n) bölünmesiyle elde edilen 'k' aralığı ile yapılan örnekleme türü hangisidir?",
+    "options": ["Basit rastgele örnekleme", "Küme örnekleme", "Tabakalı örnekleme", "Sistematik örnekleme"],
+    "correctIndex": 3,
+    "explanations": ["Yanlış. Basit rastgele kura ile veya rastgele sayı ile seçilir.", "Yanlış. Küme örnekleme grupları toptan seçmektir.", "Yanlış. Tabakalı homojen gruplardan seçmedir.", "Doğru! Sabit bir k aralığı kullanılarak atlayarak seçim yapmaya sistematik örnekleme denir."]
+  },
+  {
+    "question": "Çubuk grafiğindeki çubukların büyükten küçüğe doğru sıralanmış haline ne ad verilir?",
+    "options": ["Pasta Grafiği", "Pareto Grafiği", "Dağılım Grafiği", "Frekans Tablosu"],
+    "correctIndex": 1,
+    "explanations": ["Yanlış. Pasta grafiği daire şeklinde dilimlerden oluşur.", "Doğru! Kategori boyutuna göre en büyükten en küçüğe sıralanmış çubuk grafiklerine Pareto Grafiği denir.", "Yanlış. Dağılım grafiği (scatter plot) farklı bir grafik türüdür.", "Yanlış. Frekans tablosu grafik değil, bir sayılar tablosudur."]
+  },
+  {
+    "question": "Frekans tablosunda, bir değerin frekansının toplam frekansa bölünmesiyle aşağıdakilerden hangisi elde edilir?",
+    "options": ["Kümülatif Frekans", "Marjinal Dağılım", "Göreceli (Bağıl) Frekans", "Varyasyon"],
+    "correctIndex": 2,
+    "explanations": ["Yanlış. Kümülatif frekans, göreceli frekansların toplanarak ilerlemesidir.", "Yanlış. Marjinal dağılım iki yönlü tablolardaki kenar toplamlarıdır.", "Doğru! Bir değerin sıklığının toplam büyüklüğe oranı Göreceli Frekans'tır.", "Yanlış. Varyasyon verilerdeki doğal değişimdir."]
+  },
+  {
+    "question": "İki yönlü tablolarda, odak noktasının yalnızca nüfusun belirli bir alt kümesinde olduğu dağılım türü hangisidir?",
+    "options": ["Marjinal Dağılım", "Koşullu Dağılım", "Birikimli Dağılım", "Normal Dağılım"],
+    "correctIndex": 1,
+    "explanations": ["Yanlış. Marjinal dağılım toplamları (kenar boşluklarını) ifade eder.", "Doğru! Sadece belirli bir alt kümeye (şarta) odaklanılan dağılıma koşullu dağılım denir.", "Yanlış. Birikimli dağılım frekansların toplanmasıdır.", "Yanlış. Normal dağılım sürekli verilerin istatistiksel eğrisidir."]
+  },
+  {
+    "question": "Bir deneysel çalışmada, katılımcının işlem almadığı halde aldığını düşünerek yanıt değişkeninde değişim göstermesine ne ad verilir?",
+    "options": ["Karıştırıcı Etki", "Körleme Etkisi", "Varyasyon", "Plasebo Etkisi"],
+    "correctIndex": 3,
+    "explanations": ["Yanlış. Karıştırıcı etki, farklı değişkenlerin etkisinin birbirine girmesidir.", "Yanlış. Körleme bu etkiyi önlemek için yapılan tasarımın adıdır.", "Yanlış. Varyasyon ölçümler arasındaki doğal farklılıktır.", "Doğru! Kişinin ilaç veya işlem aldığını sanarak psikolojik olarak sonuç göstermesi plasebo etkisidir."]
+  },
+  {
+    "question": "Bir kişinin evinden en yakın markete olan uzaklığı (örneğin 1.25 km) ne tür bir veridir?",
+    "options": ["Nicel sürekli veri", "Nicel kesikli veri", "Nitel veri", "Nominal veri"],
+    "correctIndex": 0,
+    "explanations": ["Doğru! Mesafe bir aralıktaki tüm ondalıklı değerleri alabildiği için nicel sürekli veridir.", "Yanlış. Kesikli veriler sadece tam sayılarla ifade edilir (sayılabilir).", "Yanlış. Mesafe sayısaldır, kategorik (nitel) değildir.", "Yanlış. Nominal veri kategorik isimler/etiketlerdir."]
+  },
+  {
+    "question": "Bir popülasyonu rastgele olarak heterojen gruplara ayırıp, ardından bu gruplardan birkaçını tamamen seçerek incelediğimiz örnekleme yöntemi hangisidir?",
+    "options": ["Tabakalı örnekleme", "Basit rastgele örnekleme", "Küme örnekleme", "Amaçlı örnekleme"],
+    "correctIndex": 2,
+    "explanations": ["Yanlış. Tabakalı örneklemede homojen gruplardan rastgele üyeler seçilir, grubun tamamı değil.", "Yanlış. Basit rastgelede tüm popülasyondan kura çekilir.", "Doğru! Heterojen kümeler oluşturup bazı kümelerin tamamını seçme işlemine Küme Örnekleme denir.", "Yanlış. Amaçlı örnekleme araştırmacının bilinçli uzman/hedef kitlesi seçimidir."]
+  },
+  {
+    "question": "Nadir görülen özelliklere sahip gruplara ulaşmak için, ilk seçilen katılımcıların diğer katılımcıları bulması üzerine kurulan olasılıksız örnekleme yöntemi nedir?",
+    "options": ["Kolay örnekleme", "Kartopu örnekleme", "Kota örnekleme", "Sistematik örnekleme"],
+    "correctIndex": 1,
+    "explanations": ["Yanlış. Kolay örnekleme en yakın ve ulaşılabilir olana gitmektir.", "Doğru! Katılımcıların kendi ağlarındaki diğer kişileri önermesiyle büyüyen yönteme kartopu örnekleme denir.", "Yanlış. Kota örnekleme belirli bir demografik yüzdeyi tutturmayı hedefler.", "Yanlış. Sistematik örnekleme matematiksel atlamalarla yapılır."]
+  },
+  {
+    "question": "İstatistikte ölçüm araçlarının yanlış olması gibi örnekleme süreciyle doğrudan ilgili olmayan faktörlerin oluşturduğu hataya ne ad verilir?",
+    "options": ["Örneklem Varyasyonu", "Örnekleme Hatası", "Örnekleme Dışı Hata", "Rastgele Atama Hatası"],
+    "correctIndex": 2,
+    "explanations": ["Yanlış. Örneklem varyasyonu alınan farklı örneklemler arasındaki doğal farktır.", "Yanlış. Örnekleme hatası, örneğin popülasyonu tam temsil edememesinden doğan hatadır.", "Doğru! Arızalı ölçüm cihazı gibi veri toplama hatalarına örnekleme dışı hata denir.", "Yanlış. Rastgele atama hata değil bir yöntemdir."]
+  },
+  {
+    "question": "Aşağıdaki değişkenlerden hangisi için hesaplanan iki değer arasında oranlama (ratio) yapılabilir ve 'mutlak sıfır' noktası vardır?",
+    "options": ["Ağırlık", "Sıcaklık (Celsius)", "Tatil yeri sıralaması", "Cinsiyet"],
+    "correctIndex": 0,
+    "explanations": ["Doğru! Ağırlık oran (ratio) ölçeğindedir, gerçek bir 0 (hiçlik) noktası vardır.", "Yanlış. Celsius aralık ölçeğidir. 0 derece sıcaklığın olmadığı anlamına gelmez.", "Yanlış. Sıralı (ordinal) veridir, oranlanamaz.", "Yanlış. Nominal (kategorik) veridir."]
+  },
+  {
+    "question": "Aynı popülasyondan alınan birden fazla rastgele örneğin, doğru toplanmış olmalarına rağmen farklı sonuçlar üretmesine ne ad verilir?",
+    "options": ["Örnekleme Dışı Hata", "Örneklem Varyasyonu (Değişkenliği)", "Plasebo Etkisi", "Amaçlı Örnekleme"],
+    "correctIndex": 1,
+    "explanations": ["Yanlış. Bu bir hata değil, istatistiksel bir gerçektir.", "Doğru! Aynı popülasyondan çekilen farklı örneklemlerin farklı sonuçlar vermesine örneklem varyasyonu denir.", "Yanlış. Plasebo psikolojik bir etkidir.", "Yanlış. Amaçlı örnekleme bir örneklem seçim tekniğidir."]
+  },
+  {
+    "question": "Katılımcıların araştırmanın hangi kolunda olduklarını bilmedikleri, ancak araştırmacının bunu bildiği deney tipi nedir?",
+    "options": ["Açık deney", "Tek-kör deney", "Çift-kör deney", "Rastgele olmayan deney"],
+    "correctIndex": 1,
+    "explanations": ["Yanlış. Açık deneyde herkes her şeyi bilir.", "Doğru! Sadece katılımcıların kör olduğu deneylere tek-kör deney denir.", "Yanlış. Çift-körde araştırmacı da bilmez.", "Yanlış. Rastgele olmayan farklı bir kavramdır."]
+  },
+  {
+    "question": "Bir istatistiksel deneyde, bağımsız değişken ile yanıt değişkeni arasındaki ilişkiyi incelerken sonucu etkileyerek durumu karıştıran değişkene ne denir?",
+    "options": ["Açıklayıcı değişken", "Kategorik değişken", "Gizli değişken", "Bağımlı değişken"],
+    "correctIndex": 2,
+    "explanations": ["Yanlış. Açıklayıcı değişken, kasıtlı olarak değiştirilen değişkendir.", "Yanlış. Kategorik değişken bir veri tipidir.", "Doğru! Deneye müdahale edebilecek kontrol dışı faktörlere gizli değişken denir.", "Yanlış. Bağımlı değişken ölçülen yanıttır."]
+  },
+  {
+    "question": "Aşağıdakilerden hangisi bir 'Nitel (Kategorik)' veri örneği değildir?",
+    "options": ["Göz rengi", "Kullanılan akıllı telefon markası", "Kan grubu", "Sınavdaki doğru cevap sayısı"],
+    "correctIndex": 3,
+    "explanations": ["Yanlış. Göz rengi nitel bir veridir.", "Yanlış. Markalar kategorik nitel verilerdir.", "Yanlış. Kan grupları nitel verilerdir.", "Doğru! Sınavdaki doğru cevap sayısı sayısal bir ifadedir, nicel veridir."]
+  }
+]

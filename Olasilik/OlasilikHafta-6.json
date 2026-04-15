@@ -1,0 +1,402 @@
+[
+  {
+    "question": "Normal dağılımın grafiği genel olarak hangi şekle benzetilir?",
+    "options": [
+      "U şeklinde",
+      "Çan şeklinde",
+      "Doğrusal",
+      "V şeklinde"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Normal dağılım eğrisi uçlarda alçak, ortada yüksektir.",
+      "Doğru! Normal dağılımın grafiği simetrik bir çan şeklindedir[cite: 14].",
+      "Yanlış. Eğrisel bir yapıya sahiptir, doğrusal değildir.",
+      "Yanlış. V şeklinde keskin bir yapısı yoktur."
+    ]
+  },
+  {
+    "question": "Normal dağılımın şeklini ve konumunu belirleyen iki ana parametre nedir?",
+    "options": [
+      "Ortalama ($\\mu$) ve Standart Sapma ($\\sigma$)",
+      "Medyan ve Mod",
+      "Varyans ve Açıklık",
+      "Çarpıklık ve Basıklık"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Normal dağılımın iki ana parametresi ortalama ve standart sapmadır[cite: 20, 21, 22].",
+      "Yanlış. Bunlar merkezi eğilim ölçüleridir ancak tek başlarına normal dağılımı tanımlamazlar.",
+      "Yanlış. Açıklık bir parametre değildir.",
+      "Yanlış. Bunlar normal dağılımda dağılımı tanımlamak için kullanılan temel parametreler değildir."
+    ]
+  },
+  {
+    "question": "Normal dağılım eğrisi altında kalan toplam alanın değeri kaçtır?",
+    "options": [
+      "0.5",
+      "10",
+      "1",
+      "Sonsuz"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bu sadece ortalamanın bir tarafında kalan alandır[cite: 60].",
+      "Yanlış. Toplam olasılık 1'i geçemez.",
+      "Doğru! Tüm olasılık dağılımlarında olduğu gibi f(x) eğrisi altında kalan alan daima 1'dir[cite: 53].",
+      "Yanlış. Alan sınırlı ve 1'e eşittir."
+    ]
+  },
+  {
+    "question": "Tam olarak normal dağılım gösteren bir veri setinde Ortalama, Medyan ve Mod arasındaki ilişki nasıldır?",
+    "options": [
+      "Ortalama > Medyan > Mod",
+      "Mod > Medyan > Ortalama",
+      "Mod = Medyan = Ortalama",
+      "Ortalama < Medyan = Mod"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Dağılım simetrik olduğundan birbirlerine eşit olmalıdırlar.",
+      "Yanlış. Bu, normal dağılımın değil, sağa çarpık dağılımın bir özelliğidir[cite: 81, 82].",
+      "Doğru! Normal dağılım ortalamaya göre tam simetrik olduğu için Mod = Medyan = Ortalama bağıntısı geçerlidir[cite: 76].",
+      "Yanlış. Hepsi birbirine eşittir."
+    ]
+  },
+  {
+    "question": "Normal dağılım değişkenleri hakkında verilen bilgilerden hangisi doğrudur?",
+    "options": [
+      "Sadece tam sayı değerleri alabilir.",
+      "Sürekli bir dağılımdır ve $-\\infty$ ile $\\infty$ arası tüm reel değerleri alabilir.",
+      "Sadece pozitif değerler alabilir.",
+      "Kesikli bir dağılım türüdür."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Kesikli değil, sürekli bir dağılımdır; ondalıklı değerler de alabilir.",
+      "Doğru! Normal dağılım sürekli bir dağılımdır [cite: 13] ve eksi sonsuz ile artı sonsuz aralığındaki tüm reel eksendeki değerleri alabilir[cite: 51, 52].",
+      "Yanlış. Negatif değerler de alabilir.",
+      "Yanlış. Sürekli bir dağılımdır[cite: 13]."
+    ]
+  },
+  {
+    "question": "Standart normal dağılımın aritmetik ortalaması ($\\mu$) ve varyansı ($\\sigma^2$) sırasıyla kaçtır?",
+    "options": [
+      "$\\mu=1$, $\\sigma=0$",
+      "$\\mu=0.5$, $\\sigma=0.5$",
+      "$\\mu=10$, $\\sigma=1$",
+      "$\\mu=0$, $\\sigma=1$"
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. Standart sapma/varyans 0 olamaz, bu hiç varyasyon olmadığı anlamına gelir.",
+      "Yanlış. Standart değerler bunlar değildir.",
+      "Yanlış. Ortalama 0 olmalıdır.",
+      "Doğru! Aritmetik ortalama $\\mu=0$ ve varyans $\\sigma=1$ alındığında oluşan dağılıma standart normal dağılım denir[cite: 90]."
+    ]
+  },
+  {
+    "question": "Herhangi bir X rastgele değişkenini, standart normal dağılım değişkeni Z'ye dönüştürmek için kullanılan formül hangisidir?",
+    "options": [
+      "$z = (X + \\mu) / \\sigma$",
+      "$z = (X - \\mu) / \\sigma$",
+      "$z = (X \\cdot \\mu) - \\sigma$",
+      "$z = (\\sigma - X) / \\mu$"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Toplama değil çıkarma işlemi yapılmalıdır.",
+      "Doğru! Z değişkenine dönüşüm $z = (X - \\mu) / \\sigma$ bağıntısı gereğince yapılır[cite: 92, 94].",
+      "Yanlış. Çarpma işlemi kullanılmaz.",
+      "Yanlış. Formülün yapısı tamamen farklıdır."
+    ]
+  },
+  {
+    "question": "Hesaplanmış bir z-değeri (z-puanı) temel olarak neyi ifade eder?",
+    "options": [
+      "Olasılığın yüzde kaç olduğunu doğrudan belirtir.",
+      "Bir değerin standart sapma sayısını (ortalamadan kaç standart sapma uzaklıkta olduğunu) gösterir.",
+      "Veri setindeki toplam ölçüm sayısını gösterir.",
+      "Ortalamanın varyansa oranını gösterir."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Olasılığı bulmak için z-değeri üzerinden tablodan okuma yapılmalıdır.",
+      "Doğru! z-değeri, bir değerin standart sapma sayısını ve ortalamadan ne kadar uzaklaştığını gösterir[cite: 107].",
+      "Yanlış. Örneklem sayısı (n) ile z-değeri farklı kavramlardır.",
+      "Yanlış. Böyle bir oran formülü yoktur."
+    ]
+  },
+  {
+    "question": "Normal dağılımda, ortalamadan bir standart sapma uzaklığa ($\\mu \\pm 1\\sigma$) sahip aralık, eğri altındaki toplam alanın yaklaşık yüzde kaçını kapsar?",
+    "options": [
+      "%50",
+      "%68",
+      "%95",
+      "%99.7"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. %50 ortalamanın sadece bir tarafındaki alandır.",
+      "Doğru! Ampirik kurala göre, $\\mu \\pm 1\\sigma$ aralığında normal eğri altında kalan alan yaklaşık 0.68 yani %68'dir[cite: 68, 70].",
+      "Yanlış. %95, 2 standart sapma aralığına denk gelir.",
+      "Yanlış. %99.7, 3 standart sapma aralığına denk gelir."
+    ]
+  },
+  {
+    "question": "Normal dağılımda, verilerin yaklaşık %95'i hangi aralık içerisinde yer alır?",
+    "options": [
+      "$\\mu \\pm 1\\sigma$",
+      "$\\mu \\pm 2\\sigma$",
+      "$\\mu \\pm 3\\sigma$",
+      "$\\mu \\pm 0.5\\sigma$"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu aralık %68'lik alanı kapsar.",
+      "Doğru! Ampirik kurala göre, verilerin yaklaşık %95'i $\\mu \\pm 2\\sigma$ aralığında yer alır[cite: 68, 69].",
+      "Yanlış. Bu aralık verilerin %99.7'sini kapsar.",
+      "Yanlış. Daha dar bir aralıktır."
+    ]
+  },
+  {
+    "question": "Normal dağılım eğrisinde aritmetik ortalamanın ($\\mu$) solunda kalan bölgenin ($\\int_{-\\infty}^{\\mu} f(x) dx$) olasılığı kaçtır?",
+    "options": [
+      "0.25",
+      "0.50",
+      "1.00",
+      "0.68"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Alanın çeyreği değildir.",
+      "Doğru! Dağılım ortalamaya göre simetrik olduğundan ortalamanın solunda (ve sağında) kalan alan tam olarak 0.5'tir (%50)[cite: 56, 57, 58].",
+      "Yanlış. 1.0 tüm eğrinin altındaki toplam alandır.",
+      "Yanlış. Bu değer $\\mu \\pm 1\\sigma$ aralığının kapsadığı alandır."
+    ]
+  },
+  {
+    "question": "$X \\sim N(5, 6)$ ifadesindeki 5 ve 6 sayıları sırasıyla neyi ifade etmektedir?",
+    "options": [
+      "Varyans ve Ortalama",
+      "Standart Sapma ve Varyans",
+      "Ortalama ve Standart Sapma",
+      "Z-puanı ve Alan"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Terimlerin sırası hatalıdır.",
+      "Yanlış. Parametreler sırasıyla ortalama ve standart sapmadır.",
+      "Doğru! Bu ifade ortalaması $\\mu=5$ ve standart sapması $\\sigma=6$ olan normal dağılımlı bir değişkeni ifade eder[cite: 111, 112].",
+      "Yanlış. Bunlar normal dağılımın iki ana parametresi değildir."
+    ]
+  },
+  {
+    "question": "$X \\sim N(5, 6)$ dağılımında, $x = 17$ değeri için hesaplanacak olan z-değeri nedir?",
+    "options": [
+      "0.5",
+      "1",
+      "2",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Hesaplama hatası.",
+      "Yanlış. Pay kısmı 12 çıkacaktır, 6'ya bölünmelidir.",
+      "Doğru! Formül: $z = (17 - 5) / 6 = 12 / 6 = 2$ olarak bulunur[cite: 114].",
+      "Yanlış. 12, pay kısmındaki farktır, standart sapmaya bölünmelidir."
+    ]
+  },
+  {
+    "question": "$X \\sim N(5, 6)$ dağılımında $x = 2$ değeri için hesaplanan z-değeri nedir?",
+    "options": [
+      "-0.5",
+      "0.5",
+      "-2",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Formül: $z = (2 - 5) / 6 = -3 / 6 = -0.5$ değerini verir[cite: 119].",
+      "Yanlış. Değer ortalamanın (5) altında olduğu için z-değeri negatif çıkmalıdır.",
+      "Yanlış. Bölme işleminde hata var.",
+      "Yanlış. Doğru cevap -0.5 olmalıdır."
+    ]
+  },
+  {
+    "question": "Z-değeri hesaplanmış bir veriyi tekrar X (orijinal) değerine döndürmek için kullanılması gereken denklem hangisidir?",
+    "options": [
+      "$x = (z / \\sigma) + \\mu$",
+      "$x = \\sigma \\cdot z + \\mu$",
+      "$x = (\\mu \\cdot z) + \\sigma$",
+      "$x = \\sigma \\cdot \\mu + z$"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bölme değil çarpma yapılmalıdır.",
+      "Doğru! z-değeri formülünden $x$ yalnız bırakılırsa $x = \\sigma z + \\mu$ denklemi elde edilir[cite: 122].",
+      "Yanlış. Değişkenlerin yerleri yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "İstatistik kitaplarında sıkça bulunan standart z-tablosu genellikle hangi tip kümülatif olasılığı doğrudan verir?",
+    "options": [
+      "$P(Z > z)$",
+      "$P(Z = z)$",
+      "$P(Z < z)$",
+      "$P(a < Z < b)$"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Z-tablosu genellikle sağ değil sol kuyruk kümülatif alanını verir.",
+      "Yanlış. Sürekli dağılımlarda spesifik tek bir noktanın olasılığı hesaplanmaz.",
+      "Doğru! z-tablosu doğrudan, $P(Z < z)$ gibi kümülatif bir dağılımı (cdf) gösterir[cite: 144].",
+      "Yanlış. Aralığı bulmak için iki farklı kümülatif alanın birbirinden çıkarılması gerekir."
+    ]
+  },
+  {
+    "question": "Standart normal dağılımda $P(Z \\ge 3.25)$ olasılığı z-tablosu yardımıyla nasıl hesaplanır?",
+    "options": [
+      "Tablodan 3.25'in değeri okunur ve doğrudan sonuç olarak yazılır.",
+      "$1 - P(Z \\le 3.25)$ işlemi ile hesaplanır.",
+      "$P(Z \\le 3.25) \\cdot 2$ formülü ile bulunur.",
+      "Tablodaki değer eksi (-) ile çarpılır."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Tablo doğrudan $\\le$ durumunu (sol kısmı) verir.",
+      "Doğru! Eğri altındaki toplam alan 1 olduğu için, sağ kuyruk simetri ile $1 - P(Z \\le 3.25)$ şeklinde hesaplanır[cite: 150, 152].",
+      "Yanlış.",
+      "Yanlış. Olasılık hiçbir zaman negatif olamaz."
+    ]
+  },
+  {
+    "question": "$P(Z \\le -0.19)$ gibi negatif bir z-değerinin olasılığını hesaplarken simetri özelliğinden faydalanarak hangi eşdeğer ifade kullanılabilir?",
+    "options": [
+      "$P(Z \\le 0.19)$",
+      "$1 - P(Z \\le 0.19)$",
+      "$- P(Z \\le 0.19)$",
+      "$1 + P(Z \\le 0.19)$"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Sadece işaret değiştirilemez.",
+      "Doğru! Simetri özelliğinden dolayı sol kuyruk $P(Z \\le -0.19)$, tam ters taraftaki sağ kuyruğa $P(Z \\ge 0.19)$ eşittir, bu da $1 - P(Z \\le 0.19)$ demektir[cite: 159].",
+      "Yanlış. Olasılık değeri sıfırdan küçük olamaz.",
+      "Yanlış. Olasılık 1 değerini aşamaz."
+    ]
+  },
+  {
+    "question": "$P(1.02 \\le Z \\le 2.12)$ olasılığı z-tablosu kullanılarak nasıl hesaplanır?",
+    "options": [
+      "$P(Z \\le 2.12) - P(Z \\le 1.02)$",
+      "$P(Z \\le 2.12) + P(Z \\le 1.02)$",
+      "$1 - (P(Z \\le 2.12) - P(Z \\le 1.02))$",
+      "$(2.12 - 1.02) / 2$"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! İki değer arasındaki kümülatif alanı bulmak için, büyük sınırın olasılığından küçük sınırın olasılığı çıkarılır[cite: 166].",
+      "Yanlış. Toplama işlemi alanı 1'den büyük yapabilir.",
+      "Yanlış. Bu işlem sadece o iki z aralığının dışındaki alanın toplamını verir.",
+      "Yanlış. Alan hesaplaması doğrudan Z değerleri çıkarılarak yapılmaz."
+    ]
+  },
+  {
+    "question": "\"z-değeri ölçekten bağımsızdır\" ifadesi ne anlama gelmektedir?",
+    "options": [
+      "Her zaman 0 ile 1 arasında değer alır.",
+      "Tüm dağılımlarda standart sapmayı matematiksel olarak sıfırlar.",
+      "Çeşitli ortalama ve standart sapmaya sahip farklı veri kümelerinde standart olarak uygulanabilir ve karşılaştırılabilir.",
+      "Hesaplanırken orijinal ölçü birimi (kg, metre vb.) sonucun yanına yazılır."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. z-değeri pozitif, negatif veya 1'den büyük sayılar olabilir.",
+      "Yanlış. Standart sapmayı 1 yapar, sıfırlamaz.",
+      "Doğru! z-değeri ölçekten bağımsızdır; farklı birimlere ve ortalamalara sahip veri kümelerinin standart formda karşılaştırılmasını sağlar[cite: 108, 109].",
+      "Yanlış. Z-puanı tamamen birimsiz (ölçekten bağımsız) bir değerdir."
+    ]
+  },
+  {
+    "question": "Bir aracın hız denetiminde $\\mu = 62$ ve $X = 72$ iken standart sapma ($\\sigma$) bulunmak isteniyor. Eğer z-değeri tablodan 1.88 bulunmuşsa $\\sigma$ yaklaşık kaçtır?",
+    "options": [
+      "5.32",
+      "10.0",
+      "18.8",
+      "2.15"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Formül üzerinden $10 / \\sigma = 1.88 \\rightarrow \\sigma = 10 / 1.88 \\approx 5.32$ olarak hesaplanır[cite: 207].",
+      "Yanlış. 10 sayısı X ile ortalama arasındaki salt farktır.",
+      "Yanlış.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Normal dağılımın özellikleri dikkate alındığında $\\int_{-\\infty}^{\\infty} f(x) dx$ integralinin sonucu nedir?",
+    "options": [
+      "Sınırlandırılamaz (Sonsuz)",
+      "0",
+      "0.5",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. Eğri altındaki alan sınırlıdır.",
+      "Yanlış. Olasılık her zaman pozitif bir alan kaplar.",
+      "Yanlış. Ortalamaya kadar olan alanın toplamıdır.",
+      "Doğru! f(x) eğrisi altında kalan alan daima 1'dir ve bu integralin sonucu 1 çıkar[cite: 53, 54]."
+    ]
+  },
+  {
+    "question": "$X \\sim N(25, 4)$ dağılımı kullanılarak $P(X < k) = 0.90$ (90. yüzdelik) değeri bulunurken tabloyu okurken izlenecek ilk adım ne olmalıdır?",
+    "options": [
+      "Tablonun kenarından z=0.90 değerine denk gelen olasılığa (iç alana) bakmak.",
+      "Tablo içinde 0.90 alanına (olasılığına) en yakın değeri bulup buna denk gelen z-değerini (yaklaşık 1.28) tespit etmek.",
+      "Doğrudan $k = 25 + 0.90$ işlemi yapmak.",
+      "$0.90 \\cdot 4$ işlemi ile yeni bir standart sapma bulmak."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. 0.90 değeri yüzdelik dilimi, yani eğri altındaki alanı temsil eder, z-değerini değil.",
+      "Doğru! P(X<k)=0.90 olması tablodaki iç alandan (0.90) dışarıdaki z-değerine (yaklaşık 1.28) ters arama yapmayı gerektirir[cite: 196].",
+      "Yanlış. Orijinal X değerine dönerken Z-formülü kullanılmalıdır.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Standart normal dağılım eğrisi f(x) fonksiyonunun formülündeki katsayı hangisidir?",
+    "options": [
+      "$1 / (\\sigma \\sqrt{2\\pi})$",
+      "$1 / \\sqrt{2\\pi}$",
+      "$e^{-x^2 / 2}$",
+      "$\\pi \\cdot e$"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu standart olmayan genel normal dağılım içindir.",
+      "Doğru! Standart normal dağılımda $\\sigma=1$ olduğu için katsayı $1 / \\sqrt{2\\pi}$ şeklini alır[cite: 98].",
+      "Yanlış. Katsayı formülün başındaki çarpım elemanıdır.",
+      "Yanlış."
+    ]
+  },
+  {
+    "question": "Normal dağılım gerçek dünyada hangi durumlarda karşımıza çıkar?",
+    "options": [
+      "Yalnızca teorik matematikte ve bilgisayar modellerinde bulunur.",
+      "Psikoloji, işletme, ekonomi, fen bilimleri gibi birçok alanda değişkenlerde yaygın olarak bulunur ancak her şeye uygulanamaz.",
+      "Sadece kesikli verilerin sayım işlemlerinde kullanılır.",
+      "Gerçek dünyadaki hiçbir veriye uyum sağlayamaz."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Gerçek hayatta pratikte çok geniş bir kullanım alanı vardır.",
+      "Doğru! Çan eğrisi psikoloji, işletme, matematik gibi hemen hemen her alanda vardır, ancak gerçek dünyadaki her şeye uygulanamaz[cite: 15, 16].",
+      "Yanlış. Kesikli veriler için değil, boy ve ağırlık gibi sürekli veriler içindir.",
+      "Yanlış. İstatistikte en yaygın kullanılan dağılımdır."
+    ]
+  }
+]

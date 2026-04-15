@@ -1,0 +1,402 @@
+[
+  {
+    "question": "Bir şans deneyindeki tüm olası sonuçların kümesine ne ad verilir?",
+    "options": [
+      "Olay",
+      "Çıktı",
+      "Deneme",
+      "Örnek uzayı"
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. Olay, çıktıların kombinasyonu veya örnek uzayının alt kümeleridir[cite: 22].",
+      "Yanlış. Çıktı, bir deneyin sadece bir sonucudur[cite: 20].",
+      "Yanlış. Deneme, deneyin her bir tekrarına verilen addır[cite: 19].",
+      "Doğru! Örnek uzayı, deneydeki tüm olası sonuçların kümesi veya koleksiyonudur ve S ile gösterilir[cite: 21]."
+    ]
+  },
+  {
+    "question": "Bir A olayının olasılığı (P(A)) hangi değer aralığında olmak zorundadır?",
+    "options": [
+      "-1 ile 1 arasında",
+      "0 ile 1 arasında",
+      "1 ile 100 arasında",
+      "0 ile 0.5 arasında"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Olasılık negatif bir değer alamaz.",
+      "Doğru! Bir A olayının olasılığı 0 ≤ P(A) ≤ 1 şeklinde tanımlanır[cite: 54].",
+      "Yanlış. Olasılık değeri yüzde olarak ifade edilse de matematiksel P(A) değeri 1'i geçemez[cite: 54].",
+      "Yanlış. 0.5 sadece eşit derecede olabilirlik durumudur, olasılık 1'e kadar çıkabilir[cite: 54, 64]."
+    ]
+  },
+  {
+    "question": "Eğer bir A olayının olasılığı P(A) = 0 ise, bu olay için aşağıdakilerden hangisi söylenebilir?",
+    "options": [
+      "Kesin olaydır.",
+      "İmkansız olaydır.",
+      "Eşit olası olaydır.",
+      "Bağımsız olaydır."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Kesin olayların olasılığı 1'dir[cite: 56, 65].",
+      "Doğru! P(A)=0 olması, A olayının asla gerçekleşmeyeceği, yani imkansız olduğu manasına gelir[cite: 55, 60].",
+      "Yanlış. Eşit olası olayların olasılığı 0.5'tir[cite: 57].",
+      "Yanlış. Bağımsızlık olayın imkansızlığı ile ilgili değil, iki olayın etkileşimi ile ilgilidir[cite: 123]."
+    ]
+  },
+  {
+    "question": "Aşağıdakilerden hangisi örnek uzayını temsil etmenin dört ana yolundan biri değildir?",
+    "options": [
+      "Venn şeması ile",
+      "Ağaç diyagramı ile",
+      "Histogram ile",
+      "Çıktıların sistematik bir listesi ile"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Venn şeması örnek uzayını gösterme yollarından biridir[cite: 45].",
+      "Yanlış. Ağaç diyagramı örnek uzayını gösterme yollarından biridir[cite: 33].",
+      "Doğru! Histogram, veri frekanslarını göstermek içindir, örnek uzayı gösterim yöntemleri (liste, ağaç diyagramı, küme notasyonu, Venn şeması) arasında yer almaz[cite: 25, 26, 33, 42, 45].",
+      "Yanlış. Çıktıların sistematik listesi örnek uzayını gösterme yollarından biridir[cite: 26]."
+    ]
+  },
+  {
+    "question": "A olayındaki sonuç sayısının, olası bütün sonuçların sayısına bölünmesiyle elde edilen olasılık türü hangisidir?",
+    "options": [
+      "Deneysel olasılık",
+      "Koşullu olasılık",
+      "Teorik olasılık",
+      "Bağımlı olasılık"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Deneysel olasılık meydana gelme sayısının deneme sayısına bölümüdür[cite: 72].",
+      "Yanlış. Koşullu olasılık, bir olayın diğerinin gerçekleşmesi koşuluna bağlı olasılığıdır[cite: 93].",
+      "Doğru! A olayındaki sonuç sayısının olası bütün sonuçlara bölünmesi formülü Teorik Olasılık için geçerlidir[cite: 69, 70].",
+      "Yanlış. Bağımlı olasılık iki olayın birbirini etkilemesiyle ilgilidir[cite: 129]."
+    ]
+  },
+  {
+    "question": "Deneysel olasılık hesaplamalarında, deneme sayısı arttıkça sonuç hangi değere yakınsar?",
+    "options": [
+      "Sıfıra",
+      "Bire",
+      "Teorik olasılığa",
+      "Örnek uzayının eleman sayısına"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Sadece imkansız olaylar sıfıra yakınsar.",
+      "Yanlış. Sadece kesin olaylar bire yakınsar.",
+      "Doğru! Deneme sayısı arttıkça, elde edilen deneysel sonuç teorik olasılığa yakınsar[cite: 77].",
+      "Yanlış. Olasılık değeri 1'i aşamaz, örnek uzayı eleman sayısına eşitlenemez[cite: 54]."
+    ]
+  },
+  {
+    "question": "A ve B gibi iki olayın birleşimi (VEYA işlemi) neyi ifade eder?",
+    "options": [
+      "Sonuçların her ikisinde birden olmasıdır.",
+      "Sonuçların A ve B olaylarından en az birinde olmasıdır.",
+      "A'da olup B'de olmayan sonuçlardır.",
+      "İki olayın da gerçekleşmeme olasılığıdır."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu tanım olayların birleşimi değil, kesişimi (VE işlemi) için geçerlidir[cite: 84, 85].",
+      "Doğru! İki olayın birleşimi (VEYA işlemi), sonuçların A ve B olaylarından en az birinde olmasıdır[cite: 79, 80].",
+      "Yanlış. Bu sadece A'nın B'den farkını ifade eder.",
+      "Yanlış. Bu tümleyenlerin kesişimini ifade eder."
+    ]
+  },
+  {
+    "question": "A olayının tümleyeni ($A^{\\prime}$) hangi sonuçlardan oluşur?",
+    "options": [
+      "A olayındaki tüm sonuçlardan",
+      "Örnek uzayında olup A'da olmayan tüm sonuçlardan",
+      "A ve B olaylarının ortak sonuçlarından",
+      "Hem A hem de B olayında olmayan sonuçlardan"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu A olayının kendisidir.",
+      "Doğru! A olayının tümleyeni, A'da olmayan tüm sonuçlardan oluşur[cite: 83, 87].",
+      "Yanlış. Bu tanım kesişim işlemidir[cite: 85].",
+      "Yanlış. Bu A birleşim B'nin tümleyenidir."
+    ]
+  },
+  {
+    "question": "A = {1,2,3} ve B = {2,3,4,5} ise A VE B (A $\\cap$ B) kümesi aşağıdakilerden hangisidir?",
+    "options": [
+      "{1,4,5}",
+      "{1,2,3,4,5}",
+      "{2,3}",
+      "{4,5}"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bu küme sadece kesişimde olmayan elemanlardır.",
+      "Yanlış. Bu A VEYA B (birleşim) kümesidir[cite: 82].",
+      "Doğru! A ve B'nin kesişimi (VE işlemi) her ikisinde de bulunan {2,3} sonuçlarından oluşur[cite: 88, 89].",
+      "Yanlış. Bu B kümesinde olup A'da olmayan elemanlardır."
+    ]
+  },
+  {
+    "question": "Bir B olayı gerçekleştikten sonra A olayının gerçekleşme olasılığı ile ilgileniliyorsa, bu olasılık türüne ne ad verilir?",
+    "options": [
+      "Bağımsız olasılık",
+      "Ayrık olasılık",
+      "Koşullu olasılık",
+      "Tümleyen olasılık"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bağımsız olasılıkta olaylar birbirini etkilemez[cite: 123].",
+      "Yanlış. Ayrık olasılık, aynı anda gerçekleşemeyen olaylar için kullanılır[cite: 159].",
+      "Doğru! Bir olayın gerçekleşmesinin, başka bir olayın gerçekleşmesi koşuluna bağlı olmasına koşullu olasılık denir[cite: 92, 93].",
+      "Yanlış. Tümleyen olasılık bir olayın olmama ihtimalidir[cite: 83, 87]."
+    ]
+  },
+  {
+    "question": "P(A \\ B) şeklinde gösterilen koşullu olasılığın formülü aşağıdakilerden hangisidir?",
+    "options": [
+      "P(AB) / P(A)",
+      "P(A) + P(B)",
+      "P(AB) / P(B)",
+      "P(A) * P(B)"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bu P(B \\ A) (A gerçekleştikten sonra B'nin gerçekleşmesi) formülüdür.",
+      "Yanlış. Bu ayrık olaylar için toplama kuralıdır[cite: 208].",
+      "Doğru! B'den sonra A'nın gerçekleşmesi olasılığı P(A \\ B) = P(AB) / P(B) olarak hesaplanır[cite: 95, 96].",
+      "Yanlış. Bu bağımsız olayların kesişim (çarpma kuralı) formülüdür[cite: 199]."
+    ]
+  },
+  {
+    "question": "İki olaydan birinin meydana gelmesi, diğerinin meydana gelme şansını etkilemiyorsa bu iki olay için hangi terim kullanılır?",
+    "options": [
+      "Ayrık olaylar",
+      "Bağımsız olaylar",
+      "Bağımlı olaylar",
+      "Koşullu olaylar"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Ayrık olaylar aynı anda gerçekleşemeyen olaylardır[cite: 159].",
+      "Doğru! Birinin meydana gelmesinin diğerinin meydana gelme şansını etkilemediği olaylara bağımsız olaylar denir[cite: 122, 123].",
+      "Yanlış. Birbirini etkileyen olaylara bağımlı olaylar denir[cite: 129].",
+      "Yanlış. Koşullu olay, gerçekleşmesi bir şarta bağlanan olaydır[cite: 93]."
+    ]
+  },
+  {
+    "question": "A ve B olaylarının bağımsız olması için aşağıdaki eşitliklerden hangisinin doğru olması gerekir?",
+    "options": [
+      "P(AB) = 0",
+      "P(A \\ B) = P(B)",
+      "P(A VEYA B) = P(A) + P(B)",
+      "P(AB) = P(A) * P(B)"
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. P(AB) = 0 olması, olayların ayrık olduğunu gösterir[cite: 160].",
+      "Yanlış. Bağımsızlık durumunda P(A \\ B) = P(A) olmalıdır, P(B) değil[cite: 126].",
+      "Yanlış. Bu ayrık olaylar için toplama kuralıdır[cite: 208].",
+      "Doğru! İki olayın bağımsız olması için P(AB) = P(A) * P(B) şartı sağlanmalıdır[cite: 125, 128]."
+    ]
+  },
+  {
+    "question": "İki olay aynı anda gerçekleşemiyorsa ve hiçbir sonucu paylaşmıyorsa bu olaylara ne ad verilir?",
+    "options": [
+      "Bağımsız olaylar",
+      "Eşit olaylar",
+      "Ayrık olaylar",
+      "Tümleyen olaylar"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bağımsız olaylar birbiriyle ilgisi olmayan ama aynı anda gerçekleşebilen olaylar olabilir[cite: 123].",
+      "Yanlış. Eşit olaylar tüm çıktıları aynı olan olaylardır.",
+      "Doğru! İki olay aynı anda gerçekleşemiyorsa ve sonuç paylaşmıyorsa bunlar ayrık olaylardır[cite: 158, 159, 160].",
+      "Yanlış. Her ayrık olay tümleyen olmak zorunda değildir."
+    ]
+  },
+  {
+    "question": "Bir iskambil destesinden seçilen kart için, 'K = kart bir kupa' ve 'M = kart bir maça' olayları ayrık olaylardır. Bu iki olayın kesişiminin olasılığı P(KM) nedir?",
+    "options": [
+      "0",
+      "1",
+      "0.5",
+      "0.25"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Ayrık olayların hiçbir ortak sonucu olmadığı için kesişimlerinin olasılığı her zaman P(AB)=0 olur[cite: 160, 215].",
+      "Yanlış. 1, kesin olayların olasılığıdır[cite: 56].",
+      "Yanlış. Bir kart aynı anda hem kupa hem maça olamaz[cite: 215].",
+      "Yanlış. Kesişimleri yoktur."
+    ]
+  },
+  {
+    "question": "Bağımlı iki A ve B olayı için Çarpma Kuralı'na göre P(A VE B) veya P(AB) formülü hangisidir?",
+    "options": [
+      "P(A) * P(B)",
+      "P(A) + P(B \\ A)",
+      "P(A) * P(B \\ A)",
+      "P(A) / P(B)"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bu sadece olaylar bağımsız ise geçerlidir[cite: 198, 199].",
+      "Yanlış. Toplama kuralı ve çarpma kuralı karıştırılmamalıdır.",
+      "Doğru! Bağımlı olaylar için çarpma kuralı P(AB) = P(A) * P(B \\ A) şeklindedir[cite: 194, 195].",
+      "Yanlış. Bu koşullu olasılığın formülünün hatalı çevrilmiş halidir."
+    ]
+  },
+  {
+    "question": "Ayrık olmayan iki A ve B olayı için Toplama Kuralı formülü (P(A VEYA B)) aşağıdakilerden hangisidir?",
+    "options": [
+      "P(A) + P(B) - P(AB)",
+      "P(A) + P(B)",
+      "P(A) * P(B) + P(AB)",
+      "P(A) + P(B) + P(AB)"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Ayrık olmayan olaylar için formül P(A VEYA B) = P(A) + P(B) - P(AB) şeklindedir[cite: 205, 206].",
+      "Yanlış. Bu formül sadece olaylar ayrıksa kullanılır[cite: 207, 208].",
+      "Yanlış. Çarpım ve toplam bir arada bu şekilde kullanılmaz.",
+      "Yanlış. Kesişim toplanmaz, iki kere sayılmaması için çıkartılır[cite: 206]."
+    ]
+  },
+  {
+    "question": "Eğer A ve B olayları ayrık olaylar ise, P(A VEYA B) formülü nasıl basitleşir?",
+    "options": [
+      "P(A) * P(B)",
+      "P(A) + P(B)",
+      "P(A) - P(B)",
+      "P(AB) = 0"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu çarpma işlemidir.",
+      "Doğru! Ayrık olaylarda P(AB)=0 olduğu için toplama kuralı P(A VEYA B) = P(A) + P(B) haline gelir[cite: 208, 209].",
+      "Yanlış. Olasılıklar çıkartılmaz, birleşimleri için toplanır.",
+      "Yanlış. P(AB)=0 şartı doğrudur ancak P(A VEYA B)'nin basitleşmiş eşitliğini sormaktadır[cite: 208, 209]."
+    ]
+  },
+  {
+    "question": "Olasılık tabloları (iki yönlü tablolar) temelde hangi olasılıkları hesaplamak için kullanılır?",
+    "options": [
+      "Sadece bağımsız olasılıkları",
+      "Sürekli olasılık dağılımlarını",
+      "Marjinal ve koşullu dağılımları/olasılıkları",
+      "Ağaç diyagramlarının düğüm sayılarını"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Sadece bağımsız olasılıkları hesaplamakla kısıtlı değildir.",
+      "Yanlış. Tablolar genelde ayrık verileri gösterir.",
+      "Doğru! İki yönlü olasılık tabloları, marjinal ve koşullu dağılımları ve olasılıkları hesaplamak için kullanılır[cite: 240, 241, 242].",
+      "Yanlış. Tablolar ağaç diyagramlarıyla doğrudan düğüm sayımı ilişkisi kurmaz."
+    ]
+  },
+  {
+    "question": "Frekanslar veya olasılıklar ile etiketlenen dallardan oluşan ve bir deneyin sonuçlarını belirlemek için kullanılan görsel grafik türü hangisidir?",
+    "options": [
+      "Ağaç Diyagramı",
+      "Kutu Grafiği",
+      "Venn Diyagramı",
+      "Dağılım Grafiği"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru! Ağaç diyagramı, olasılık problemlerinin görselleştirilmesinde kullanılan ve olasılıklarla etiketlenen dallardan oluşan bir grafiktir[cite: 290, 291].",
+      "Yanlış. Kutu grafiği, medyan ve çeyrekler açıklığı gibi istatistiksel dağılımları gösterir.",
+      "Yanlış. Venn diyagramı kümeler ve kesişimler üzerinden ilişkileri gösterir, dallar barındırmaz[cite: 411, 412].",
+      "Yanlış. Dağılım grafiği (scatter plot) veri noktalarının iki eksen arasındaki dağılımını gösterir."
+    ]
+  },
+  {
+    "question": "Ağaç diyagramlarında bir yolun toplam olasılığı (örneğin art arda iki kedinin Tekir seçilmesi, P(TT)) nasıl hesaplanır?",
+    "options": [
+      "Dallardaki olasılıklar birbiriyle toplanır.",
+      "Dallardaki olasılıklar birbirinden çıkarılır.",
+      "Dallardaki olasılıklar birbirine bölünür.",
+      "Dallardaki olasılıklar birbiriyle çarpılır."
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Yanlış. Toplama işlemi VEYA (farklı yolların olasılıklarını bulmak) için kullanılır[cite: 408, 409].",
+      "Yanlış. Olasılıklar çıkarılmaz.",
+      "Yanlış. Olasılıklar bölünmez.",
+      "Doğru! Ağaç diyagramında belirli bir yolu (VE işlemini) takip ederken o yol üzerindeki dalların olasılıkları birbiriyle çarpılır, örn: P(TT)=(4/9)*(3/8)[cite: 390]."
+    ]
+  },
+  {
+    "question": "Olaylar arasındaki mantıksal ilişkilerin tanımlanmasında kullanılan, örnek uzayının dikdörtgen, olayların ise iç içe veya kesişen kümeler şeklinde gösterildiği grafik türü hangisidir?",
+    "options": [
+      "Histogram",
+      "Venn Diyagramı",
+      "Ağaç Diyagramı",
+      "Korelasyon Grafiği"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Histogram sürekli veri aralıklarındaki frekansları gösterir.",
+      "Doğru! S örnek uzayının büyük bir dikdörtgen, olayların ise içindeki bölgeler olarak gösterildiği grafiklere Venn diyagramı denir[cite: 410, 411, 412].",
+      "Yanlış. Ağaç diyagramları kümeler yerine dallar kullanır[cite: 290].",
+      "Yanlış. Korelasyon grafiği sayısal verilerin ilişkisini gösterir."
+    ]
+  },
+  {
+    "question": "Sonucu önceden belirlenemeyen deneylere ne ad verilir?",
+    "options": [
+      "Bağımlı deney",
+      "Mutlak deney",
+      "Şans deneyi",
+      "Ayrık deney"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Yanlış. Bağımlı terimi olayların ilişkisi için kullanılır.",
+      "Yanlış. Böyle bir olasılık terimi yoktur.",
+      "Doğru! Sonucu önceden belirlenemeyen, zar atma gibi deneylere Şans deneyi denir[cite: 18].",
+      "Yanlış. Ayrık terimi, birbiriyle ortak noktası olmayan olaylar için kullanılır[cite: 159]."
+    ]
+  },
+  {
+    "question": "Venn diyagramında P(A \\ B) şeklinde ifade edilen koşullu olasılığın (öğrencinin B olayındayken A olayında olma olasılığı) formülü için hangi alanlar birbirine bölünür?",
+    "options": [
+      "P(AB) alanı, P(A) alanına bölünür.",
+      "P(AB) alanı, P(B) alanına bölünür.",
+      "P(A) alanı, P(B) alanına bölünür.",
+      "P(A VEYA B) alanı, P(B) alanına bölünür."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. Bu ifade P(B \\ A)'dır.",
+      "Doğru! Koşullu olasılıkta, kesişim bölgesi (P(AB)), gerçekleştiği bilinen koşul olayının (P(B)) bölgesine bölünür. (P(A\\B) = P(AB)/P(B))[cite: 485].",
+      "Yanlış. İki olayın doğrudan birbirine bölünmesi formülü yoktur.",
+      "Yanlış. Birleşim değil kesişim alanı bölünür[cite: 485]."
+    ]
+  },
+  {
+    "question": "A ve B bağımsız olaylar ise P(A \\ B) ifadesi neye eşittir?",
+    "options": [
+      "P(B)",
+      "P(A)",
+      "P(AB)",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Yanlış. P(A \\ B), B gerçekleştikten sonra A'nın olasılığıdır, P(B)'ye değil[cite: 126].",
+      "Doğru! Eğer olaylar bağımsızsa, B'nin gerçekleşmesi A'yı etkilemez, dolayısıyla P(A \\ B) = P(A) olur[cite: 126, 139].",
+      "Yanlış. Kesişime eşit olmaz.",
+      "Yanlış. Sıfır olması için olayların ayrık olması gerekir, bağımsız değil[cite: 160]."
+    ]
+  }
+]
