@@ -664,6 +664,7 @@
         let currentQuestionIndex = 0;
         let catalog = [];
         let userAnswers = {};
+        let questionDisplayCache = {};
 
         function normalizeQuestionList(raw) {
             if (!Array.isArray(raw)) {
@@ -753,19 +754,19 @@
 
         function jsonTemplateExampleObject() {
             return {
-                question: '[Buraya 1. sorunun metnini yazın]',
+                question: 'Write the question text here',
                 options: [
-                    '[Seçenek A]',
-                    '[Seçenek B]',
-                    '[Seçenek C]',
-                    '[Seçenek D]'
+                    'Option A',
+                    'Option B',
+                    'Option C',
+                    'Option D'
                 ],
                 correctIndex: 0,
                 explanations: [
-                    'Doğru Seçenek Açıklaması: [Neden doğru olduğunu açıklayın]',
-                    'Yanlış Seçenek Açıklaması A: [Neden yanlış olduğunu açıklayın]',
-                    'Yanlış Seçenek Açıklaması B: [Neden yanlış olduğunu açıklayın]',
-                    'Yanlış Seçenek Açıklaması C: [Neden yanlış olduğunu açıklayın]'
+                    'Correct Answer Explanation: Explain why the correct answer is correct',
+                    'Incorrect Answer Explanation A: Explain why this option is incorrect',
+                    'Incorrect Answer Explanation B: Explain why this option is incorrect',
+                    'Incorrect Answer Explanation C: Explain why this option is incorrect'
                 ]
             };
         }
@@ -774,13 +775,31 @@
             return JSON.stringify([jsonTemplateExampleObject()], null, 2);
         }
 
-        function getPgDil() {
+        function getPgLanguageEn() {
             const sel = document.getElementById('pg-dil').value;
             if (sel === 'other') {
                 const t = document.getElementById('pg-dil-ozel').value.trim();
-                return t || '(dili belirtin)';
+                return t || '(specify language)';
             }
-            return sel;
+            const map = {
+                'Türkçe': 'Turkish',
+                'İngilizce': 'English',
+                'Almanca': 'German',
+                'Fransızca': 'French'
+            };
+            return map[sel] || sel;
+        }
+
+        function getPgDifficultyEn() {
+            const v = document.getElementById('pg-zorluk').value;
+            const map = {
+                'Kolay': 'easy',
+                'Orta': 'moderate',
+                'Zor': 'difficult',
+                'Çok zor': 'very difficult',
+                'Karma (kolay–zor karışık)': 'mixed (from easy to very difficult)'
+            };
+            return map[v] || v;
         }
 
         function getPgSoruSayisi() {
@@ -790,23 +809,26 @@
         }
 
         function buildPromptText() {
-            const soruSayisi = getPgSoruSayisi();
-            const zorluk = document.getElementById('pg-zorluk').value;
-            const dil = getPgDil();
-            const ornek = getJsonTemplateString();
-            return `Verdiğim pdf' lerden soru çıkar.
+            const questionCount = getPgSoruSayisi();
+            const difficulty = getPgDifficultyEn();
+            const lang = getPgLanguageEn();
+            const example = getJsonTemplateString();
+            return `Generate ${questionCount} multiple-choice questions based on the PDFs I provide.
 
-${soruSayisi} tane soru olsun.
-Soruların zorluğu ${zorluk} olsun.
-Soruların Dili ${dil} olsun.
+The questions must be ${difficulty} in terms of difficulty level.
+All questions must be written in ${lang}.
 
-Şıklarda cevabı belli edicek işaretler "(" gibi şeyler olmasın. olucaksada tüm şıklarda olsun.
+Each question must have exactly 4 answer options.
+The correct answer must not be easily identifiable through formatting or symbols. Avoid using markers such as parentheses to highlight the correct option. If any such formatting is used, it must be applied consistently across all options.
 
-Sorular aşağıdaki örnekteki gibi olsun. Çıktıyı yalnızca geçerli bir JSON dizi olarak ver; başında veya sonunda açıklama, markdown kod bloğu veya \`\`\` kullanma.
+The output must strictly follow the JSON format shown below.
+Return only a valid JSON array. Do not include any explanations, markdown formatting, or code block markers before or after the JSON.
 
-Örnek tek soruluk şema (sen tam olarak ${soruSayisi} adet nesne üret, her biri bu alanlara sahip olsun):
+Each question object must follow this exact structure:
 
-${ornek}`;
+${example}
+
+The final JSON array must contain exactly ${questionCount} question objects (${questionCount} elements in the array), each fully complying with this structure.`;
         }
 
         function refreshPromptOutput() {
@@ -959,9 +981,42 @@ ${ornek}`;
 
 
 
+        function shuffleIndices(len) {
+            const idx = Array.from({ length: len }, (_, i) => i);
+            for (let i = len - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                const t = idx[i];
+                idx[i] = idx[j];
+                idx[j] = t;
+            }
+            return idx;
+        }
+
+        function buildShuffledView(raw) {
+            const order = shuffleIndices(raw.options.length);
+            return {
+                question: raw.question,
+                options: order.map(i => raw.options[i]),
+                explanations: order.map(i => raw.explanations[i]),
+                correctIndex: order.indexOf(raw.correctIndex)
+            };
+        }
+
+        function getDisplayQuestion(index) {
+            if (userAnswers[index]) {
+                if (!questionDisplayCache[index]) {
+                    questionDisplayCache[index] = buildShuffledView(questionsData[index]);
+                }
+                return questionDisplayCache[index];
+            }
+            questionDisplayCache[index] = buildShuffledView(questionsData[index]);
+            return questionDisplayCache[index];
+        }
+
         function startQuiz() {
             document.getElementById('prompt-view').style.display = 'none';
             document.getElementById('json-upload-view').style.display = 'none';
+            questionDisplayCache = {};
             currentQuestionIndex = 0;
             userAnswers = {};
             showQuizPanel();
@@ -971,7 +1026,7 @@ ${ornek}`;
         }
 
         function loadQuestion() {
-            const data = questionsData[currentQuestionIndex];
+            const data = getDisplayQuestion(currentQuestionIndex);
             const optionsGrid = document.getElementById('options-grid');
             const nextBtn = document.getElementById('next-btn');
             const expBox = document.getElementById('explanation-box');
@@ -1088,6 +1143,7 @@ ${ornek}`;
             if (wrongQs.length === 0) return;
 
             questionsData = wrongQs;
+            questionDisplayCache = {};
             userAnswers = {};
             currentQuestionIndex = 0;
             showQuizPanel();
@@ -1109,6 +1165,7 @@ ${ornek}`;
             document.getElementById('quiz-view').style.display = 'none';
             document.getElementById('menu-view').style.display = 'block';
             showQuizPanel();
+            questionDisplayCache = {};
             userAnswers = {};
             questionsData = [];
         }
