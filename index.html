@@ -110,15 +110,14 @@
             color: var(--text-main);
         }
 
-        /* Buttons */
+        /* Buttons — sade, yüksek kontrast */
         .btn {
-            padding: 14px 24px;
+            padding: 15px 22px;
             border-radius: 12px;
             font-weight: 600;
             cursor: pointer;
             font-family: inherit;
-            transition: all 0.2s;
-            border: none;
+            transition: background-color 0.15s, border-color 0.15s, color 0.15s;
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -126,26 +125,41 @@
             font-size: 1rem;
         }
 
+        .btn:focus-visible {
+            outline: 2px solid #c7d2fe;
+            outline-offset: 2px;
+        }
+
         .btn-primary {
             background: var(--primary);
-            color: white;
+            color: #fff;
             width: 100%;
+            border: 2px solid #a5b4fc;
         }
 
         .btn-primary:hover {
             background: var(--primary-hover);
-            transform: scale(1.02);
+            border-color: #c7d2fe;
+        }
+
+        .btn-primary:active {
+            background: #4338ca;
         }
 
         .btn-outline {
             background: transparent;
-            border: 2px solid var(--border);
-            color: var(--text-muted);
+            border: 2px solid #e2e8f0;
+            color: #f8fafc;
         }
 
         .btn-outline:hover {
-            border-color: var(--primary);
-            color: var(--primary);
+            border-color: #fff;
+            background: rgba(255, 255, 255, 0.06);
+            color: #fff;
+        }
+
+        .btn-outline:active {
+            background: rgba(255, 255, 255, 0.1);
         }
 
         /* Quiz UI */
@@ -362,6 +376,143 @@
             width: auto;
             min-width: 200px;
         }
+
+        /* Prompt generator */
+        #prompt-view .prompt-intro {
+            color: var(--text-muted);
+            text-align: center;
+            margin-bottom: 24px;
+            font-size: 1rem;
+        }
+
+        .prompt-form {
+            display: grid;
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+
+        .field-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-main);
+            font-size: 0.95rem;
+        }
+
+        .field-group input[type="number"],
+        .field-group select,
+        .field-group input[type="text"] {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 12px;
+            border: 2px solid var(--border);
+            background: var(--bg);
+            color: var(--text-main);
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .field-group input:focus,
+        .field-group select:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .field-hint {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 6px;
+        }
+
+        #prompt-output {
+            width: 100%;
+            min-height: 280px;
+            padding: 16px;
+            border-radius: 12px;
+            border: 2px solid var(--border);
+            background: var(--bg);
+            color: var(--text-main);
+            font-family: ui-monospace, 'Cascadia Code', 'Segoe UI Mono', monospace;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            resize: vertical;
+        }
+
+        .prompt-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 16px;
+            margin-bottom: 24px;
+        }
+
+        .prompt-toolbar .btn {
+            width: auto;
+            flex: 1 1 160px;
+        }
+
+        .prompt-header-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+
+        .prompt-header-row h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        /* JSON upload */
+        #json-upload-view .json-upload-intro {
+            color: var(--text-muted);
+            text-align: center;
+            margin-bottom: 24px;
+            font-size: 1rem;
+        }
+
+        #json-upload-view input[type="file"] {
+            width: 100%;
+            padding: 14px;
+            border-radius: 12px;
+            border: 2px dashed var(--border);
+            background: var(--bg);
+            color: var(--text-muted);
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.95rem;
+        }
+
+        #json-upload-view input[type="file"]::file-selector-button {
+            margin-right: 12px;
+            padding: 10px 18px;
+            border-radius: 10px;
+            border: 2px solid #a5b4fc;
+            background: var(--primary);
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        #json-upload-view input[type="file"]::file-selector-button:hover {
+            background: var(--primary-hover);
+            border-color: #c7d2fe;
+        }
+
+        #json-upload-error {
+            display: none;
+            margin-top: 16px;
+            padding: 14px;
+            border-radius: 12px;
+            background: rgba(239, 68, 68, 0.12);
+            border: 1px solid rgba(239, 68, 68, 0.35);
+            color: #f87171;
+            font-size: 0.95rem;
+        }
     </style>
 </head>
 
@@ -374,6 +525,12 @@
                 <h1>Soru Çözücü</h1>
                 <p>Hangi kategoriden soru çözmek istersiniz?</p>
             </div>
+
+            <button type="button" class="btn btn-outline" style="width: 100%; margin-bottom: 12px;"
+                onclick="openPromptGenerator()">PDF / AI: Soru üretici (prompt ve JSON şablon)</button>
+
+            <button type="button" class="btn btn-outline" style="width: 100%; margin-bottom: 24px;"
+                onclick="openJsonUploadView()">JSON dosyası yükle (kendi testin)</button>
 
             <div id="catalog-container">
                 <div style="grid-column: 1/-1; text-align: center; color: var(--text-muted);">Katalog yükleniyor...
@@ -426,6 +583,80 @@
                 </div>
             </div>
         </div>
+
+        <!-- PDF / Prompt generator -->
+        <div id="prompt-view" class="card" style="display: none;">
+            <div class="prompt-header-row">
+                <h2>Soru üretici</h2>
+                <button type="button" class="btn btn-outline" style="width: auto;" onclick="backFromPromptGenerator()">Ana
+                    sayfa</button>
+            </div>
+            <p class="prompt-intro">PDF’lerinizi bir sohbet veya yapay zekâ aracına ekleyip aşağıdaki metni kopyalayın.
+                Çıktıyı bu sitede kullanılan JSON biçiminde isteyin; örnek yapıyı dosya olarak da indirebilirsiniz.</p>
+
+            <div class="prompt-form">
+                <div class="field-group">
+                    <label for="pg-soru-sayisi">Soru sayısı</label>
+                    <input type="number" id="pg-soru-sayisi" min="1" max="500" value="10">
+                </div>
+                <div class="field-group">
+                    <label for="pg-zorluk">Zorluk</label>
+                    <select id="pg-zorluk">
+                        <option value="Kolay">Kolay</option>
+                        <option value="Orta" selected>Orta</option>
+                        <option value="Zor">Zor</option>
+                        <option value="Çok zor">Çok zor</option>
+                        <option value="Karma (kolay–zor karışık)">Karma (kolay–zor karışık)</option>
+                    </select>
+                    <p class="field-hint">İsterseniz üretilen metinde özelleştirmek için değiştirilebilir.</p>
+                </div>
+                <div class="field-group">
+                    <label for="pg-dil">Dil</label>
+                    <select id="pg-dil">
+                        <option value="Türkçe" selected>Türkçe</option>
+                        <option value="İngilizce">İngilizce</option>
+                        <option value="Almanca">Almanca</option>
+                        <option value="Fransızca">Fransızca</option>
+                        <option value="other">Diğer (aşağıya yazın)</option>
+                    </select>
+                    <input type="text" id="pg-dil-ozel" placeholder="Özel dil adı" style="margin-top: 10px; display: none;"
+                        aria-label="Özel dil">
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label for="prompt-output">Oluşturulan metin</label>
+            </div>
+            <textarea id="prompt-output" readonly spellcheck="false" title="Prompt metni"></textarea>
+
+            <div class="prompt-toolbar">
+                <button type="button" class="btn btn-outline" onclick="copyPromptOutput()">Kopyala</button>
+                <button type="button" class="btn btn-outline" onclick="downloadPromptTxt()">Prompt’u indir (.txt)</button>
+                <button type="button" class="btn btn-primary" onclick="downloadJsonTemplate()">Örnek JSON şablonu indir
+                    (.json)</button>
+            </div>
+        </div>
+
+        <!-- JSON file upload → same quiz flow -->
+        <div id="json-upload-view" class="card" style="display: none;">
+            <div class="prompt-header-row">
+                <h2>JSON ile test</h2>
+                <button type="button" class="btn btn-outline" style="width: auto;" onclick="backFromJsonUpload()">Ana
+                    sayfa</button>
+            </div>
+            <p class="json-upload-intro">Katalogdaki testlerle aynı biçimde bir JSON dosyası seçin. Dosya yüklenir
+                yüklenmez test başlar; sonunda özet ve yanlışları tekrar çözme aynı şekilde çalışır.</p>
+            <div class="field-group">
+                <label for="json-file-input">Soru dosyası (.json)</label>
+                <input type="file" id="json-file-input" accept=".json,application/json"
+                    onchange="onJsonFileChosen(event)">
+            </div>
+            <p class="field-hint" style="margin-top: 12px;">Beklenen yapı: köşeli parantez içinde soru dizisi; her elemanda
+                <code style="color:#818cf8;">question</code>, <code style="color:#818cf8;">options</code>, <code
+                    style="color:#818cf8;">correctIndex</code>, <code style="color:#818cf8;">explanations</code> (şık sayısı
+                kadar).</p>
+            <div id="json-upload-error" role="alert"></div>
+        </div>
     </div>
 
     <script>
@@ -433,6 +664,226 @@
         let currentQuestionIndex = 0;
         let catalog = [];
         let userAnswers = {};
+
+        function normalizeQuestionList(raw) {
+            if (!Array.isArray(raw)) {
+                throw new Error('JSON kökü bir dizi ([...]) olmalıdır.');
+            }
+            if (raw.length === 0) {
+                throw new Error('En az bir soru gerekli.');
+            }
+            return raw.map((q, i) => normalizeOneQuestion(q, i));
+        }
+
+        function normalizeOneQuestion(q, index) {
+            const n = index + 1;
+            if (!q || typeof q !== 'object') {
+                throw new Error('Soru ' + n + ': geçersiz kayıt.');
+            }
+            const question = q.question != null ? String(q.question) : '';
+            const options = Array.isArray(q.options) ? q.options.map(o => String(o)) : null;
+            if (!options || options.length < 2) {
+                throw new Error('Soru ' + n + ': en az 2 şık (options) gerekli.');
+            }
+            const correctIndex = q.correctIndex;
+            if (typeof correctIndex !== 'number' || !Number.isInteger(correctIndex)) {
+                throw new Error('Soru ' + n + ': correctIndex tam sayı olmalı.');
+            }
+            if (correctIndex < 0 || correctIndex >= options.length) {
+                throw new Error('Soru ' + n + ': correctIndex 0 ile ' + (options.length - 1) + ' arasında olmalı.');
+            }
+            let explanations = Array.isArray(q.explanations)
+                ? q.explanations.map(e => (e == null ? '' : String(e)))
+                : [];
+            while (explanations.length < options.length) {
+                explanations.push('');
+            }
+            if (explanations.length > options.length) {
+                explanations = explanations.slice(0, options.length);
+            }
+            return { question, options, correctIndex, explanations };
+        }
+
+        function openJsonUploadView() {
+            const err = document.getElementById('json-upload-error');
+            err.style.display = 'none';
+            err.textContent = '';
+            document.getElementById('menu-view').style.display = 'none';
+            document.getElementById('quiz-view').style.display = 'none';
+            document.getElementById('prompt-view').style.display = 'none';
+            document.getElementById('json-upload-view').style.display = 'block';
+            const inp = document.getElementById('json-file-input');
+            if (inp) inp.value = '';
+        }
+
+        function backFromJsonUpload() {
+            document.getElementById('json-upload-view').style.display = 'none';
+            document.getElementById('menu-view').style.display = 'block';
+        }
+
+        function onJsonFileChosen(ev) {
+            const errEl = document.getElementById('json-upload-error');
+            errEl.style.display = 'none';
+            errEl.textContent = '';
+            const file = ev.target.files && ev.target.files[0];
+            if (!file) return;
+            const inputEl = ev.target;
+            const reader = new FileReader();
+            reader.onload = function () {
+                try {
+                    const parsed = JSON.parse(reader.result);
+                    questionsData = normalizeQuestionList(parsed);
+                    document.getElementById('json-upload-view').style.display = 'none';
+                    startQuiz();
+                } catch (e) {
+                    errEl.textContent = e instanceof SyntaxError
+                        ? 'Geçersiz JSON sözdizimi.'
+                        : (e.message || 'Dosya işlenemedi.');
+                    errEl.style.display = 'block';
+                    inputEl.value = '';
+                }
+            };
+            reader.onerror = function () {
+                errEl.textContent = 'Dosya okunamadı.';
+                errEl.style.display = 'block';
+                inputEl.value = '';
+            };
+            reader.readAsText(file, 'UTF-8');
+        }
+
+        function jsonTemplateExampleObject() {
+            return {
+                question: '[Buraya 1. sorunun metnini yazın]',
+                options: [
+                    '[Seçenek A]',
+                    '[Seçenek B]',
+                    '[Seçenek C]',
+                    '[Seçenek D]'
+                ],
+                correctIndex: 0,
+                explanations: [
+                    'Doğru Seçenek Açıklaması: [Neden doğru olduğunu açıklayın]',
+                    'Yanlış Seçenek Açıklaması A: [Neden yanlış olduğunu açıklayın]',
+                    'Yanlış Seçenek Açıklaması B: [Neden yanlış olduğunu açıklayın]',
+                    'Yanlış Seçenek Açıklaması C: [Neden yanlış olduğunu açıklayın]'
+                ]
+            };
+        }
+
+        function getJsonTemplateString() {
+            return JSON.stringify([jsonTemplateExampleObject()], null, 2);
+        }
+
+        function getPgDil() {
+            const sel = document.getElementById('pg-dil').value;
+            if (sel === 'other') {
+                const t = document.getElementById('pg-dil-ozel').value.trim();
+                return t || '(dili belirtin)';
+            }
+            return sel;
+        }
+
+        function getPgSoruSayisi() {
+            const n = parseInt(document.getElementById('pg-soru-sayisi').value, 10);
+            if (!Number.isFinite(n) || n < 1) return 1;
+            return Math.min(500, n);
+        }
+
+        function buildPromptText() {
+            const soruSayisi = getPgSoruSayisi();
+            const zorluk = document.getElementById('pg-zorluk').value;
+            const dil = getPgDil();
+            const ornek = getJsonTemplateString();
+            return `Verdiğim pdf' lerden soru çıkar.
+
+${soruSayisi} tane soru olsun.
+Soruların zorluğu ${zorluk} olsun.
+Soruların Dili ${dil} olsun.
+
+Şıklarda cevabı belli edicek işaretler "(" gibi şeyler olmasın. olucaksada tüm şıklarda olsun.
+
+Sorular aşağıdaki örnekteki gibi olsun. Çıktıyı yalnızca geçerli bir JSON dizi olarak ver; başında veya sonunda açıklama, markdown kod bloğu veya \`\`\` kullanma.
+
+Örnek tek soruluk şema (sen tam olarak ${soruSayisi} adet nesne üret, her biri bu alanlara sahip olsun):
+
+${ornek}`;
+        }
+
+        function refreshPromptOutput() {
+            const ta = document.getElementById('prompt-output');
+            if (ta) ta.value = buildPromptText();
+        }
+
+        function syncPgDilCustom() {
+            const dil = document.getElementById('pg-dil');
+            const ozel = document.getElementById('pg-dil-ozel');
+            const show = dil.value === 'other';
+            ozel.style.display = show ? 'block' : 'none';
+        }
+
+        function openPromptGenerator() {
+            document.getElementById('menu-view').style.display = 'none';
+            document.getElementById('quiz-view').style.display = 'none';
+            document.getElementById('json-upload-view').style.display = 'none';
+            document.getElementById('prompt-view').style.display = 'block';
+            syncPgDilCustom();
+            refreshPromptOutput();
+        }
+
+        function backFromPromptGenerator() {
+            document.getElementById('prompt-view').style.display = 'none';
+            document.getElementById('menu-view').style.display = 'block';
+        }
+
+        function copyPromptOutput() {
+            const ta = document.getElementById('prompt-output');
+            const v = ta.value;
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(v).catch(() => {
+                    ta.focus();
+                    ta.select();
+                    document.execCommand('copy');
+                });
+            } else {
+                ta.focus();
+                ta.select();
+                document.execCommand('copy');
+            }
+        }
+
+        function triggerDownload(filename, mime, text) {
+            const blob = new Blob([text], { type: mime });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = filename;
+            a.click();
+            URL.revokeObjectURL(a.href);
+        }
+
+        function downloadPromptTxt() {
+            refreshPromptOutput();
+            const text = document.getElementById('prompt-output').value;
+            triggerDownload('soru-prompt.txt', 'text/plain;charset=utf-8', text);
+        }
+
+        function downloadJsonTemplate() {
+            const json = getJsonTemplateString();
+            triggerDownload('soru-sablon.json', 'application/json;charset=utf-8', json);
+        }
+
+        function initPromptGenerator() {
+            ['pg-soru-sayisi', 'pg-zorluk', 'pg-dil', 'pg-dil-ozel'].forEach(id => {
+                const el = document.getElementById(id);
+                if (!el) return;
+                const upd = () => {
+                    syncPgDilCustom();
+                    if (document.getElementById('prompt-view').style.display !== 'none') refreshPromptOutput();
+                };
+                el.addEventListener('input', upd);
+                el.addEventListener('change', upd);
+            });
+            syncPgDilCustom();
+        }
 
         function showQuizPanel() {
             document.getElementById('quiz-content').style.display = 'block';
@@ -509,6 +960,8 @@
 
 
         function startQuiz() {
+            document.getElementById('prompt-view').style.display = 'none';
+            document.getElementById('json-upload-view').style.display = 'none';
             currentQuestionIndex = 0;
             userAnswers = {};
             showQuizPanel();
@@ -651,6 +1104,8 @@
         }
 
         function returnToMenu() {
+            document.getElementById('prompt-view').style.display = 'none';
+            document.getElementById('json-upload-view').style.display = 'none';
             document.getElementById('quiz-view').style.display = 'none';
             document.getElementById('menu-view').style.display = 'block';
             showQuizPanel();
@@ -660,6 +1115,7 @@
 
         // Start
         init();
+        initPromptGenerator();
     </script>
 
 </body>
