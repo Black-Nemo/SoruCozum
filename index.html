@@ -8,6 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- MathJax for rendering math formulas -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        },
+        startup: {
+          typeset: false // Set to false so we can manually typeset when content loads
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <style>
         :root {
             --primary: #6366f1;
@@ -1080,6 +1095,11 @@ Before sending, validate your output. If it is not valid JSON, regenerate it and
             } else {
                 bBtn.innerText = 'Önceki';
             }
+
+            // Render MathJax formulas for the newly loaded question and options
+            if (window.MathJax && MathJax.typesetPromise) {
+                MathJax.typesetPromise([document.getElementById('quiz-content')]).catch((err) => console.error(err));
+            }
         }
 
         function selectOption(el, selectedIdx, correctIdx, explanation) {
@@ -1101,6 +1121,11 @@ Before sending, validate your output. If it is not valid JSON, regenerate it and
             const nextBtn = document.getElementById('next-btn');
             nextBtn.style.display = 'block';
             updateNextButtonLabel();
+
+            // Render MathJax formulas for the explanation box
+            if (window.MathJax && MathJax.typesetPromise) {
+                MathJax.typesetPromise([document.getElementById('explanation-box')]).catch((err) => console.error(err));
+            }
         }
 
         function nextQuestion() {
