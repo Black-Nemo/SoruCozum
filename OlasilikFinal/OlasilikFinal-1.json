@@ -9,10 +9,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: 15, verilerin bir kısmının farkı olabilir ama en büyük ve en küçük değerin farkı değildir.",
       "Doğru Cevap Açıklaması: Aralık (Range), en büyük değer ile en küçük değer arasındaki farktır. 25 - 8 = 17.",
-      "Yanlış Cevap Açıklaması A: 15, verilerin bir kısmının farkı olabilir ama en büyük ve en küçük değerin farkı değildir.",
-      "Yanlış Cevap Açıklaması B: 14, veri setindeki bir değerdir, aralık değildir.",
-      "Yanlış Cevap Açıklaması C: 25, veri setindeki maksimum değerdir, aralık değildir."
+      "Yanlış Cevap Açıklaması: 14, veri setindeki bir değerdir, aralık değildir.",
+      "Yanlış Cevap Açıklaması: 25, veri setindeki maksimum değerdir, aralık değildir."
     ]
   },
   {
@@ -25,10 +25,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Simetrik dağılımda Ortalama, Medyan ve Mod birbirine eşittir.",
+      "Yanlış Cevap Açıklaması: Sola çarpık dağılımda Ortalama < Medyan < Mod olur.",
       "Doğru Cevap Açıklaması: Aritmetik Ortalama > Medyan > Mod olduğunda dağılım sağa doğru çarpıktır (kuyruk sağdadır).",
-      "Yanlış Cevap Açıklaması A: Simetrik dağılımda Ortalama, Medyan ve Mod birbirine eşittir.",
-      "Yanlış Cevap Açıklaması B: Sola çarpık dağılımda Ortalama < Medyan < Mod olur.",
-      "Yanlış Cevap Açıklaması C: Bimodal dağılımda iki farklı mod bulunur, verilen bilgiyle bimodal olduğu söylenemez."
+      "Yanlış Cevap Açıklaması: Bimodal dağılımda iki farklı mod bulunur, verilen bilgiyle bimodal olduğu söylenemez."
     ]
   },
   {
@@ -41,10 +41,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Bu formül veri grubunun Dağılım Aralığını (Range) verir.",
       "Doğru Cevap Açıklaması: IQR (Çeyrekler Açıklığı), verinin ortadaki %50'lik kısmının yayıldığı aralıktır ve Q3 - Q1 formülüyle bulunur.",
-      "Yanlış Cevap Açıklaması A: Bu formül veri grubunun Dağılım Aralığını (Range) verir.",
-      "Yanlış Cevap Açıklaması B: Bu, medyan ile alt çeyreklik arasındaki farkı verir, IQR'yi değil.",
-      "Yanlış Cevap Açıklaması C: Bu, üst çeyreklik ile medyan arasındaki farkı verir, IQR'yi değil."
+      "Yanlış Cevap Açıklaması: Bu, medyan ile alt çeyreklik arasındaki farkı verir, IQR'yi değil.",
+      "Yanlış Cevap Açıklaması: Bu, üst çeyreklik ile medyan arasındaki farkı verir, IQR'yi değil."
     ]
   },
   {
@@ -57,10 +57,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: İstatistik, popülasyondan çekilen örneklemden elde edilen sayısal ölçüdür.",
+      "Yanlış Cevap Açıklaması: Örneklem, popülasyonun analiz için seçilmiş bir alt kümesidir.",
       "Doğru Cevap Açıklaması: Tüm popülasyonu (anakütleyi) tanımlayan sayısal ölçülere parametre denir.",
-      "Yanlış Cevap Açıklaması A: İstatistik, popülasyondan çekilen örneklemden elde edilen sayısal ölçüdür.",
-      "Yanlış Cevap Açıklaması B: Örneklem, popülasyonun analiz için seçilmiş bir alt kümesidir.",
-      "Yanlış Cevap Açıklaması C: Değişken, bireylerden bireylere farklılık gösteren bir özelliktir."
+      "Yanlış Cevap Açıklaması: Değişken, bireylerden bireylere farklılık gösteren bir özelliktir."
     ]
   },
   {
@@ -74,9 +74,9 @@
     "correctIndex": 0,
     "explanations": [
       "Doğru Cevap Açıklaması: Boy uzunluğu, belirli bir aralıktaki tüm ondalıklı değerleri alabilen ölçülebilir bir özellik olduğu için sürekli nicel değişkendir.",
-      "Yanlış Cevap Açıklaması A: Kesikli değişkenler sayılarak elde edilir ve tam sayılardan oluşur (örneğin öğrenci sayısı).",
-      "Yanlış Cevap Açıklaması B: Sıralı nitel değişkenler sayılarla değil, derecelendirme ile ifade edilir (örn. eğitim seviyesi).",
-      "Yanlış Cevap Açıklaması C: Nominal değişkenler kategorik verilerdir, sıralama veya miktar bildirmezler (örn. göz rengi)."
+      "Yanlış Cevap Açıklaması: Kesikli değişkenler sayılarak elde edilir ve tam sayılardan oluşur (örneğin öğrenci sayısı).",
+      "Yanlış Cevap Açıklaması: Sıralı nitel değişkenler sayılarla değil, derecelendirme ile ifade edilir (örn. eğitim seviyesi).",
+      "Yanlış Cevap Açıklaması: Nominal değişkenler kategorik verilerdir, sıralama veya miktar bildirmezler (örn. göz rengi)."
     ]
   },
   {
@@ -89,10 +89,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: 0.70, A ve B ayrık (mutually exclusive) olaylar olsaydı birleşimlerinin (P(A U B)) olasılığı olurdu.",
       "Doğru Cevap Açıklaması: Bağımsız olayların kesişiminin olasılığı, olasılıklarının çarpımına eşittir. 0.4 * 0.3 = 0.12.",
-      "Yanlış Cevap Açıklaması A: 0.70, A ve B ayrık (mutually exclusive) olaylar olsaydı birleşimlerinin (P(A U B)) olasılığı olurdu.",
-      "Yanlış Cevap Açıklaması B: 0.10, basit bir çarpım hatası veya rastgele bir sayıdır.",
-      "Yanlış Cevap Açıklaması C: 0.82, olasılık kurallarına uymayan rastgele bir sayıdır."
+      "Yanlış Cevap Açıklaması: 0.10, basit bir çarpım hatası veya rastgele bir sayıdır.",
+      "Yanlış Cevap Açıklaması: 0.82, olasılık kurallarına uymayan rastgele bir sayıdır."
     ]
   },
   {
@@ -105,10 +105,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Bu olasılık, çekilen bilye torbaya geri konulsaydı geçerli olurdu.",
       "Doğru Cevap Açıklaması: İlk bilyenin kırmızı olma olasılığı 5/8'dir. Geri koyulmadığı için ikinci bilye çekilirken 4 kırmızı, toplam 7 bilye kalır. Olasılık (5/8) * (4/7) olur.",
-      "Yanlış Cevap Açıklaması A: Bu olasılık, çekilen bilye torbaya geri konulsaydı geçerli olurdu.",
-      "Yanlış Cevap Açıklaması B: İkinci çekilişteki olasılık 1/2 değildir, 4/7'dir.",
-      "Yanlış Cevap Açıklaması C: Bu değer, bilyeler yerine konularak çekildiğinde oluşacak sonuçtur."
+      "Yanlış Cevap Açıklaması: İkinci çekilişteki olasılık 1/2 değildir, 4/7'dir.",
+      "Yanlış Cevap Açıklaması: Bu değer, bilyeler yerine konularak çekildiğinde oluşacak sonuçtur."
     ]
   },
   {
@@ -121,10 +121,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: 0.10, olayların bağımsız olduğu varsayımıyla yapılan çarpımın sonucudur.",
+      "Yanlış Cevap Açıklaması: 0.30, olasılıkların birbirinden çıkarılmasıyla elde edilen hatalı bir sonuçtur.",
       "Doğru Cevap Açıklaması: Ayrık olayların kesişimleri yoktur (P(A ∩ B) = 0). Birleşimlerinin olasılığı, olasılıklarının toplamına eşittir: 0.5 + 0.2 = 0.70.",
-      "Yanlış Cevap Açıklaması A: 0.10, olayların bağımsız olduğu varsayımıyla yapılan çarpımın sonucudur.",
-      "Yanlış Cevap Açıklaması B: 0.30, olasılıkların birbirinden çıkarılmasıyla elde edilen hatalı bir sonuçtur.",
-      "Yanlış Cevap Açıklaması C: 0.60, bağımsız olaylar formülü (P(A)+P(B)-P(A)*P(B)) kullanılsaydı bulunacak değerdir."
+      "Yanlış Cevap Açıklaması: 0.60, bağımsız olaylar formülü (P(A)+P(B)-P(A)*P(B)) kullanılsaydı bulunacak değerdir."
     ]
   },
   {
@@ -137,10 +137,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Birlikte gerçekleşme olasılığı kesişim ile ifade edilir: P(A ∩ B).",
       "Doğru Cevap Açıklaması: P(A|B) koşullu olasılıktır ve 'B olayı gerçekleşmiş iken A olayının gerçekleşme olasılığı' şeklinde okunur.",
-      "Yanlış Cevap Açıklaması A: Birlikte gerçekleşme olasılığı kesişim ile ifade edilir: P(A ∩ B).",
-      "Yanlış Cevap Açıklaması B: Bu tanım P(B|A) ifadesinin karşılığıdır.",
-      "Yanlış Cevap Açıklaması C: En az birinin gerçekleşme olasılığı birleşim ile ifade edilir: P(A ∪ B)."
+      "Yanlış Cevap Açıklaması: Bu tanım P(B|A) ifadesinin karşılığıdır.",
+      "Yanlış Cevap Açıklaması: En az birinin gerçekleşme olasılığı birleşim ile ifade edilir: P(A ∪ B)."
     ]
   },
   {
@@ -153,10 +153,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: 1/2, hilesiz bir zar için geçerli olan olasılıktır.",
       "Doğru Cevap Açıklaması: Kalan olasılık 1 - 1/3 = 2/3'tür. 5 rakam eşit olduğundan her birinin olasılığı (2/3)/5 = 2/15'tir. Çift sayılar {2, 4, 6}. Olasılık = P(2) + P(4) + P(6) = 2/15 + 2/15 + 1/3 = 4/15 + 5/15 = 9/15 = 3/5.",
-      "Yanlış Cevap Açıklaması A: 1/2, hilesiz bir zar için geçerli olan olasılıktır.",
-      "Yanlış Cevap Açıklaması B: 8/15 hesaplama hatasıdır.",
-      "Yanlış Cevap Açıklaması C: 2/3 kalan diğer tüm durumların olasılığıdır."
+      "Yanlış Cevap Açıklaması: 8/15 hesaplama hatasıdır.",
+      "Yanlış Cevap Açıklaması: 2/3 kalan diğer tüm durumların olasılığıdır."
     ]
   },
   {
@@ -169,10 +169,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Bu ifade, tümünün kusurlu olma olasılığını 1'den çıkarır, yani en az birinin sağlam olma olasılığını hesaplar.",
       "Doğru Cevap Açıklaması: 'En az birinin kusurlu' olasılığı = 1 - P(Hiçbirinin kusurlu olmaması). Hiçbirinin kusurlu olmaması, hepsinin (3 ürünün) sağlam seçilmesi demektir: C(6,3) / C(10,3). Sonuç: 1 - [C(6,3) / C(10,3)].",
-      "Yanlış Cevap Açıklaması A: Bu ifade, tümünün kusurlu olma olasılığını 1'den çıkarır, yani en az birinin sağlam olma olasılığını hesaplar.",
-      "Yanlış Cevap Açıklaması B: Bu sadece tam olarak bir kusurlu ürün çekilme olasılığıdır, en az birini (1, 2 veya 3 kusurlu) kapsamaz.",
-      "Yanlış Cevap Açıklaması C: Bu ifade üçünün de sağlam olma olasılığıdır."
+      "Yanlış Cevap Açıklaması: Bu sadece tam olarak bir kusurlu ürün çekilme olasılığıdır, en az birini (1, 2 veya 3 kusurlu) kapsamaz.",
+      "Yanlış Cevap Açıklaması: Bu ifade üçünün de sağlam olma olasılığıdır."
     ]
   },
   {
@@ -185,10 +185,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: 15 değeri sadece 3 * E(X) işleminin sonucudur, +2 unutulmuştur.",
       "Doğru Cevap Açıklaması: Beklenen değerin doğrusal özelliği vardır: E(aX + b) = a * E(X) + b. Dolayısıyla E(3X + 2) = 3 * 5 + 2 = 17.",
-      "Yanlış Cevap Açıklaması A: 15 değeri sadece 3 * E(X) işleminin sonucudur, +2 unutulmuştur.",
-      "Yanlış Cevap Açıklaması B: 5, sadece X'in beklenen değeridir.",
-      "Yanlış Cevap Açıklaması C: 21, yanlış bir hesaplama işlemidir."
+      "Yanlış Cevap Açıklaması: 5, sadece X'in beklenen değeridir.",
+      "Yanlış Cevap Açıklaması: 21, yanlış bir hesaplama işlemidir."
     ]
   },
   {
@@ -202,9 +202,9 @@
     "correctIndex": 0,
     "explanations": [
       "Doğru Cevap Açıklaması: Varyansın özelliği Var(aX + b) = a² * Var(X)'tir. Sabitlerin varyansı 0'dır. Bu nedenle Var(2X - 3) = 2² * Var(X) = 4 * 4 = 16.",
-      "Yanlış Cevap Açıklaması A: 8 değeri formülde katsayının karesi alınmadan çarpıldığında bulunur.",
-      "Yanlış Cevap Açıklaması B: 5 değeri varyans yerine beklenen değer kuralları uygulanarak hata yapıldığında ortaya çıkar.",
-      "Yanlış Cevap Açıklaması C: 13 değeri hatalı bir işlemin sonucudur."
+      "Yanlış Cevap Açıklaması: 8 değeri formülde katsayının karesi alınmadan çarpıldığında bulunur.",
+      "Yanlış Cevap Açıklaması: 5 değeri varyans yerine beklenen değer kuralları uygulanarak hata yapıldığında ortaya çıkar.",
+      "Yanlış Cevap Açıklaması: 13 değeri hatalı bir işlemin sonucudur."
     ]
   },
   {
@@ -217,10 +217,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: 1.6, bu dağılımın varyansıdır (n * p * (1-p) = 10 * 0.2 * 0.8).",
       "Doğru Cevap Açıklaması: Binom dağılımının beklenen değeri formülü E(X) = n * p'dir. 10 * 0.2 = 2.0.",
-      "Yanlış Cevap Açıklaması A: 1.6, bu dağılımın varyansıdır (n * p * (1-p) = 10 * 0.2 * 0.8).",
-      "Yanlış Cevap Açıklaması B: 8.0, n * (1-p) yani başarısızlıkların beklenen değeridir.",
-      "Yanlış Cevap Açıklaması C: 0.2, sadece bir denemede başarı olasılığıdır."
+      "Yanlış Cevap Açıklaması: 8.0, n * (1-p) yani başarısızlıkların beklenen değeridir.",
+      "Yanlış Cevap Açıklaması: 0.2, sadece bir denemede başarı olasılığıdır."
     ]
   },
   {
@@ -233,10 +233,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: n * p, binom dağılımının beklenen değeri (ortalama) formülüdür.",
       "Doğru Cevap Açıklaması: Binom dağılımında varyans, Var(X) = n * p * (1 - p) yani n * p * q formülü ile bulunur.",
-      "Yanlış Cevap Açıklaması A: n * p, binom dağılımının beklenen değeri (ortalama) formülüdür.",
-      "Yanlış Cevap Açıklaması B: p * q tek bir Bernoulli denemesinin varyansıdır.",
-      "Yanlış Cevap Açıklaması C: n / p olasılık ve istatistikte varyans formülü değildir."
+      "Yanlış Cevap Açıklaması: p * q tek bir Bernoulli denemesinin varyansıdır.",
+      "Yanlış Cevap Açıklaması: n / p olasılık ve istatistikte varyans formülü değildir."
     ]
   },
   {
@@ -249,10 +249,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: 1 - e⁻³ en az 1 hata yapma olasılığıdır.",
       "Doğru Cevap Açıklaması: Poisson formülü P(X=x) = (e^(-λ) * λ^x) / x!'dir. λ = 3 ve x = 0 için P(X=0) = (e⁻³ * 3⁰) / 0! = e⁻³.",
-      "Yanlış Cevap Açıklaması A: 1 - e⁻³ en az 1 hata yapma olasılığıdır.",
-      "Yanlış Cevap Açıklaması B: 3 * e⁻³ tam olarak 1 hata yapma olasılığıdır (x=1 için).",
-      "Yanlış Cevap Açıklaması C: e⁻¹ λ=1 olduğu durumda hiç hata yapmama olasılığıdır."
+      "Yanlış Cevap Açıklaması: 3 * e⁻³ tam olarak 1 hata yapma olasılığıdır (x=1 için).",
+      "Yanlış Cevap Açıklaması: e⁻¹ λ=1 olduğu durumda hiç hata yapmama olasılığıdır."
     ]
   },
   {
@@ -265,10 +265,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Sadece iki olası sonucu olan denemeler Binom veya Bernoulli dağılımını ifade eder.",
       "Doğru Cevap Açıklaması: Poisson dağılımında beklenen değer (E(X) = λ) ve varyans (Var(X) = λ) birbirine eşittir.",
-      "Yanlış Cevap Açıklaması A: Sadece iki olası sonucu olan denemeler Binom veya Bernoulli dağılımını ifade eder.",
-      "Yanlış Cevap Açıklaması B: Poisson dağılımı λ küçükken sağa çarpıktır, λ büyüdükçe simetrikleşir, her zaman simetrik değildir.",
-      "Yanlış Cevap Açıklaması C: Poisson dağılımı belirli aralıklardaki olay sayısını modeller, sürekli değil kesikli bir dağılımdır."
+      "Yanlış Cevap Açıklaması: Poisson dağılımı λ küçükken sağa çarpıktır, λ büyüdükçe simetrikleşir, her zaman simetrik değildir.",
+      "Yanlış Cevap Açıklaması: Poisson dağılımı belirli aralıklardaki olay sayısını modeller, sürekli değil kesikli bir dağılımdır."
     ]
   },
   {
@@ -281,10 +281,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: 15, maksimum bekleme süresidir.",
+      "Yanlış Cevap Açıklaması: 10, aralığın ortalaması değildir.",
       "Doğru Cevap Açıklaması: Düzgün dağılımda bekleme süresi [0, 15] aralığındadır. Ortalama E(X) = (a + b) / 2 formülünden (0 + 15) / 2 = 7.5 dakika bulunur.",
-      "Yanlış Cevap Açıklaması A: 15, maksimum bekleme süresidir.",
-      "Yanlış Cevap Açıklaması B: 10, aralığın ortalaması değildir.",
-      "Yanlış Cevap Açıklaması C: 5, aralığın ortalaması değildir."
+      "Yanlış Cevap Açıklaması: 5, aralığın ortalaması değildir."
     ]
   },
   {
@@ -298,9 +298,9 @@
     "correctIndex": 0,
     "explanations": [
       "Doğru Cevap Açıklaması: Toplam aralık uzunluğu 12 - 4 = 8. İstenen aralık uzunluğu 10 - 6 = 4. Olasılık = İstenen Aralık / Toplam Aralık = 4 / 8 = 0.5.",
-      "Yanlış Cevap Açıklaması A: 0.25, 2 birimlik bir aralığın (örneğin 6 ile 8 arası) olasılığıdır.",
-      "Yanlış Cevap Açıklaması B: 0.75, 6 birimlik bir aralığın olasılığıdır.",
-      "Yanlış Cevap Açıklaması C: 0.4 hesaplama hatasıdır."
+      "Yanlış Cevap Açıklaması: 0.25, 2 birimlik bir aralığın (örneğin 6 ile 8 arası) olasılığıdır.",
+      "Yanlış Cevap Açıklaması: 0.75, 6 birimlik bir aralığın olasılığıdır.",
+      "Yanlış Cevap Açıklaması: 0.4 hesaplama hatasıdır."
     ]
   },
   {
@@ -313,10 +313,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: 1000 ortalama değerdir, oran parametresi (λ) değil.",
+      "Yanlış Cevap Açıklaması: 0.01, 1/100 işleminden gelir.",
       "Doğru Cevap Açıklaması: Üstel dağılımda ortalama E(X) = 1/λ 'dır. 1000 = 1/λ ise λ = 1/1000 = 0.001'dir.",
-      "Yanlış Cevap Açıklaması A: 1000 ortalama değerdir, oran parametresi (λ) değil.",
-      "Yanlış Cevap Açıklaması B: 0.01, 1/100 işleminden gelir.",
-      "Yanlış Cevap Açıklaması C: 1, oranla alakası olmayan bir sayıdır."
+      "Yanlış Cevap Açıklaması: 1, oranla alakası olmayan bir sayıdır."
     ]
   },
   {
@@ -330,9 +330,9 @@
     "correctIndex": 0,
     "explanations": [
       "Doğru Cevap Açıklaması: Üstel dağılımın hafızasızlık özelliği (P(X > t+s | X > s) = P(X > t)), bir cihaz s saat çalışmışsa, t saat daha çalışma olasılığının yepyeni bir cihazın t saat çalışma olasılığına eşit olmasıdır.",
-      "Yanlış Cevap Açıklaması A: Üstel dağılımda E(X) = 1/λ ve Var(X) = 1/λ²'dir, eşit değildir.",
-      "Yanlış Cevap Açıklaması B: Üstel dağılım arıza oranının zamanla sabit kaldığını varsayar, aşınmayı modellemez (aşınma için Weibull kullanılır).",
-      "Yanlış Cevap Açıklaması C: Olasılık yoğunluk fonksiyonu x arttıkça azalır (azalan fonksiyondur)."
+      "Yanlış Cevap Açıklaması: Üstel dağılımda E(X) = 1/λ ve Var(X) = 1/λ²'dir, eşit değildir.",
+      "Yanlış Cevap Açıklaması: Üstel dağılım arıza oranının zamanla sabit kaldığını varsayar, aşınmayı modellemez (aşınma için Weibull kullanılır).",
+      "Yanlış Cevap Açıklaması: Olasılık yoğunluk fonksiyonu x arttıkça azalır (azalan fonksiyondur)."
     ]
   },
   {
@@ -345,10 +345,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Bu ifade sunucunun 2 yıldan daha uzun süre dayanma (çökmemesi) olasılığıdır (P(X > 2)).",
       "Doğru Cevap Açıklaması: Ortalama 5 ise λ = 1/5'tir. Üstel dağılımda kümülatif dağılım fonksiyonu P(X ≤ x) = 1 - e^(-λx)'tir. P(X ≤ 2) = 1 - e^(-(1/5)*2) = 1 - e^(-2/5).",
-      "Yanlış Cevap Açıklaması A: Bu ifade sunucunun 2 yıldan daha uzun süre dayanma (çökmemesi) olasılığıdır (P(X > 2)).",
-      "Yanlış Cevap Açıklaması B: Parametre λ hatalı bir şekilde ortalama olarak alındığında ortaya çıkar.",
-      "Yanlış Cevap Açıklaması C: Yanlış bir formüldür."
+      "Yanlış Cevap Açıklaması: Parametre λ hatalı bir şekilde ortalama olarak alındığında ortaya çıkar.",
+      "Yanlış Cevap Açıklaması: Yanlış bir formüldür."
     ]
   },
   {
@@ -361,10 +361,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Çıkarma yerine toplama işlemi yapılmıştır, bu formül yanlıştır.",
+      "Yanlış Cevap Açıklaması: Ortalama ve standart sapmanın yerleri yanlıştır.",
       "Doğru Cevap Açıklaması: Bir değerin Z skoru, değerin ortalamadan ne kadar uzaklaştığını standart sapma cinsinden ölçer ve Z = (x - μ) / σ formülüyle hesaplanır.",
-      "Yanlış Cevap Açıklaması A: Çıkarma yerine toplama işlemi yapılmıştır, bu formül yanlıştır.",
-      "Yanlış Cevap Açıklaması B: Ortalama ve standart sapmanın yerleri yanlıştır.",
-      "Yanlış Cevap Açıklaması C: x ile ortalamanın sırası ters çevrilmiştir, bu işaretin zıt olmasına sebep olur."
+      "Yanlış Cevap Açıklaması: x ile ortalamanın sırası ters çevrilmiştir, bu işaretin zıt olmasına sebep olur."
     ]
   },
   {
@@ -377,10 +377,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Ortalama 1, standart sapma 0 olamaz, sapma 0 ise değişim yoktur.",
       "Doğru Cevap Açıklaması: Standart normal dağılım, ortalamanın 0'a çekildiği ve standart sapmanın 1'e ölçeklendiği özel bir normal dağılımdır.",
-      "Yanlış Cevap Açıklaması A: Ortalama 1, standart sapma 0 olamaz, sapma 0 ise değişim yoktur.",
-      "Yanlış Cevap Açıklaması B: Standart sapma 0 olamaz.",
-      "Yanlış Cevap Açıklaması C: Ortalama ve standart sapma değerleri karıştırılmıştır."
+      "Yanlış Cevap Açıklaması: Standart sapma 0 olamaz.",
+      "Yanlış Cevap Açıklaması: Ortalama ve standart sapma değerleri karıştırılmıştır."
     ]
   },
   {
@@ -394,9 +394,9 @@
     "correctIndex": 0,
     "explanations": [
       "Doğru Cevap Açıklaması: Z = (x - μ) / σ = (85 - 75) / 5 = 10 / 5 = 2. Öğrenci ortalamanın 2 standart sapma üzerindedir.",
-      "Yanlış Cevap Açıklaması A: 1.5 yanlış hesaplamadır.",
-      "Yanlış Cevap Açıklaması B: 1 yanlış hesaplamadır, notu 80 olanın Z skoru 1'dir.",
-      "Yanlış Cevap Açıklaması C: -2, notu 65 olan bir öğrencinin Z skorudur."
+      "Yanlış Cevap Açıklaması: 1.5 yanlış hesaplamadır.",
+      "Yanlış Cevap Açıklaması: 1 yanlış hesaplamadır, notu 80 olanın Z skoru 1'dir.",
+      "Yanlış Cevap Açıklaması: -2, notu 65 olan bir öğrencinin Z skorudur."
     ]
   },
   {
@@ -409,10 +409,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Büyük sayılar kanunu, n büyüdükçe örneklem ortalamasının popülasyon ortalamasına yakınsayacağını söyler, dağılımın şeklinden bahsetmez.",
       "Doğru Cevap Açıklaması: Merkezi Limit Teoremi (CLT), n > 30 gibi yeterince büyük örneklemlerde, örneklem ortalamasının dağılımının normalleşeceğini ifade eder.",
-      "Yanlış Cevap Açıklaması A: Büyük sayılar kanunu, n büyüdükçe örneklem ortalamasının popülasyon ortalamasına yakınsayacağını söyler, dağılımın şeklinden bahsetmez.",
-      "Yanlış Cevap Açıklaması B: Bayes Teoremi koşullu olasılıkla ilgilidir.",
-      "Yanlış Cevap Açıklaması C: Chebyshev Teoremi veri noktalarının ortalamadan belirli standart sapma aralıklarında bulunma oranıyla ilgilidir."
+      "Yanlış Cevap Açıklaması: Bayes Teoremi koşullu olasılıkla ilgilidir.",
+      "Yanlış Cevap Açıklaması: Chebyshev Teoremi veri noktalarının ortalamadan belirli standart sapma aralıklarında bulunma oranıyla ilgilidir."
     ]
   },
   {
@@ -425,10 +425,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Örneklem varyansı, tek bir örneklemin kendi içindeki değişkenliğidir.",
+      "Yanlış Cevap Açıklaması: Z skoru tek bir değerin standartlaştırılmış şeklidir.",
       "Doğru Cevap Açıklaması: Örneklem ortalamasının dağılımının standart sapmasına 'Standart Hata' (SE) denir ve σ / √n formülüyle hesaplanır.",
-      "Yanlış Cevap Açıklaması A: Örneklem varyansı, tek bir örneklemin kendi içindeki değişkenliğidir.",
-      "Yanlış Cevap Açıklaması B: Z skoru tek bir değerin standartlaştırılmış şeklidir.",
-      "Yanlış Cevap Açıklaması C: Güven aralığı, parametrenin içinde bulunacağı tahmin edilen bir aralıktır."
+      "Yanlış Cevap Açıklaması: Güven aralığı, parametrenin içinde bulunacağı tahmin edilen bir aralıktır."
     ]
   },
   {
@@ -441,10 +441,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Standart hata n arttıkça küçülür, büyümez.",
       "Doğru Cevap Açıklaması: n yerine 4n yazılırsa, kök dışına 2 olarak çıkar. Yeni standart hata = σ / √(4n) = σ / (2√n) olur, yani yarıya düşer.",
-      "Yanlış Cevap Açıklaması A: Standart hata n arttıkça küçülür, büyümez.",
-      "Yanlış Cevap Açıklaması B: Karekök ilişkisi nedeniyle 4 katına çıkış hatayı 2'ye böler.",
-      "Yanlış Cevap Açıklaması C: Karekök ilişkisi unutulup doğrudan n ile orantı kurulamayacağı gibi yönü de yanlıştır."
+      "Yanlış Cevap Açıklaması: Karekök ilişkisi nedeniyle 4 katına çıkış hatayı 2'ye böler.",
+      "Yanlış Cevap Açıklaması: Karekök ilişkisi unutulup doğrudan n ile orantı kurulamayacağı gibi yönü de yanlıştır."
     ]
   },
   {
@@ -457,10 +457,10 @@
     ],
     "correctIndex": 3,
     "explanations": [
-      "Doğru Cevap Açıklaması: Popülasyon alt gruplara (fakültelere) ayrılıp her alt gruptan rastgele seçim yapıldığı için bu yöntem tabakalı örneklemedir.",
-      "Yanlış Cevap Açıklaması A: Küme örneklemesinde fakülteler seçilir ve seçilen fakültedeki tüm öğrenciler ankete dahil edilirdi.",
-      "Yanlış Cevap Açıklaması B: Basit rastgele örneklemede fakülte ayrımı gözetilmeksizin tüm üniversite listesinden doğrudan rastgele çekim yapılır.",
-      "Yanlış Cevap Açıklaması C: Sistematik örneklemede listeden belirli bir atlama aralığıyla (örn. her 10. kişi) seçim yapılır."
+      "Yanlış Cevap Açıklaması: Küme örneklemesinde fakülteler seçilir ve seçilen fakültedeki tüm öğrenciler ankete dahil edilirdi.",
+      "Yanlış Cevap Açıklaması: Basit rastgele örneklemede fakülte ayrımı gözetilmeksizin tüm üniversite listesinden doğrudan rastgele çekim yapılır.",
+      "Yanlış Cevap Açıklaması: Sistematik örneklemede listeden belirli bir atlama aralığıyla (örn. her 10. kişi) seçim yapılır.",
+      "Doğru Cevap Açıklaması: Popülasyon alt gruplara (fakültelere) ayrılıp her alt gruptan rastgele seçim yapıldığı için bu yöntem tabakalı örneklemedir."
     ]
   },
   {
@@ -473,10 +473,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Sistematik örnekleme belli bir kurala (k'ncı eleman) bağlıdır.",
+      "Yanlış Cevap Açıklaması: Tabakalı örneklemede nüfusun tüm alt gruplarından temsiliyet amaçlanır.",
       "Doğru Cevap Açıklaması: Sadece kolay ulaşılan ve o an oradan geçen kişilerin seçilmesi, rastgelelik içermeyen 'kolayda örnekleme' (convenience sampling) yöntemidir ve yanlılık yaratabilir.",
-      "Yanlış Cevap Açıklaması A: Sistematik örnekleme belli bir kurala (k'ncı eleman) bağlıdır.",
-      "Yanlış Cevap Açıklaması B: Tabakalı örneklemede nüfusun tüm alt gruplarından temsiliyet amaçlanır.",
-      "Yanlış Cevap Açıklaması C: Küme örneklemesinde belirli bölgeler (kümeler) rastgele seçilir."
+      "Yanlış Cevap Açıklaması: Küme örneklemesinde belirli bölgeler (kümeler) rastgele seçilir."
     ]
   },
   {
@@ -489,10 +489,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: 1/6 hiçbir koşul verilmeseydi 6 gelme olasılığı olurdu.",
       "Doğru Cevap Açıklaması: Olası sonuçlar (örneklem uzayı) 4'ten büyük sayılar olan {5, 6}'ya daralmıştır. 6 gelmesi bu 2 sonuçtan 1'idir. Olasılık 1/2'dir.",
-      "Yanlış Cevap Açıklaması A: 1/6 hiçbir koşul verilmeseydi 6 gelme olasılığı olurdu.",
-      "Yanlış Cevap Açıklaması B: 1/3, örneklem uzayının 3 elemanlı olduğu durumlarda çıkar.",
-      "Yanlış Cevap Açıklaması C: 1/4 yanlış bir orandır."
+      "Yanlış Cevap Açıklaması: 1/3, örneklem uzayının 3 elemanlı olduğu durumlarda çıkar.",
+      "Yanlış Cevap Açıklaması: 1/4 yanlış bir orandır."
     ]
   },
   {
@@ -505,10 +505,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Aynı anda gerçekleşememe ayrık (mutually exclusive) olayların özelliğidir, bağımsız olayların değil.",
       "Doğru Cevap Açıklaması: Bağımsızlık, P(A|B) = P(A) olması demektir; yani B'nin bilinmesi A'nın olasılığını değiştirmez.",
-      "Yanlış Cevap Açıklaması A: Aynı anda gerçekleşememe ayrık (mutually exclusive) olayların özelliğidir, bağımsız olayların değil.",
-      "Yanlış Cevap Açıklaması B: Mutlak gerçekleşme deterministik bir durumdur, bağımsızlığı ifade etmez.",
-      "Yanlış Cevap Açıklaması C: Tüm olaylar aynı rastgele deneye ait oldukları sürece aynı örneklem uzayındadır."
+      "Yanlış Cevap Açıklaması: Mutlak gerçekleşme deterministik bir durumdur, bağımsızlığı ifade etmez.",
+      "Yanlış Cevap Açıklaması: Tüm olaylar aynı rastgele deneye ait oldukları sürece aynı örneklem uzayındadır."
     ]
   },
   {
@@ -521,10 +521,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Kesin olayların olasılığı tam olarak 1'dir.",
+      "Yanlış Cevap Açıklaması: Olasılık 1'i geçemeyeceği için bu yorum geçersizdir.",
       "Doğru Cevap Açıklaması: Olasılık kurallarının ilk aksiyomuna göre, herhangi bir olayın olasılığı 0 ile 1 arasında olmalıdır (0 ≤ P(A) ≤ 1). 1.2 olamaz.",
-      "Yanlış Cevap Açıklaması A: Kesin olayların olasılığı tam olarak 1'dir.",
-      "Yanlış Cevap Açıklaması B: Olasılık 1'i geçemeyeceği için bu yorum geçersizdir.",
-      "Yanlış Cevap Açıklaması C: Örneklem uzayı evrensel kümedir, olay onu aşamaz."
+      "Yanlış Cevap Açıklaması: Örneklem uzayı evrensel kümedir, olay onu aşamaz."
     ]
   },
   {
@@ -538,9 +538,9 @@
     "correctIndex": 0,
     "explanations": [
       "Doğru Cevap Açıklaması: Sürekli dağılımlarda alan, olasılığa karşılık gelir. Tek bir noktanın altında kalan alan (genişliği olmayan bir çizgi) sıfırdır, bu nedenle P(X = a) = 0'dır.",
-      "Yanlış Cevap Açıklaması A: Olasılık yoğunluk fonksiyonunun o noktadaki değeri hesaplanabilir ama bu olasılık değildir.",
-      "Yanlış Cevap Açıklaması B: P(X = a) sürekli dağılımlarda asla 1 olmaz.",
-      "Yanlış Cevap Açıklaması C: 0.5 medyanla ilgili olabilir ama nokta olasılığı değildir."
+      "Yanlış Cevap Açıklaması: Olasılık yoğunluk fonksiyonunun o noktadaki değeri hesaplanabilir ama bu olasılık değildir.",
+      "Yanlış Cevap Açıklaması: P(X = a) sürekli dağılımlarda asla 1 olmaz.",
+      "Yanlış Cevap Açıklaması: 0.5 medyanla ilgili olabilir ama nokta olasılığı değildir."
     ]
   },
   {
@@ -553,10 +553,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: 0.5, ortalamanın sağında veya solunda kalan yarım alandır.",
+      "Yanlış Cevap Açıklaması: 100 yüzdelik bir ifadedir, alan olasılık olarak 1'dir.",
       "Doğru Cevap Açıklaması: Tüm olasılık yoğunluk fonksiyonlarında olduğu gibi, eğrinin altındaki toplam alan (toplam olasılık) tam olarak 1'e eşittir.",
-      "Yanlış Cevap Açıklaması A: 0.5, ortalamanın sağında veya solunda kalan yarım alandır.",
-      "Yanlış Cevap Açıklaması B: 100 yüzdelik bir ifadedir, alan olasılık olarak 1'dir.",
-      "Yanlış Cevap Açıklaması C: Eğri eksi sonsuzdan artı sonsuza uzanmasına rağmen altındaki alan integrali 1'e eşittir, sonsuz değildir."
+      "Yanlış Cevap Açıklaması: Eğri eksi sonsuzdan artı sonsuza uzanmasına rağmen altındaki alan integrali 1'e eşittir, sonsuz değildir."
     ]
   },
   {
@@ -569,10 +569,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Ortalama (μ) sadece eğrinin yatay eksen (x ekseni) üzerindeki merkez konumunu belirler.",
       "Doğru Cevap Açıklaması: Standart sapma (σ), verilerin ortalamadan ne kadar yayıldığını gösterir; σ büyükse eğri yayvan ve basık, küçükse dar ve sivri olur.",
-      "Yanlış Cevap Açıklaması A: Ortalama (μ) sadece eğrinin yatay eksen (x ekseni) üzerindeki merkez konumunu belirler.",
-      "Yanlış Cevap Açıklaması B: Medyan, normal dağılımda ortalamaya eşittir ancak yayılımı belirtmez.",
-      "Yanlış Cevap Açıklaması C: Z skoru dağılımın şeklini değil, tek bir verinin konumunu belirtir."
+      "Yanlış Cevap Açıklaması: Medyan, normal dağılımda ortalamaya eşittir ancak yayılımı belirtmez.",
+      "Yanlış Cevap Açıklaması: Z skoru dağılımın şeklini değil, tek bir verinin konumunu belirtir."
     ]
   },
   {
@@ -585,10 +585,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Sürekli dağılımlarda f(x) yoğunluk ifade ettiği için 1'den büyük değerler alabilir (ancak alan 1'i geçemez).",
+      "Yanlış Cevap Açıklaması: Eğri altındaki alan 1 olmalıdır, 0 değil.",
       "Doğru Cevap Açıklaması: Olasılıklar negatif olamayacağından, bir fonksiyonun olasılık yoğunluk fonksiyonu olabilmesi için f(x) ≥ 0 olmalıdır.",
-      "Yanlış Cevap Açıklaması A: Sürekli dağılımlarda f(x) yoğunluk ifade ettiği için 1'den büyük değerler alabilir (ancak alan 1'i geçemez).",
-      "Yanlış Cevap Açıklaması B: Eğri altındaki alan 1 olmalıdır, 0 değil.",
-      "Yanlış Cevap Açıklaması C: Üstel dağılım gibi dağılımlar asimetriktir, simetrik olmak şart değildir."
+      "Yanlış Cevap Açıklaması: Üstel dağılım gibi dağılımlar asimetriktir, simetrik olmak şart değildir."
     ]
   },
   {
@@ -601,10 +601,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Varyans standart sapmanın karesine eşittir, tersi değil.",
+      "Yanlış Cevap Açıklaması: Varyans kareler toplamından hesaplandığı için asla negatif olamaz.",
       "Doğru Cevap Açıklaması: Standart sapma, varyansın karekökü olduğu için kare alma işlemi sırasındaki birim değişimini geri alır ve verinin orijinal birimiyle (örneğin cm, kg) aynı olur.",
-      "Yanlış Cevap Açıklaması A: Varyans standart sapmanın karesine eşittir, tersi değil.",
-      "Yanlış Cevap Açıklaması B: Varyans kareler toplamından hesaplandığı için asla negatif olamaz.",
-      "Yanlış Cevap Açıklaması C: Varyans arttıkça veriler ortalamadan daha fazla uzaklaşır (dağılır)."
+      "Yanlış Cevap Açıklaması: Varyans arttıkça veriler ortalamadan daha fazla uzaklaşır (dağılır)."
     ]
   },
   {
@@ -617,10 +617,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: 1 tüm alandır.",
+      "Yanlış Cevap Açıklaması: 0 bir nokta olasılığıdır.",
       "Doğru Cevap Açıklaması: Standart normal dağılımın ortalaması 0'dır ve simetriktir. Eğrinin altındaki toplam alan 1 olduğundan, ortalamanın solundaki (0'dan küçük) alan 0.5'tir.",
-      "Yanlış Cevap Açıklaması A: 1 tüm alandır.",
-      "Yanlış Cevap Açıklaması B: 0 bir nokta olasılığıdır.",
-      "Yanlış Cevap Açıklaması C: Olasılık değerleri negatif olamaz."
+      "Yanlış Cevap Açıklaması: Olasılık değerleri negatif olamaz."
     ]
   },
   {
@@ -633,10 +633,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Denemeler kesinlikle birbirinden bağımsız olmalıdır.",
+      "Yanlış Cevap Açıklaması: Deneme sayısı (n) önceden belirlenmiş ve sabit olmalıdır.",
       "Doğru Cevap Açıklaması: Binom deneyinin temel şartlarından biri, her bir denemenin (Bernoulli denemesi) sadece başarı veya başarısızlık olarak adlandırılan iki olası sonucu olmasıdır.",
-      "Yanlış Cevap Açıklaması A: Denemeler kesinlikle birbirinden bağımsız olmalıdır.",
-      "Yanlış Cevap Açıklaması B: Deneme sayısı (n) önceden belirlenmiş ve sabit olmalıdır.",
-      "Yanlış Cevap Açıklaması C: Başarı olasılığı (p) her denemede sabit kalmalıdır."
+      "Yanlış Cevap Açıklaması: Başarı olasılığı (p) her denemede sabit kalmalıdır."
     ]
   },
   {
@@ -650,9 +650,9 @@
     "correctIndex": 0,
     "explanations": [
       "Doğru Cevap Açıklaması: Toplam 36 olası durum vardır. Toplamı 7 eden durumlar (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) olmak üzere 6 tanedir. Olasılık 6/36 = 1/6'dır.",
-      "Yanlış Cevap Açıklaması A: 1/12 toplamı 3 veya 11 olan durumların olasılığıdır.",
-      "Yanlış Cevap Açıklaması B: 7/36 yanlış bir sayımla elde edilmiştir.",
-      "Yanlış Cevap Açıklaması C: Zarlardaki sayılar üzerinden yanlış bir oran kurulmuştur."
+      "Yanlış Cevap Açıklaması: 1/12 toplamı 3 veya 11 olan durumların olasılığıdır.",
+      "Yanlış Cevap Açıklaması: 7/36 yanlış bir sayımla elde edilmiştir.",
+      "Yanlış Cevap Açıklaması: Zarlardaki sayılar üzerinden yanlış bir oran kurulmuştur."
     ]
   },
   {
@@ -665,10 +665,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
-      "Doğru Cevap Açıklaması: Torbada toplam 15 top vardır. Kırmızı ve siyah topların toplamı 4 + 6 = 10'dur. 'Veya' dendiği için ayrık bu iki olayın olasılıkları toplanır: 10/15 = 2/3. (Cevap C de 10/15, Cevap A da 2/3. Format gereği ilk doğru indeks A olacaktır, ancak buradaki seçeneklere göre 2/3 ile 10/15 aynı değerdir. Seçenek düzenlemesi: A=2/3, C=10/15 yazılmıştı. 10/15'tir).",
-      "Yanlış Cevap Açıklaması A: 2/3 sadeleştirilmiş halidir (doğrudur ancak orjinal oran 10/15'tir).",
-      "Yanlış Cevap Açıklaması B: 4/15 sadece kırmızı çekilme olasılığıdır.",
-      "Yanlış Cevap Açıklaması C: 1/2 yanlıştır."
+      "Yanlış Cevap Açıklaması: 2/3 sadeleştirilmiş halidir (doğrudur ancak orjinal oran 10/15'tir).",
+      "Yanlış Cevap Açıklaması: 4/15 sadece kırmızı çekilme olasılığıdır.",
+      "Doğru Cevap Açıklaması: Torbada toplam 15 top vardır. Kırmızı ve siyah topların toplamı 4 + 6 = 10'dur. 'Veya' dendiği için ayrık bu iki olayın olasılıkları toplanır: 10/15 = 2/3.",
+      "Yanlış Cevap Açıklaması: 1/2 yanlıştır."
     ]
   },
   {
@@ -682,9 +682,9 @@
     "correctIndex": 0,
     "explanations": [
       "Doğru Cevap Açıklaması: Sabit n (5) denemede, birbirini dışlayan iki sonuçlu (Yazı/Tura) ve başarı olasılığı sabit olan olayların olasılığı Binom dağılımıyla hesaplanır.",
-      "Yanlış Cevap Açıklaması A: Poisson dağılımı birim zamandaki veya alandaki olay sayısı içindir.",
-      "Yanlış Cevap Açıklaması B: Üstel dağılım iki olay arasındaki süreyi modeller.",
-      "Yanlış Cevap Açıklaması C: Normal dağılım sürekli veriler için kullanılır."
+      "Yanlış Cevap Açıklaması: Poisson dağılımı birim zamandaki veya alandaki olay sayısı içindir.",
+      "Yanlış Cevap Açıklaması: Üstel dağılım iki olay arasındaki süreyi modeller.",
+      "Yanlış Cevap Açıklaması: Normal dağılım sürekli veriler için kullanılır."
     ]
   },
   {
@@ -698,9 +698,9 @@
     "correctIndex": 0,
     "explanations": [
       "Doğru Cevap Açıklaması: Belirli bir zaman aralığında ortalama bir varış oranına (λ=4) sahip, nadir rastlanan olayların sayısı Poisson Dağılımı ile modellenir.",
-      "Yanlış Cevap Açıklaması A: Binom dağılımı belirli sayıda deneme olduğunda kullanılır, burada deneme sayısı sonsuz ve zaman aralığı söz konusudur.",
-      "Yanlış Cevap Açıklaması B: Hipergeometrik dağılım yerine koymadan çekim yapılan kesikli durumlarda kullanılır.",
-      "Yanlış Cevap Açıklaması C: Düzgün dağılım aralıktaki olasılıkların eşit olduğu durumlar içindir."
+      "Yanlış Cevap Açıklaması: Binom dağılımı belirli sayıda deneme olduğunda kullanılır, burada deneme sayısı sonsuz ve zaman aralığı söz konusudur.",
+      "Yanlış Cevap Açıklaması: Hipergeometrik dağılım yerine koymadan çekim yapılan kesikli durumlarda kullanılır.",
+      "Yanlış Cevap Açıklaması: Düzgün dağılım aralıktaki olasılıkların eşit olduğu durumlar içindir."
     ]
   },
   {
@@ -713,10 +713,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Aritmetik ortalama nicel veriler için kullanılabilir.",
+      "Yanlış Cevap Açıklaması: Medyan için verilerin en azından sıralı (ordinal) olması gerekir.",
       "Doğru Cevap Açıklaması: Nominal veriler (örneğin kan grubu, göz rengi) sıralanamaz veya matematiksel işleme tabi tutulamaz. Bu yüzden sadece en çok tekrar eden frekansı ifade eden 'Mod' kullanılabilir.",
-      "Yanlış Cevap Açıklaması A: Aritmetik ortalama nicel veriler için kullanılabilir.",
-      "Yanlış Cevap Açıklaması B: Medyan için verilerin en azından sıralı (ordinal) olması gerekir.",
-      "Yanlış Cevap Açıklaması C: Varyans nicel bir yayılım ölçüsüdür, kategorik verilerde hesaplanamaz."
+      "Yanlış Cevap Açıklaması: Varyans nicel bir yayılım ölçüsüdür, kategorik verilerde hesaplanamaz."
     ]
   },
   {
@@ -729,10 +729,10 @@
     ],
     "correctIndex": 1,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Ortalama ancak standart normal dağılımda 0 olur.",
       "Doğru Cevap Açıklaması: Örneklem ortalaması, popülasyon ortalamasının yansız (unbiased) bir tahmincisidir. Bu nedenle E(x̄) = μ'dir.",
-      "Yanlış Cevap Açıklaması A: Ortalama ancak standart normal dağılımda 0 olur.",
-      "Yanlış Cevap Açıklaması B: Beklenen değer popülasyon ortalamasına sabittir, n değiştikçe standart hata (yayılım) değişir, beklenen değer değil.",
-      "Yanlış Cevap Açıklaması C: Standart hata, dağılımın standart sapmasıdır, beklenen değeri değildir."
+      "Yanlış Cevap Açıklaması: Beklenen değer popülasyon ortalamasına sabittir, n değiştikçe standart hata (yayılım) değişir, beklenen değer değil.",
+      "Yanlış Cevap Açıklaması: Standart hata, dağılımın standart sapmasıdır, beklenen değeri değildir."
     ]
   },
   {
@@ -745,10 +745,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Hipergeometrik dağılım genellikle popülasyon küçük olduğunda ve çekilenler yerine konmadığında olasılığın değiştiği durumlarda kullanılır.",
+      "Yanlış Cevap Açıklaması: Üstel dağılım sürekli bir zaman veya bekleme süresi dağılımıdır.",
       "Doğru Cevap Açıklaması: Sabit bir n (10) ve her çekimde sabit bir kusur olasılığı (0.05) bulunduğundan ve her parça bağımsız kabul edildiğinden Binom dağılımı uygundur.",
-      "Yanlış Cevap Açıklaması A: Hipergeometrik dağılım genellikle popülasyon küçük olduğunda ve çekilenler yerine konmadığında olasılığın değiştiği durumlarda kullanılır.",
-      "Yanlış Cevap Açıklaması B: Üstel dağılım sürekli bir zaman veya bekleme süresi dağılımıdır.",
-      "Yanlış Cevap Açıklaması C: Normal dağılım sürekli nicel veriler içindir, n=10 oranlar için normal yaklaşım varsayımını genelde sağlamaz."
+      "Yanlış Cevap Açıklaması: Normal dağılım sürekli nicel veriler içindir, n=10 oranlar için normal yaklaşım varsayımını genelde sağlamaz."
     ]
   },
   {
@@ -761,10 +761,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Bağımsızlık şartı gerekmez, formül geneldir.",
+      "Yanlış Cevap Açıklaması: Koşullu olasılık P(A|B) ile ifade edilir.",
       "Doğru Cevap Açıklaması: Bu genel toplama kuralıdır ve A veya B'nin (veya her ikisinin) gerçekleşme olasılığını bulmak için herhangi iki olayda kullanılabilir.",
-      "Yanlış Cevap Açıklaması A: Bağımsızlık şartı gerekmez, formül geneldir.",
-      "Yanlış Cevap Açıklaması B: Koşullu olasılık P(A|B) ile ifade edilir.",
-      "Yanlış Cevap Açıklaması C: Ayrık olayların kesişimi boştur ve hesaplanacak değeri yoktur (0'dır)."
+      "Yanlış Cevap Açıklaması: Ayrık olayların kesişimi boştur ve hesaplanacak değeri yoktur (0'dır)."
     ]
   },
   {
@@ -777,10 +777,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Varyans grafikte doğrudan bir uzunluk olarak gösterilemez.",
+      "Yanlış Cevap Açıklaması: IQR kutunun sol kenarı (Q1) ile sağ kenarı (Q3) arasındaki mesafedir.",
       "Doğru Cevap Açıklaması: Kutu grafiğinin uçları genellikle minimum ve maksimum değerleri (aykırı değerler hariç) gösterir, bu yüzden aralarındaki mesafe dağılım aralığını temsil eder.",
-      "Yanlış Cevap Açıklaması A: Varyans grafikte doğrudan bir uzunluk olarak gösterilemez.",
-      "Yanlış Cevap Açıklaması B: IQR kutunun sol kenarı (Q1) ile sağ kenarı (Q3) arasındaki mesafedir.",
-      "Yanlış Cevap Açıklaması C: Medyan kutunun içindeki bir çizgidir, mesafe değil noktadır."
+      "Yanlış Cevap Açıklaması: Medyan kutunun içindeki bir çizgidir, mesafe değil noktadır."
     ]
   },
   {
@@ -793,10 +793,10 @@
     ],
     "correctIndex": 2,
     "explanations": [
+      "Yanlış Cevap Açıklaması: Aritmetik ortalama tüm değerlerin toplamını içerdiği için aykırı değerlerden çok fazla etkilenir.",
+      "Yanlış Cevap Açıklaması: Varyans her verinin ortalamaya uzaklığının karesini aldığı için uç değerlere karşı çok hassastır.",
       "Doğru Cevap Açıklaması: Medyan, verilerin sadece ortasındaki sıraya baktığı için çok büyük veya çok küçük uç değerlerden etkilenmez (dirençlidir).",
-      "Yanlış Cevap Açıklaması A: Aritmetik ortalama tüm değerlerin toplamını içerdiği için aykırı değerlerden çok fazla etkilenir.",
-      "Yanlış Cevap Açıklaması B: Varyans her verinin ortalamaya uzaklığının karesini aldığı için uç değerlere karşı çok hassastır.",
-      "Yanlış Cevap Açıklaması C: Range sadece en küçük ve en büyük değeri kullandığından aykırı değerlerin etkisini doğrudan yansıtır."
+      "Yanlış Cevap Açıklaması: Range sadece en küçük ve en büyük değeri kullandığından aykırı değerlerin etkisini doğrudan yansıtır."
     ]
   }
 ]
