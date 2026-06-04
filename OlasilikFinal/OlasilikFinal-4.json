@@ -1,0 +1,802 @@
+[
+  {
+    "question": "Bir popülasyon ortalaması (μ) için %95 güven aralığı [45, 55] olarak hesaplanmıştır. Bu aralığın yorumu aşağıdakilerden hangisidir?",
+    "options": [
+      "Popülasyondaki verilerin %95'i 45 ile 55 arasındadır.",
+      "Aynı yöntemle 100 farklı örneklem alınsa, oluşturulan güven aralıklarından yaklaşık 95'inin gerçek popülasyon ortalamasını içermesi beklenir.",
+      "Gerçek popülasyon ortalamasının bu aralıkta olma olasılığı kesinlikle %95'tir.",
+      "Örneklem ortalamasının 50 olma olasılığı %95'tir."
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Güven aralığı, tahmin yönteminin ne kadar güvenilir olduğunu ifade eder. %95 güven düzeyi, bu prosedürle üretilen aralıkların %95'inin gerçek parametreyi kapsayacağını belirtir.",
+      "Yanlış Cevap Açıklaması A: Güven aralığı verilerin dağılımını değil, popülasyon parametresinin bulunduğu tahmin aralığını gösterir.",
+      "Yanlış Cevap Açıklaması B: Parametre ya aralığın içindedir ya da değildir (olasılık 1 veya 0'dır), yöntem %95 başarılıdır.",
+      "Yanlış Cevap Açıklaması C: Güven aralığı örneklem ortalamasının olasılığını belirlemez."
+    ]
+  },
+  {
+    "question": "Güven aralığı hesaplanırken kullanılan 'Hata Payı' (Margin of Error) aşağıdakilerin hangisine bağlı olarak DEĞİŞMEZ?",
+    "options": [
+      "Örneklem Büyüklüğü (n)",
+      "Popülasyon Büyüklüğü (N)",
+      "Güven Düzeyi (1 - α)",
+      "Örneklem Standart Sapması (s)"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Standart hesaplamalarda (çok küçük popülasyonlar hariç) hata payı formülü popülasyon büyüklüğünü (N) içermez. Yalnızca kritik değer, standart sapma ve örneklem büyüklüğüne bağlıdır.",
+      "Yanlış Cevap Açıklaması A: Örneklem büyüklüğü (n) paydayı oluşturur ve hata payını doğrudan etkiler.",
+      "Yanlış Cevap Açıklaması B: Güven düzeyi kritik değeri (Z veya t) değiştirerek hata payını etkiler.",
+      "Yanlış Cevap Açıklaması C: Standart sapma hata payı formülünün payında yer alır."
+    ]
+  },
+  {
+    "question": "Bir popülasyon ortalamasını tahmin etmek için çekilen örneklem büyüklüğü n = 25'tir ve popülasyon varyansı BİLİNMEMEKTEDİR. Bu durumda hangi tablo ve serbestlik derecesi kullanılmalıdır?",
+    "options": [
+      "Z tablosu, serbestlik derecesi yok",
+      "t tablosu, serbestlik derecesi = 25",
+      "t tablosu, serbestlik derecesi = 24",
+      "Ki-Kare tablosu, serbestlik derecesi = 24"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Popülasyon varyansı bilinmediğinde ve n < 30 olduğunda t dağılımı kullanılır. Serbestlik derecesi df = n - 1 = 25 - 1 = 24'tür.",
+      "Yanlış Cevap Açıklaması A: Z tablosu sadece varyans bilindiğinde veya n > 30 iken (yaklaşım olarak) kullanılır.",
+      "Yanlış Cevap Açıklaması B: Serbestlik derecesi n değil, n - 1'dir.",
+      "Yanlış Cevap Açıklaması C: Ki-Kare tablosu varyans tahmini veya kategorik testler içindir."
+    ]
+  },
+  {
+    "question": "Aşağıdakilerden hangisi bir araştırma hipotezi formüle edilirken Alternatif Hipotezin (HA) alabileceği biçimlerden biri olamaz?",
+    "options": [
+      "μ > 50",
+      "μ < 50",
+      "μ ≠ 50",
+      "μ = 50"
+    ],
+    "correctIndex": 3,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Alternatif hipotez (HA) hiçbir zaman eşitlik durumu (=) içermez. Eşitlik durumu daima Sıfır Hipotezine (H0) aittir.",
+      "Yanlış Cevap Açıklaması A: Büyüktür işareti sağ kuyruk testini belirten geçerli bir HA biçimidir.",
+      "Yanlış Cevap Açıklaması B: Küçüktür işareti sol kuyruk testini belirten geçerli bir HA biçimidir.",
+      "Yanlış Cevap Açıklaması C: Eşit değildir işareti çift kuyruk testini belirten geçerli bir HA biçimidir."
+    ]
+  },
+  {
+    "question": "İstatistiksel bir hipotez testinde 'Anlamlılık Düzeyi' (α) neyi ifade eder?",
+    "options": [
+      "Gerçekte yanlış olan Sıfır Hipotezini reddedememe olasılığını",
+      "Gerçekte doğru olan Sıfır Hipotezini reddetme (Tip I Hata) olasılığını",
+      "Araştırmanın sonucunun %100 doğru çıkma ihtimalini",
+      "Testin Gücünü"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Anlamlılık düzeyi (α), doğru olan bir H0'ı yanlışlıkla reddederek 'yanlış alarm' verme riskinin (Tip I Hata) araştırmacı tarafından baştan belirlenmiş sınırıdır.",
+      "Yanlış Cevap Açıklaması A: Bu durum Tip II Hata (β) olarak adlandırılır.",
+      "Yanlış Cevap Açıklaması B: İstatistikte %100 kesinlik yoktur.",
+      "Yanlış Cevap Açıklaması C: Testin gücü (1 - β), yanlış H0'ı doğru şekilde reddetme olasılığıdır."
+    ]
+  },
+  {
+    "question": "Hipotez testlerinde kullanılan p-değeri (p-value) ile anlamlılık düzeyi (α) karşılaştırmasında, H0'ın reddedilmesi için hangi şart sağlanmalıdır?",
+    "options": [
+      "p-değeri > α",
+      "p-değeri = 1 - α",
+      "p-değeri ≤ α",
+      "p-değeri ≥ 1"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Doğru Cevap Açıklaması: P-değeri, sıfır hipotezi doğruyken bu örneklemi tesadüfen elde etme olasılığıdır. Bu olasılık çok düşükse (alfa sınırından küçük veya eşitse), sonucun tesadüf olmadığına kanaat getirilip H0 reddedilir.",
+      "Yanlış Cevap Açıklaması A: P-değeri alfa'dan büyükse, yeterli kanıt yoktur ve H0 reddedilemez.",
+      "Yanlış Cevap Açıklaması B: Güven düzeyiyle doğrudan bir eşitlik şartı aranmaz.",
+      "Yanlış Cevap Açıklaması C: P-değeri zaten 0 ile 1 arasında bir olasılık değeridir, 1'den büyük olamaz."
+    ]
+  },
+  {
+    "question": "Tip II Hata (β) istatistikte nasıl tanımlanır?",
+    "options": [
+      "Gerçekte doğru olan H0'ın reddedilmesi",
+      "Gerçekte yanlış olan H0'ın reddedilmemesi",
+      "Alternatif hipotezin yanlış kurulması",
+      "Örneklem büyüklüğünün gereğinden fazla alınması"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Tip II Hata, gerçekte bir etki veya fark varken (H0 yanlışken), elimizdeki istatistiksel kanıt yetersiz kaldığı için H0'ı reddedemememizdir.",
+      "Yanlış Cevap Açıklaması A: Bu durum Tip I Hatadır (α).",
+      "Yanlış Cevap Açıklaması B: Hipotez kurma hatası ile ilgili bir kavram değildir.",
+      "Yanlış Cevap Açıklaması C: Örneklem büyüklüğünün fazla alınması Tip II hata riskini azaltır, hatanın kendisi değildir."
+    ]
+  },
+  {
+    "question": "İstatistiksel bir testin gücü (Power of a test) aşağıdakilerden hangisi ile ifade edilir?",
+    "options": [
+      "α",
+      "1 - α",
+      "1 - β",
+      "β"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Testin gücü, gerçekte yanlış olan bir Sıfır Hipotezini doğru bir şekilde reddetme olasılığıdır ve Tip II hata olasılığının (β) tümleyenidir (1 - β).",
+      "Yanlış Cevap Açıklaması A: α, Tip I hata olasılığıdır.",
+      "Yanlış Cevap Açıklaması B: 1 - α, Güven Düzeyidir.",
+      "Yanlış Cevap Açıklaması C: β, Tip II hata olasılığıdır."
+    ]
+  },
+  {
+    "question": "Bir gıda firması paketlediği cipslerin ortalama 150 gram olduğunu iddia etmektedir. Tüketici derneği ise gramajın 150'den DÜŞÜK olduğundan şüphelenmektedir. Bu durum için Alternatif Hipotez (HA) nasıl kurulmalıdır?",
+    "options": [
+      "HA: μ ≠ 150",
+      "HA: μ > 150",
+      "HA: μ < 150",
+      "HA: μ = 150"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Tüketici derneğinin iddiası gramajın daha düşük olduğudur. Bu nedenle araştırmanın amacı bunu kanıtlamak olur ve HA: μ < 150 (sol kuyruk testi) şeklinde kurulur.",
+      "Yanlış Cevap Açıklaması A: Eşit değildir (≠), hem eksik hem fazla olma durumunu aynı anda test eden çift kuyruk testidir.",
+      "Yanlış Cevap Açıklaması B: Büyüktür (>), gramajın fazla olduğundan şüphelenilseydi kurulurdu.",
+      "Yanlış Cevap Açıklaması C: Eşittir (=) ifadesi her zaman Sıfır Hipotezi (H0) içinde yer alır."
+    ]
+  },
+  {
+    "question": "İki bağımsız popülasyon ortalaması karşılaştırılırken, popülasyon varyanslarının EŞİT OLMADIĞI varsayılıyorsa hangi t-testi kullanılmalıdır?",
+    "options": [
+      "Eşleştirilmiş t-testi",
+      "Havuzlanmış Varyans t-testi",
+      "Welch t-testi",
+      "Z-testi"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Varyansların eşit olmadığı veya bu konuda bir kanıt bulunmadığı durumlarda, serbestlik derecesinin daha karmaşık bir formülle düzeltildiği Welch t-testi kullanılır.",
+      "Yanlış Cevap Açıklaması A: Eşleştirilmiş test bağımlı veri setleri (aynı kişide önce/sonra ölçümleri) içindir.",
+      "Yanlış Cevap Açıklaması B: Havuzlanmış test, popülasyon varyanslarının kesin olarak eşit olduğu varsayıldığında kullanılır.",
+      "Yanlış Cevap Açıklaması C: Z-testi, popülasyon varyansları bilindiğinde kullanılır."
+    ]
+  },
+  {
+    "question": "Aynı hastaların diyet programına başlamadan önceki kiloları ile 3 ay sonraki kiloları karşılaştırılarak diyetin etkinliği test edilecektir. Bu araştırma deseni için en uygun istatistiksel test hangisidir?",
+    "options": [
+      "Bağımsız Örneklemler t-testi",
+      "Eşleştirilmiş (Bağımlı) Örneklemler t-testi",
+      "Ki-kare Bağımsızlık Testi",
+      "Varyans Analizi (ANOVA)"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Ölçümler aynı bireyler üzerinden iki farklı zamanda alındığı için veriler bağımlıdır. Her bireyin ölçüm farkı alınarak tek bir t-testine dönüştürülen Eşleştirilmiş t-testi kullanılır.",
+      "Yanlış Cevap Açıklaması A: Bağımsız örneklemler t-testi birbirini tanımayan iki farklı grubu kıyaslamak içindir.",
+      "Yanlış Cevap Açıklaması B: Ki-kare testi sayısal kilo verisi için değil, kategorik nitel veriler için kullanılır.",
+      "Yanlış Cevap Açıklaması C: ANOVA genellikle üç veya daha fazla grubu karşılaştırmak için kullanılır."
+    ]
+  },
+  {
+    "question": "Eşleştirilmiş örneklem t-testinde (Paired t-test) analiz hangi veriler üzerinden yapılır?",
+    "options": [
+      "İki grubun bağımsız örneklem ortalamaları üzerinden",
+      "Her bir eşleşen çiftin değerleri arasındaki farklar (d) üzerinden",
+      "Popülasyon varyanslarının havuzlanmış hali üzerinden",
+      "Verilerin kategorik frekansları üzerinden"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Eşleştirilmiş t-testinde, birinci ölçümden ikinci ölçüm çıkarılarak her denek için bir 'fark (d)' değeri bulunur. Daha sonra bu farklar üzerinden tek örneklem t-testi uygulanır.",
+      "Yanlış Cevap Açıklaması A: Bu bağımsız örneklemler t-testinin mantığıdır.",
+      "Yanlış Cevap Açıklaması B: Havuzlanmış varyans işlemi varyansların eşit olduğu bağımsız t-testinde yapılır.",
+      "Yanlış Cevap Açıklaması C: Kategorik frekanslar Ki-Kare testinin konusudur."
+    ]
+  },
+  {
+    "question": "Ki-Kare (χ²) dağılımı ile ilgili olarak aşağıdakilerden hangisi yanlıştır?",
+    "options": [
+      "Sağa çarpık bir dağılımdır.",
+      "Dağılımın şekli serbestlik derecesine (df) bağlıdır.",
+      "Negatif değerler de alabilir.",
+      "Serbestlik derecesi çok büyüdükçe Normal dağılıma yaklaşır."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Ki-kare değişkeni standart normal değişkenlerin karelerinin toplamından elde edildiği için asla negatif değer alamaz. Her zaman sıfıra eşit veya büyüktür.",
+      "Yanlış Cevap Açıklaması A: Küçük serbestlik derecelerinde bariz bir şekilde sağa çarpıktır.",
+      "Yanlış Cevap Açıklaması B: Serbestlik derecesi grafiğin yatıklığını ve şeklini doğrudan değiştirir.",
+      "Yanlış Cevap Açıklaması C: Büyük df değerlerinde Merkezi Limit Teoremi'nin sonucu olarak simetrikleşip normale yakınsar."
+    ]
+  },
+  {
+    "question": "Bir zarın hilesiz olup olmadığını (her yüzün eşit olasılıkla gelip gelmediğini) kontrol etmek için 100 kez atış yapılıyor. Hangi Ki-Kare testi bu analiz için uygundur?",
+    "options": [
+      "Ki-Kare Bağımsızlık Testi",
+      "Ki-Kare Homojenlik Testi",
+      "Ki-Kare Uyum İyiliği (Goodness of Fit) Testi",
+      "Ki-Kare Varyans Testi"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Gözlemlenen tek bir kategorik veri dizisinin, beklenen teorik bir dağılıma (hilesiz zarda her bir yüz için 100/6) uyup uymadığını sınayan analiz Uyum İyiliği Testidir.",
+      "Yanlış Cevap Açıklaması A: Bağımsızlık testi, iki farklı kategorik değişkenin birbiriyle ilişkili olup olmadığını inceler.",
+      "Yanlış Cevap Açıklaması B: Homojenlik testi, farklı popülasyonlardan alınan grupların oranlarının benzerliğini sular.",
+      "Yanlış Cevap Açıklaması C: Varyans testi standart sapmanın belirli bir rakama eşitliğini sular."
+    ]
+  },
+  {
+    "question": "Ki-Kare Uyum İyiliği Testinde, 'k' kategori sayısını belirtmek üzere, serbestlik derecesi (df) nasıl hesaplanır?",
+    "options": [
+      "k - 1",
+      "(k - 1) * (k - 1)",
+      "k / 2",
+      "k + 1"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Tek yönlü sınıflandırma olan Uyum İyiliği testinde serbestlik derecesi, toplam kategori sayısının bir eksiği olan k - 1 formülüyle hesaplanır.",
+      "Yanlış Cevap Açıklaması A: Bu formül rxc çapraz tablolarındaki bağımsızlık testi formülüne benzer ancak k için geçersizdir.",
+      "Yanlış Cevap Açıklaması B: İkiye bölme işlemi serbestlik derecesinde kullanılmaz.",
+      "Yanlış Cevap Açıklaması C: Kategori sayısı artırılmaz, kısıtlamadan dolayı eksiltilir."
+    ]
+  },
+  {
+    "question": "Ki-Kare test istatistiğinin hesaplama formülü aşağıdakilerden hangisidir? (O: Gözlenen değer, E: Beklenen değer)",
+    "options": [
+      "Σ [ (O - E) / E ]",
+      "Σ [ (O - E)² / E ]",
+      "Σ [ (O - E) / O ]",
+      "Σ [ (O + E)² / O ]"
+    ],
+    "correctIndex": 1,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Ki-kare istatistiği, gözlenen ile beklenen frekanslar arasındaki farkın karesinin beklenen frekansa bölünmesiyle bulunan değerlerin toplamıdır.",
+      "Yanlış Cevap Açıklaması A: Kare alma işlemi olmadan farklar toplanırsa artı ve eksiler birbirini götürebilir.",
+      "Yanlış Cevap Açıklaması B: Bölme işlemi O'ya değil E'ye (beklenen değere) göre yapılır.",
+      "Yanlış Cevap Açıklaması C: Toplama işlemi değil fark alınması gerekir."
+    ]
+  },
+  {
+    "question": "Bir araştırmacı, öğrencilerin cinsiyeti (Kız/Erkek) ile tercih ettikleri yabancı dil (İngilizce/Almanca/Fransızca) arasında bir ilişki olup olmadığını araştırıyor. Hangi istatistiksel test kullanılmalıdır?",
+    "options": [
+      "Ki-Kare Bağımsızlık Testi",
+      "Ki-Kare Uyum İyiliği Testi",
+      "Bağımsız Örneklemler t-testi",
+      "Basit Doğrusal Regresyon"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Aynı popülasyondan çekilen bireylerin iki farklı kategorik değişkene (Cinsiyet ve Dil) göre çapraz sınıflandırıldığı tablolarda ilişkiyi test etmek için Ki-Kare Bağımsızlık testi kullanılır.",
+      "Yanlış Cevap Açıklaması A: Uyum iyiliği testi sadece tek bir kategorik değişken üzerinde uygulanır.",
+      "Yanlış Cevap Açıklaması B: t-testi nicel (sayısal) bir değişkenin iki grup arasındaki ortalama farkı için kullanılır.",
+      "Yanlış Cevap Açıklaması C: Regresyon analizi nicel sürekli değişkenlerin tahmini içindir."
+    ]
+  },
+  {
+    "question": "r satır ve c sütundan oluşan bir kontenjans tablosunda Ki-Kare Bağımsızlık testi için serbestlik derecesi (df) formülü nedir?",
+    "options": [
+      "r * c",
+      "r + c - 1",
+      "(r - 1) * (c - 1)",
+      "(r * c) - 1"
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Ki-kare çapraz tablolarda serbestlik derecesi, (Satır Sayısı - 1) x (Sütun Sayısı - 1) olarak hesaplanır.",
+      "Yanlış Cevap Açıklaması A: Bu toplam hücre sayısını verir.",
+      "Yanlış Cevap Açıklaması B: Bu uyum iyiliği testine uymayan rastgele bir toplamdır.",
+      "Yanlış Cevap Açıklaması C: Bu tüm hücrelerin tek yönlü liste gibi düşünüldüğü duruma ait olup bağımsızlık testinde hatalıdır."
+    ]
+  },
+  {
+    "question": "İki popülasyon oranını (p1 ve p2) karşılaştıran bir hipotez testinde, H0: p1 = p2 iken hesaplamada kullanılan 'Ortak Oran (Havuzlanmış Oran - p_c)' nasıl bulunur? (x: başarı sayısı, n: örneklem büyüklüğü)",
+    "options": [
+      "(x1 + x2) / (n1 + n2)",
+      "(x1 / n1) + (x2 / n2)",
+      "(x1 * x2) / (n1 * n2)",
+      "(p1 + p2) / 2"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: İki popülasyon oranının eşit olduğu varsayıldığında, her iki örneklemdeki toplam başarı sayısının toplam örneklem sayısına bölünmesiyle en iyi tahmin olan ortak oran (havuzlanmış oran) elde edilir.",
+      "Yanlış Cevap Açıklaması A: Bu ayrı ayrı oranların anlamsız bir şekilde toplanmasıdır.",
+      "Yanlış Cevap Açıklaması B: Bu olasılık çarpmayla ilgili yanlış bir kurgudur.",
+      "Yanlış Cevap Açıklaması C: Aritmetik ortalama, n1 ve n2 farklı boyutlarda ise havuzlanmış oranı yanlış hesaplar."
+    ]
+  },
+  {
+    "question": "Bir hipotez testinin sonucunda 'p-değeri = 0.02' olarak bulunmuştur. Anlamlılık düzeyi α = 0.05 olarak belirlenmişse, verilecek karar ve yorum ne olmalıdır?",
+    "options": [
+      "H0 reddedilir; sonuç istatistiksel olarak anlamlıdır.",
+      "H0 reddedilmez; sonuç istatistiksel olarak anlamlı değildir.",
+      "HA reddedilir; kanıt yetersizdir.",
+      "Test tekrarlanmalıdır."
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: p-değeri (0.02) alfa sınırından (0.05) küçük olduğu için Sıfır Hipotezi (H0) reddedilir. Bu durum sonucun tesadüf eseri olmadığını, istatistiksel olarak anlamlı bir fark/etki bulunduğunu gösterir.",
+      "Yanlış Cevap Açıklaması A: P-değeri alfadan büyük olduğunda H0 reddedilemez.",
+      "Yanlış Cevap Açıklaması B: Testlerde doğrudan HA reddedilmez, karar daima H0 üzerinden verilir.",
+      "Yanlış Cevap Açıklaması C: Test sonucu net bir matematiksel karara vardığı için tekrarlanması kurallara göre zorunlu değildir."
+    ]
+  },
+  {
+    "question": "Sürekli bir rastgele değişkenin tüm olası değerleri için çizilen Olasılık Yoğunluk Fonksiyonu (PDF) eğrisinin altında kalan toplam alan ne kadardır?",
+    "options": [
+      "0",
+      "0.5",
+      "1",
+      "Değişkenin ortalamasına bağlıdır."
+    ],
+    "correctIndex": 2,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Olasılık kurallarının temeli gereği, örneklem uzayındaki tüm olası sonuçların olasılıklarının toplamı her zaman 1'e eşittir.",
+      "Yanlış Cevap Açıklaması A: Alanın 0 olması olayın imkansız olduğunu gösterir.",
+      "Yanlış Cevap Açıklaması B: 0.5 sadece medyanın sağında veya solunda kalan alandır.",
+      "Yanlış Cevap Açıklaması C: Toplam alan sabittir (1) ve ortalamaya bağlı olarak değişmez."
+    ]
+  },
+  {
+    "question": "Sürekli Düzgün (Uniform) dağılım X ~ U(a, b) için olasılık yoğunluk fonksiyonu f(x) hangi değere eşittir?",
+    "options": [
+      "1 / (b - a)",
+      "(a + b) / 2",
+      "(b - a)",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Düzgün dağılım dikdörtgen şeklindedir. Dikdörtgenin alanı 1 olmak zorunda olduğu için ve tabanı (b-a) olduğu için, yükseklik f(x) = 1 / (b - a) olmak zorundadır.",
+      "Yanlış Cevap Açıklaması A: Bu formül düzgün dağılımın beklenen değerini (ortalamasını) verir.",
+      "Yanlış Cevap Açıklaması B: Bu aralığın uzunluğunu verir, olasılık yoğunluğunu değil.",
+      "Yanlış Cevap Açıklaması C: f(x) a ile b aralığı dışında 0'dır, aralık içinde sabit bir sayıdır."
+    ]
+  },
+  {
+    "question": "Üstel dağılıma sahip bir cihazın ömrünü modellerken kullanılan 'Hafızasızlık' (Memoryless) özelliği istatistiksel olarak nasıl formüle edilir?",
+    "options": [
+      "P(X > s + t | X > s) = P(X > t)",
+      "P(X > t) = 1 - P(X < t)",
+      "E(X) = Var(X)",
+      "P(X = x) = 0"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Hafızasızlık özelliği, cihazın 's' süre kadar hayatta kaldığı biliniyorsa, 't' süre DAHA yaşama ihtimalinin, sıfırdan başlayan yepyeni bir cihazın 't' süre yaşama ihtimaline eşit olduğunu ifade eder.",
+      "Yanlış Cevap Açıklaması A: Bu genel bir tümleyen kuralıdır, hafızasızlıkla ilgili spesifik bir formül değildir.",
+      "Yanlış Cevap Açıklaması B: E(X) = Var(X) Poisson dağılımına ait bir özelliktir.",
+      "Yanlış Cevap Açıklaması C: P(X=x) = 0, tüm sürekli dağılımların genel bir özelliğidir, hafızasızlık değildir."
+    ]
+  },
+  {
+    "question": "Merkezi Limit Teoremi'ne göre, ortalaması μ ve varyansı σ² olan herhangi bir popülasyondan çekilen n büyüklüğündeki örneklemlerin ortalaması (X̄) için aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      "n yeterince büyükse X̄ ~ N(μ, σ² / n) dağılımına yakınsar.",
+      "n yeterince büyükse X̄ ~ N(μ, σ²) dağılımına yakınsar.",
+      "Her zaman Poisson dağılımına uyar.",
+      "Beklenen değeri n*μ olur."
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Merkezi Limit Teoremi, popülasyon dağılımı ne olursa olsun, örneklem boyutu büyüdükçe (n > 30), örneklem ortalamasının, ortalaması μ ve varyansı σ²/n olan bir normal dağılıma yakınsadığını belirtir.",
+      "Yanlış Cevap Açıklaması A: X̄'nın varyansı popülasyon varyansı σ² değil, standart hata karesi olan σ² / n'dir.",
+      "Yanlış Cevap Açıklaması B: Normal dağılıma yakınsar, Poisson'a değil.",
+      "Yanlış Cevap Açıklaması C: n*μ ortalamaların değil, toplamların (ΣX) beklenen değeridir."
+    ]
+  },
+  {
+    "question": "Bir istatistik dersinde Z tablosu okurken P(Z < 1.5) değeri 0.9332 olarak verilmiştir. Buna göre P(Z > 1.5) olasılığı kaçtır?",
+    "options": [
+      "0.0668",
+      "0.9332",
+      "-0.9332",
+      "1.5000"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Eğrinin altındaki toplam alan 1'dir. Z'nin 1.5'ten büyük olma olasılığı tümleyeni alınarak bulunur: 1 - 0.9332 = 0.0668.",
+      "Yanlış Cevap Açıklaması A: 0.9332 küçük olma olasılığıdır.",
+      "Yanlış Cevap Açıklaması B: Olasılık değeri negatif olamaz.",
+      "Yanlış Cevap Açıklaması C: 1.5 Z değerinin kendisidir, bir alan (olasılık) değeri değildir."
+    ]
+  },
+  {
+    "question": "Simetri özelliğini kullanarak standart normal dağılımda P(Z < -1.5) olasılığını bulmak için hangi değere bakmak yeterlidir?",
+    "options": [
+      "P(Z > 1.5)",
+      "P(Z < 1.5)",
+      "P(-1.5 < Z < 1.5)",
+      "1 - P(Z < -1.5)"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Standart normal dağılım 0 etrafında tam simetrik olduğundan, sol kuyrukta -1.5'in solunda kalan alan, sağ kuyrukta 1.5'in sağında kalan alana eşittir.",
+      "Yanlış Cevap Açıklaması A: P(Z < 1.5) 0.5'ten büyük gövde alanını ifade eder.",
+      "Yanlış Cevap Açıklaması B: Bu iki değer arasındaki toplam olasılıktır.",
+      "Yanlış Cevap Açıklaması C: Bu ifade P(Z > -1.5) alanına eşittir."
+    ]
+  },
+  {
+    "question": "Bir Geometrik dağılımda, ilk başarıyı elde etmek için gereken deneme sayısını X gösteriyorsa, p başarı olasılığı olmak üzere P(X = k) olasılığı formülü hangisidir?",
+    "options": [
+      "(1 - p)^(k-1) * p",
+      "p^k * (1 - p)",
+      "k * p * (1 - p)",
+      "p / (1 - p)^k"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: İlk k-1 denemede başarısız olunmuş (1-p olasılığı ile) ve k'ncı denemede başarılı olunmuştur (p olasılığı ile). Bu bağımsız olaylar çarpılır: (1-p)^(k-1) * p.",
+      "Yanlış Cevap Açıklaması A: Bu k defa başarılı olup sonraki adımda başarısız olmayı gösterir.",
+      "Yanlış Cevap Açıklaması B: Bu rastgele bir katsayı çarpımıdır.",
+      "Yanlış Cevap Açıklaması C: Bu matematiksel olarak dağılıma ait olmayan bir formüldür."
+    ]
+  },
+  {
+    "question": "Aşağıdaki dağılımlardan hangisi, yerine koymadan (without replacement) yapılan çekilişlerde, sabit büyüklükte bir örneklem içindeki 'başarı' sayısını modellemek için kullanılır?",
+    "options": [
+      "Hipergeometrik Dağılım",
+      "Binom Dağılımı",
+      "Poisson Dağılımı",
+      "Geometrik Dağılım"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Popülasyon sınırlıysa ve çekilen nesne geri atılmıyorsa başarı olasılığı her seferinde değişir. Bu bağımlı durumu modelleyen ayrık dağılım Hipergeometrik Dağılımdır.",
+      "Yanlış Cevap Açıklaması A: Binom dağılımı çekilenin yerine konduğu (bağımsız denemeler) durumlar içindir.",
+      "Yanlış Cevap Açıklaması B: Poisson nadir olayların zaman/alan dağılımı içindir.",
+      "Yanlış Cevap Açıklaması C: Geometrik dağılım ilk başarıya kadar geçen deneme sayısını modeller."
+    ]
+  },
+  {
+    "question": "Poisson dağılımının parametresi olan λ (lambda), aşağıdakilerden hangisini ifade eder?",
+    "options": [
+      "Belirli bir zaman dilimi veya alanda beklenen ortalama olay sayısını",
+      "Toplam deneme sayısını",
+      "Tek bir denemede başarı elde etme olasılığını",
+      "Dağılımın maksimum sapma miktarını"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Poisson dağılımında λ, tanımlanan birim aralıkta (örneğin 1 saatte gelen çağrı sayısı) gerçekleşmesi beklenen olay sayısını, yani dağılımın ortalamasını (ve varyansını) ifade eder.",
+      "Yanlış Cevap Açıklaması A: Deneme sayısı Binom dağılımında 'n' ile gösterilir.",
+      "Yanlış Cevap Açıklaması B: Başarı olasılığı Binom ve Geometrik dağılımda 'p' ile gösterilir.",
+      "Yanlış Cevap Açıklaması C: Sapma miktarı doğrudan lambda demek değildir (gerçi varyans lambdaya eşittir ama asıl tanım beklenen olay sayısıdır)."
+    ]
+  },
+  {
+    "question": "Bir Binom dağılımını (X ~ B(n, p)) Normal dağılım yardımıyla hesaplarken, ortalama (μ) ve varyans (σ²) sırasıyla hangi değerlere eşit kabul edilir?",
+    "options": [
+      "μ = n*p , σ² = n*p*q",
+      "μ = n/p , σ² = p*q",
+      "μ = p , σ² = n*p",
+      "μ = n*q , σ² = n"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Binom dağılımında beklenen değer (ortalama) n*p, varyans ise n*p*(1-p) yani n*p*q olarak tanımlanır. Normal yaklaşım yapılırken bu parametreler aynen alınarak N(np, npq) oluşturulur.",
+      "Yanlış Cevap Açıklaması A: n/p diye bir beklenen değer formülü istatistikte kullanılmaz.",
+      "Yanlış Cevap Açıklaması B: Sadece p ortalama değildir.",
+      "Yanlış Cevap Açıklaması C: n*q başarısızlıkların beklenen değeridir."
+    ]
+  },
+  {
+    "question": "Binom olasılıkları Normal dağılıma yaklaştırılarak çözülürken uygulanan Süreklilik Düzeltmesinde (Continuity Correction), P(X > 20) ifadesi nasıl dönüştürülmelidir?",
+    "options": [
+      "P(X > 20.5)",
+      "P(X > 19.5)",
+      "P(X < 20.5)",
+      "P(X = 20)"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Kesikli bir veride X > 20 demek 21, 22... değerlerini almak demektir (20 DAHİL DEĞİL). Sürekli eksene geçerken 21'in alt sınırı olan 20.5'ten başlamak gerekir, bu yüzden P(X > 20.5) olur.",
+      "Yanlış Cevap Açıklaması A: P(X > 19.5) olursa 20 değeri (dahil) aralığa katılmış olur, oysa P(X ≥ 20) dendiğinde bu uygulanır.",
+      "Yanlış Cevap Açıklaması B: İşaret yönü (<) değiştirilmez.",
+      "Yanlış Cevap Açıklaması C: Sürekli dağılımlarda eşitliğin P(X=20) olasılığı sıfırdır, alanı hesaplanmaz."
+    ]
+  },
+  {
+    "question": "Çeyrekler Açıklığı (IQR) yöntemine göre aykırı değer bulunurken hesaplanan veri dağılımında %25'lik ikinci çeyrek ile %25'lik üçüncü çeyreği birbirinden ayıran sınır çizgisinin adı nedir?",
+    "options": [
+      "Medyan (Ortanca - Q2)",
+      "Mod",
+      "Aritmetik Ortalama",
+      "Birinci Çeyreklik (Q1)"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Veri setini küçükten büyüğe sıralandığında tam ortadan ikiye bölen, böylece %50'lik noktanın izini veren ölçü Medyandır ve Q2 olarak adlandırılır.",
+      "Yanlış Cevap Açıklaması A: Mod sadece frekans tepe değeridir, sıralamada yeri belli değildir.",
+      "Yanlış Cevap Açıklaması B: Ortalama verilerin değerlerinden etkilenir, tam sıralama %50'sini ikiye bölmeyebilir.",
+      "Yanlış Cevap Açıklaması C: Birinci çeyreklik (Q1) veriyi ilk %25'lik dilimden böler."
+    ]
+  },
+  {
+    "question": "Listelenen popülasyondan her 'k'ıncı' elemanın seçilerek (örneğin listedeki her 15. kişiyi almak) örneğe dahil edildiği örnekleme yöntemi aşağıdakilerden hangisidir?",
+    "options": [
+      "Sistematik Örnekleme",
+      "Basit Rastgele Örnekleme",
+      "Tabakalı Örnekleme",
+      "Kolayda Örnekleme"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Sabit bir örnekleme aralığı (k) belirlenip listeden ardışık şekilde eleman seçilmesine sistematik örnekleme denir.",
+      "Yanlış Cevap Açıklaması A: Basit rastgele kura veya bilgisayar rastgeleliğine dayanır, matematiksel atlama aralığı yoktur.",
+      "Yanlış Cevap Açıklaması B: Tabakalı örnekleme gruplara bölmeyi gerektirir.",
+      "Yanlış Cevap Açıklaması C: Kolayda örnekleme, kural gözetmeksizin rastlanana sormaktır."
+    ]
+  },
+  {
+    "question": "Bir şehri önce rastgele heterojen mahallelere ayırıp, ardından bu mahallelerden bazılarını tamamen kura ile seçerek seçilen mahallelerdeki herkesle anket yapılan örnekleme yöntemi hangisidir?",
+    "options": [
+      "Küme Örneklemesi",
+      "Tabakalı Örnekleme",
+      "Sistematik Örnekleme",
+      "Kota Örneklemesi"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Popülasyonun doğal gruplara (kümeler) ayrıldığı ve bu kümelerin kura ile seçilip içindeki tüm birimlerin araştırıldığı tekniğe Küme Örneklemesi denir.",
+      "Yanlış Cevap Açıklaması A: Tabakalı örneklemede her mahalleden biraz insan seçilirdi.",
+      "Yanlış Cevap Açıklaması B: Sistematik örnekleme bir listeye atlama kuralı koymaktır.",
+      "Yanlış Cevap Açıklaması C: Kota örneklemesi olasılıksız ve belirli özellik sayılarına dayanan bir yöntemdir."
+    ]
+  },
+  {
+    "question": "İki kategorik değişken arasındaki durumu gösteren 'İki Yönlü Tablolarda (Contingency Tables)', tablonun kenarlarında (en sağ ve en alt) yer alan toplam değerlerin dağılımına ne ad verilir?",
+    "options": [
+      "Marjinal Dağılımlar",
+      "Koşullu Dağılımlar",
+      "Frekans Poligonları",
+      "Bağıl Kümülatif Dağılımlar"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: İki değişkenli tablonun sınırlarında/kenarlarında (margin) bulunan, satır veya sütun değişkeninin tek başına olan toplam dağılımını gösteren rakamlara marjinal dağılımlar denir.",
+      "Yanlış Cevap Açıklaması A: Koşullu dağılımlar tek bir alt grup içindeki oranları yansıtır.",
+      "Yanlış Cevap Açıklaması B: Frekans poligonu bir grafik çizim yöntemidir.",
+      "Yanlış Cevap Açıklaması C: Kümülatif dağılım değerlerin birikerek toplanmasını ifade eder."
+    ]
+  },
+  {
+    "question": "Çubukları azalan frekans sırasına göre büyükten küçüğe doğru dizilerek oluşturulan ve sorunların en önemli kaynaklarını belirlemeye yarayan grafiğe ne isim verilir?",
+    "options": [
+      "Pareto Grafiği",
+      "Histogram",
+      "Kutu Grafiği",
+      "Zaman Serisi Grafiği"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Kategorik verilerde büyükten küçüğe sıralanmış çubuk grafik formuna Pareto Grafiği denir.",
+      "Yanlış Cevap Açıklaması A: Histogram, sürekli sayısal verilerin aralıklarla kesişmeden gösterilmesidir, sıralama büyükten küçüğe olma zorunluluğu taşımaz (kendi ekseni vardır).",
+      "Yanlış Cevap Açıklaması B: Kutu grafiği nicel verilerde çeyreklik aralıkları gösterir.",
+      "Yanlış Cevap Açıklaması C: Zaman serisi zaman akışına göre çizgi grafiktir."
+    ]
+  },
+  {
+    "question": "Bir deneyin sonucunu etkileyebilecek, ancak araştırmacı tarafından bilinmeyen veya doğrudan kontrol edilmeyen ve sonuçta 'Karıştırıcı Etki'ye yol açabilen değişkenlere ne ad verilir?",
+    "options": [
+      "Gizli (Lurking) Değişken",
+      "Bağımsız (Açıklayıcı) Değişken",
+      "Yanıt Değişkeni",
+      "Kesikli Değişken"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Araştırma tasarımına dahil edilmemiş ancak bağımlı değişken üzerinde gizlice etki eden faktörlere Gizli (Lurking) değişkenler denir.",
+      "Yanlış Cevap Açıklaması A: Bağımsız değişken, araştırmacının bizzat seçtiği ve etkisini izlediği değişkendir.",
+      "Yanlış Cevap Açıklaması B: Yanıt değişkeni, bağımsızın etkisine göre değişen sonuç değişkenidir.",
+      "Yanlış Cevap Açıklaması C: Kesikli değişken veri türüyle ilgilidir (tam sayı değerler alır)."
+    ]
+  },
+  {
+    "question": "Deneysel tasarımda, asıl test edilecek uygulamayı veya ilacı alan grubun sonuçlarını karşılaştırmak amacıyla ayrılan ve sadece plasebo (etkisiz madde) veya standart tedavi alan gruba ne denir?",
+    "options": [
+      "Kontrol Grubu",
+      "Deney Grubu",
+      "Evren Grubu",
+      "Popülasyon"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Deneysel işlemin (treatment) asıl etkisini net görmek için referans noktası olarak kullanılan, müdahale edilmeyen veya plasebo verilen grup 'Kontrol Grubu'dur.",
+      "Yanlış Cevap Açıklaması A: Deney grubu, test edilen yeni ilacın veya müdahalenin uygulandığı gruptur.",
+      "Yanlış Cevap Açıklaması B: Evren grubu istatistikte popülasyondur, tasarım grubu değildir.",
+      "Yanlış Cevap Açıklaması C: Popülasyon incelenen tüm kitleyi temsil eder."
+    ]
+  },
+  {
+    "question": "Plasebo Etkisi (Placebo Effect) aşağıdakilerden hangisini ifade eder?",
+    "options": [
+      "Bir katılımcının hiçbir etken madde almamasına rağmen, tedavi gördüğüne inanması sebebiyle olumlu yanıt vermesini",
+      "Araştırmacının sonucu bildiği için deneklere yanlı davranmasını",
+      "Örneklemin evreni temsil edecek şekilde seçilememesini",
+      "Deneydeki birden fazla bağımsız değişkenin birbirine karışmasını"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Psikolojik bir yanılsama olan plasebo etkisi, boş (etkisiz) bir hap veya tedavi uygulanan kişinin kendini daha iyi hissetmesi fenomenidir.",
+      "Yanlış Cevap Açıklaması A: Araştırmacının yanlılığı (bias) körleme yapılmamasından doğar, plasebo ile ilgili bir etki değildir.",
+      "Yanlış Cevap Açıklaması B: Temsil sorunu Örnekleme Yanlılığıdır.",
+      "Yanlış Cevap Açıklaması C: Değişkenlerin karışması Karıştırıcı Etkidir (Confounding)."
+    ]
+  },
+  {
+    "question": "Bir veri setinde Aritmetik Ortalama > Medyan > Mod şeklinde bir sıralama varsa, bu dağılımın şekli hakkında ne söylenebilir?",
+    "options": [
+      "Sağa çarpık (Pozitif çarpık) bir dağılımdır.",
+      "Sola çarpık (Negatif çarpık) bir dağılımdır.",
+      "Tam simetrik (Normal) bir dağılımdır.",
+      "İki modlu (Bimodal) bir dağılımdır."
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Aykırı derecede büyük değerler aritmetik ortalamayı kendine çekeceği için ortalama sağa (büyük değere) kayar, bu duruma sağa çarpık dağılım denir.",
+      "Yanlış Cevap Açıklaması A: Sola çarpıkta küçük aykırı değerler vardır, sıralama Ortalama < Medyan < Mod olur.",
+      "Yanlış Cevap Açıklaması B: Simetrik dağılımda Ortalama = Medyan = Mod eşitliği aranır.",
+      "Yanlış Cevap Açıklaması C: İki tepe noktası olan dağılımlar bimodaldir, bu sıralama ile bimodalite tespit edilemez."
+    ]
+  },
+  {
+    "question": "İstatistiksel analizde, verilerin ortalamadan ne kadar uzaklaştığını göstermek için standart sapma Z-skoruna çevrilir. Eğer Z = -2.5 ise bu ne anlama gelir?",
+    "options": [
+      "İlgili veri noktası, ortalamanın 2.5 standart sapma altında (solunda) yer almaktadır.",
+      "İlgili veri noktası, ortalamanın 2.5 birim altındadır.",
+      "Veri seti sağa çarpık bir dağılıma sahiptir.",
+      "Standart sapma -2.5'tir."
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Z-skoru, bir değerin aritmetik ortalamadan kaç standart sapma uzakta olduğunu ve yönünü (+/-) belirtir. -2.5, ortalamadan 2.5 σ kadar küçük olduğunu gösterir.",
+      "Yanlış Cevap Açıklaması A: Uzaklık birim cinsinden değil, standart sapma çarpanı cinsinden hesaplanır.",
+      "Yanlış Cevap Açıklaması B: Tek bir değerin konumu dağılımın genel çarpıklığını belirleyemez.",
+      "Yanlış Cevap Açıklaması C: Standart sapma karesel (pozitif) bir değerdir, hiçbir zaman eksi (-) olamaz."
+    ]
+  },
+  {
+    "question": "Bir güven aralığı hesaplanırken, Güven Düzeyini %90'dan %99'a çıkarmak, hesaplanan aralığın genişliğini nasıl etkiler?",
+    "options": [
+      "Güven aralığının genişlemesine (daha geniş bir aralık tahmini yapılmasına) neden olur.",
+      "Güven aralığının daralmasına (daha kesin bir tahmin yapılmasına) neden olur.",
+      "Aralığın genişliğinde herhangi bir değişikliğe yol açmaz.",
+      "Aralığın genişliği, sadece örneklem büyüklüğü ile ters orantılı olarak değişir."
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Tahminin doğruluğundan daha fazla emin olmak isteniyorsa, hedefi vurma ihtimalini artırmak için daha geniş bir 'ağ' atılır. Z veya t tablosundaki kritik çarpan değeri artacağından aralık genişler.",
+      "Yanlış Cevap Açıklaması A: Daralan aralıkta isabet oranından feragat edilmiş olunur (güven düzeyi düşer).",
+      "Yanlış Cevap Açıklaması B: Kritik değer (Z veya t) hata payını hesaplarken kullanıldığı için aralığın genişliği doğrudan etkilenir.",
+      "Yanlış Cevap Açıklaması C: Örneklem büyüklüğü aralığı daraltır, ancak güven düzeyindeki artışın etkisi genişletmek yönündedir."
+    ]
+  },
+  {
+    "question": "Hangi hipotez (Sıfır mı Alternatif mi) daima popülasyon parametresinin belirli bir değere EŞİT (=), küçük eşit (≤) veya büyük eşit (≥) olduğunu iddia eden matematiksel eşitlik bağlacını içerir?",
+    "options": [
+      "Sıfır Hipotezi (H0)",
+      "Alternatif Hipotez (HA)",
+      "Güç Hipotezi",
+      "Bağımsız Hipotez"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: İstatistiksel testlerin yapısı gereği, statükoyu (değişim yok, fark yok) temsil eden ve eşitlik içeren durum daima Sıfır Hipotezi (H0) içerisinde ifade edilir.",
+      "Yanlış Cevap Açıklaması A: Alternatif Hipotez (HA) tam tersini savunduğu için her zaman <, > veya ≠ işaretlerini taşır.",
+      "Yanlış Cevap Açıklaması B: Güç hipotezi diye bir kavram yoktur, Testin Gücü (Power) kavramı vardır.",
+      "Yanlış Cevap Açıklaması C: İlgisiz bir tanımdır."
+    ]
+  },
+  {
+    "question": "H0'ı reddetmek için kullanılan karar kuralı genellikle nedir?",
+    "options": [
+      "Hesaplanan p-değeri, belirlenen anlamlılık düzeyinden (α) küçük veya eşitse H0 reddedilir.",
+      "Hesaplanan p-değeri, belirlenen anlamlılık düzeyinden (α) büyükse H0 reddedilir.",
+      "P-değeri, Güven Düzeyine eşitse H0 reddedilir.",
+      "Test İstatistiği sıfır çıkarsa H0 reddedilir."
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: p-değeri, statüko doğruyken bu örneğin ortaya çıkma ihtimalidir. İhtimal (p-değeri) bizim tolere edeceğimiz hata sınırından (α) daha azsa, bunun tesadüf olmadığına kanaat getirir ve H0'ı çöpe atar (reddedilir) alternatif hipotezi benimseriz.",
+      "Yanlış Cevap Açıklaması A: P-değeri alfadan büyük olduğunda tesadüflük ihtimali yüksek demektir, kanıt yetersizdir, H0 reddedilemez.",
+      "Yanlış Cevap Açıklaması B: P-değeri ile güven düzeyi doğrudan birbirine eşitlenmez.",
+      "Yanlış Cevap Açıklaması C: Test istatistiği sıfır ise ortalamalar arasında hiç fark yok demektir, bu durumda kesinlikle H0 reddedilmez."
+    ]
+  },
+  {
+    "question": "Gerçekte YANLIŞ olan bir sıfır hipotezini, örneklemin yetersizliği nedeniyle reddedemediğimizde istatistiksel olarak hangi hatayı yapmış oluruz?",
+    "options": [
+      "Tip II Hata (β)",
+      "Tip I Hata (α)",
+      "Standart Hata",
+      "Örnekleme Hatası"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Ortada gerçekten bir etki, fark veya değişim varken araştırmanın bunu tespit edememesi ve 'değişiklik yok' (H0) diyerek bunu atlaması Tip II Hatadır (Beta - β).",
+      "Yanlış Cevap Açıklaması A: Tip I Hata ortada bir şey yokken 'var' diyerek yanlış alarm vermektir (H0'ı hatalı reddetmek).",
+      "Yanlış Cevap Açıklaması B: Standart hata örneklem dağılımının standart sapmasıdır, test karar hatası değildir.",
+      "Yanlış Cevap Açıklaması C: Örnekleme hatası tüm örneğe bakamamanın getirdiği genel sapmadır."
+    ]
+  },
+  {
+    "question": "Hipotez testi bağlamında 'Testin Gücü' (Power of a Test) ne anlama gelir?",
+    "options": [
+      "Gerçekte yanlış olan Sıfır Hipotezini (H0) doğru bir şekilde tespit edip reddetme olasılığı (1 - β).",
+      "Gerçekte doğru olan Sıfır Hipotezini yanlışlıkla reddetme olasılığı (α).",
+      "İki değişkenin arasındaki doğrusal ilişkinin şiddeti.",
+      "Sıfır hipotezi doğruyken p-değerinin aldığı minimum oran."
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Bir testin gücü, var olan gerçek bir etkiyi veya farkı doğru olarak tespit edebilme kapasitesidir. Tip II hatanın (kaçırmanın) tümleyenidir (1 - β).",
+      "Yanlış Cevap Açıklaması A: Bu tanım Tip I hatayı (α) ifade eder.",
+      "Yanlış Cevap Açıklaması B: Bu tanım Korelasyon Katsayısını (r) ifade eder.",
+      "Yanlış Cevap Açıklaması C: P-değerinin kendi tanımı olasılık tabanlıdır, testin gücünü doğrudan tanımlamaz."
+    ]
+  },
+  {
+    "question": "Bağımsız İki Örneklem için Ortalamaların Karşılaştırılması testinde, 'iki popülasyon varyansının birbirinden FARKLI olduğu (σ1² ≠ σ2²)' kabul ediliyorsa hangi yöntem kullanılmalıdır?",
+    "options": [
+      "Welch t-Testi",
+      "Havuzlanmış Varyans t-Testi (Pooled t-Test)",
+      "Eşleştirilmiş (Paired) t-Testi",
+      "Z-Testi"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: İki örneklem t-testinde varyansların eşit olma varsayımı sağlanmadığında, serbestlik derecesini (df) kesirli olarak yeniden düzelten daha güvenilir yöntem Welch t-testidir.",
+      "Yanlış Cevap Açıklaması A: Havuzlanmış test, varyansların kesinlikle eşit kabul edildiği durumda çalışır.",
+      "Yanlış Cevap Açıklaması B: Eşleştirilmiş test bağımlı aynı gruplardaki (önce-sonra gibi) ölçümler içindir.",
+      "Yanlış Cevap Açıklaması C: Z-testi popülasyon varyanslarının zaten bilindiği testlerde kullanılır."
+    ]
+  },
+  {
+    "question": "Aynı gruptaki hastaların 'diyet öncesi' ve 'diyet sonrası' ağırlıkları karşılaştırılacaktır. Gözlemlerin birbiriyle ilişkili olduğu bu senaryo için en uygun t-testi hangisidir?",
+    "options": [
+      "Eşleştirilmiş (Bağımlı) Örneklem t-Testi",
+      "İki Bağımsız Örneklem Welch t-Testi",
+      "İki Bağımsız Örneklem Havuzlanmış t-Testi",
+      "Tek Örneklem t-Testi"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Veriler aynı kişiler üzerinden ardışık veya koşullu (öncesi/sonrası gibi) alındığı için bağımsızlık koşulu sağlanmaz. Çiftler arasındaki fark (d = sonrası - öncesi) üzerinden tek bir t-testine dönüştürülen Eşleştirilmiş t-testi kullanılır.",
+      "Yanlış Cevap Açıklaması A: Welch testi birbirini hiç tanımayan ve etkilemeyen bağımsız gruplarda kullanılır.",
+      "Yanlış Cevap Açıklaması B: Havuzlanmış test de bağımsız gruplar için kullanılır.",
+      "Yanlış Cevap Açıklaması C: Tek örneklem t-testi, bir grubun ortalamasının sabit bir değerle kıyaslanmasıdır, ancak eşleştirilmiş test kendi içinde o mekanizmayı farklar üzerinden çalıştırsa da asıl ismi Eşleştirilmiş Test'tir."
+    ]
+  },
+  {
+    "question": "İki kategorik değişkenin birbiriyle bir ilişkisi olup olmadığını (Örneğin: Eğitim durumu ile Parti tercihinin birbirine bağlı olup olmadığını) saptamak için hangi Ki-Kare testi kullanılır?",
+    "options": [
+      "Ki-Kare Bağımsızlık Testi",
+      "Ki-Kare Uyum İyiliği Testi",
+      "Ki-Kare Homojenlik Testi",
+      "Eşleştirilmiş Ki-Kare Testi"
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Çapraz tablolarda (contingency tables) tek bir örneklemden çekilen iki farklı kategorik değişken arasında anlamlı bir istatistiksel ilişki olup olmadığını araştıran analiz Ki-Kare Bağımsızlık Testidir.",
+      "Yanlış Cevap Açıklaması A: Uyum İyiliği Testi sadece TEK bir kategorik değişkenin belli bir formüle uyup uymadığını sınar.",
+      "Yanlış Cevap Açıklaması B: Homojenlik Testi araştırmacı tarafından önceden belirlenen bağımsız grupların oran yapısının benzerliğini sınar.",
+      "Yanlış Cevap Açıklaması C: Eşleştirilmiş t-testi vardır ancak bu nitel veriler için kullanılan bir analiz değildir."
+    ]
+  },
+  {
+    "question": "Zarın 100 kere atılıp her bir sayının geliş frekanslarının teorik olarak beklenen frekanslara (eşit gelme ihtimaline) uyup uymadığını kontrol eden Ki-Kare Uyum İyiliği Testinde, hesaplamaların güvenilir olması için gereken BEKLENEN FREKANS (e_i) minimum şartı nedir?",
+    "options": [
+      "Her hücredeki beklenen frekansın en az 5 olması (e_i ≥ 5).",
+      "Örneklem sayısının en az 30 olması.",
+      "Gözlenen frekansların tümünün eşit olması.",
+      "Beklenen frekansların gözlenenlerden mutlaka büyük olması."
+    ],
+    "correctIndex": 0,
+    "explanations": [
+      "Doğru Cevap Açıklaması: Ki-kare formülünde paydada Beklenen Değer (E) olduğu için küçük değerli beklentiler formülün sonucunu aşırı şişirir ve dağılımı bozar. İstatistiksel kural gereği beklenen her frekans en az 5 olmalı, değilse kategoriler birleştirilmelidir.",
+      "Yanlış Cevap Açıklaması A: Örneklem sayısının 30 olması Merkezi Limit Teoremi içindir.",
+      "Yanlış Cevap Açıklaması B: Gözlenen frekanslar istendiği gibi çıkabilir, şart beklenenle ilgilidir.",
+      "Yanlış Cevap Açıklaması C: Beklenen frekans her durumda daha büyük olmak zorunda değildir."
+    ]
+  }
+]
